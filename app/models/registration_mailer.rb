@@ -83,7 +83,7 @@ class RegistrationMailer < ActionMailer::Base
   
   def notification_of_csr_submition_to_user_no_ra(person, csr_status_link)
     @headers['Content-Transfer-Encoding'] = "8bit"
-     @subject = "You certificate request has been submited to the HellasGrid CA"
+     @subject = "Your certificate request has been submited to the HellasGrid CA"
      @recipients = person.email
      @charset = "utf-8"
      @from = "support@grid.auth.gr"
