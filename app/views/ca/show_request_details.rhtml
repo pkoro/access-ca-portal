@@ -1,0 +1,61 @@
+<table border="0" cellspacing="0" cellpadding="10px" width="700px">
+  <tr>
+    <td width="420px">
+      <table border="0" cellspacing="0" cellpadding="0" width="400px" class="PersonDetails">
+        <tr>
+          <th>Κατάσταση</th>
+          <td style="padding: 5px;"><%= @req.status %></td>
+        </tr>
+        <tr>
+          <th>Ανανέωση στις</th>
+          <td style="padding: 5px;"><%= @req.updated_at %></td>
+        </tr>
+        <tr>
+          <th>Αιτών</th>
+          <td style="padding: 5px;">
+            <%= link_to @req.requestor.email, :action => 'show_person_details', :id => @req.requestor.id %>
+          </td>
+        </tr>
+        <% if @req.owner_id!=0 %>
+          <tr>
+            <th>Οντότητα προς πιστοποίηση</th>
+            <% if @req.owner_type == "Person" %>
+              <td style="padding: 5px;">
+                <%= link_to @req.owner.email, :action => 'show_person_details', :id => @req.owner.id %>
+              </td>
+            <% else %>
+              <td style="padding: 5px;">
+                <%= link_to @req.owner.fqdn, :action => 'show_host_details', :id => @req.owner.id %>
+              </td>
+            <% end %>
+          </tr>
+        <% end %>
+        <tr>
+          <th>Τύπος Αίτησης</th>
+          <td style="padding: 5px;"><%= @req.csrtype %></td>
+        </tr>
+        <tr>
+          <th>Στοιχεία Αίτησης</th>
+          <td style="padding: 5px;">
+          <% @ReqReader.request[:dnElements].each_value do |dnEl| %>
+            <%= dnEl['Type'] %> = <%= dnEl['Value'] %>
+            <br/>
+          <%end %>
+          </td>
+        </tr>
+        <tr>
+          <th>Κλειδί</th>
+          <td style="padding: 5px;"><%= @ReqReader.request[:Object].public_key.type.to_s.split("::")[2] %>  (<%= @ReqReader.request[:Object].public_key.to_text.match(/\d+/)[0] %> bit)</td>
+        </tr>
+        <tr>
+          <th>Exponent</th>
+          <td style="padding: 5px;"><%= @ReqReader.request[:Object].public_key.to_text.split("Exponent:")[1].to_i.to_s %></td>
+        </tr>
+        <tr>
+          <th>Modulus</th>
+          <td style="padding: 5px;"><%= @ReqReader.request[:Object].public_key.to_text.split("Exponent:")[0].split("\n")[1..1000].join("<br />") %></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

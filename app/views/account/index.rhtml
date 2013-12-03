@@ -1,0 +1,59 @@
+<% if flash[:notice]%>
+<div style="border: green solid 1px; padding: 10px; width: 450px; text-align: center">
+	<p><%= flash[:notice] %></p>
+</div>
+<br />
+<% end %>
+
+<div aling="center" width="450">
+	<table border="0" cellspacing="10">
+		<tr>
+			<th width="400" style="text-align: right; border-bottom: 1px solid Black; font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;">
+				Προσωπικά Στοιχεία
+			</th>
+		</tr>
+		<tr>
+			<td style="text-align: left;" valign="top">
+				<ul class="accountMainPageMenu" style="list-style: none;">
+					<li>
+						<%= link_to "Ενημέρωση Προσωπικών στοιχείων", :action => "edit_personal_information"%>
+					</li>
+				</ul>
+			</td>
+		</tr>
+		
+		<tr>
+			<th style="text-align: right; border-bottom: 1px solid Black; font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;">
+				Αιτήσεις
+			</th>
+		</tr>
+		<tr>
+			<td style="text-align: left" valign="top">
+				<ul class="accountMainPageMenu" style="list-style: none; text-align: left">
+					<li>
+						<%= link_to "Ανανέωση Πιστοποιητικού", :action => "csr_form" %>
+					</li>
+				<!--	<li>
+						<%= link_to "Πρόσβαση στην υποδομή PRACE T1", :action => "prace_t1_form" %>
+					</li> -->
+					<li>
+						<%= link_to "Πρόσβαση στο SEE VO", :action => "see_vo_form" %>
+					</li>
+					<li>
+						<%= link_to "Πρόσβαση στο NWCHEM VO", :action => "nwchem_vo_form" %>
+					</li>
+					<li>
+						<%= link_to "Πρόσβαση σε  UI", :action => "ui_access_form" %>
+					</li>
+					<li>
+						<%= link_to "Πιστοποιητικά Διακομιστών", :controller => "host" %>
+					</li>
+					<li>
+						<%= link_to "Αιτήσεις πιστοποιητικών σε αναμονή", :action => "list_pending_csrs" %>
+					</li>
+				</ul>
+			</td>
+		</tr>
+		
+	</table>
+</div>

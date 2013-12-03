@@ -1,0 +1,29 @@
+<center>
+	<h1>Η αίτησή σας έχει αποσταλλεί στην Αρχή Πιστοποίησης ΗellasGrid CA</h1>
+</center>
+<br />
+<div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
+	<p>CSR_<%= @person.organization.domain.upcase %>_<%= @person.active_personal_csr.id %></p>
+</div>
+<br />
+<p>
+	Μπορείτε να παρακολουθείτε την κατάσταση της αίτησεώς σας μέσω του web
+	στη διεύθυνση:
+</p>
+
+<p><%= link_to @csr_status_link, @csr_status_link %></p>
+
+<p>
+	Για κάθε αίτηση που αποστέλλεται στην Α.Π., δημιουργείται ένα τυχαίο κλείδί
+	με το οποίο έχει κανείς πρόσβαση στα στοιχεία της αιτήσεως. Το κλειδί για την
+	δική σας αίτηση είναι:
+</p>  
+
+<div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
+	<p><%= @person.active_personal_csr.uniqueid %></p>
+</div>
+<br />
+<p>
+	Ηλεκτρονικό αντίγραφο του παραπάνω κειμένου έχει αποσταλλεί ηλεκτρονικά στην
+	διεύθυνση: <%= @person.email %>
+</p>

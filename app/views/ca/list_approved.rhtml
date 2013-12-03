@@ -1,0 +1,22 @@
+<div align="center">
+	<div style="width: 700px">
+		<h1>Αιτήσεις πιστοποιητικών σε αναμονή για υπογραφή από την Α.Π.</h1>
+		<table class="tablelist" cellspacing="0" cellpadding="4px">
+  			<tr>
+    			<%= sort_header_tag('certificate_requests.id', :caption => 'ID')%>
+				<th style="color: #4F4F4F; font-weight: normal;">FQDN/E-mail</th>
+				<%= sort_header_tag('organizations.name_el', :caption => 'Οργανισμός')%>
+				<%= sort_header_tag('created_at', :caption => 'Ημερομηνία αίτησης')%>
+				<%= sort_header_tag('updated_at', :caption => 'Τελευταία ανανέωση')%>
+  			</tr>
+  			<% @certificate_requests.each_with_index do |csr, i| %>
+              <%= create_approved_csr_list_row(csr,i) %>
+			<% end %>
+		</table>
+		<br />
+		<br/>
+		<div align="right" style="position: relative;">
+			<%= will_paginate @certificate_requests %> 
+		</div>
+	</div>
+</div>

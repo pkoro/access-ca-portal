@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+./script/runner "UncheckedPerson.dump_to_file"
+./script/runner "Certificate.dump_to_file"
+./script/runner "DistinguishedName.dump_to_file"
+./script/runner "AlternativeName.dump_to_file"
+./script/runner "Host.dump_to_file"
+./script/runner "Organization.dump_to_file"
+./script/runner "EmailConfirmation.dump_to_file"
+./script/runner "CertificateRequest.dump_to_file"
+./script/runner "RAStaffMembership.dump_to_file"
+./script/runner "RegistrationAuthority.dump_to_file"
+./script/runner "SeeVoRequest.dump_to_file"
+./script/runner "UiRequest.dump_to_file"

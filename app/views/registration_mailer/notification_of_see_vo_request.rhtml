@@ -1,0 +1,27 @@
+Ο χρήστης:
+<% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
+  	<%=@person.first_name_en + " " + @person.last_name_en %>
+<% else %>
+  	<%=@person.first_name_el + " " + @person.last_name_el %>
+<% end %>
+
+Με e-mail:
+  <%= X509Certificate::CertificateReader.new(Certificate.find(:first,:order => "id DESC",:conditions => ["owner_type = 'Person' and owner_id = ?", @person.id]).body).certificate[:SubjAltNames].split(/, /)[0].split(/:/)[1].downcase %>
+
+έχει κάνει αίτηση για πρόσβαση στο SEE VO
+
+Το DN του είναι:
+  <%= X509Certificate::CertificateReader.new(Certificate.find(:first,:order => "id DESC",:conditions => ["owner_type = 'Person' and owner_id = ?", @person.id]).body).certificate[:Certificate].subject %>
+
+Και έχει υπογραφεί από την Α.Π.:
+  <%= X509Certificate::CertificateReader.new(Certificate.find(:first,:order => "id DESC",:conditions => ["owner_type = 'Person' and owner_id = ?", @person.id]).body).certificate[:Certificate].issuer %>
+
+
+Template για απάντηση:
+
+Your request for membership in the SEE VO has been processed. Please
+allow 6 hours for all clusters in the region to notify their systems
+about your membership.
+
+On behalf of the GridAUTH team,
+First_name Last_name

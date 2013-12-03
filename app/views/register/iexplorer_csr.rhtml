@@ -1,0 +1,140 @@
+<OBJECT CLASSID="clsid:127698e4-e730-4e5c-a2b1-21490a70c8a1"
+CODEBASE="https://access.hellasgrid.gr/xenroll.dll"
+ID=Enroll>
+</OBJECT>
+
+<% if error_messages_in_gr_for(:csr) != "" %>
+<br />
+<div class="error_box">
+	<%= error_messages_in_gr_for(:csr) %>
+</div>
+<br />
+<% end %>
+
+<fieldset>
+	<legend>Παραγωγή κλειδιού και αποστολή αιτήσεως στην Α.Π.</legend>
+	<div class="blue_box">
+	<p>
+		Επιλέξτε το μέγεθος του προσωπικού κλειδιού που θέλετε να δημιουργήσετε
+		και προχωρήστε στην αποστολή. 
+	</p>
+	<p>
+		ΠΡΟΣΟΧΗ: Ο crypto provider που πρέπει να χρησιμοποιηθεί στον Internet
+		Explorer είναι ο Microsoft Enhanced (προεπιλεγμένη τιμή)
+	</p> 
+	</div>
+	<% form_tag ({:action => 'submit_iexplorer_csr'}, {:name => "GetData"}) do %>
+	<input type="hidden" name="emailAddress" value="<%= @person.email %>">
+<%
+	if Certificate.find(:first, :conditions => ["owner_id = ? and owner_type = 'Person'", @person.id], :order => "id DESC")
+	  person_cn = X509Certificate::CertificateReader.new(Certificate.find(:first, :conditions => ["owner_id =? and owner_type = 'Person'", @person.id], :order => "id DESC").body).certificate[:dnElements][3]["Value"]
+	else 
+	  person_cn = @person.first_name_en.capitalize + " " + @person.last_name_en.capitalize
+	end
+%>
+	<input type="hidden" name="commonName" value="<%=person_cn %>">
+	<input type="hidden" name="organizationName" value="HellasGrid">
+<%
+	if Certificate.find(:first, :conditions => ["owner_id = ? and owner_type = 'Person'", @person.id], :order => "id DESC")
+	  person_ou = X509Certificate::CertificateReader.new(Certificate.find(:first, :conditions => ["owner_id =? and owner_type = 'Person'", @person.id], :order => "id DESC").body).certificate[:dnElements][2]["Value"]
+	else 
+	  person_ou = @person.organization.domain
+	end
+%>
+	<input type="hidden" name="organizationalUnitName" value="<%= person_ou %>">
+	<input type="hidden" name="countryName" value="GR">
+	<label for="cryptoprovider">Crypto Provider:</label></br />
+	<select name="cryptprovider" class="textbox"></select>
+	<input type="submit" value="Αποστολή" name="submit" class="textbox">
+<script language="VBScript">
+<!--
+Sub submit_OnClick
+Dim TheForm
+set TheForm = Document.GetData
+szName = "C=GR; O=HellasGrid" & _
+"; OU =" & TheForm.organizationalUnitName.value & _
+"; CN=" & TheForm.commonName.value
+Enroll.HashAlgorithm = "SHA1"
+Enroll.KeySpec = 1
+' adding 2 to "GenKeyFlags" will  enable the 'High Security' 
+' (USER_PROTECTED) mode, which means IE will pop up a dialog
+' asking what level of protection you would like to give
+' the key - this varies from 'none' to 'confirm password
+' every time the key is used'
+Enroll.GenKeyFlags = 1
+sz10 = Enroll.CreatePKCS10(szName,"1.3.6.1.5.5.7.3.2")
+if (sz10 = Empty OR theError <> 0) Then
+sz = "Si &#65533;Verification Error '" & Hex(theError) & ". " & _
+chr(13) & chr(10) & _
+"Request has not been sent."
+result = MsgBox(sz, 0, "Certificate Request")
+Exit Sub
+else
+TheForm.MSREQ.value = sz10
+end if
+End Sub
+-->
+</script>
+<SCRIPT LANGUAGE=VBS>
+<!--
+
+FindProviders
+
+Function FindProviders
+	Dim i, j
+	Dim providers()
+	i = 0
+	j = 1
+	Dim el
+	Dim temp
+	Dim first
+	Dim TheForm
+	Set TheForm = Document.GetData
+	On Error Resume Next
+	first = 0
+	curId = first
+
+	Do While True
+	temp = ""
+	Enroll.providerType = j
+	temp = Enroll.enumProviders(i,0)
+	If Len(temp) = 0 Then
+	If j < 1 Then 
+	  j = j + 1
+	  i = 0 
+	Else
+	  Exit Do
+	End If
+	Else
+	set el = document.createElement("OPTION")
+	el.text = temp
+	el.value = j 
+	' Added to show ONLY the microsoft crypto providers
+	' in the future if we want to support the key generation
+	' in tokens also, we might need to remove this if statement
+	If InStr(1, el.Text, "Microsoft Enhanced", vbTextCompare) Then
+		' TheForm.cryptprovider.add(el)
+		myId = curId
+	' ElseIf InStr(1, el.Text, "Microsoft Base Smart", vbTextCompare) Then
+	Else
+		' TheForm.cryptprovider.add(el)
+		curId = curId + 1
+	End If
+	TheForm.cryptprovider.add(el)
+	' If first = 0  Then
+	If myId > 0 Then
+	'  first = 1
+	  TheForm.cryptprovider.selectedIndex = myId
+	
+	End If
+	i = i + 1
+	End If
+	Loop
+
+End Function
+
+-->
+</SCRIPT>
+	<input type='hidden' name='MSREQ'>
+	<% end %>
+</fieldset>

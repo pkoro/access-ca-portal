@@ -1,0 +1,45 @@
+<% if (@person or @host) and @cert %>
+<center>
+<h1>Ψηφιακό πιστοποιητικό για: <%= if @cert.owner_type == "Person" then @cert.owner.email else @cert.owner.fqdn end %></h1>
+<br />
+<table class="PersonDetails" cellspacing="0" cellpadding="0">
+	<tr>
+		<th valign="top">Subject DN:</th>
+		<td><%= @cert.subject_dn %></td>
+	</tr>
+	<tr>
+		<th valign="top">Issuer DN:</th>
+		<td><%= X509Certificate::CertificateReader.new(@cert.body).certificate[:Certificate].issuer.to_s %></td>
+	</tr>
+	<tr>
+		<th valign="top">Εγκυρό από:</th>
+		<td><%= X509Certificate::CertificateReader.new(@cert.body).certificate[:Certificate].not_before.to_s %></td>
+	</tr>
+	<tr>
+		<th valign="top">Έγκυρο εώς:</th>
+		<td><%= X509Certificate::CertificateReader.new(@cert.body).certificate[:Certificate].not_after.to_s %></td>
+	</tr>
+	<tr>
+		<th valign="top">Πιστοποιητικό:</th>
+		<td><pre><%= @cert.body %></pre></td>
+	</tr>
+    <% if @cert.owner_type == "Person" %>
+	<tr>
+		<td colspan="2">
+			<center>
+			<%= link_to "Εγκατάσταση πιστοποιητικού στον browser", :action => "load_cert", :id => @cert.certificate_request_uniqueid %>
+			</center>
+		</td>
+	</tr>
+    <% end %>
+</table>
+</center>
+<% else %>
+<div class="error_box">
+	<span style="color: red; height: 500; text-align: center">
+	Η οντότητα δεν υπάρχει ή δεν έχει έγκυρο πιστοποιητικό
+	</span>
+	<br /><br /><br /><br /><br /><br />
+</div>
+<% end %>
+

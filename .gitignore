@@ -1,0 +1,5 @@
+*database.yml
+*.log
+*deploy.rb
+TEST-CA/
+Capfile

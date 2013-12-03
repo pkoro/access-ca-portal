@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+
+	<title>jquery.toggleElements.js - Toggle HTML-Elements with jQuery</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+	<meta name="description" content="jquery.toggleElements.js - Toggle HTML-Elements with jQuery" />
+	<meta name="keywords" content="toggle, jQuery, Plugin, JavaScript Library, snippet, jQuery-Plugin, JavaScript, Ajax, Css" />
+	<meta http-equiv="keywords" content="toggle, jQuery, Plugin, JavaScript Library, snippet, jQuery-Plugin, JavaScript, Ajax, Css" />
+	<meta name="verify-v1" content="Eal6+fiCjgKAZb5A6pRvSLmsh9NLF2AsqxqJrLuFoAs=" />
+
+	<meta name="robots" content="index,follow" />
+	<meta name="revisit-after" content="7 days" />
+	<meta name="siteinfo" content="http://jquery.andreaseberhard.de/robots.txt" />
+
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen,projection" />
+
+	<link rel="icon" href="favicon.ico" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<script type="text/javascript" src="jquery-latest.pack.js"></script>
+	<script type="text/javascript" src="pluginpage.js"></script>
+
+	<script type="text/javascript" src="jquery.toggleElements.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="toggleElements.css" />
+	<link rel="stylesheet" type="text/css" href="toggleElements2.css" />
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('div.toggler-1').toggleElements( );
+		$('ul.toggler-2').toggleElements( );
+		$('img.toggler-3').toggleElements( { fxAnimation:'show', fxSpeed:'slow', className:'toggler2' } );
+		$('ul.toggler-4').toggleElements( { fxAnimation:'show', fxSpeed:'slow', className:'toggler2' } );
+		$('div.toggler-5').toggleElements( { fxAnimation:'show', fxSpeed:'slow', className:'toggler2' } );
+		$('ul.toggler-6').toggleElements( { fxAnimation:'fade', fxSpeed:1000, className:'toggler' } );
+		$('div.toggler-7').toggleElements( { fxAnimation:'fade', fxSpeed:1000, className:'toggler' } );
+		$('ul.toggler-8').toggleElements( { fxAnimation:'show', fxSpeed:'fast', className:'none' } );
+		$('fieldset.toggler-9').toggleElements( { fxAnimation:'show', fxSpeed:1000, className:'toggler', onClick:doOnClick, onHide:doOnHide, onShow:doOnShow } );
+		$('div.toggler-10').toggleElements( );
+	});
+	
+function doOnClick() {
+	alert('callback: onClick');
+}
+function doOnHide() {
+	alert('callback: onHide');
+}
+function doOnShow() {
+	alert('callback: onShow');
+}
+</script>
+
+<!-- Chili the jQuery code highlighter plugin -->
+<script type="text/javascript" src="chili/chili.pack.js"></script>
+<script id="setup" type="text/javascript">
+ChiliBook.recipeFolder     = "chili/";
+ChiliBook.stylesheetFolder = "chili/";
+</script>
+
+  </head>
+
+  <body>
+
+	<div id="page">
+
+		<div class="intro">
+			<h1>
+				<a href="./index.html" title="jquery.toggleElements.js - Toggle HTML-Elements with jQuery">jquery.toggleElements.js<br />Toggle HTML-Elements with jQuery</a>
+			</h1>
+			<div class="introtext">
+				<p>
+					<strong>toggleElements</strong> is designed to hide informations on your site and show it only when the user requests more information.
+				</p>
+				<h2>Features</h2>
+				<ul>
+					<li>unobtrusive script, simple to setup</li>
+					<li>full customizeable via CSS</li>
+					<li>only a class and a title-attribute must be added to your original HTML</li>
+					<li>nesting <em>toggleElements</em> is possible</li>
+				</ul>
+				<p class="light">This page uses jQuery Version <script type="text/javascript">document.write(jQuery(document).jquery);</script></p>
+			</div>
+			<div class="sidebar">
+				<p>
+				Version 1.3, 2007-09-11
+				</p>
+				<p>
+					Tested on Windows XP SP2 with<br />
+					- IE 5.5 + 6 + 7<br />
+					- Firefox 1.5.0.7 + 2.0.0.3<br />
+					- Opera 8.0 + 8.5 + 9.00
+				</p>
+				<div class="download"><a href="http://jquery.andreaseberhard.de/download/toggleElements.zip" title="Download this site">Download</a></div>
+			</div>
+		</div>
+
+		<div class="examples">
+
+			<h2>E x a m p l e s:</h2>
+			
+			<div class="toggler-1" title="Example 1: div with text and image">
+				<p>
+				<img src="image.jpg" style="float:left;margin-right:30px;margin-bottom:10px;" alt="" />
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum erat. Sed rutrum. Nam aliquam, neque id molestie malesuada, tellus odio facilisis augue, in vulputate massa neque elementum risus. Aenean pretium, diam quis condimentum imperdiet, est augue pretium quam, id varius ligula justo ultricies ante. In feugiat. Nulla magna. Nullam non metus at dui aliquet blandit. Nunc mi. Aenean mauris tellus, faucibus non, semper ac, facilisis non, orci. Proin cursus nibh in tellus. Fusce posuere nisi eu ligula. Morbi volutpat est a diam lobortis consectetuer. Donec placerat, eros vel cursus ornare, leo mi aliquet velit, quis aliquet ipsum augue eget augue. Donec ligula sem, eleifend at, mattis et, facilisis at, augue.
+				</p>
+			</div>
+
+			<ul class="toggler-2" title="Example 2: unordered list">
+				<li>Google</li>
+				<li>AltaVista</li>
+				<li>Fireball</li>
+			</ul>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum erat. Sed rutrum. Nam aliquam, neque id molestie malesuada, tellus odio facilisis augue, in vulputate massa neque elementum risus. Aenean pretium, diam quis condimentum imperdiet, est augue pretium quam, id varius ligula justo ultricies ante. In feugiat. Nulla magna. Nullam non metus at dui aliquet blandit. Nunc mi. Aenean mauris tellus, faucibus non, semper ac, facilisis non, orci. Proin cursus nibh in tellus. Fusce posuere nisi eu ligula. Morbi volutpat est a diam lobortis consectetuer. Donec placerat, eros vel cursus ornare, leo mi aliquet velit, quis aliquet ipsum augue eget augue. Donec ligula sem, eleifend at, mattis et, facilisis at, augue.
+			</p>
+
+			<img src="image.jpg" alt="" class="toggler-3" title="Example 3: a single image with different class" />
+
+			<ul class="toggler-4" title="Example 4: unordered list with different class">
+				<li>Google</li>
+				<li>AltaVista</li>
+				<li>Fireball</li>
+				<li>Google</li>
+				<li>AltaVista</li>
+				<li>Fireball</li>
+			</ul>
+
+			<div class="toggler-5" title="Example 5: div with different class and subs ;-)">
+				<p>
+				<img src="image.jpg" style="float:left;margin-right:30px;margin-bottom:10px;" alt="" />
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum erat. Sed rutrum. Nam aliquam, neque id molestie malesuada, tellus odio facilisis augue, in vulputate massa neque elementum risus. Aenean pretium, diam quis condimentum imperdiet, est augue pretium quam, id varius ligula justo ultricies ante. In feugiat. Nulla magna. Nullam non metus at dui aliquet blandit. Nunc mi. Aenean mauris tellus, faucibus non, semper ac, facilisis non, orci. Proin cursus nibh in tellus. Fusce posuere nisi eu ligula. Morbi volutpat est a diam lobortis consectetuer. Donec placerat, eros vel cursus ornare, leo mi aliquet velit, quis aliquet ipsum augue eget augue. Donec ligula sem, eleifend at, mattis et, facilisis at, augue.
+				</p>
+				<ul class="toggler-6" title="Example 6: unordered list">
+					<li>Google</li>
+					<li>AltaVista</li>
+					<li>Fireball</li>
+				</ul>
+				<div class="toggler-7" title="Example 7: unordered list with sub">
+					<ul>
+						<li>Google</li>
+						<li>AltaVista</li>
+						<li>
+							<ul class="toggler-8" title="Example 8: unordered list">
+								<li>Google</li>
+								<li>AltaVista</li>
+								<li>Fireball</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<fieldset class="toggler-9" title="Example 9: fieldset, with callbacks">
+				<legend>Lorem Ipsum</legend>
+				<label for="foo"><input id="foo" name="foo" /></label>
+				<input type="submit" value="submit" />
+			</fieldset>
+
+			<div class="toggler-10 opened" title="Example 10: additional class 'opened'">
+				<p>
+				<img src="image.jpg" style="float:left;margin-right:30px;margin-bottom:10px;" alt="" />
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum erat. Sed rutrum. Nam aliquam, neque id molestie malesuada, tellus odio facilisis augue, in vulputate massa neque elementum risus. Aenean pretium, diam quis condimentum imperdiet, est augue pretium quam, id varius ligula justo ultricies ante. In feugiat. Nulla magna. Nullam non metus at dui aliquet blandit. Nunc mi. Aenean mauris tellus, faucibus non, semper ac, facilisis non, orci. Proin cursus nibh in tellus. Fusce posuere nisi eu ligula. Morbi volutpat est a diam lobortis consectetuer. Donec placerat, eros vel cursus ornare, leo mi aliquet velit, quis aliquet ipsum augue eget augue. Donec ligula sem, eleifend at, mattis et, facilisis at, augue.
+				</p>
+			</div>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam erat magna, convallis id, ultricies in, molestie in, justo. In ornare metus quis lectus. Vivamus suscipit sapien eget sapien. Sed posuere, nulla vel luctus adipiscing, tellus nisl blandit sem, eu cursus diam tellus hendrerit est. Nulla lectus. Nullam feugiat sollicitudin magna. Fusce adipiscing arcu non quam condimentum lacinia. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In vehicula bibendum magna. Suspendisse potenti. Cras ut pede at est sollicitudin accumsan. Suspendisse potenti.
+				<br /><br />
+				Ut ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Donec mauris. Ut magna. Etiam id dui dapibus nisl tincidunt sagittis. Curabitur eu eros. Proin at tortor at erat porttitor fringilla. Nunc neque lacus, aliquet at, viverra sit amet, ultrices ac, leo. Phasellus in odio. Fusce non lectus vestibulum ante lacinia suscipit. Nulla purus. Nullam et augue. Nunc ligula mi, rutrum quis, accumsan eu, tristique nec, sapien. Phasellus augue ante, consequat vitae, pulvinar nec, sodales quis, nunc. Morbi ligula risus, interdum vel, tincidunt et, auctor at, ipsum. Sed nulla nunc, viverra a, elementum sit amet, ultrices nec, enim.
+			</p>
+			
+		</div>
+		
+		<div class="content">
+			<h2>How to use <em>jquery.toggleElements.js</em></h2>
+			<p>
+				<strong>1.</strong><br /><a rel="external" href="http://jquery.com/">Download jQuery</a>
+				<br /><a rel="external" href="http://andreaseberhard.de/jquery/download/toggleElements.zip">Download toggleElements.zip</a>
+				<a class="jsource" href="jquery.toggleElements.js">View Source</a>
+			</p>
+			<p>
+				<strong>2.</strong><br />Just add <em>jQuery</em> and <em>toggleElements</em> to the HEAD-Section of your HTML ...
+			</p>
+<pre><code class="html">&lt;head&gt;
+...
+&lt;script type="text/javascript" src="jquery-latest.pack.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="jquery.toggleElements.js"&gt;&lt;/script&gt;
+...
+&lt;/head&gt;</code></pre>
+			<p>
+				<strong>3.</strong><br />Customize <em>toggleElements.css</em> to your needs and add it to the HEAD-Section of your HTML ...
+			</p>
+<pre><code class="html">&lt;head&gt;
+...
+&lt;link rel="stylesheet" type="text/css" href="toggleElements.css" /&gt;
+...
+&lt;/head&gt;</code></pre>
+			<p>
+				<strong>4.</strong><br />Wrap a DIV-Element with <strong>class="toggler-c"</strong> around the HTML-Code you want to toggle.
+				The text used in the <strong>title-Attribute</strong> will be used to create the Toggle-Link.
+				<br />You can also add the <strong>class="toggler-c"</strong> and the <strong>title-Attribute</strong> to any other existing element.
+			</p>
+<pre><code class="html">...
+&lt;div class="toggler-c" title="Example 1"&gt;
+  Your HTML here ...
+&lt;/div&gt;
+...
+&lt;ul class="toggler-c" title="Example 2"&gt;
+  &lt;li&gt;Google&lt;/li&gt;
+  &lt;li&gt;Altavista&lt;/li&gt;
+  &lt;li&gt;Fireball&lt;/li&gt;
+&lt;/ul&gt;
+...</code></pre>
+			<p>
+				<strong>5.</strong><br />Activate toggleElements on document.ready <br />
+			</p>
+<pre><code class="javascript">&lt;script type="text/javascript"&gt;
+$(document).ready(function(){
+	$('div.toggler-c').toggleElements(
+		{ fxAnimation:'slide', fxSpeed:'slow', className:'toggler' } );
+	$('ul.toggler-c').toggleElements();
+});
+&lt;/script&gt;</code></pre>
+		</div>
+
+		<div class="content">
+			<h2>Options for <em>jquery.toggleElements.js</em></h2>
+			<table>
+				<tr>
+					<th>Option</th>
+					<th>Value</th>
+				</tr>
+				<tr>
+					<td>fxAnimation</td>
+					<td>
+						 "slide", "show", or "fade" (default "slide")<br />
+					</td>
+				</tr>
+				<tr>
+					<td>fxSpeed</td>
+					<td>
+						 "slow", "normal", "fast" or the number of milliseconds<br />
+						 (e.g. 1000 for 1 second, default "normal")<br />
+					</td>
+				</tr>
+				<tr>
+					<td>className</td>
+					<td>
+						 use this classname as prefix for the CSS-Classes (default <em>toggler</em>, see CSS-File toggleElements.css)
+					</td>
+				</tr>
+				<tr>
+					<td>removeTitle</td>
+					<td>
+						 remove the Title-Attribute of the HTML-Element, true or false (default true)
+					</td>
+				</tr>
+				<tr>
+					<td>showTitle</td>
+					<td>
+						 add title-Attribute to the Toggle-Link (default false)
+					</td>
+				</tr>
+				<tr>
+					<td>onClick</td>
+					<td>
+						<em>Callback Function</em><br />
+						This function is called immediatly after click on the Toggle-Link.
+						You can return false to cancel the click.
+					</td>
+				</tr>
+				<tr>
+					<td>onHide</td>
+					<td>
+						<em>Callback Function</em><br />
+						This function is called immediatly after the content is hidden.
+					</td>
+				</tr>
+				<tr>
+					<td>onShow</td>
+					<td>
+						<em>Callback Function</em><br />
+						This function is called immediatly after the content is shown.
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<p>
+		&copy; Andreas Eberhard, andreas.eberhard(at)gmail.com
+		<br />
+		<a href="http://jquery.andreaseberhard.de/">http://jquery.andreaseberhard.de/</a>
+		</p>
+		<a class="top" href="#page">Top |</a>
+	</div>
+
+<!--[if lt IE 5.5]>
+	<div class="toocool"><h1>Too cool for your old IE ;-)</h1></div>
+<![endif]-->
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2220699-1";
+urchinTracker();
+</script>
+
+  </body>
+</html>

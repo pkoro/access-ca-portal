@@ -1,0 +1,12 @@
+Ο χρήστης:
+<% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
+  	<%=@person.first_name_en + " " + @person.last_name_en %>,<%= @person.email %>
+<% else %>
+  	<%=@person.first_name_el + " " + @person.last_name_el %>,<%= @person.email %>
+<% end %>
+
+Τα πλήρη στοιχεία του οποίου μπορείτε να βρείτε στην σελίδα:
+https://access.hellasgrid.gr/support/show_person_details/<%=@person.id%>
+
+έχει κάνει αίτηση για πρόσβαση στο UI:
+  <%= @ui %>.

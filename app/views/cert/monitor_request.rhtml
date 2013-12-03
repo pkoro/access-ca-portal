@@ -1,0 +1,14 @@
+<fieldset style="width: 400px; padding-left: 5px; padding-right: 1px;">
+	<legend>Αναζήτηση αιτήσεως πιστοποιητικού</legend>
+	<p style="text-align: left;">
+		Συμπληρώστε στη φόρμα το hash της αιτήσεως σας.
+	</p>	
+	<% form_tag :action=> "monitor_request" do %>
+		<div align="left" style="padding-right: 20px">
+		<label  for="id"><div style="text-align: left;">Hash Αιτήσεως</div></label>
+		<input type="text" name="id" class="textbox" size="40">
+		</div>
+		<input type="submit" value="Αναζήτηση" class="textbox" />
+	</p>
+	<% end %>
+</fieldset>

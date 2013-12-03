@@ -1,0 +1,52 @@
+<div align="right">
+	<%= link_to(image_tag("excel.jpg", :style => "border: 0", :alt => "Export in Excel format"), :action => "export_registered_users") %>
+</div>
+
+<div align="center">
+	<div style="width: 70	0px">
+		<h1>Listing People from HellasGrid CA</h1>
+		
+		<table class="tablelist" cellspacing="0" cellpadding="4px">
+  			<tr>
+    			<%= sort_header_tag('People.last_name_en', :caption => 'Name')%>
+				<%= sort_header_tag('People.email', :caption => 'E-mail')%>
+				<%= sort_header_tag('ra_staff_memberships.role', :caption => 'Role')%>
+				<th colspan="5"></th>
+  			</tr>
+  			<% @ra_membership.each_with_index do |membership, i| %>
+			<% row_class = i%2 == 0 ? "even" : "odd" %> 
+  			<tr class="<%= row_class %>">
+              <td><%= membership.member.first_name_en %> <%= membership.member.last_name_en %></td>
+              <td><%= membership.member.email %></td>
+              <td><%= case membership.role 
+                        when 1: "Manager" 
+                        when 2: "Operator" 
+                      end %></td>
+              <td align=center><%= if membership.role == 2
+                        link_to 'Αφαίρεση', :action => 'remove_ra_operator', :id => membership.member.id
+                      else
+                        'N/A'
+                      end %></td>
+  			</tr>
+			<% end %>
+		</table>
+		<br />
+		<br/>
+		<div align="right" style="position: relative;">
+			 <%= will_paginate @ra_membership %> 
+
+		</div>
+		<% form_tag :action=> "add_ra_operator" do %>
+          <fieldset id="editFormFields">
+            <legend>Εισαγωγή νέου RA Operator</legend>
+		    <table cellspacing="0" cellpadding="4px" border="0">
+		      <tr>
+                <th valign="top"><label for="ra_access_dn">subject DN:</label></th>
+                <td valign="top"><%= text_field(:ra_access, :dn, :class => "textbox", :size => "33") %></td>
+                <td valign="top"><input type="submit" value="Εισαγωγή" class="textbox"></td>
+              </tr>
+            </table>
+          </fieldset>
+        <% end %>
+	</div>
+</div>

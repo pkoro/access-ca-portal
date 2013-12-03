@@ -1,0 +1,79 @@
+<% if error_messages_in_gr_for(:person) != "" %>
+<div class="error_box">
+	<%= error_messages_in_gr_for(:person) %>
+</div>
+<br />
+<% end %>
+
+<% form_tag :action=> "update_personal_information" do %>
+  
+  <fieldset id="editFormFields">
+	<legend>Ενημέρωση Στοιχείων</legend>
+	<table border="0" cellspacing="0" cellpadding="0" width="400px">
+		<tr>
+			<td width="150px"><label for="person_first_name">Όνομα</label></td>
+			<td width="250px">
+				<table botder="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td><label for="person_first_name_el">Ελληνικά</label><br />
+							<%= text_field :person, :first_name_el, :class => "textbox", :size => "20" %>						</td>
+						<td><label for="person_first_name_en">Αγγλικά</label><br />
+							<%= text_field :person, :first_name_en, :class => "textbox", :size => "20" %>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="person_last_name">Επώνυμο</label></td>
+			<td width="250px">
+				<table botder="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td><label for="person_last_name_el">Ελληνικά</label><br />
+							<%= text_field :person, :last_name_el, :class => "textbox", :size => "20" %>
+						</td>
+						<td><label for="person_last_name_en">Αγγλικά</label><br />
+							<%= text_field :person, :last_name_en, :class => "textbox", :size => "20" %>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="person_email">E-mail</label></td>
+			<td><%= text_field :person, :email, :class => "textbox", :size => "20" %></td>
+		</tr>
+		<tr>
+			<td><label for="person_organization_id">Οργανισμός</label></td>
+			<td height="40"><%= select(:person, :organization_id, @organizations, {:include_blank => false}, {:class => "textbox"})%></td>
+		</tr>
+		<tr>
+			<td><label for="person_work_phone">Τηλέφωνο εργασίας</label></td>
+			<td><%= text_field :person, :work_phone, :class => "textbox", :size => "20" %></td>
+		</tr>
+		<tr>
+			<td><label for="person_scientific_field_id">Επιστημονικός τομέας</label></td>
+			<td height="40"><%= select(:person, :scientific_field_id, @scientific_fields, {:include_blank => false}, {:class => "textbox"})%></td>
+		</tr>
+		<tr>
+			<td><label for="person_deparmtent">Τμήμα</label></td>
+			<td><%= text_field :person, :department, :class => "textbox", :size => "20" %></td>
+		</tr>
+		<tr>
+			<td><label for="person_position">Ιδιότητα</label></td>
+			<td height="40"><%= select(:person, :position, [
+			['Ερευνητής', 'Researcher'],
+			['Καθηγητής', 'Faculty'],
+			['Τεχνικό Προσωπικό', 'Staff'],
+			['Φοιτητής', 'Student']
+			], {:include_blank => false}, {:class => "textbox"})%></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="Ενημέρωση" class="textbox" />
+			</td>
+		</tr>
+	</table>
+  </fieldset>
+
+<% end %>

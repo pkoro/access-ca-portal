@@ -1,0 +1,578 @@
+/*<![CDATA[*/
+<!--
+td.title {
+border-style: none;
+border-width: medium;
+}
+p.title {
+color: #FFFFFF;
+font-family: verdana, arial, athens;
+letter-spacing: 0;
+font-size: 18px;
+text-align: center;
+}
+table.header {
+border-collapse: collapse;
+border-bottom-width: 0;
+}
+table.topMenu {
+border-collapse: collapse;
+border-width: 0;
+}
+table.topMenu td {
+color: #003399;
+font-size: 11px;
+font-family: verdana, arial, athens;
+text-align: center;
+}
+span.date {
+color: #003399;
+font-size: 11px;
+font-family: verdana, arial, athens;
+}
+table.date {
+border-collapse: collapse;
+border-width: 0;
+text-align: right;
+}
+table.block {
+border-collapse: collapse;
+border-width: 0px;
+}
+td.block {
+border-bottom: 1px solid #003399;
+}
+th.block {
+font-weight: bold;
+text-align: left;
+font-size: 11px;
+color: #FFFFFF;
+font-family: verdana, arial, athens;
+}
+span.block {
+margin-left: 10px;
+}
+table.menublock {
+border-collapse: collapse;
+border-width: 0;
+text-align: left;
+}
+
+td.menublock {
+font-weight: bold;
+margin-left: 5px;
+color: #003869;
+font-family: verdana, arial, athens;
+border-left: 1px solid #6093C4;
+border-right: 1px solid #6093C4;
+border-top: 1px solid #6093C4;
+font-size: 11px;
+}
+a.menublock {
+text-decoration: none;
+color: #003399;
+font-family: verdana, arial;
+margin-left: 5px;
+}
+a.menu {
+text-decoration: none;
+color: #003399;
+font-family: verdana, arial;
+font-size: 11px
+}
+li.menu {
+text-decoration: none;
+color: #003399;
+font-family: verdana, arial;
+font-size: 11px
+}
+a.leftbottomblock {
+text-decoration: none;
+color: #003399;
+font-family: verdana, arial, athens;
+}
+p.leftblock {
+margin-left: 0px;
+}
+td.contentblock {
+border-style: none;
+border-width: medium;
+}
+span.contentblock {
+font-family: verdana,arial, athens;
+font-size: 11px;
+color: #FFFFFF;
+}
+p.bodyText {
+font-family: verdana, arial, athens;
+font-size: 11px;
+text-indent: 10px;
+margin-left: 10px;
+margin-right: 10px;
+}
+h1.bodyText {
+font-family: verdana, arial, athens;
+font-size: 12px;
+font-weight: bold;
+text-indent: 10px;
+margin-left: 10px;
+}
+h2.bodyText {
+font-family: verdana, arial, athens;
+font-size: 12px;
+font-weight: bold;
+text-indent: 14px;
+margin-left: 10px;
+}
+h3.bodyText {
+font-family: verdana, arial, athens;
+font-size: 12px;
+font-weight: bold;
+text-indent: 14px;
+margin-left: 10px;
+}
+h4.bodyText {
+font-family: verdana, arial, athens;
+font-size: 12px;
+font-weight: bold;
+text-indent: 14px;
+margin-left: 10px;
+}
+h1 {
+font-family: verdana, arial, athens;
+font-size: 2em;
+font-weight: bold;
+text-indent: 10px;
+margin-left: 10px;
+text-align: center;
+}
+h2 {
+font-family: verdana, arial, athens;
+font-size: 1.5em;
+font-weight: bold;
+text-indent: 14px;
+margin-left: 10px;
+}
+h3 {
+font-family: verdana, arial, athens;
+font-size: 1em;
+font-weight: bold;
+text-indent: 14px;
+margin-left: 10px;
+}
+h4 {
+font-family: verdana, arial, athens;
+font-size: 12px;
+font-weight: bold;
+text-indent: 14px;
+margin-left: 10px;
+}
+
+p {
+font-family: verdana, arial, athens;
+font-size: 11px;
+margin-bottom: 40px;
+}
+
+li.bodyText {
+font-family: verdana, arial, athens;
+font-size: 11px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px
+}
+span.bodyText {
+font-family: verdana, arial, athens;
+font-size: 11px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px
+}
+b.bodyText {
+font-family: verdana, arial, athens;
+font-size: 11px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px
+}
+span.seminars {
+font-family: verdana, arial, athens;
+font-size: 11px;
+text-align: center;
+}
+#infoBox {
+float: right;
+margin-bottom: 5px;
+}
+table.bodyText {
+border-collapse: collapse;
+border-width: 0
+}
+td.bodyText {
+border-left: 1px #CCCCCC;
+border-right-color: #CCCCCC;
+border-right-width: 1;
+border-top-style: none;
+border-top-width: medium;
+border-bottom-style: none;
+border-bottom-width: 1
+}
+td.bodyTextWithBottomBorder {
+border-left-style: none;
+border-left-width: medium;
+border-right-style: none;
+border-right-width: medium;
+border-bottom-style: none;
+border-bottom-width: medium
+}
+span.newsText {
+font-family: verdana, arial, athens;
+font-size: 11px;
+margin-left: 10px;
+}
+table.newsText {
+border-collapse: collapse;
+border-width: 0
+}
+td.newsText {
+border-left: 1px #FF6600;
+border-right-color: #FF6600;
+border-right-width: 1;
+border-top-style: none;
+border-top-width: medium;
+}
+span.newsText {
+font-family: verdana, arial, athens;
+font-size: 11px;
+margin-bottom: 10px;
+margin-left: 10px;
+margin-right: 10px
+}
+p.newsText {
+margin-left: 5px;
+}
+td.newsblock {
+border-bottom: 1px #FF6600;
+}
+td.calendarblock {
+border-bottom: 1px #CCCCCC;
+}
+table.calendarText {
+border-collapse: collapse;
+border-width: 0
+}
+td.calendarText {
+border-left: 1px #CCCCCC;
+border-right-color: #CCCCCC;
+border-right-width: 1;
+border-top-style: none;
+border-top-width: medium;
+}
+td.footer {
+border-style: none;
+border-width: medium;
+}
+p.footer {
+color: #FFFFFF;
+font-family: verdana, arial, athens;
+font-size: 9px;
+font-weight: bold;
+text-align: center
+}
+input.search {
+border: 1px solid rgb(0, 0, 0) background: rgb(255, 255, 255) none repeat scroll 0%;
+-moz-background-clip: initial;
+-moz-background-inline-policy: initial;
+-moz-background-origin: initial;
+}
+/*
+    ** Calendar elements - used in the calendar rendering 
+    */
+div.day {
+background-color: #FFFFBB;
+border: 1px solid Black;
+padding: 0.2em;
+position: absolute;
+visibility: hidden;
+width: 12em;
+z-index: 2;
+}
+div.date {
+font-weight: bold;
+}
+table.calendar {
+border: 1px solid #8CACBB;
+text-align: right;
+font-family: verdana, arial, athens;
+}
+table.calendar a {
+text-decoration: none;
+color: #436976;
+}
+table.calendar a:hover {
+text-decoration: none;
+}
+table.calendar th {
+background-color: #DEE7EC;
+font-size: 11px;
+color: Black;
+font-weight: bold;
+text-align: center;
+font-family: verdana, arial, athens;
+}
+table.calendar td {
+background-color: transparent;
+font-size: 11px;
+width: 3em;
+padding: 2px;
+}
+table.calendar td.weekdays {
+background-color: #DEE7EC;
+font-size: 11px;
+font-family: verdana, arial, athens;
+border: 1px solid #8CACBB;
+border-style: solid none;
+text-align: center;
+}
+table.calendar td.event {
+background-color: #DEE7EC;
+font-weight: bold;
+}
+table.calendar td.noevent {
+background-color: transparent;
+}
+table.calendar td.todayevent {
+background-color: #DEE7EC;
+border: 2px solid #FFA500;
+font-weight: bold;
+}
+table.calendar td.todaynoevent {
+border-collapse: collapse;
+border: 2px solid #FFA500;
+}
+/*
+** Menu
+*/
+	#foldheader{
+cursor: pointer;
+cursor: hand ;
+font-weight: bold ;
+list-style-image: url(fold.gif);
+font-size: 11px
+}
+#foldinglist{
+list-style-image: url(list.gif)
+}
+#horizontalList ul
+ {
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+#horizontalList ul li {
+display: inline;
+}
+#horizontalList ul li a
+ {
+text-decoration: none;
+padding: .2em 1em;
+}
+#centralBody {
+font-family: verdana;
+font-size: 10px;
+}
+/* thesis form */
+form.thesis {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+  font:10px verdana,arial,sans-serif;
+margin: 0;
+padding: 5px;
+min-width: 490px;
+max-width: 490px;
+width: 490px;
+}
+form.thesis fieldset {
+  / * clear: both; note that this clear causes inputs to break to left in ie5.x mac, commented out */
+  border-color: #000;
+border-width: 1px;
+border-style: solid;
+padding: 10px;        /* padding in fieldset support spotty in IE */
+  margin: 0;
+}
+form.thesis fieldset legend {
+font-size: 1.1em; /* bump up legend font size, not too large or it'll overwrite border on left */
+                       /* be careful with padding, it'll shift the nice offset on top of border  */
+}
+form.thesis label {
+display: block;  /* block float the labels to left column, set a width */
+	float: left;
+width: 45%;
+padding: 0.4em;
+margin: 5px 0 0; /* set top margin same as form input - textarea etc. elements */
+	text-align: left;
+}
+form.thesis fieldset label:first-letter { /* use first-letter pseudo-class to underline accesskey, note that */
+	text-decoration:underline;    /* Firefox 1.07 WIN and Explorer 5.2 Mac don't support first-letter */
+                                    /* pseudo-class on legend elements, but do support it on label elements */
+                                    /* we instead underline first letter on each label element and accesskey */
+                                    /* each input. doing only legends would  lessens cognitive load */
+                                   /* opera breaks after first letter underlined legends but not labels */
+}
+form.thesis input, form.thesis textarea, form.thesis select {
+	/* display: inline; inline display must not be set or will hide submit buttons in IE 5x mac */
+	width:auto;      /* set width of form elements to auto-size, otherwise watch for wrap on resize */
+	margin:5px 0 0 10px; /* set margin on left of form elements rather than right of label aligns textarea better in IE */
+	font:10px verdana,arial,sans-serif;
+border: grey 1px solid;
+}
+form.thesis input {
+width: 200px;
+}
+form.thesis input#reset {
+margin-left: 0px; /* set margin-left back to zero on reset button (set above) */
+}
+textarea {
+overflow: auto;
+}
+form.thesis small {
+display: block;
+margin: 0 0 5px 160px; /* instructions/comments left margin set to align w/ right column inputs */
+	padding: 1px 3px;
+font-size: 10px;
+}
+form.thesis .required{
+font-weight: bold;
+}
+/* uses class instead of div, more efficient */
+
+form.thesis br {
+clear: left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+
+/* Forms */
+.cssform p{
+width: 300px;
+clear: left;
+margin: 0;
+padding: 5px 0 8px 0;
+padding-left: 155px; /*width of left column containing the label elements*/
+border-top: 1px dashed gray;
+}
+
+.cssform label{
+font-weight: bold;
+float: left;
+margin-left: -155px; /*width of left column*/
+width: 150px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+}
+
+.cssform label.error { margin-left: 0px; margin-top: 5px; margin-bottom: 5px; color: red; }
+
+.cssform input[type="text"]{ /*width of text boxes. IE6 does not understand this attribute*/
+width: 180px;
+}
+
+.cssform textarea{
+width: 270px;
+height: 150px;
+}
+
+.cssform textarea.small {
+	width: 200px;
+	height: 45px;
+}
+
+.cssform textarea.large{
+width: 350px;
+height: 150px;
+}
+
+.cssform textarea.small {
+	width: 200px;
+	height: 45px;
+}
+
+.cssform span.explanation {
+	color: grey;
+	font-size: 10px;
+	display: block;
+}
+
+/**
+ * ----------------------------------------------------------------------------
+ * toggleElements.css - Stylesheet for jQuery-Plugin toggleElements
+ * ----------------------------------------------------------------------------
+ */
+
+/* Screen ------------------------------------------------------------------- */
+
+@media projection, screen {
+
+	/* Toggler - default style */
+	.toggler {
+	   margin:25px 0 25px 0;
+		cursor:pointer;
+		text-decoration: none;
+		font-size: 1.4em;
+		font-weight:bold;
+		line-height:30px;
+		display: block;
+	}
+	.toggler-closed {
+		color:#333;
+		padding-left:20px;
+		height:30px;
+		background: #efefef url('/javascripts/jquery/modules/toggleElements/togglerc.gif') center right no-repeat;
+		border: solid 1px white;
+	}
+	.toggler-closed:hover {
+		color: #000;
+		padding-left:20px;
+		height:30px;
+		background: #fff url('/javascripts/jquery/modules/toggleElements/togglerch.gif') center right no-repeat;
+		border: solid 1px #e3e3e3;
+	}
+	.toggler-opened {
+		color:#333;
+		padding-left:20px;
+		height:30px;
+		background: #efefef url('/javascripts/jquery/modules/toggleElements/togglero.gif') center right no-repeat;
+		border: solid 1px white;
+	}
+	.toggler-opened:hover {
+		color: #000;
+		padding-left:20px;
+		height:30px;
+		background: #fff url('/javascripts/jquery/modules/toggleElements/toggleroh.gif') center right no-repeat;
+		border: solid 1px #e3e3e3;
+	}
+
+	/* Container - default style */
+	.toggler-c {
+	}
+	.toggler-c-closed {
+	   background:transparent;
+	   border:solid 1px #e3e3e3;
+		margin:-25px 0px 25px 0px;
+	   padding:20px;
+	}
+	.toggler-c-opened {
+		margin:-25px 0px 25px 0px;
+	   padding:20px;
+	   background:#efefef;
+	   border:solid 1px #fff;
+	}
+
+}
+
+/* Print -------------------------------------------------------------------- */
+@media print {
+
+	.toggler-c { margin-bottom:25px; }
+	.toggler { display: none; }
+
+}
+
+
+-->
+/*]]>*/

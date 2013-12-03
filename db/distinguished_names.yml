@@ -1,0 +1,2983 @@
+--- 
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Christos Kanellopoulos
+    id: "1"
+    owner_id: "1"
+    owner_type: Person
+    created_at: 2002-08-19 10:32:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=grid01.physics.auth.gr
+    id: "2"
+    owner_id: "1"
+    owner_type: Host
+    created_at: 2002-08-19 11:17:44
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=grid04.physics.auth.gr
+    id: "3"
+    owner_id: "2"
+    owner_type: Host
+    created_at: 2002-08-19 14:13:37
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=Vangelis Floros
+    id: "4"
+    owner_id: "2"
+    owner_type: Person
+    created_at: 2002-08-28 12:21:48
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=cgnode00.di.uoa.gr
+    id: "5"
+    owner_id: "3"
+    owner_type: Host
+    created_at: 2002-08-29 07:05:15
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=cgnode04.di.uoa.gr
+    id: "6"
+    owner_id: "4"
+    owner_type: Host
+    created_at: 2002-08-29 07:08:11
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=telecom.ece.ntua.gr/CN=Konstantinos Dolkas
+    id: "7"
+    owner_id: "3"
+    owner_type: Person
+    created_at: 2002-10-09 05:31:43
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=telecom.ece.ntua.gr/CN=ldap/pclab120.telecom.ece.ntua.gr
+    id: "8"
+    owner_id: "5"
+    owner_type: Host
+    created_at: 2002-10-10 09:13:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=telecom.ece.ntua.gr/CN=host/pclab120.telecom.ece.ntua.gr
+    id: "9"
+    owner_id: "5"
+    owner_type: Host
+    created_at: 2002-10-10 09:17:03
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Nikos Mastroyiannopoulos
+    id: "10"
+    owner_id: "4"
+    owner_type: Person
+    created_at: 2003-01-27 10:54:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Christos Markou
+    id: "11"
+    owner_id: "5"
+    owner_type: Person
+    created_at: 2003-03-11 14:59:12
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/xg001.inp.demokritos.gr
+    id: "12"
+    owner_id: "6"
+    owner_type: Host
+    created_at: 2003-04-16 06:46:11
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/xg003.inp.demokritos.gr
+    id: "13"
+    owner_id: "7"
+    owner_type: Host
+    created_at: 2003-04-16 06:48:20
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Theodoros Theodoropoulos
+    id: "14"
+    owner_id: "6"
+    owner_type: Person
+    created_at: 2003-06-10 20:11:12
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/cgnode04.di.uoa.gr
+    id: "15"
+    owner_id: "4"
+    owner_type: Host
+    created_at: 2003-08-28 12:25:06
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=Yannis Cotronis
+    id: "16"
+    owner_id: "7"
+    owner_type: Person
+    created_at: 2003-10-15 09:00:00
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=phys.uoa.gr/CN=Maria Nassiakou
+    id: "17"
+    owner_id: "8"
+    owner_type: Person
+    created_at: 2003-10-29 09:09:56
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=Kostas Koumantaros
+    id: "18"
+    owner_id: "9"
+    owner_type: Person
+    created_at: 2003-12-09 19:00:38
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=host/edg-ce.admin.grnet.gr
+    id: "19"
+    owner_id: "8"
+    owner_type: Host
+    created_at: 2003-12-09 19:59:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=host/edg-se.admin.grnet.gr
+    id: "20"
+    owner_id: "9"
+    owner_type: Host
+    created_at: 2003-12-09 20:00:11
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=host/edg-lcfg.admin.grnet.gr
+    id: "21"
+    owner_id: "10"
+    owner_type: Host
+    created_at: 2003-12-09 20:01:02
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=host/mmedia.admin.grnet.gr
+    id: "22"
+    owner_id: "11"
+    owner_type: Host
+    created_at: 2003-12-09 20:01:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=host/kkoum.admin.grnet.gr
+    id: "23"
+    owner_id: "12"
+    owner_type: Host
+    created_at: 2003-12-09 20:02:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Dimitris Zilaskos
+    id: "24"
+    owner_id: "10"
+    owner_type: Person
+    created_at: 2004-01-15 00:05:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=Fotis Georgatos
+    id: "25"
+    owner_id: "11"
+    owner_type: Person
+    created_at: 2004-03-09 18:21:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=host/grid3.hep.ntua.gr
+    id: "26"
+    owner_id: "13"
+    owner_type: Host
+    created_at: 2004-03-17 07:44:19
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=host/grid2.hep.ntua.gr
+    id: "27"
+    owner_id: "14"
+    owner_type: Host
+    created_at: 2004-03-17 07:44:37
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=host/ce01.isabella.grnet.gr
+    id: "28"
+    owner_id: "15"
+    owner_type: Host
+    created_at: 2004-04-01 16:05:16
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=host/se01.isabella.grnet.gr
+    id: "29"
+    owner_id: "16"
+    owner_type: Host
+    created_at: 2004-04-01 16:05:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=Christoforos Kouniakis
+    id: "30"
+    owner_id: "12"
+    owner_type: Person
+    created_at: 2004-05-24 10:25:02
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Lazaros Gallos
+    id: "31"
+    owner_id: "13"
+    owner_type: Person
+    created_at: 2004-06-15 10:16:36
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Eleni Arapaki
+    id: "32"
+    owner_id: "14"
+    owner_type: Person
+    created_at: 2004-06-18 11:26:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Michalis Maragakis
+    id: "33"
+    owner_id: "15"
+    owner_type: Person
+    created_at: 2004-06-18 11:28:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Panagioths Argyrakis
+    id: "34"
+    owner_id: "16"
+    owner_type: Person
+    created_at: 2004-06-18 11:28:57
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Michalis Maragakis
+    id: "35"
+    owner_id: "17"
+    owner_type: Person
+    created_at: 2004-06-18 12:33:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /O=HellasGrid/O=HellasGrid/OU=it.uom.gr/CN=Vassilis Stefanidis
+    id: "36"
+    owner_id: "18"
+    owner_type: Person
+    created_at: 2004-06-24 07:17:51
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /O=HellasGrid/O=HellasGrid/OU=it.uom.gr/CN=Kostantinos Georgakopoulos
+    id: "37"
+    owner_id: "19"
+    owner_type: Person
+    created_at: 2004-06-24 07:20:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=Konstantinos Georgakopoulos
+    id: "38"
+    owner_id: "19"
+    owner_type: Person
+    created_at: 2004-06-24 14:34:43
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=Vasilis Stefanidis
+    id: "39"
+    owner_id: "18"
+    owner_type: Person
+    created_at: 2004-06-24 17:38:31
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=Christos Papachristos
+    id: "40"
+    owner_id: "20"
+    owner_type: Person
+    created_at: 2004-07-06 08:46:08
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=host/grid001.ics.forth.gr
+    id: "41"
+    owner_id: "17"
+    owner_type: Host
+    created_at: 2004-07-06 12:47:37
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=Theodoros Typou
+    id: "42"
+    owner_id: "21"
+    owner_type: Person
+    created_at: 2004-07-07 11:09:48
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=Anastasios Kousourakis
+    id: "43"
+    owner_id: "22"
+    owner_type: Person
+    created_at: 2004-07-07 11:10:41
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=grid05.physics.auth.gr
+    id: "44"
+    owner_id: "18"
+    owner_type: Host
+    created_at: 2004-07-08 15:21:28
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=grid08.physics.auth.gr
+    id: "45"
+    owner_id: "19"
+    owner_type: Host
+    created_at: 2004-07-08 15:31:19
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=Panagiotis Mixailidis
+    id: "46"
+    owner_id: "23"
+    owner_type: Person
+    created_at: 2004-07-09 06:54:36
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=globus.it.uom.gr
+    id: "47"
+    owner_id: "20"
+    owner_type: Host
+    created_at: 2004-07-12 08:33:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=storage.it.uom.gr
+    id: "48"
+    owner_id: "21"
+    owner_type: Host
+    created_at: 2004-07-13 10:05:14
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=Konstantinos Margaritis
+    id: "49"
+    owner_id: "24"
+    owner_type: Person
+    created_at: 2004-07-16 14:09:13
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/grid13.physics.auth.gr
+    id: "50"
+    owner_id: "22"
+    owner_type: Host
+    created_at: 2004-07-23 13:37:06
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=softlab.ece.ntua.gr/CN=Kyriakos Ginis
+    id: "51"
+    owner_id: "25"
+    owner_type: Person
+    created_at: 2004-09-07 10:02:25
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cslab.ece.ntua.gr/CN=Antonis Zissimos
+    id: "52"
+    owner_id: "26"
+    owner_type: Person
+    created_at: 2004-09-08 11:51:44
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/grid17.physics.auth.gr
+    id: "53"
+    owner_id: "23"
+    owner_type: Host
+    created_at: 2004-09-12 16:15:16
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/grid14.physics.auth.gr
+    id: "54"
+    owner_id: "24"
+    owner_type: Host
+    created_at: 2004-09-12 16:15:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cslab.ece.ntua.gr/CN=Evangelos Koukis
+    id: "55"
+    owner_id: "27"
+    owner_type: Person
+    created_at: 2004-09-14 10:03:13
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cslab.ece.ntua.gr/CN=Fotis Georgatos
+    id: "56"
+    owner_id: "28"
+    owner_type: Person
+    created_at: 2004-09-17 16:51:51
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/grid05.physics.auth.gr
+    id: "57"
+    owner_id: "18"
+    owner_type: Host
+    created_at: 2004-09-29 15:13:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/grid08.physics.auth.gr
+    id: "58"
+    owner_id: "19"
+    owner_type: Host
+    created_at: 2004-09-29 15:14:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/node001.grid.auth.gr
+    id: "59"
+    owner_id: "25"
+    owner_type: Host
+    created_at: 2004-10-08 12:17:28
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/node004.grid.auth.gr
+    id: "60"
+    owner_id: "26"
+    owner_type: Host
+    created_at: 2004-10-08 12:17:45
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=host/node001.grid.auth.gr
+    id: "61"
+    owner_id: "25"
+    owner_type: Host
+    created_at: 2004-10-11 09:18:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=host/node004.grid.auth.gr
+    id: "62"
+    owner_id: "26"
+    owner_type: Host
+    created_at: 2004-10-11 09:19:13
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=host/node009.grid.auth.gr
+    id: "63"
+    owner_id: "27"
+    owner_type: Host
+    created_at: 2004-10-11 09:19:55
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Katerina Zachariadou
+    id: "64"
+    owner_id: "29"
+    owner_type: Person
+    created_at: 2004-10-15 10:42:16
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Konstantinos Bachas
+    id: "65"
+    owner_id: "30"
+    owner_type: Person
+    created_at: 2004-10-18 09:21:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=Ognjen Prnjat
+    id: "66"
+    owner_id: "31"
+    owner_type: Person
+    created_at: 2004-10-26 08:59:30
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=netmode.ece.ntua.gr/CN=Athanasios Moralis
+    id: "67"
+    owner_id: "32"
+    owner_type: Person
+    created_at: 2004-12-01 08:59:11
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=host/grid002.ics.forth.gr
+    id: "68"
+    owner_id: "28"
+    owner_type: Host
+    created_at: 2004-12-02 15:32:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/cgnode03.di.uoa.gr
+    id: "69"
+    owner_id: "29"
+    owner_type: Host
+    created_at: 2004-12-02 18:17:24
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=netmode.ece.ntua.gr/CN=Andreas Dridakis
+    id: "70"
+    owner_id: "33"
+    owner_type: Person
+    created_at: 2004-12-06 11:49:47
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=host/ce02.isabella.grnet.gr
+    id: "71"
+    owner_id: "30"
+    owner_type: Host
+    created_at: 2004-12-10 06:38:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=host/se02.isabella.grnet.gr
+    id: "72"
+    owner_id: "31"
+    owner_type: Host
+    created_at: 2004-12-10 06:40:39
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cslab.ece.ntua.gr/CN=host/rt.cslab.ece.ntua.gr
+    id: "73"
+    owner_id: "32"
+    owner_type: Host
+    created_at: 2004-12-10 06:42:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=netmode.ece.ntua.gr/CN=host/grid1.netmode.ece.ntua.gr
+    id: "74"
+    owner_id: "33"
+    owner_type: Host
+    created_at: 2004-12-10 06:43:39
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=netmode.ece.ntua.gr/CN=host/grid2.netmode.ece.ntua.gr
+    id: "75"
+    owner_id: "34"
+    owner_type: Host
+    created_at: 2004-12-10 06:43:55
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=netmode.ece.ntua.gr/CN=host/grid5.netmode.ece.ntua.gr
+    id: "76"
+    owner_id: "35"
+    owner_type: Host
+    created_at: 2004-12-10 06:44:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Karagiannis Dimosthenis
+    id: "77"
+    owner_id: "34"
+    owner_type: Person
+    created_at: 2004-12-14 16:50:24
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Triantiafillidis Christos
+    id: "78"
+    owner_id: "35"
+    owner_type: Person
+    created_at: 2004-12-14 16:51:49
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=Panayotis Katsaloulis
+    id: "79"
+    owner_id: "36"
+    owner_type: Person
+    created_at: 2004-12-15 13:35:14
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=K.G. Margaritis
+    id: "80"
+    owner_id: "24"
+    owner_type: Person
+    created_at: 2004-12-17 11:19:00
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/grid04.physics.auth.gr
+    id: "81"
+    owner_id: "2"
+    owner_type: Host
+    created_at: 2005-01-13 14:16:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/grid01.physics.auth.gr
+    id: "82"
+    owner_id: "1"
+    owner_type: Host
+    created_at: 2005-01-13 14:16:19
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=host/voms.grid.auth.gr
+    id: "83"
+    owner_id: "36"
+    owner_type: Host
+    created_at: 2005-01-17 06:56:10
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=host/rls.isabella.grnet.gr
+    id: "84"
+    owner_id: "37"
+    owner_type: Host
+    created_at: 2005-01-18 09:01:22
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=host/rb.isabella.grnet.gr
+    id: "85"
+    owner_id: "38"
+    owner_type: Host
+    created_at: 2005-01-18 09:01:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Hatziantoniou Triantafillos
+    id: "86"
+    owner_id: "37"
+    owner_type: Person
+    created_at: 2005-01-25 13:18:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Aristotelis Kyriakis
+    id: "87"
+    owner_id: "38"
+    owner_type: Person
+    created_at: 2005-01-26 15:09:33
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=ce22.hep.ntua.gr
+    id: "88"
+    owner_id: "39"
+    owner_type: Host
+    created_at: 2005-01-28 10:52:19
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=ce32.hep.ntua.gr
+    id: "89"
+    owner_id: "40"
+    owner_type: Host
+    created_at: 2005-01-28 10:52:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=ce42.hep.ntua.gr
+    id: "90"
+    owner_id: "41"
+    owner_type: Host
+    created_at: 2005-01-28 10:53:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=se23.hep.ntua.gr
+    id: "91"
+    owner_id: "42"
+    owner_type: Host
+    created_at: 2005-01-28 10:54:22
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=se33.hep.ntua.gr
+    id: "92"
+    owner_id: "43"
+    owner_type: Host
+    created_at: 2005-01-28 10:54:43
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=se43.hep.ntua.gr
+    id: "93"
+    owner_id: "44"
+    owner_type: Host
+    created_at: 2005-01-28 10:55:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Konstantinos Karafasoulis
+    id: "94"
+    owner_id: "39"
+    owner_type: Person
+    created_at: 2005-01-28 13:48:24
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=athena.physics.auth.gr
+    id: "95"
+    owner_id: "45"
+    owner_type: Host
+    created_at: 2005-01-30 16:33:25
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=Nassiakou Maria
+    id: "96"
+    owner_id: "40"
+    owner_type: Person
+    created_at: 2005-02-02 10:11:39
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ce01.gridctb.uoa.gr
+    id: "97"
+    owner_id: "46"
+    owner_type: Host
+    created_at: 2005-02-14 14:03:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/se01.gridctb.uoa.gr
+    id: "98"
+    owner_id: "47"
+    owner_type: Host
+    created_at: 2005-02-14 14:04:14
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=central.ntua.gr/CN=Konstantinos Farakos
+    id: "99"
+    owner_id: "41"
+    owner_type: Person
+    created_at: 2005-02-21 13:01:29
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=Giorgos Fotis
+    id: "100"
+    owner_id: "42"
+    owner_type: Person
+    created_at: 2005-02-25 14:22:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/alexander.it.uom.gr
+    id: "101"
+    owner_id: "48"
+    owner_type: Host
+    created_at: 2005-02-25 17:17:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/filippos.it.uom.gr
+    id: "102"
+    owner_id: "49"
+    owner_type: Host
+    created_at: 2005-02-25 17:18:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Christos Triantafyllidis
+    id: "103"
+    owner_id: "35"
+    owner_type: Person
+    created_at: 2005-02-28 12:49:55
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Anastasie Houiris
+    id: "104"
+    owner_id: "43"
+    owner_type: Person
+    created_at: 2005-03-01 14:07:36
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Chariclia Petridou
+    id: "105"
+    owner_id: "44"
+    owner_type: Person
+    created_at: 2005-03-04 16:40:30
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Sophia Kyriazopoulou
+    id: "106"
+    owner_id: "45"
+    owner_type: Person
+    created_at: 2005-03-08 10:59:47
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HELLASGRID/OU=grid.auth.gr/CN=lists.grid.auth.gr
+    id: "107"
+    owner_id: "50"
+    owner_type: Host
+    created_at: 2005-03-17 18:44:55
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HELLASGRID/OU=grid.auth.gr/CN=www.grid.auth.gr
+    id: "108"
+    owner_id: "51"
+    owner_type: Host
+    created_at: 2005-03-17 18:45:31
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=host/tassadar.physics.auth.gr
+    id: "109"
+    owner_id: "52"
+    owner_type: Host
+    created_at: 2005-03-18 16:32:15
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=George Goulas
+    id: "110"
+    owner_id: "46"
+    owner_type: Person
+    created_at: 2005-03-29 12:16:53
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Anastasia Metallinou
+    id: "111"
+    owner_id: "47"
+    owner_type: Person
+    created_at: 2005-03-30 12:28:19
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Athanassia Assiki
+    id: "112"
+    owner_id: "48"
+    owner_type: Person
+    created_at: 2005-03-30 12:30:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=filippidis xristos
+    id: "113"
+    owner_id: "49"
+    owner_type: Person
+    created_at: 2005-03-30 12:31:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Georgios Anagnostou
+    id: "114"
+    owner_id: "50"
+    owner_type: Person
+    created_at: 2005-04-01 10:10:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Theo Geralis
+    id: "115"
+    owner_id: "51"
+    owner_type: Person
+    created_at: 2005-04-01 10:12:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Loukas E. Dimitris
+    id: "116"
+    owner_id: "52"
+    owner_type: Person
+    created_at: 2005-04-01 10:36:42
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/xg005.inp.demokritos.gr
+    id: "117"
+    owner_id: "53"
+    owner_type: Host
+    created_at: 2005-04-01 10:37:22
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/xg006.inp.demokritos.gr
+    id: "118"
+    owner_id: "54"
+    owner_type: Host
+    created_at: 2005-04-01 10:37:37
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/xg009.inp.demokritos.gr
+    id: "119"
+    owner_id: "55"
+    owner_type: Host
+    created_at: 2005-04-01 10:37:51
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/xg010.inp.demokritos.gr
+    id: "120"
+    owner_id: "56"
+    owner_type: Host
+    created_at: 2005-04-01 10:38:09
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/xg016.inp.demokritos.gr
+    id: "121"
+    owner_id: "57"
+    owner_type: Host
+    created_at: 2005-04-01 10:38:44
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=wiki.grid.auth.gr
+    id: "122"
+    owner_id: "58"
+    owner_type: Host
+    created_at: 2005-04-06 16:46:34
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Dimitris Apostolou
+    id: "123"
+    owner_id: "53"
+    owner_type: Person
+    created_at: 2005-04-06 16:57:09
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Vayia Panagiotidis
+    id: "124"
+    owner_id: "54"
+    owner_type: Person
+    created_at: 2005-04-06 16:57:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Nikos Vidiadakis
+    id: "125"
+    owner_id: "55"
+    owner_type: Person
+    created_at: 2005-04-06 16:58:03
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Giannis Kouretis
+    id: "126"
+    owner_id: "56"
+    owner_type: Person
+    created_at: 2005-04-06 16:58:31
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Theodoros Alexopoulos
+    id: "127"
+    owner_id: "57"
+    owner_type: Person
+    created_at: 2005-04-06 16:59:00
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Yorgos Tsipolitis
+    id: "128"
+    owner_id: "58"
+    owner_type: Person
+    created_at: 2005-04-06 16:59:28
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=host/grid1.csl.ee.upatras.gr
+    id: "129"
+    owner_id: "59"
+    owner_type: Host
+    created_at: 2005-04-06 17:01:11
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=host/grid2.csl.ee.upatras.gr
+    id: "130"
+    owner_id: "60"
+    owner_type: Host
+    created_at: 2005-04-06 17:01:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Dimitris Varouchas
+    id: "131"
+    owner_id: "59"
+    owner_type: Person
+    created_at: 2005-04-15 11:23:09
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Stefanos Leontsinis
+    id: "132"
+    owner_id: "60"
+    owner_type: Person
+    created_at: 2005-04-15 11:23:10
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=host/lfc.isabella.grnet.gr
+    id: "133"
+    owner_id: "61"
+    owner_type: Host
+    created_at: 2005-04-20 06:00:06
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=biomed.ntua.gr/CN=Aggelos Androulidakis
+    id: "134"
+    owner_id: "61"
+    owner_type: Person
+    created_at: 2005-04-20 06:00:35
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Ilias Panagoulias
+    id: "135"
+    owner_id: "62"
+    owner_type: Person
+    created_at: 2005-04-20 06:00:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=osiris.physics.auth.gr
+    id: "136"
+    owner_id: "62"
+    owner_type: Host
+    created_at: 2005-04-23 18:55:54
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/arxiloxos1.inp.demokritos.gr
+    id: "137"
+    owner_id: "63"
+    owner_type: Host
+    created_at: 2005-04-28 06:55:10
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/arxiloxos2.inp.demokritos.gr
+    id: "138"
+    owner_id: "64"
+    owner_type: Host
+    created_at: 2005-04-28 06:55:13
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/arxiloxos3.inp.demokritos.gr
+    id: "139"
+    owner_id: "65"
+    owner_type: Host
+    created_at: 2005-04-28 06:55:14
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=Konstantinos Tsakalozos
+    id: "140"
+    owner_id: "63"
+    owner_type: Person
+    created_at: 2005-04-28 06:55:19
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=host/ce52.hep.ntua.gr
+    id: "141"
+    owner_id: "66"
+    owner_type: Host
+    created_at: 2005-04-28 12:50:05
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=host/se53.hep.ntua.gr
+    id: "142"
+    owner_id: "67"
+    owner_type: Host
+    created_at: 2005-04-28 12:50:10
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Evangelos Gazis
+    id: "143"
+    owner_id: "64"
+    owner_type: Person
+    created_at: 2005-05-10 07:19:39
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cslab.ece.ntua.gr/CN=Kornilios Kourtis
+    id: "144"
+    owner_id: "65"
+    owner_type: Person
+    created_at: 2005-05-10 07:19:42
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Theodora Papadopoulou
+    id: "145"
+    owner_id: "66"
+    owner_type: Person
+    created_at: 2005-05-10 07:19:45
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Fotis Georgatos
+    id: "146"
+    owner_id: "67"
+    owner_type: Person
+    created_at: 2005-05-11 09:49:33
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=Andreas Alexopoulos
+    id: "147"
+    owner_id: "68"
+    owner_type: Person
+    created_at: 2005-05-12 11:35:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=Vassiliki Tsagkalidou
+    id: "148"
+    owner_id: "69"
+    owner_type: Person
+    created_at: 2005-05-12 11:53:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=monitor.grid.auth.gr
+    id: "149"
+    owner_id: "68"
+    owner_type: Host
+    created_at: 2005-05-13 06:15:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=Giorgos Papanikos
+    id: "150"
+    owner_id: "70"
+    owner_type: Person
+    created_at: 2005-05-18 15:56:15
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Theodora Papadopoulou
+    id: "151"
+    owner_id: "71"
+    owner_type: Person
+    created_at: 2005-05-18 15:56:18
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Theodora Papadopoulou
+    id: "152"
+    owner_id: "72"
+    owner_type: Person
+    created_at: 2005-05-18 17:54:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=rt.grid.auth.gr
+    id: "153"
+    owner_id: "69"
+    owner_type: Host
+    created_at: 2005-05-23 10:15:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=host/grid7.csl.ee.upatras.gr
+    id: "154"
+    owner_id: "70"
+    owner_type: Host
+    created_at: 2005-05-23 19:44:28
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=host/grid8.csl.ee.upatras.gr
+    id: "155"
+    owner_id: "71"
+    owner_type: Host
+    created_at: 2005-05-23 19:44:29
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.ntua.gr/CN=Konstantinos Anagnostopoulos
+    id: "156"
+    owner_id: "73"
+    owner_type: Person
+    created_at: 2005-05-25 13:33:28
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=host/grid9.csl.ee.upatras.gr
+    id: "157"
+    owner_id: "72"
+    owner_type: Host
+    created_at: 2005-06-01 21:00:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl01.di.uoa.gr
+    id: "158"
+    owner_id: "73"
+    owner_type: Host
+    created_at: 2005-06-06 19:01:51
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl02.di.uoa.gr
+    id: "159"
+    owner_id: "74"
+    owner_type: Host
+    created_at: 2005-06-06 19:01:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl03.di.uoa.gr
+    id: "160"
+    owner_id: "75"
+    owner_type: Host
+    created_at: 2005-06-06 19:02:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl04.di.uoa.gr
+    id: "161"
+    owner_id: "76"
+    owner_type: Host
+    created_at: 2005-06-06 19:02:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl05.di.uoa.gr
+    id: "162"
+    owner_id: "77"
+    owner_type: Host
+    created_at: 2005-06-06 19:02:05
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl06.di.uoa.gr
+    id: "163"
+    owner_id: "78"
+    owner_type: Host
+    created_at: 2005-06-06 19:02:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=host/grid3.csl.ee.upatras.gr
+    id: "164"
+    owner_id: "79"
+    owner_type: Host
+    created_at: 2005-06-06 19:36:14
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=George Kakaletris
+    id: "165"
+    owner_id: "74"
+    owner_type: Person
+    created_at: 2005-06-09 12:55:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=George Thomopoulos
+    id: "166"
+    owner_id: "75"
+    owner_type: Person
+    created_at: 2005-06-09 12:56:11
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=iasa.gr/CN=William Vassilis Karageorgos
+    id: "167"
+    owner_id: "76"
+    owner_type: Person
+    created_at: 2005-06-09 12:56:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl07.di.uoa.gr
+    id: "168"
+    owner_id: "80"
+    owner_type: Host
+    created_at: 2005-06-24 12:07:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl08.di.uoa.gr
+    id: "169"
+    owner_id: "81"
+    owner_type: Host
+    created_at: 2005-06-24 12:07:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl09.di.uoa.gr
+    id: "170"
+    owner_id: "82"
+    owner_type: Host
+    created_at: 2005-06-24 12:07:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl10.di.uoa.gr
+    id: "171"
+    owner_id: "83"
+    owner_type: Host
+    created_at: 2005-06-24 12:08:00
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl11.di.uoa.gr
+    id: "172"
+    owner_id: "84"
+    owner_type: Host
+    created_at: 2005-06-24 12:08:00
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl12.di.uoa.gr
+    id: "173"
+    owner_id: "85"
+    owner_type: Host
+    created_at: 2005-06-24 12:08:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl13.di.uoa.gr
+    id: "174"
+    owner_id: "86"
+    owner_type: Host
+    created_at: 2005-06-24 12:08:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl14.di.uoa.gr
+    id: "175"
+    owner_id: "87"
+    owner_type: Host
+    created_at: 2005-06-24 12:08:02
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=host/dl15.di.uoa.gr
+    id: "176"
+    owner_id: "88"
+    owner_type: Host
+    created_at: 2005-06-24 12:08:02
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=aegean.gr/CN=Giannis Stergiou
+    id: "177"
+    owner_id: "77"
+    owner_type: Person
+    created_at: 2005-06-24 12:08:02
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cslab.ece.ntua.gr/CN=Nikolaos Drosinos
+    id: "178"
+    owner_id: "78"
+    owner_type: Person
+    created_at: 2005-07-01 13:07:55
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/rgma.it.uom.gr
+    id: "179"
+    owner_id: "89"
+    owner_type: Host
+    created_at: 2005-07-07 09:36:54
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=George Doukas
+    id: "180"
+    owner_id: "79"
+    owner_type: Person
+    created_at: 2005-07-13 03:16:19
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/globus.it.uom.gr
+    id: "181"
+    owner_id: "20"
+    owner_type: Host
+    created_at: 2005-07-13 10:44:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/storage.it.uom.gr
+    id: "182"
+    owner_id: "21"
+    owner_type: Host
+    created_at: 2005-07-13 05:46:29
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/mh01.gridctb.uoa.gr
+    id: "183"
+    owner_id: "90"
+    owner_type: Host
+    created_at: 2005-07-21 06:48:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=Spiros Evagelatos
+    id: "184"
+    owner_id: "80"
+    owner_type: Person
+    created_at: 2005-07-22 16:39:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Evangelos Papadopoulos
+    id: "185"
+    owner_id: "81"
+    owner_type: Person
+    created_at: 2005-07-27 10:09:18
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Stavros Maltezos
+    id: "186"
+    owner_id: "82"
+    owner_type: Person
+    created_at: 2005-07-28 16:33:23
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=host/node008.grid.auth.gr
+    id: "187"
+    owner_id: "91"
+    owner_type: Host
+    created_at: 2005-08-03 11:17:38
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.auth.gr/CN=Epameinontas Kontothanasis
+    id: "188"
+    owner_id: "83"
+    owner_type: Person
+    created_at: 2005-08-05 15:11:41
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=Chrysostomos Tziouvaras
+    id: "189"
+    owner_id: "84"
+    owner_type: Person
+    created_at: 2005-08-08 16:16:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=host/gridmachine.admin.grnet.gr
+    id: "190"
+    owner_id: "92"
+    owner_type: Host
+    created_at: 2005-08-09 12:30:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/ptolemeos.it.uom.gr
+    id: "191"
+    owner_id: "93"
+    owner_type: Host
+    created_at: 2005-08-31 09:58:22
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=phys.uoa.gr/CN=Christine Kourkoumelis
+    id: "192"
+    owner_id: "85"
+    owner_type: Person
+    created_at: 2005-08-31 09:58:28
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=phys.uoa.gr/CN=Dimitrios Fassouliotis
+    id: "193"
+    owner_id: "86"
+    owner_type: Person
+    created_at: 2005-08-31 09:58:29
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=phys.uoa.gr/CN=Konstantinos Nikolopoulos
+    id: "194"
+    owner_id: "87"
+    owner_type: Person
+    created_at: 2005-08-31 09:58:30
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=host/mon.isabella.grnet.gr
+    id: "195"
+    owner_id: "94"
+    owner_type: Host
+    created_at: 2005-09-05 06:02:12
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Hariton Polatoglou
+    id: "196"
+    owner_id: "88"
+    owner_type: Person
+    created_at: 2005-09-08 09:57:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=Maria Avgoulea
+    id: "197"
+    owner_id: "89"
+    owner_type: Person
+    created_at: 2005-09-09 05:56:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chem.demokritos.gr/CN=Yannis G. Lazarou
+    id: "198"
+    owner_id: "90"
+    owner_type: Person
+    created_at: 2005-09-09 13:42:11
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Nikos Skoulidis
+    id: "199"
+    owner_id: "91"
+    owner_type: Person
+    created_at: 2005-09-09 13:42:14
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=host/sl1.cti.gr
+    id: "200"
+    owner_id: "95"
+    owner_type: Host
+    created_at: 2005-09-15 07:39:20
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=host/sl2.cti.gr
+    id: "201"
+    owner_id: "96"
+    owner_type: Host
+    created_at: 2005-09-15 07:39:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=host/sl3.cti.gr
+    id: "202"
+    owner_id: "97"
+    owner_type: Host
+    created_at: 2005-09-15 07:39:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cslab.ece.ntua.gr/CN=Giorgos Verigakis
+    id: "203"
+    owner_id: "92"
+    owner_type: Person
+    created_at: 2005-09-15 13:25:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=Aristidis Vlahopanos
+    id: "204"
+    owner_id: "93"
+    owner_type: Person
+    created_at: 2005-09-16 09:40:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=unipi.gr/CN=Mikaela Poulymenopoulou
+    id: "205"
+    owner_id: "94"
+    owner_type: Person
+    created_at: 2005-09-19 09:03:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=host/sl4.cti.gr
+    id: "206"
+    owner_id: "98"
+    owner_type: Host
+    created_at: 2005-09-19 12:16:52
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=host/sl5.cti.gr
+    id: "207"
+    owner_id: "99"
+    owner_type: Host
+    created_at: 2005-09-19 12:16:53
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=host/sl6.cti.gr
+    id: "208"
+    owner_id: "100"
+    owner_type: Host
+    created_at: 2005-09-19 12:16:53
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=host/sl7.cti.gr
+    id: "209"
+    owner_id: "101"
+    owner_type: Host
+    created_at: 2005-09-19 12:16:54
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chem.demokritos.gr/CN=Aris M Zaras
+    id: "210"
+    owner_id: "95"
+    owner_type: Person
+    created_at: 2005-09-21 09:43:11
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=Georgios Gounaris
+    id: "211"
+    owner_id: "96"
+    owner_type: Person
+    created_at: 2005-09-26 09:15:38
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=Evangelos Markatos
+    id: "212"
+    owner_id: "97"
+    owner_type: Person
+    created_at: 2005-10-11 11:03:20
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=node001.grid.auth.gr
+    id: "213"
+    owner_id: "25"
+    owner_type: Host
+    created_at: 2005-10-11 13:21:56
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=node004.grid.auth.gr
+    id: "214"
+    owner_id: "26"
+    owner_type: Host
+    created_at: 2005-10-11 13:23:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=node009.grid.auth.gr
+    id: "215"
+    owner_id: "27"
+    owner_type: Host
+    created_at: 2005-10-11 13:23:48
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=Antonis Limperis
+    id: "216"
+    owner_id: "98"
+    owner_type: Person
+    created_at: 2005-10-12 14:46:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=George Stathakopoulos
+    id: "217"
+    owner_id: "99"
+    owner_type: Person
+    created_at: 2005-10-17 10:57:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Vasso Sfyrla
+    id: "218"
+    owner_id: "100"
+    owner_type: Person
+    created_at: 2005-10-18 15:45:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=Christos Anastopoulos
+    id: "219"
+    owner_id: "101"
+    owner_type: Person
+    created_at: 2005-10-24 11:12:43
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Konstantinos Anagnostopoulos
+    id: "220"
+    owner_id: "73"
+    owner_type: Person
+    created_at: 2005-11-02 11:59:51
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=Panagiotis Louridas
+    id: "221"
+    owner_id: "102"
+    owner_type: Person
+    created_at: 2005-11-02 14:27:38
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=Dimitrios Fousteris
+    id: "222"
+    owner_id: "103"
+    owner_type: Person
+    created_at: 2005-11-04 07:59:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Kalliopi Mermigka
+    id: "223"
+    owner_id: "104"
+    owner_type: Person
+    created_at: 2005-11-04 08:00:00
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Nikolas Karalis
+    id: "224"
+    owner_id: "105"
+    owner_type: Person
+    created_at: 2005-11-04 08:00:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Rachel Avramidou
+    id: "225"
+    owner_id: "106"
+    owner_type: Person
+    created_at: 2005-11-04 08:00:05
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ceid.upatras.gr/CN=Giorgos Ikonomou
+    id: "226"
+    owner_id: "107"
+    owner_type: Person
+    created_at: 2005-11-10 11:56:35
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=host/se63.hep.ntua.gr
+    id: "227"
+    owner_id: "102"
+    owner_type: Host
+    created_at: 2005-11-14 10:35:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=Dimitrios Sampsonidis
+    id: "228"
+    owner_id: "108"
+    owner_type: Person
+    created_at: 2005-11-15 11:27:10
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Yorgos Varisteas
+    id: "229"
+    owner_id: "109"
+    owner_type: Person
+    created_at: 2005-11-21 12:59:12
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=Konstantinos Koutsopoulos
+    id: "230"
+    owner_id: "110"
+    owner_type: Person
+    created_at: 2005-11-23 17:37:54
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=host/ce62.hep.ntua.gr
+    id: "231"
+    owner_id: "103"
+    owner_type: Host
+    created_at: 2005-11-28 12:32:18
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=Dimitris Fousteris
+    id: "232"
+    owner_id: "103"
+    owner_type: Person
+    created_at: 2005-11-28 13:28:29
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/wms.it.uom.gr
+    id: "233"
+    owner_id: "104"
+    owner_type: Host
+    created_at: 2005-12-01 11:46:20
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=snd.edu.gr/CN=ce.snd.edu.gr
+    id: "234"
+    owner_id: "105"
+    owner_type: Host
+    created_at: 2005-12-05 10:47:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=snd.edu.gr/CN=se.snd.edu.gr
+    id: "235"
+    owner_id: "106"
+    owner_type: Host
+    created_at: 2005-12-05 10:47:48
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=host/grid-mon.ics.forth.gr
+    id: "236"
+    owner_id: "107"
+    owner_type: Host
+    created_at: 2005-12-06 12:53:56
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/dpm.it.uom.gr
+    id: "237"
+    owner_id: "108"
+    owner_type: Host
+    created_at: 2005-12-12 10:19:35
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=aegean.gr/CN=Giannis Kouvakis
+    id: "238"
+    owner_id: "111"
+    owner_type: Person
+    created_at: 2005-12-20 11:17:52
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=host/ce01.ariagni.hellasgrid.gr
+    id: "239"
+    owner_id: "109"
+    owner_type: Host
+    created_at: 2005-12-23 11:08:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=host/mon01.ariagni.hellasgrid.gr
+    id: "240"
+    owner_id: "110"
+    owner_type: Host
+    created_at: 2005-12-23 11:08:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=host/se01.ariagni.hellasgrid.gr
+    id: "241"
+    owner_id: "111"
+    owner_type: Host
+    created_at: 2005-12-23 11:08:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=host/ce22.hep.ntua.gr
+    id: "242"
+    owner_id: "39"
+    owner_type: Host
+    created_at: 2005-12-29 10:50:35
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=host/se23.hep.ntua.gr
+    id: "243"
+    owner_id: "42"
+    owner_type: Host
+    created_at: 2005-12-29 10:50:35
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=host/wn24.hep.ntua.gr
+    id: "244"
+    owner_id: "115"
+    owner_type: Host
+    created_at: 2005-12-29 10:50:36
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=voms.grid.auth.gr
+    id: "245"
+    owner_id: "36"
+    owner_type: Host
+    created_at: 2006-01-11 16:22:53
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=Prassa Vaia
+    id: "246"
+    owner_id: "112"
+    owner_type: Person
+    created_at: 2006-01-16 13:37:47
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ariagni.hellasgrid.gr/CN=host/ce01.ariagni.hellasgrid.gr
+    id: "247"
+    owner_id: "112"
+    owner_type: Host
+    created_at: 2006-01-17 15:30:09
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ariagni.hellasgrid.gr/CN=host/mon01.ariagni.hellasgrid.gr
+    id: "248"
+    owner_id: "113"
+    owner_type: Host
+    created_at: 2006-01-17 15:30:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ariagni.hellasgrid.gr/CN=host/se01.ariagni.hellasgrid.gr
+    id: "249"
+    owner_id: "114"
+    owner_type: Host
+    created_at: 2006-01-17 15:30:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/CN=host/ui.inp.demokritos.gr
+    id: "250"
+    owner_id: "116"
+    owner_type: Host
+    created_at: 2006-01-20 17:09:16
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=kallisto.hellasgrid.gr/CN=mon.kallisto.hellasgrid.gr
+    id: "251"
+    owner_id: "117"
+    owner_type: Host
+    created_at: 2006-01-25 11:07:28
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=kallisto.hellasgrid.gr/CN=se01.kallisto.hellasgrid.gr
+    id: "252"
+    owner_id: "118"
+    owner_type: Host
+    created_at: 2006-01-25 11:07:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=Charalampos Gkikas
+    id: "253"
+    owner_id: "113"
+    owner_type: Person
+    created_at: 2006-01-25 11:07:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=kallisto.hellasgrid.gr/CN=ce01.kallisto.hellasgrid.gr
+    id: "254"
+    owner_id: "119"
+    owner_type: Host
+    created_at: 2006-01-26 12:25:30
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Costas PAPADOPOULOS
+    id: "255"
+    owner_id: "114"
+    owner_type: Person
+    created_at: 2006-01-31 17:15:38
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=bioacademy.gr/CN=George Spyrou
+    id: "256"
+    owner_id: "115"
+    owner_type: Person
+    created_at: 2006-02-01 15:11:39
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=ce.hep.ntua.gr
+    id: "257"
+    owner_id: "120"
+    owner_type: Host
+    created_at: 2006-02-02 14:19:02
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=mon.hep.ntua.gr
+    id: "258"
+    owner_id: "121"
+    owner_type: Host
+    created_at: 2006-02-02 14:19:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=se.hep.ntua.gr
+    id: "259"
+    owner_id: "122"
+    owner_type: Host
+    created_at: 2006-02-02 14:19:10
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=netmode.ece.ntua.gr/CN=Constantinos Marinos
+    id: "260"
+    owner_id: "116"
+    owner_type: Person
+    created_at: 2006-02-06 10:28:42
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=Ioannis Liabotis
+    id: "261"
+    owner_id: "117"
+    owner_type: Person
+    created_at: 2006-02-08 15:47:28
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Konstantinos Theofilatos
+    id: "262"
+    owner_id: "118"
+    owner_type: Person
+    created_at: 2006-02-10 16:33:34
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=iasa.gr/CN=Marios Chatziangelou
+    id: "263"
+    owner_id: "119"
+    owner_type: Person
+    created_at: 2006-02-13 17:49:20
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=marie.hellasgrid.gr/CN=aurum.marie.hellasgrid.gr
+    id: "264"
+    owner_id: "123"
+    owner_type: Host
+    created_at: 2006-02-15 17:35:22
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=marie.hellasgrid.gr/CN=ce01.marie.hellasgrid.gr
+    id: "265"
+    owner_id: "124"
+    owner_type: Host
+    created_at: 2006-02-15 17:35:23
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=marie.hellasgrid.gr/CN=mon.marie.hellasgrid.gr
+    id: "266"
+    owner_id: "125"
+    owner_type: Host
+    created_at: 2006-02-15 17:35:25
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=marie.hellasgrid.gr/CN=se01.marie.hellasgrid.gr
+    id: "267"
+    owner_id: "126"
+    owner_type: Host
+    created_at: 2006-02-15 17:35:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=see-training-ca.grid.auth.gr
+    id: "268"
+    owner_id: "127"
+    owner_type: Host
+    created_at: 2006-02-21 13:48:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=aegean.gr/CN=Dimitrios J. Vergados
+    id: "269"
+    owner_id: "120"
+    owner_type: Person
+    created_at: 2006-02-22 17:21:12
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=netmode.ece.ntua.gr/CN=grid2.netmode.ece.ntua.gr
+    id: "270"
+    owner_id: "34"
+    owner_type: Host
+    created_at: 2006-02-23 13:59:20
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=netmode.ece.ntua.gr/CN=grid1.netmode.ece.ntua.gr
+    id: "271"
+    owner_id: "33"
+    owner_type: Host
+    created_at: 2006-02-27 15:09:25
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=host/grid-test1.admin.grnet.gr
+    id: "272"
+    owner_id: "128"
+    owner_type: Host
+    created_at: 2006-02-28 12:22:02
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=bit.med.upatras.gr/CN=Kristina S. Bliznakova
+    id: "273"
+    owner_id: "121"
+    owner_type: Person
+    created_at: 2006-02-28 12:22:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=hellasgrid-ui.ics.forth.gr
+    id: "274"
+    owner_id: "129"
+    owner_type: Host
+    created_at: 2006-03-01 10:03:41
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=mon02.ics.forth.gr
+    id: "275"
+    owner_id: "130"
+    owner_type: Host
+    created_at: 2006-03-01 10:03:47
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=Fotis E. Psomopoulos
+    id: "276"
+    owner_id: "122"
+    owner_type: Person
+    created_at: 2006-03-01 10:04:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=shibboleth.grid.auth.gr
+    id: "277"
+    owner_id: "131"
+    owner_type: Host
+    created_at: 2006-03-02 12:32:41
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=Angelo Sifaleras
+    id: "278"
+    owner_id: "123"
+    owner_type: Person
+    created_at: 2006-03-02 12:33:06
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=host/grid-test2.admin.grnet.gr
+    id: "279"
+    owner_id: "132"
+    owner_type: Host
+    created_at: 2006-03-08 10:58:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=radius.grid.auth.gr
+    id: "280"
+    owner_id: "133"
+    owner_type: Host
+    created_at: 2006-03-08 11:01:31
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=srv218.physics.auth.gr
+    id: "281"
+    owner_id: "134"
+    owner_type: Host
+    created_at: 2006-03-15 17:25:19
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=host/grid13.csl.ee.upatras.gr
+    id: "282"
+    owner_id: "135"
+    owner_type: Host
+    created_at: 2006-03-16 17:55:12
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=host/grid19.csl.ee.upatras.gr
+    id: "283"
+    owner_id: "136"
+    owner_type: Host
+    created_at: 2006-03-16 17:55:16
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=host/grid25.csl.ee.upatras.gr
+    id: "284"
+    owner_id: "137"
+    owner_type: Host
+    created_at: 2006-03-16 17:55:19
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Adamantios Stavridis
+    id: "285"
+    owner_id: "124"
+    owner_type: Person
+    created_at: 2006-03-20 12:25:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=tassadar.physics.auth.gr
+    id: "286"
+    owner_id: "52"
+    owner_type: Host
+    created_at: 2006-03-20 12:29:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=ce05.hep.ntua.gr
+    id: "287"
+    owner_id: "138"
+    owner_type: Host
+    created_at: 2006-03-24 15:50:08
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=mon07.hep.ntua.gr
+    id: "288"
+    owner_id: "139"
+    owner_type: Host
+    created_at: 2006-03-24 15:50:13
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=se06.hep.ntua.gr
+    id: "289"
+    owner_id: "140"
+    owner_type: Host
+    created_at: 2006-03-24 15:50:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=Anastasios Zafeiropoulos
+    id: "290"
+    owner_id: "125"
+    owner_type: Person
+    created_at: 2006-03-24 15:50:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=ce01.isabella.grnet.gr
+    id: "291"
+    owner_id: "15"
+    owner_type: Host
+    created_at: 2006-03-28 15:02:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=se01.isabella.grnet.gr
+    id: "292"
+    owner_id: "16"
+    owner_type: Host
+    created_at: 2006-03-28 15:02:33
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/ikaros4.inp.demokritos.gr
+    id: "293"
+    owner_id: "141"
+    owner_type: Host
+    created_at: 2006-03-30 12:38:37
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/ui.inp.demokritos.gr
+    id: "294"
+    owner_id: "116"
+    owner_type: Host
+    created_at: 2006-03-30 12:38:41
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=host/xg007.inp.demokritos.gr
+    id: "295"
+    owner_id: "142"
+    owner_type: Host
+    created_at: 2006-03-30 12:38:48
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Christos Filippidis
+    id: "296"
+    owner_id: "49"
+    owner_type: Person
+    created_at: 2006-03-30 12:38:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chemeng.ntua.gr/CN=Antony N. Spyropoulos
+    id: "297"
+    owner_id: "126"
+    owner_type: Person
+    created_at: 2006-04-03 12:26:37
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chemeng.ntua.gr/CN=Evangelos Megalios
+    id: "298"
+    owner_id: "127"
+    owner_type: Person
+    created_at: 2006-04-03 12:26:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chemeng.ntua.gr/CN=Mihalis Kavousanakis
+    id: "299"
+    owner_id: "128"
+    owner_type: Person
+    created_at: 2006-04-03 12:27:05
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chemeng.ntua.gr/CN=Athanasios G. Papathanasiou
+    id: "300"
+    owner_id: "129"
+    owner_type: Person
+    created_at: 2006-04-03 12:27:14
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chemeng.ntua.gr/CN=George Pashos
+    id: "301"
+    owner_id: "130"
+    owner_type: Person
+    created_at: 2006-04-03 12:29:41
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Joseph Kioseoglou
+    id: "302"
+    owner_id: "131"
+    owner_type: Person
+    created_at: 2006-04-04 12:16:43
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=marie.hellasgrid.gr/CN=ce02.marie.hellasgrid.gr
+    id: "303"
+    owner_id: "143"
+    owner_type: Host
+    created_at: 2006-04-05 10:12:09
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=marie.hellasgrid.gr/CN=mon02.marie.hellasgrid.gr
+    id: "304"
+    owner_id: "144"
+    owner_type: Host
+    created_at: 2006-04-05 10:12:15
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=marie.hellasgrid.gr/CN=se02.marie.hellasgrid.gr
+    id: "305"
+    owner_id: "145"
+    owner_type: Host
+    created_at: 2006-04-05 10:12:18
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chemeng.ntua.gr/CN=Ioannis Bonis
+    id: "306"
+    owner_id: "132"
+    owner_type: Person
+    created_at: 2006-04-05 10:12:24
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Nikos Charitonides
+    id: "307"
+    owner_id: "133"
+    owner_type: Person
+    created_at: 2006-04-06 15:12:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Paschalis Korosoglou
+    id: "308"
+    owner_id: "134"
+    owner_type: Person
+    created_at: 2006-04-07 09:08:41
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chemeng.ntua.gr/CN=Eleni Koronaki
+    id: "309"
+    owner_id: "135"
+    owner_type: Person
+    created_at: 2006-04-10 15:43:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=Michalis Oikonomakos
+    id: "310"
+    owner_id: "136"
+    owner_type: Person
+    created_at: 2006-04-11 14:09:25
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=cti.gr/CN=Vasilis Gkamas
+    id: "311"
+    owner_id: "137"
+    owner_type: Person
+    created_at: 2006-04-11 14:09:29
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=chemistry.uoc.gr/CN=Georgios Dimitrakakis
+    id: "312"
+    owner_id: "138"
+    owner_type: Person
+    created_at: 2006-04-12 13:47:56
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Eleni Petrakou
+    id: "313"
+    owner_id: "139"
+    owner_type: Person
+    created_at: 2006-04-12 13:48:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=lfc.isabella.grnet.gr
+    id: "314"
+    owner_id: "61"
+    owner_type: Host
+    created_at: 2006-04-17 14:49:29
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=iasa.gr/CN=Kosmas Beros
+    id: "315"
+    owner_id: "140"
+    owner_type: Person
+    created_at: 2006-04-27 11:20:34
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=Maria Nassiakou
+    id: "316"
+    owner_id: "40"
+    owner_type: Person
+    created_at: 2006-04-28 13:21:36
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=Nikos Voutsinas
+    id: "317"
+    owner_id: "141"
+    owner_type: Person
+    created_at: 2006-05-04 10:48:15
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/fta01.gridctb.uoa.gr
+    id: "318"
+    owner_id: "146"
+    owner_type: Host
+    created_at: 2006-05-04 11:48:14
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/fts01.gridctb.uoa.gr
+    id: "319"
+    owner_id: "147"
+    owner_type: Host
+    created_at: 2006-05-04 11:48:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/wms01.gridctb.uoa.gr
+    id: "320"
+    owner_id: "148"
+    owner_type: Host
+    created_at: 2006-05-04 11:48:36
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=Stathis Kasderidis
+    id: "321"
+    owner_id: "142"
+    owner_type: Person
+    created_at: 2006-05-05 15:15:23
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Aliki Stergiou
+    id: "322"
+    owner_id: "143"
+    owner_type: Person
+    created_at: 2006-05-08 10:19:50
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Nikolaos Charitonides
+    id: "323"
+    owner_id: "144"
+    owner_type: Person
+    created_at: 2006-05-08 14:40:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=inp.demokritos.gr/CN=Spiros Spirou
+    id: "324"
+    owner_id: "145"
+    owner_type: Person
+    created_at: 2006-05-11 11:56:52
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=athena.hellasgrid.gr/CN=ce01.athena.hellasgrid.gr
+    id: "325"
+    owner_id: "150"
+    owner_type: Host
+    created_at: 2006-05-15 10:22:48
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=athena.hellasgrid.gr/CN=mon.athena.hellasgrid.gr
+    id: "326"
+    owner_id: "151"
+    owner_type: Host
+    created_at: 2006-05-15 10:22:56
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=athena.hellasgrid.gr/CN=se01.athena.hellasgrid.gr
+    id: "327"
+    owner_id: "152"
+    owner_type: Host
+    created_at: 2006-05-15 10:23:01
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=athena.hellasgrid.gr/CN=ce02.athena.hellasgrid.gr
+    id: "328"
+    owner_id: "153"
+    owner_type: Host
+    created_at: 2006-05-15 16:38:43
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Stefanos Leontsinis
+    id: "329"
+    owner_id: "146"
+    owner_type: Person
+    created_at: 2006-05-15 16:38:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ics.forth.gr/CN=host/glite-ce.ics.forth.gr
+    id: "330"
+    owner_id: "154"
+    owner_type: Host
+    created_at: 2006-05-16 15:15:24
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/bdii.gridctb.uoa.gr
+    id: "331"
+    owner_id: "155"
+    owner_type: Host
+    created_at: 2006-05-17 07:52:49
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/rb.gridctb.uoa.gr
+    id: "332"
+    owner_id: "156"
+    owner_type: Host
+    created_at: 2006-05-17 07:52:52
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/wms.gridctb.uoa.gr
+    id: "333"
+    owner_id: "157"
+    owner_type: Host
+    created_at: 2006-05-17 07:52:56
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/globus-lcg.it.uom.gr
+    id: "334"
+    owner_id: "158"
+    owner_type: Host
+    created_at: 2006-05-17 09:39:54
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=voms2.grid.auth.gr
+    id: "335"
+    owner_id: "159"
+    owner_type: Host
+    created_at: 2006-05-19 09:29:41
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=node021.grid.auth.gr
+    id: "336"
+    owner_id: "160"
+    owner_type: Host
+    created_at: 2006-05-19 11:38:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=grid15.csl.ee.upatras.gr
+    id: "337"
+    owner_id: "161"
+    owner_type: Host
+    created_at: 2006-05-19 15:21:34
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=grid20.csl.ee.upatras.gr
+    id: "338"
+    owner_id: "162"
+    owner_type: Host
+    created_at: 2006-05-19 15:21:37
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=grid26.csl.ee.upatras.gr
+    id: "339"
+    owner_id: "163"
+    owner_type: Host
+    created_at: 2006-05-19 15:21:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=Konstantinos Tsakalozos
+    id: "340"
+    owner_id: "63"
+    owner_type: Person
+    created_at: 2006-05-22 08:19:54
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ce02.gridctb.uoa.gr
+    id: "341"
+    owner_id: "164"
+    owner_type: Host
+    created_at: 2006-05-23 09:19:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=csl.ee.upatras.gr/CN=Efthymios Housos
+    id: "342"
+    owner_id: "147"
+    owner_type: Person
+    created_at: 2006-05-24 08:55:03
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ceid.upatras.gr/CN=Antonis Christodoulou
+    id: "343"
+    owner_id: "148"
+    owner_type: Person
+    created_at: 2006-05-24 12:40:08
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=ldap.physics.auth.gr
+    id: "344"
+    owner_id: "165"
+    owner_type: Host
+    created_at: 2006-05-25 08:39:36
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=grid9.csl.ee.upatras.gr
+    id: "345"
+    owner_id: "72"
+    owner_type: Host
+    created_at: 2006-05-29 16:38:09
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=Giorgos Kakaletris
+    id: "346"
+    owner_id: "74"
+    owner_type: Person
+    created_at: 2006-05-29 16:38:23
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=grid3.csl.ee.upatras.gr
+    id: "347"
+    owner_id: "79"
+    owner_type: Host
+    created_at: 2006-05-30 08:59:13
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ariagni.hellasgrid.gr/CN=host/ce02.ariagni.hellasgrid.gr
+    id: "348"
+    owner_id: "166"
+    owner_type: Host
+    created_at: 2006-05-31 09:30:14
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=di.uoa.gr/CN=Valia Tsagkalidou
+    id: "349"
+    owner_id: "149"
+    owner_type: Person
+    created_at: 2006-06-05 10:39:42
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=srv005.grid.auth.gr
+    id: "350"
+    owner_id: "167"
+    owner_type: Host
+    created_at: 2006-06-07 09:12:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=iasa.gr/CN=ce01.grid.iasa.gr
+    id: "351"
+    owner_id: "168"
+    owner_type: Host
+    created_at: 2006-06-07 11:43:20
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=iasa.gr/CN=ce02.grid.iasa.gr
+    id: "352"
+    owner_id: "169"
+    owner_type: Host
+    created_at: 2006-06-07 11:46:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=iasa.gr/CN=mon.grid.iasa.gr
+    id: "353"
+    owner_id: "170"
+    owner_type: Host
+    created_at: 2006-06-07 11:46:33
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=iasa.gr/CN=se01.grid.iasa.gr
+    id: "354"
+    owner_id: "171"
+    owner_type: Host
+    created_at: 2006-06-07 11:46:39
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=hep.ntua.gr/CN=myvoms.hep.ntua.gr
+    id: "355"
+    owner_id: "172"
+    owner_type: Host
+    created_at: 2006-06-21 07:52:33
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=athena.hellasgrid.gr/CN=rb01.egee-see.org
+    id: "356"
+    owner_id: "173"
+    owner_type: Host
+    created_at: 2006-06-21 08:35:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=athena.hellasgrid.gr/CN=wms01.egee-see.org
+    id: "357"
+    owner_id: "174"
+    owner_type: Host
+    created_at: 2006-06-21 08:45:06
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=grid7.csl.ee.upatras.gr
+    id: "358"
+    owner_id: "70"
+    owner_type: Host
+    created_at: 2006-06-23 11:22:59
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=lfc.hep.ntua.gr
+    id: "359"
+    owner_id: "175"
+    owner_type: Host
+    created_at: 2006-06-26 09:31:55
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=Leonidas Pispiriggas
+    id: "360"
+    owner_id: "150"
+    owner_type: Person
+    created_at: 2006-06-26 12:30:35
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=rb.hep.ntua.gr
+    id: "361"
+    owner_id: "176"
+    owner_type: Host
+    created_at: 2006-06-26 15:28:04
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=imel.demokritos.gr/CN=Nikos Papanikolaou
+    id: "362"
+    owner_id: "151"
+    owner_type: Person
+    created_at: 2006-06-29 12:42:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=physics.auth.gr/CN=Stergios Logothetidis
+    id: "363"
+    owner_id: "152"
+    owner_type: Person
+    created_at: 2006-06-30 07:47:08
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=eap.gr/CN=Vassilis Fotopoulos
+    id: "364"
+    owner_id: "153"
+    owner_type: Person
+    created_at: 2006-06-30 10:08:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=Theodoros Tzidamis
+    id: "365"
+    owner_id: "154"
+    owner_type: Person
+    created_at: 2006-07-06 14:10:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=marie.hellasgrid.gr/CN=glite-ce01.marie.hellasgrid.gr
+    id: "366"
+    owner_id: "177"
+    owner_type: Host
+    created_at: 2006-07-11 12:29:05
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=forth.gr/CN=Stamatis Stamatiadis
+    id: "367"
+    owner_id: "155"
+    owner_type: Person
+    created_at: 2006-07-12 07:45:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Athanassia Assiki
+    id: "368"
+    owner_id: "156"
+    owner_type: Person
+    created_at: 2006-07-17 11:08:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=forth.gr/CN=Stavros C. Farantos
+    id: "369"
+    owner_id: "157"
+    owner_type: Person
+    created_at: 2006-07-17 11:08:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=forth.gr/CN=Peter Nillius
+    id: "370"
+    owner_id: "158"
+    owner_type: Person
+    created_at: 2006-07-17 11:08:36
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=Georgios Lalazissis
+    id: "371"
+    owner_id: "159"
+    owner_type: Person
+    created_at: 2006-07-20 07:39:48
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Angelos Lenis
+    id: "372"
+    owner_id: "160"
+    owner_type: Person
+    created_at: 2006-07-25 10:21:50
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=auth.gr/CN=Sotirios Diplaris
+    id: "373"
+    owner_id: "161"
+    owner_type: Person
+    created_at: 2006-07-28 13:38:38
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=auth.gr/CN=Fani Tzima
+    id: "374"
+    owner_id: "162"
+    owner_type: Person
+    created_at: 2006-07-28 13:38:57
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb01.gridctb.uoa.gr
+    id: "375"
+    owner_id: "178"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:02
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb02.gridctb.uoa.gr
+    id: "376"
+    owner_id: "179"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:07
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb03.gridctb.uoa.gr
+    id: "377"
+    owner_id: "180"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:12
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb04.gridctb.uoa.gr
+    id: "378"
+    owner_id: "181"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:18
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb05.gridctb.uoa.gr
+    id: "379"
+    owner_id: "182"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb06.gridctb.uoa.gr
+    id: "380"
+    owner_id: "183"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:25
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb07.gridctb.uoa.gr
+    id: "381"
+    owner_id: "184"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:29
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb08.gridctb.uoa.gr
+    id: "382"
+    owner_id: "185"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:32
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb09.gridctb.uoa.gr
+    id: "383"
+    owner_id: "186"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:35
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb10.gridctb.uoa.gr
+    id: "384"
+    owner_id: "187"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:39
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/ctb11.gridctb.uoa.gr
+    id: "385"
+    owner_id: "188"
+    owner_type: Host
+    created_at: 2006-08-03 07:18:44
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=node008.grid.auth.gr
+    id: "386"
+    owner_id: "91"
+    owner_type: Host
+    created_at: 2006-08-03 16:29:16
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=it.uom.gr/CN=host/ui.it.uom.gr
+    id: "387"
+    owner_id: "189"
+    owner_type: Host
+    created_at: 2006-08-14 07:09:56
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=rb01.grid.auth.gr
+    id: "388"
+    owner_id: "190"
+    owner_type: Host
+    created_at: 2006-08-21 16:12:05
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grid.auth.gr/CN=bdii01.grid.auth.gr
+    id: "389"
+    owner_id: "191"
+    owner_type: Host
+    created_at: 2006-08-21 16:12:31
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=isabella.grnet.gr/CN=mon.isabella.grnet.gr
+    id: "390"
+    owner_id: "94"
+    owner_type: Host
+    created_at: 2006-09-01 08:51:53
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=glite-ce.hep.ntua.gr
+    id: "391"
+    owner_id: "192"
+    owner_type: Host
+    created_at: 2006-09-04 07:53:29
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=glite-se.hep.ntua.gr
+    id: "392"
+    owner_id: "193"
+    owner_type: Host
+    created_at: 2006-09-04 07:53:58
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=auth.gr/CN=George Tzanis
+    id: "393"
+    owner_id: "163"
+    owner_type: Person
+    created_at: 2006-09-11 10:44:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Theodoros E. Athanaileas
+    id: "394"
+    owner_id: "164"
+    owner_type: Person
+    created_at: 2006-09-11 10:44:35
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=Constantinos A. Kotsokalis
+    id: "395"
+    owner_id: "165"
+    owner_type: Person
+    created_at: 2006-09-11 15:08:55
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=grnet.gr/CN=host/wilbur.admin.grnet.gr
+    id: "396"
+    owner_id: "194"
+    owner_type: Host
+    created_at: 2006-09-12 15:53:37
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoi.gr/CN=Ioannis Papadopoulos
+    id: "397"
+    owner_id: "166"
+    owner_type: Person
+    created_at: 2006-09-12 15:53:44
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=auth.gr/CN=Eleni Katragkou
+    id: "398"
+    owner_id: "167"
+    owner_type: Person
+    created_at: 2006-09-15 13:52:00
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoi.gr/CN=Ioannis Evangelou
+    id: "399"
+    owner_id: "168"
+    owner_type: Person
+    created_at: 2006-09-15 13:52:08
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoi.gr/CN=Nikolaos Manthos
+    id: "400"
+    owner_id: "169"
+    owner_type: Person
+    created_at: 2006-09-15 13:52:24
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoi.gr/CN=Panagiotis Kokkas
+    id: "401"
+    owner_id: "170"
+    owner_type: Person
+    created_at: 2006-09-15 13:52:31
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ait.edu.gr/CN=Vasileios Mylonakis
+    id: "402"
+    owner_id: "171"
+    owner_type: Person
+    created_at: 2006-09-15 13:52:34
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ntua.gr/CN=Ioannis E. Foukarakis
+    id: "403"
+    owner_id: "172"
+    owner_type: Person
+    created_at: 2006-09-18 13:59:26
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoa.gr/CN=Martha Spyropoulou-Stassinaki
+    id: "404"
+    owner_id: "173"
+    owner_type: Person
+    created_at: 2006-09-18 13:59:41
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoa.gr/CN=Paraskevi Ganoti
+    id: "405"
+    owner_id: "174"
+    owner_type: Person
+    created_at: 2006-09-18 14:00:00
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoa.gr/CN=Spiridon Tzakis
+    id: "406"
+    owner_id: "175"
+    owner_type: Person
+    created_at: 2006-09-18 14:00:08
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoa.gr/CN=Annie Belogianni
+    id: "407"
+    owner_id: "176"
+    owner_type: Person
+    created_at: 2006-09-19 13:46:09
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=auth.gr/CN=Zagkouris Kimon
+    id: "408"
+    owner_id: "177"
+    owner_type: Person
+    created_at: 2006-09-19 13:46:17
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/gridctb.uoa.gr
+    id: "409"
+    owner_id: "195"
+    owner_type: Host
+    created_at: 2006-09-20 13:01:00
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=gridctb.uoa.gr/CN=host/master.gridctb.uoa.gr
+    id: "410"
+    owner_id: "196"
+    owner_type: Host
+    created_at: 2006-09-20 13:01:12
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=auth.gr/CN=Georgios Papadopoulos
+    id: "411"
+    owner_id: "178"
+    owner_type: Person
+    created_at: 2006-09-20 13:01:30
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=iasa.gr/CN=Efstathios Stiliaris
+    id: "412"
+    owner_id: "179"
+    owner_type: Person
+    created_at: 2006-09-20 13:01:39
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=ee.upatras.gr/CN=Andreas Alexopoulos
+    id: "413"
+    owner_id: "180"
+    owner_type: Person
+    created_at: 2006-09-20 13:03:23
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoa.gr/CN=Pantelis Balaouras
+    id: "414"
+    owner_id: "181"
+    owner_type: Person
+    created_at: 2006-09-21 16:39:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoa.gr/CN=Michael Gatzonis
+    id: "415"
+    owner_id: "182"
+    owner_type: Person
+    created_at: 2006-09-21 16:39:46
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=phys.uoa.gr/CN=Konstantinos Nikolopoulos
+    id: "416"
+    owner_id: "183"
+    owner_type: Person
+    created_at: 2006-09-25 15:28:21
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=auth.gr/CN=Malousi Andigoni
+    id: "417"
+    owner_id: "184"
+    owner_type: Person
+    created_at: 2006-09-26 15:16:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=auth.gr/CN=Vassilis Koutkias
+    id: "418"
+    owner_id: "185"
+    owner_type: Person
+    created_at: 2006-09-26 15:16:33
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=auth.gr/CN=Ioanna Chouvarda
+    id: "419"
+    owner_id: "186"
+    owner_type: Person
+    created_at: 2006-09-26 15:16:40
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoa.gr/CN=Ariadni Antonaki
+    id: "420"
+    owner_id: "187"
+    owner_type: Person
+    created_at: 2006-09-28 07:08:02
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=phys.uoa.gr/CN=Dimitris Fassouliotis
+    id: "421"
+    owner_id: "188"
+    owner_type: Person
+    created_at: 2006-09-28 07:08:09
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoa.gr/CN=Zacharias Roupas
+    id: "422"
+    owner_id: "189"
+    owner_type: Person
+    created_at: 2006-09-28 07:08:23
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=uoa.gr/CN=Petros Katsafados
+    id: "423"
+    owner_id: "190"
+    owner_type: Person
+    created_at: 2006-10-03 11:01:06
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=noa.gr/CN=Anastasios Dapergolas
+    id: "424"
+    owner_id: "191"
+    owner_type: Person
+    created_at: 2006-10-06 09:49:20
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=noa.gr/CN=Ioannis Bellas-Velidis
+    id: "425"
+    owner_id: "192"
+    owner_type: Person
+    created_at: 2006-10-06 09:49:27
+- !ruby/object:DistinguishedName 
+  attributes: 
+    subject_dn: /C=GR/O=HellasGrid/OU=marie.hellasgrid.gr/CN=cream-ce02.marie.hellasgrid.gr
+    id: "426"
+    owner_id: "197"
+    owner_type: Host
+    created_at: 2006-10-06 14:23:42

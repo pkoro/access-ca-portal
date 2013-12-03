@@ -1,0 +1,59 @@
+<% if flash[:notice]%>
+  <div align="center">
+    <div style="border: green solid 1px; padding: 10px; width: 450px; text-align: center">
+      <p><%= flash[:notice] %></p>
+    </div>
+  </div>
+  <br />
+<% end %>
+
+<%unless @hosts.empty? %>
+  <div align="right">
+    <%= link_to(image_tag("excel.jpg", :style => "border: 0", :alt => "Export in Excel format"), :action => "export_excel") %>
+  </div>
+<%end%>
+<div align="center">
+  <div style="width: 70 0px">
+    <%unless @hosts.empty? then %>
+      <h1>Κατάλογος διακομιστών υπο την διαχείριση του:<br /> <%= session[:usercert] %></h1>
+      <table class="tablelist" cellspacing="0" cellpadding="4px">
+        <tr>
+          <%= sort_header_tag('fqdn', :caption => 'FQDN')%>
+          <%= sort_header_tag('name_el', :caption => 'Οργανισμός', :association => 'organizations')%>
+          <%= sort_header_tag('created_at', :caption => 'Ημερ. Δημιουργίας')%>
+          <th style="color: #4F4F4F; font-weight: normal;">Λήξη πιστοποιητικού</th>
+          <th colspan="5"></th>
+        </tr>
+        <% @hosts.each_with_index do |host, i| %>
+          <% row_class = i%2 == 0 ? "even" : "odd" %> 
+          <tr class="<%= row_class %>">
+            <td><%= host.fqdn %> </td>
+            <td><%= host.organization.name_el %></td>
+            <td><%= host.created_at.mday %>/<%= host.created_at.month %>/<%= host.created_at.year %></td>
+            <%host_obj = Host.find_by_fqdn(host.fqdn)%>
+            <% if host_obj.certificate
+              @expire = X509Certificate::CertificateReader.new(host_obj.certificate.body).certificate[:ExpirationDate] %>
+              <td align="center"><%= @expire.mday.to_s + "/" + @expire.month.to_s + "/" + @expire.year.to_s %></td>            
+            <%else%>
+              <td align="center">Δεν υπάρχει ενεργό πιστοποιητικό</td>
+            <%end%>
+            <td><%= link_to 'Πληροφορίες', :action => 'show_host_details', :id => host %></td>
+          </tr>
+        <% end %>
+      </table>
+      <br />
+      <br/>
+      <div align="right" style="position: relative;">
+        <%= will_paginate @hosts %>
+      </div>
+    <% else %>
+      <h1>Δεν υπάρχει κανένας διακομιστής υπό την διαχείριση σας.</h1>
+    <%end%>
+  </div>
+  <% form_tag :action=> "find" do %>
+    FQDN: <input type="text" name="fqdn" value="">
+    <input type="submit" value="Εύρεση" class="textbox">  
+  <% end %>
+  <br/>
+  <%= link_to 'Καταχώρηση νέου διακομιστή', :action => 'manual_csr' %>
+</div>

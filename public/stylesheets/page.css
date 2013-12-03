@@ -1,0 +1,48 @@
+/* CSS Document */
+
+body {
+	color: #000000;
+	margin: 0;
+	background-color: #535353;
+} 
+
+h1 { /* color01 */
+	color: #8E2626;
+}
+
+h2 {
+	color: #666666;
+}
+
+
+.color00{
+	background-color: Black;
+}
+
+.color01{
+	background-color: #5a2626;
+}
+
+.color02{
+	background-color: #8E2626;
+}
+
+.color03{
+	background-color: #B44C4C;
+}
+
+
+.leftCol    {
+	padding: 15px 10px 15px 10px;
+	background-color: #cccccc;
+	border-right: 1px solid #999999;/* color 1 */
+}
+
+.pageFooter, .pageFooter:link, .pageFooter:active, .pageFooter:visited    {
+	color: White;
+	background-color:#FF6600 ; /* color 3 */
+}
+
+.pageFooter:hover {
+	color: black;
+}

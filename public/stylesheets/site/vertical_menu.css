@@ -1,0 +1,83 @@
+#menu {
+width: 177px;
+background: #eee;
+font: normal 11px verdana;
+}
+
+#menu a, #menu h2 {
+display: block;
+border-width: 1px;
+border-style: solid;
+border-color: #ccc #888 #555 #bbb;
+margin: 0;
+padding: 1px 3px;
+}
+
+#menu h2 {
+color: #fff;
+background: #000;
+text-transform: uppercase;
+}
+
+#menu a {
+color: #000;
+background-color: #CEDEFF;
+text-decoration: none;
+}
+
+#menu a:hover {
+color: #a00;
+}
+
+
+#menu ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#menu li {
+position: relative;
+}
+
+#menu ul ul {
+position: absolute;
+top: 0;
+left: 100%;
+width: 100%;
+}
+
+div#menu li, div#menu li:hover {
+position:relative;
+}
+
+div#menu li ul{
+position:absolute;
+top: -10px;
+left:100.1%;
+display:none;
+}
+
+div#menu ul ul,
+div#menu ul ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul li:hover ul ul ul
+{
+	display: none;
+}
+	
+
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul
+{
+	display: block;
+}
+
+/*body {
+behavior: url("/javascripts/csshover.htc");
+font-size: 100%;
+} 
+#menu ul li {float: left; width: 100%;}
+#menu ul li a {height: 1%;} 
+*/

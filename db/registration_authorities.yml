@@ -1,0 +1,5 @@
+--- 
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    id: "1"
+    description: Catch-all RA in GridAUTH

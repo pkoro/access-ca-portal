@@ -1,0 +1,17 @@
+<h1>Σφάλμα μη εγγεγραμένου χρήστη!</h1>
+<p>
+	<%= flash[:notice] %>
+</p>
+
+<% form_tag :action=> "load_session" do %>
+<fieldset id="editFormFields">
+	<legend>Αναζήτηση Εγγραφής Χρήστη</legend>
+	<table border="0" cellspacing="10" cellpadding="0">
+		<tr>
+			<td valign="top"><label for="person_email">Email</label></td>
+			<td><%= text_field(:person, :email, :class => "textbox") %></td>
+		</tr>
+	</table>
+	<input type="submit" value="Αναζήτηση" class="textbox" />
+</fieldset>
+<% end %>

@@ -1,0 +1,59 @@
+<table border="0" cellspacing="0" cellpadding="10px" width="700px">
+  <tr>
+    <td width="420px">
+      <table border="0" cellspacing="0" cellpadding="0" width="400px" class="PersonDetails">
+        <tr>
+          <th>Κατάσταση</th>
+          <td style="padding: 5px;"><%= @crt.status %></td>
+        </tr>
+        <tr>
+          <th>Ανανέωση στις</th>
+          <td style="padding: 5px;"><%= @crt.updated_at %></td>
+        </tr>
+        <tr>
+          <th>Αιτών</th>
+          <td style="padding: 5px;">
+            <%if @crt.owner_type == "Host"%>
+              <%= link_to @crt.owner.admin.email, :action => 'show_person_details', :id => @crt.owner.admin.id %>
+            <%else%>
+              <%= link_to @crt.owner.email, :action => 'show_person_details', :id => @crt.owner.id %>
+            <%end%>
+          </td>
+        </tr>
+        <tr>
+          <th>Πιστοποιούμενη οντότητα</th>
+          <% if @crt.owner_type == "Person" %>
+            <td style="padding: 5px;">
+              <%= link_to @crt.owner.email, :action => 'show_person_details', :id => @crt.owner.id %>
+            </td>
+          <% else %>
+            <td style="padding: 5px;">
+              <%= link_to @crt.owner.fqdn, :action => 'show_host_details', :id => @crt.owner.id %>
+            </td>
+          <% end %>
+        </tr>
+        <tr>
+          <th>Στοιχεία Πιστοποιητικού</th>
+          <td style="padding: 5px;">
+          <% @CrtReader.certificate[:dnElements].each_value do |dnEl| %>
+            <%= dnEl['Type'] %> = <%= dnEl['Value'] %>
+            <br/>
+          <%end %>
+          </td>
+        </tr>
+        <tr>
+          <th>Κλειδί</th>
+          <td style="padding: 5px;"><%= @CrtReader.certificate[:Certificate].public_key.type.to_s.split("::")[2] %>  (<%= @CrtReader.certificate[:Certificate].public_key.to_text.match(/\d+/)[0] %> bit)</td>
+        </tr>
+        <tr>
+          <th>Exponent</th>
+          <td style="padding: 5px;"><%= @CrtReader.certificate[:Certificate].public_key.to_text.split("Exponent:")[1].to_i.to_s %></td>
+        </tr>
+        <tr>
+          <th>Modulus</th>
+          <td style="padding: 5px;"><%= @CrtReader.certificate[:Certificate].public_key.to_text.split("Exponent:")[0].split("\n")[1..1000].join("<br />") %></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

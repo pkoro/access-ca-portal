@@ -1,0 +1,27 @@
+<div align="center">
+	<div style="width: 700px">
+		<h1>Πιστοποιητικά διακομιστών που έχουν υπογραφεί από την Α.Π.</h1>
+		<table class="tablelist" cellspacing="0" cellpadding="4px">
+  			<tr>
+    			<%= sort_header_tag('Hosts.fqdn', :caption => 'FQDN')%>
+				<%= sort_header_tag('Certificates.status', :caption => 'Status')%>
+				<%= sort_header_tag('Certificates.subject_dn', :caption => 'Υποκείμενο')%>
+				<%= sort_header_tag('Certificates.updated_at', :caption => 'Τελευταία ανανέωση')%>
+  			</tr>
+  			<% @certificates.each_with_index do |crt, i| %>
+            <%row_class = i%2 == 0 ? "even" : "odd"%>
+  		    <tr class='<%=row_class%>'>
+              <td><%=crt.owner.fqdn%></td>
+  			  <td><%=crt.status%></td>
+              <td><%=link_to(crt.subject_dn.reverse.chop.reverse.gsub("/","<br/>"), :action=>"show_certificate_details", :id=>Certificate.find_by_body(crt.body).id)%></td>
+              <td><%=crt.updated_at.day.to_s + "/" + crt.updated_at.month.to_s + "/" + crt.updated_at.year.to_s%></td>
+            </tr>
+			<% end %>
+		</table>
+		<br />
+		<br/>
+		<div align="right" style="position: relative;">
+			<%= will_paginate @certificates %>
+		</div>
+	</div>
+</div>

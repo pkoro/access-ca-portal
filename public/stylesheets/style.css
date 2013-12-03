@@ -1,0 +1,167 @@
+body {
+	font: Verdana, Arial, Helvetica;
+}
+
+fieldset {
+	border: #26a solid 1px;
+	width: 450px;
+	padding-left: 10px; padding-right: 10px;
+	padding-bottom: 10px; padding-top: 10px;
+}
+
+#leftBox {
+	padding-top: 15px ;
+}
+.textbox {
+	color: #26a;
+	background: #feb;
+	border: #26a solid 1px;
+	margin: 0 1em 10px 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.csrbox {
+	color: #26a;
+	background: #feb;
+	border: #26a solid 1px;
+	margin: 0 1em 10px 0;
+	font-family: Courier;
+	font-size: 10px;
+}
+
+p {
+	color: #666666;
+	font-family: Verdana, Arial, Helvetica;
+	font-style: normal;
+	font-size: 12px;
+}
+
+li.bullets {
+	color: #666666;
+	font-family: Verdana, Arial, Helvetica;
+	font-style: normal;
+	font-size: 12px;
+}
+
+legend {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: bold;
+	font-size: 12px;
+	color: red;
+}
+
+.blue_box {
+	background-image: url(/images/bg-grad-blue-small.gif);
+	border-right: #cbdbff 1px solid;					
+	border-left: #cbdbff 1px solid;
+	padding-left:10px; padding-right:10px;
+}
+
+.error_box {
+	background-image: url(/images/bg-grad-red-small.png);
+	background-position: center;
+	border-right: #f66b6e 1px solid;					
+	border-left: #f66b6e 1px solid;
+	padding-left:10px; padding-right:10px;
+	padding-top: 10px; padding-bottom: 10px;
+	width: 450px;
+}
+
+.error_box h2 {
+	color: #f66b6e;
+}
+
+
+.error_box li {
+	/* list-style-type: circle; */
+	color: red;
+}
+
+.fieldWithErrors input {
+	border: red 2px solid;
+}
+
+.tablelist tr {
+	border-top: #cbdbff 1px solid;
+	border-bottom: #cbdbff 1px solid;
+}
+
+.tablelist td {
+	border-top: #cbdbff 1px solid;
+	border-bottom: #cbdbff 1px solid;
+	border-left: #cbdbff 1px solid;
+	border-right: #cbdbff 1px solid;
+}
+
+.tablelist tr.even {
+	background-color: #ecfbff;
+}
+
+.tablelist tr.odd {
+	background-color: #ffffff;
+}
+
+.PersonDetails {
+	border: grey 1px solid;
+}
+
+.PersonDetails th {
+	background-color: #ecfbff;
+	border-bottom: grey 1px solid;
+	border-right: grey 1px solid;
+}
+
+.PersonDetails td {
+	background-color: #ffffff;
+	border-bottom: grey 1px solid;
+}
+
+#Procedure li.leftMenuHead {
+	list-style: none;
+	font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+	padding: 0;
+	border-bottom: 1px solid Black;
+	margin-top: 10px;
+}
+
+#Procedure a{
+	display: block;
+	margin-top:5px;
+	color: #666666;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#Procedure li {
+	display: block;
+	margin-top:5px;
+	color: green;
+	text-decoration: none;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+#Procedure ul {
+	display: block;
+	margin-top:5px;
+	text-decoration: none;
+	font-weight: bold;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+.accountMainPageMenu ul {
+	display: block;
+	margin-top:5px;
+	text-decoration: none;
+	font-weight: bold;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+

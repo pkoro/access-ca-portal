@@ -1,0 +1,13 @@
+--- 
+- !ruby/object:RaStaffMembership 
+  attributes: 
+    ra_id: "1"
+    role: "1"
+    member_id: "35"
+    id: "1"
+- !ruby/object:RaStaffMembership 
+  attributes: 
+    ra_id: "1"
+    role: "1"
+    member_id: "1"
+    id: "2"

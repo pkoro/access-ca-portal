@@ -1,0 +1,43 @@
+<div align="center">
+  <div style="width: 70	0px">
+    <h1>Αιτήσεις πιστοποιητικών σε αναμονή για επιβεβαιωσή από την Α.Τ.</h1>
+	<br />
+    <table class="tablelist" id="tablelist" cellspacing="0" cellpadding="4px">
+	<thead>
+      <tr>
+		<th>ID</th>
+		<th>Τύπος</th>
+		<th>FQDN/E-mail</th>
+		<th>Οργανισμός</th>
+		<th>Ημερομηνία αίτησης</th>
+		<th>Αιτών</th>
+      </tr>
+	 </thead>
+      <% @certificate_requests.each_with_index do |csr, i| %>
+        <%= create_csr_list_row(csr,i) %>
+      <% end %>
+    </table>
+    <br />
+  </div>
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('#tablelist').dataTable({
+		"sPaginationType": "full_numbers",
+		"bLengthChange": false,
+		"iDisplayLength": 5,
+		"bSortClasses": false,
+		"aaSorting": [[ 4, "desc" ]],
+		"aoColumns": [
+        			{ "sType": "numeric" },
+		            { "sType": "string" },
+		            { "sType": "string" },
+		            { "sType": "string" },
+		            { "sType": "date" },
+		            { "sType": "string" },
+					]
+				}
+		);
+} );
+</script>

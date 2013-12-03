@@ -1,0 +1,17 @@
+Τα πιστοποιητικά για τις ακόλουθες οντότητες θα λήξουν σε λιγότερο από ΜΙΑ ΕΒΔΟΜΑΔΑ:
+<% @expire_in_a_week.each do |crt| %>
+<%=	if crt.owner_type == "Host" 
+		crt.owner.fqdn + " (Περισσότερες πληροφορίες στο: https://access.hellasgrid.gr/ra/show_certificate_details/" + crt.id.to_s + " )"
+	else
+		crt.owner.email + " (Περισσότερες πληροφορίες στο: https://access.hellasgrid.gr/ra/show_certificate_details/" + crt.id.to_s + " )"
+	end %>
+<% end %>
+
+Τα πιστοποιητικά για τις ακόλουθες οντότητες θα λήξουν σε λιγότερο από ENA MHNA:
+<% @expire_in_a_month.each do |crt| %>
+<%=	if crt.owner_type == "Host" 
+		crt.owner.fqdn + " (Περισσότερες πληροφορίες στο: https://access.hellasgrid.gr/ra/show_certificate_details/" + crt.id.to_s + " )"
+	else
+		crt.owner.email + " (Περισσότερες πληροφορίες στο: https://access.hellasgrid.gr/ra/show_certificate_details/" + crt.id.to_s + " )"
+	end %>
+<% end %>

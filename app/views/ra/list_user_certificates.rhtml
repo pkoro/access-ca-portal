@@ -1,0 +1,44 @@
+<div align="center">
+	<div style="width: 700px">
+		<h1>Πιστοποιητικά χρηστών που έχουν υπογραφεί από την Α.Π.</h1>
+		<br />
+		<table class="tablelist" id="tablelist" cellspacing="0" cellpadding="4px">
+			<thead>
+  			<tr>
+    			<th>Ονοματεπώνυμο</th>
+				<th>Kατάσταση</th>
+				<th>Υποκείμενο</th>
+				<th>Τελευταία ανανέωση</th>
+  			</tr>
+			</thead>
+  			<% @certificates.each_with_index do |crt, i| %>
+            <%row_class = i%2 == 0 ? "even" : "odd"%>
+  		    <tr class='<%=row_class%>'>
+              <td><%=link_to(crt.owner.last_name_en + " " + crt.owner.first_name_en,:action=>"show_person_details",:id=>crt.owner.id)%></td>
+  			  <td><%=crt.status%></td>	
+              <td><%=link_to(crt.subject_dn.reverse.chop.reverse.gsub("/","<br/>"), :action=>"show_certificate_details", :id=>crt.id)%></td>
+              <td><%=crt.updated_at.day.to_s + "/" + crt.updated_at.month.to_s + "/" + crt.updated_at.year.to_s%></td>
+            </tr>
+			<% end %>
+		</table>
+	</div>
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('#tablelist').dataTable({
+		"sPaginationType": "full_numbers",
+		"bLengthChange": false,
+		"iDisplayLength": 5,
+		"bSortClasses": false,
+		"aaSorting": [[ 3, "desc" ]],
+		"aoColumns": [
+		            { "sType": "string" },
+		            { "sType": "string" },
+		            { "sType": "string" },
+		            { "sType": "date" },
+					]
+				}
+		);
+} );
+</script>

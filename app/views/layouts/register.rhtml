@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title><%= page_title %></title>
+<%= stylesheet_link_tag 'style' %>
+<%= stylesheet_link_tag 'main' %>
+<%= stylesheet_link_tag 'page' %>
+<% if params[:action] == "iexplorer_vista_csr" %>
+<%= javascript_include_tag 'ieVistaCSR.vbs' %>
+<% end %>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="/javascripts/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30053219-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<% if params[:action] == "iexplorer_vista_csr" %>
+<body onload="enumCSPVista()"> 
+<% else %> 
+<body>
+<% end %>
+<table cellspacing="0" cellpadding="0" align="center" border="0" width="980">
+
+  <tr>
+    <td class="color00" align="right">
+	
+	<span class="pageTopMenu"><% if session[:usercert] %> Logged in as: <%=  session[:usercert] %><% else %>Not Logged In<% end %></span>  &nbsp; &nbsp;
+	</td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" align="center" border="0" width="980">
+  <tr>
+    <td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+          <td style="background: url(/images/banner-user-reg.jpg) no-repeat left; " height="157" width="980"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td class="color00" height="20">
+		<!--
+		<ul id="topMenu">
+        <li id="cms"> <a href="">blabla;</a></li>
+        <li id="newusers"> <a href="">Νέοι χρήστες </a>
+          <ul>
+            <li id="newusers/register"><%= link_to("Αίτηση ψηφιακού πιστοποιητικού", :action => "registration_form") %></li>
+            <li id="users/joinseevo"> <%= link_to("Αίτηση πρόσβασης στο SEE VO <br />(πιστοποίηση με φηφιακό πιστοποιητικό)", "https://www.grid.auth.gr/services/voms/SEE/request.php") %></li>
+            <li id="users/joinseevo2"> <%= link_to("Αίτηση πρόσβασης σε UI <br />(πιστοποίηση με φηφιακό πιστοποιητικό)", :controller => "account", :action => "request_ui_access") %></li>
+          </ul>
+        </li>
+        <li id="users"> <a href="">Υπάρχoντες χρήστες</a>
+          <ul>
+			<li id="users/certificaterenewal"> <a href="">Ανανέωση πιστοποιητικού</a></li>
+          </ul>
+        </li>
+        <li id="admin"> <a href="">ΣΕΜΙΝΑΡΙΑ</a></li>
+      </ul>
+   -->
+	<span class="pageTopMenu" style="padding-left: 10px">
+		<%= webapp_path %>
+	</span>
+	</td>
+  </tr>
+
+  <tr>
+    <td><table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+		  <% if params[:action] != "index" %>
+          <td class="leftCol" valign="top" width="200" id="leftColContainer" style="padding: 1px">
+			<ul id="Procedure" style="padding: 5px">
+            	<li class="leftMenuHead">Διαδικασία</li>
+				<li><%= link_to_unless_current "Καταχώρηση προσωπικών στοιχείων", :action => "registration_form" %></li>
+				<% if (params[:action] == "iexplorer_csr") || (params[:action] == "mozilla_csr") || (params[:action] == "manual_csr") %>
+				<li>Αίτηση ψηφιακού πιστοποιητικόυ</li>
+				<% else %>
+				<li><%= link_to_unless_current "Αίτηση ψηφιακού πιστοποιητικού", :action => "csr_form" %></li>
+			  	<% end %>
+				<li><%= link_to_unless_current "Αποστολή αιτήσεως", :action => "csr_receipt" %></li>
+            	<br /><br /><br /><br />
+				<li class="leftMenuHead">Επικοινωνία</li>
+				<li><%= mail_to "support@grid.auth.gr", "GridAUTH Support", :encode => "javascript" %></li>
+			</ul>
+            <div  style="margin-top:5px;color:#505050;text-decoration:none;padding-left:5px;font-weight:bold;">
+            <% if @page_info %>
+				<%= @page_info %>
+			<% end %>
+			</div>
+          </td>
+		  <% else %>
+			<td class="contentBody" width="100">
+				&nbsp;
+			</td>
+		  <% end %>
+		
+          <td class="contentBody" valign="top" width="450" id="contentContainer">
+          	<%= @content_for_layout %>
+          </td>
+			<% if params[:controller] == "register" && params[:action] == "registration_form" %>
+      <td width="250" class="contentBody" valign="top" id="leftBox">
+			<fieldset style="width: 230px; padding-left: 5px; padding-right: 1px;">
+				<legend>Υπάρχοντες Χρήστες</legend>
+				<p style="padding-right: 20px; text-align: left;">
+					Αν στο παρελθόν είχατε αποκτήσει ψηφιακό πιστοποιητικό από την Α.Π. ΗellasGrid CA
+					το οποίο έχει πλέον λήξει , συμπληρώστε στο πεδίο που ακολουθεί το e-mail σας για να
+					προχωρήσετε στη διαδικασία αίτησης καινούργιου φηφιακού πιστοποιητικού.
+				</p>	
+				<% form_tag :action=> "load_session" do %>
+					<div align="left" style="padding-right: 20px">
+					<label  for="person_email"><div style="text-align: left;">Αναζήτηση E-mail</div></label>
+					<%= text_field(:person, :email, :class => "textbox", :size => "20") %>
+					</div>
+					<input type="submit" value="Αναζήτηση" class="textbox" />
+				</p>
+				<% end %>
+			</fieldset>
+			<br />
+	    </td>
+			<% end %>
+			
+        </tr>
+       <!-- <tr>
+          <td width="200"><img height="1" width="200" src="style/spacer.gif"></td>
+          <td width="630"><img height="1" width="422" src="style/spacer.gif"></td>
+        </tr>
+		-->
+      </table></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="pageFooter">AUTH SCC (HellasGrid User Registration r<%= Config.revision %>)</td>
+  </tr>
+</table>
+<p align="center">
+	<%= link_to(image_tag("eu.gif", :style => "vertical-align: middle; border-style: solid; border-width: 2px"),"http://europa.eu.int") %>
+	&nbsp;
+	<%= link_to(image_tag("ktp.gif", :style => "vertical-align: middle; border-style: solid; border-width: 2px"),"http://www.infosoc.gr") %>
+	&nbsp;
+	<%= link_to(image_tag("HellasGrid.png", :style => "vertical-align: middle; border-style: solid; border-width: 2px"), "http://www.hellasgrid.gr") %>
+</p>
+<p align="center">
+	<%= link_to(image_tag("grnet.gif", :style => "vertical-align: middle; border-style: solid; border-width: 2px"), "http://www.grnet.gr") %>
+</p>
+</body>
+</html>

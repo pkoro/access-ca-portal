@@ -1,0 +1,100 @@
+/* *************************************************************************
+ *	Horizontal, top-2-bottom topMenu
+ * *************************************************************************/
+#topMenu, #topMenu ul{
+	/* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	display: block;
+	z-index: 1000;
+}
+
+#topMenu li {	
+/*width: 120px; /* width needed or else Opera goes nuts */
+	border: 0;
+	padding: 0;
+	margin: 0;
+	float: left;
+	position: relative;
+	background: #000;
+	width: 140px;
+	
+}
+
+#topMenu a {
+	display: block;
+	text-decoration: none;
+	padding: 3px 5px 3px 10px;
+	color: White;
+}
+
+#topMenu li li a:hover {
+	background: #909090;
+}
+
+#topMenu li li {
+	border: 0;
+	width: 100%;
+	border-bottom: 1px solid #A2A2A2;
+}
+
+#topMenu li ul {/* second-level lists */
+	position: absolute;
+	display: none;
+	width: 180px;
+	border-left: 1px solid #A2A2A2;
+	border-right: 1px solid #A2A2A2;
+	border-top: 1px solid #A2A2A2;
+}
+
+
+
+#topMenu li ul ul {	/*third-and-above-level lists */
+	left: 100%;
+	margin-top: -1.5em;
+}
+
+#topMenu li:hover>ul {
+	display: block;
+}
+
+#topMenu li.over ul ul, #topMenu li.over ul ul ul {
+	display: none; 
+}
+
+#topMenu li.over ul, #topMenu li li.over ul, #topMenu li li li.over ul { /* lists nested under hovered list items */
+	display: block;
+}
+
+/* Holly Hack. IE Requirement \*/
+* html #topMenu #admin {width: 130px;}
+* html #topMenu #products {width: 150px;}
+* html #topMenu #vendors  {width: 110px;}
+* html #topMenu #categories {width: 110px;}
+* html #topMenu #admin a.selected  {height: 20px;}
+* html #topMenu #products a.selected  {height: 20px;}
+* html #topMenu #vendors a.selected  {height: 20px;}
+* html #topMenu #categories a.selected  {height: 20px;}
+/* End */
+
+#topMenu #admin {	width: 140px; border-right: 1px solid #A2A2A2;}
+#topMenu a:hover {background-color: #f6b833;}
+#topMenu #admin a.selected {padding: 3px 8px 0px 8px;	background-color: #f4a600;	color: white; height: 17px; text-decoration: underline;}
+#topMenu #admin a.selected:hover {color: Black;}
+
+#topMenu #products {width: 150px; border-right: 1px solid #A2A2A2;}
+#products a:hover {background-color: #3390b2;}
+#topMenu #products a.selected {padding: 3px 8px 0px 8px;	background-color: #006daf;	color:  white; height: 17px; text-decoration: underline;}
+#topMenu #products a.selected:hover {color: Black;}
+
+#topMenu #vendors{width: 110px;	border-right: 1px solid #A2A2A2;}
+#vendors a:hover {background-color: #91a8a3;}
+#topMenu #vendors a.selected {padding: 3px 8px 0px 8px;	background-color: #76928c;	color:  white; height: 17px; text-decoration: underline;}
+#topMenu #vendors a.selected:hover {color: Black;}
+
+#topMenu #categories{width: 105px;	border-right: 1px solid #A2A2A2;}
+#categories a:hover {background-color: #c08962;}
+#topMenu #categories a.selected {padding: 3px 8px 0px 8px;	background-color: #A58120;	color:  white; height: 17px; text-decoration: underline;}
+#topMenu #categories a.selected:hover {color: Black;}

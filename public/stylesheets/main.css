@@ -1,0 +1,538 @@
+/* CSS Document */
+h1 {
+	font: bold 18px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin-top: 15px;
+	margin-bottom: 3px;
+}
+
+h2 {
+	font: bold 14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align:left;
+	margin: 12px 0px 0px 0px;
+	padding: 0;
+	margin-bottom: 5px;
+}
+
+a  {
+	font-weight: normal;
+	color: #4F4F4F;
+	white-space: normal;
+	text-decoration: underline;
+}
+
+a:hover   {
+	color: #620000;
+}
+
+
+.pngImage {
+behavior: url("/core/style/pngbehavior.htc"); 
+}
+
+/*
+fieldset{
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+*/
+.fieldDescr{
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.pageTopMenu, .pageTopMenu:link, .pageTopMenu:active, .pageTopMenu:visited{
+	font: normal 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #BEBEBE;
+}
+
+.pageTopMenu:hover{
+	color: White;
+}
+
+.pathMenu, .pathMenu:active, .pathMenu:visited    {
+	font-weight: bold;
+	font-size: 11px;
+	color: #073A79;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	text-decoration: none;
+}
+
+.pathMenu:hover    {
+	color: #205AA1;
+	text-decoration: underline;
+}
+
+
+.comment    {
+	color: #666666;
+	font: italic normal 11px "MS Sans Serif", Geneva, sans-serif;
+}
+
+#rightColContainer{
+	background: #FFFFFF url(page_spacer.gif) repeat-y left;	
+	padding: 15px 10px 15px 10px;
+}
+
+.rightCol    {
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#leftColContainer{
+	padding: 15px 10px 15px 10px;
+}
+
+
+.leftCol    {
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#contentContainer {
+	padding: 15px 15px 15px 25px;
+}
+
+.contentBody    {
+	color: Black;
+	background: url(/images/bg1.png) no-repeat center;
+	background-color: White;
+	font: normal 11px/16px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align:justify;
+}
+
+.contentFooter, .contentFooter:link, .contentFooter:active, .contentFooter:visited    {
+	font: bold 10px/14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #666666;
+}
+
+.contentFooter:hover {
+	color: #000000;
+}
+
+.summaryHead    {
+	font: bold 11px/14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.summary    {
+	font: normal 11px/14px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #2D2D2D;
+}
+
+
+.summaryFooter, .summaryFooter:active, .summaryFooter:visited    {
+	font:bold 10px Verdana,Arial,Helvetica,sans-serif;
+	color: #666666;
+}
+
+.summaryFooter:hover    {
+	color: #000000;
+}
+
+.pageFooter, .pageFooter:link, .pageFooter:active, .pageFooter:visited    {
+	color: White;
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	padding: 5px 8px;
+	text-align: center;
+}
+
+.pageFooter:hover    {
+	color: Black;
+}
+
+.date    {
+	font:normal 10px Verdana,Arial,Helvetica,sans-serif;
+	color: Black;
+}
+
+
+
+.more, .more:link, .more:active, .more:visited   {
+	font: bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	margin-top: 4px;
+}
+
+.sectionTitle{
+	font: bold 18px Arial, Helvetica, sans-serif;
+}
+
+/* *************************************************************************
+ *	search
+ * *************************************************************************/
+ .color01 #searchForm a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.searchResultsTitle, .searchResultsTitle:link, .searchResultsTitle:visited, .searchResultsTitle:selected{
+	font: bold 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	color: #1D516D;
+	padding-top: 15px;
+}
+.searchResultsTitle:hover{
+	color: #2B8DBE;
+} 
+.searchResultsDescr{
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #565656;
+}
+.searchResultsPath{
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #434343;
+}
+/* *************************************************************************
+ *	file
+ * *************************************************************************/
+#file{
+	display: block;
+	margin-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font: normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#file img {
+	position: relative;
+	float: left;
+	padding-top: 3px;
+	padding-right: 15px;
+}
+#file h2{
+	font-size: 12px;
+	color: #434343;
+	margin-bottom: 3px;
+	border-bottom: 1px dotted #A5A5A5;
+}
+/* *************************************************************************
+ *	news list
+ * *************************************************************************/
+#news, #news ul{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#news li {
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#news li.newsHead{
+	font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+	padding: 0;
+	margin-top: 20px;
+	border-bottom: 1px solid Black;
+}
+
+#news a{
+	display: block;
+	margin-top: 5px;
+	color: #505050;
+	text-decoration: none;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+#news a:hover{
+	color: Black;
+	text-decoration: underline;
+}
+
+#news .newsBody{
+	display: block;
+	color: #505050;
+	font: normal 11px/12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin-left: 10px;
+}
+
+
+.newsDate   {
+	font: bold 11px/12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin-top: 4px;
+}
+
+
+/* *************************************************************************
+ *	links list
+ * *************************************************************************/
+
+#links, #links ul{
+	display: block;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#links li {
+margin-bottom: 0px;
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#links li.linksHead{
+	font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+	padding: 0;
+	border-bottom: 1px solid Black;
+	margin-top: 10px;
+}
+
+#links a{
+	display: block;
+	margin-top:5px;
+	color: #666666;
+	text-decoration: none;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+#links a:hover{
+	color: Black;
+	text-decoration: underline;
+}
+
+#links .linkSummary{
+	display: block;
+	color: #404040;
+	font: normal 11px/12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 10px;
+	padding: 0;
+}
+
+
+
+/* *************************************************************************
+ *	search form
+ * *************************************************************************/
+
+#searchForm{
+	padding: 0;
+	margin: 0px 0px 0px 5px;
+	
+}
+
+#searchForm form{
+		
+}
+
+
+#searchForm fieldset{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+* html #searchForm #button {
+	margin-top:-3;
+}
+
+
+#searchForm #query {
+	font: normal 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #616161;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	height: 19px;
+	width: 150px;
+	border: 1px solid #3E3E3E;
+}
+
+/* *************************************************************************
+ *	content image
+ * *************************************************************************/ 
+#cImame{
+	margin: 0;
+	padding: 0;
+}
+
+#cImage img{
+	border: 1px solid Black;
+}
+
+#cImage .description{
+	background: #E6E6E6;
+	display: block;
+	font: italic normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align:left;
+}
+
+
+/* *************************************************************************
+ *	list table
+ * *************************************************************************/
+
+.listTableBackground    {
+	background-color: Black;
+}
+
+.listTableHeading    {
+	font-weight: bold;
+	font-size: 12px;
+	background-color: Black;
+	color: White;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	white-space: normal;
+}
+
+.listTableColumnHeaders    {
+	color: White;
+	background: #8095AB;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	white-space: normal;
+}
+
+.listTableOddRow, .listTableOddRow:link, .listTableOddRow:active, .listTableOddRow:visited    {
+	font-weight: normal;
+	font-size: 11px;
+	background-color: White;
+	color: Black;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	white-space: normal;
+}
+
+.listTableOddRow:hover    {
+	color: #ff0000;
+}
+
+
+.listTableEvenRow, .listTableEvenRow:link, .listTableEvenRow:active, .listTableEvenRow:visited    {
+	font-weight: normal;
+	font-size: 11px;
+	background-color: #E8F2F6;
+	color: Black;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	white-space: normal;
+}
+
+.listTableEvenRow:hover    {
+	color: #ff0000;
+}
+
+.listTableSelectedRow, .listTableSelectedRow:link, .listTableSelectedRow:active, .listTableSelectedRow:visited    {
+	font-weight: normal;
+	font-size: 11px;
+	background-color: #E8F2F6;
+	color: Black;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	white-space: normal;
+}
+.listTableSelectedRow:hover{
+	background-color: #E8F2F6;
+	color: Black;
+}
+
+
+.listTableActiveCell, .listTableActiveCell:link, .listTableActiveCell:active, .listTableActiveCell:visited {
+	font-weight: normal;
+	font-size: 11px;
+	background-color: #778899;
+	color: #F4F5FB;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	white-space: normal;
+}
+
+.listTableActiveCell:hover{
+		background-color: #E8F2F6;
+	color: Black;
+}
+
+
+/* *************************************************************************
+ *	Horizontal, top-2-bottom topMenu
+ * *************************************************************************/
+#topMenu, #topMenu ul{
+	/* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	display: block;
+	z-index: 1000;
+}
+
+
+
+#topMenu li {	
+    width: 120px; /* width needed or else Opera goes nuts */
+	border: 0;
+	padding: 0;
+	margin: 0;
+	float: left;
+	position: relative;
+	background: Black;
+	
+}
+
+#topMenu a {
+	display: block;
+	text-decoration: none;
+	padding: 3px 5px 3px 10px;
+	color: White;
+}
+
+#topMenu li li a:hover {
+	background: #909090;
+}
+
+
+
+#topMenu li li {
+	border: 0;
+	width: 100%;
+	border-bottom: 1px solid #A2A2A2;
+}
+
+#topMenu li ul {/* second-level lists */
+	position: absolute;
+	display: none;
+	width: 180px;
+	border-left: 1px solid #A2A2A2;
+	border-right: 1px solid #A2A2A2;
+	border-top: 1px solid #A2A2A2;
+}
+
+
+
+#topMenu li ul ul {	/*third-and-above-level lists */
+	left: 100%;
+	margin-top: -1.5em;
+}
+
+#topMenu li:hover>ul {
+	display: block;
+}
+
+#topMenu li.over ul ul, #topMenu li.over ul ul ul {
+	display: none; 
+}
+
+#topMenu li.over ul, #topMenu li li.over ul, #topMenu li li li.over ul { /* lists nested under hovered list items */
+	display: block;
+}
+
+/* Holly Hack. IE Requirement \*/
+* html #topMenu #cms  {width: 140px;}
+* html #topMenu #newusers  {width: 100px;}
+* html #topMenu #users  {width: 150px;}
+* html #topMenu #admin {width: 105px;}
+/* End */
+
+#topMenu #cms {	width: 140px; border-right: 1px solid #A2A2A2;}
+#cms a:hover {background-color: #f6b833;}
+#topMenu #cms a.selected {padding: 3px 8px 0px 8px;	background-color: #f4a600;	color: white; height: 17px; text-decoration: underline;}
+#topMenu #cms a.selected:hover {color: Black;}
+
+#topMenu #newusers {width: 100px; border-right: 1px solid #A2A2A2;}
+#newusers a:hover {background-color: #3390b2;}
+#topMenu #newusers a.selected {padding: 3px 8px 0px 8px;	background-color: #006daf;	color:  white; height: 17px; text-decoration: underline;}
+#topMenu #newusers a.selected:hover {color: Black;}
+
+#topMenu #users {width: 150px;	border-right: 1px solid #A2A2A2;}
+#users a:hover {background-color: #91a8a3;}
+#topMenu #users a.selected {padding: 3px 8px 0px 8px;	background-color: #76928c;	color:  white; height: 17px; text-decoration: underline;}
+#topMenu #users a.selected:hover {color: Black;}
+
+#topMenu #admin {width: 105px;	border-right: 1px solid #A2A2A2;}
+#admin a:hover {background-color: #c08962;}
+#topMenu #admin a.selected {padding: 3px 8px 0px 8px;	background-color: #A58120;	color:  white; height: 17px; text-decoration: underline;}
+#topMenu #admin a.selected:hover {color: Black;}

@@ -1,0 +1,38 @@
+<fieldset>
+  <legend>ΠΡΟΣΟΧΗ</legend>
+  <p>
+    Για να χρησιμοποιήσετε την εφαρμογή θα πρέπει να εισάγετε το πιστοποιητικό της Α.Π. HellasGrid CA (<a href="http://crl.grid.auth.gr/hellasgrid-ca-2006/cert/82b36fca.cacrt">εισαγωγή</a>) καθώς επίσης και της Α.Π. HellasGrid Root CA (<a href="http://crl.grid.auth.gr/hellasgrid-root-ca-2006/cert/28a58577.cacrt">εισαγωγή</a>) που έχει υπογράψει αυτό το πιστοποιητικό. Περισότερες πληροφορίες για την Α.Π. HellasGrid CA μπορείτε να βρείτε στον <%= link_to "δικτυακό της τόπο", "http://www.grid.auth.gr/en/services/hellasgrid-ca/" %>.
+  </p>
+</fieldset>
+<br />
+
+
+<h1>Διαδικασία πρόσβασης στο Grid για νέους χρήστες</h1>
+
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="50px"><%= link_to(image_tag("one.png", :style => "border: 0"), {:action => "registration_form"})%></td>
+		<td><p>Αποκτήστε το ψηφιακό πιστοποιητικό σας από την εθνική Αρχή Πιστοποίησης HellasGrid CA
+			<%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "registration_form"})%>
+			</p></td>
+	</tr>
+	<tr>
+		<td width="50px"><%= link_to(image_tag("two.png", :style => "border: 0"), {:controller => "account", :action => "ui_access_form"}) %></td>
+		<td><p>Αποκτήστε πρόσβαση σε ένα από τα User Interfaces του HellasGrid (Απαιτείται ψηφιακό πιστοποιητικό)
+			<%= link_to(image_tag("go.jpg", :style => "border: 0"), {:controller => "account", :action => "ui_access_form"}) %></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50px"><%= link_to(image_tag("three.png", :style => "border: 0"), :controller => "account", :action => "index") %></td>
+		<td><p>Εγγραφείτε σε VO (Απαιτείται ψηφιακό πιστοποιητικό)
+			<%= link_to(image_tag("go.jpg", :style => "border: 0"), :controller => "account", :action => "index") %></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50px"><%= link_to(image_tag("four.png", :style => "border: 0"), {:controller => "host", :action => "list"}) %></td>
+		<td><p>Υποβάλετε αίτηση ψηφιακού πιστοποιητικού για διακομιστή ή υπηρεσία  (Απαιτείται ψηφιακό πιστοποιητικό)
+			<%= link_to(image_tag("go.jpg", :style => "border: 0"), {:controller => "host", :action => "list"}) %></p>
+		</td>
+	</tr>
+</table>
+

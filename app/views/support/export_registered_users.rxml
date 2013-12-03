@@ -1,0 +1,118 @@
+xml.instruct! :xml, :version=>"1.0", :encoding=>"UTF-8" 
+xml.Workbook({
+  'xmlns'      => "urn:schemas-microsoft-com:office:spreadsheet", 
+  'xmlns:o'    => "urn:schemas-microsoft-com:office:office",
+  'xmlns:x'    => "urn:schemas-microsoft-com:office:excel",    
+  'xmlns:html' => "http://www.w3.org/TR/REC-html40",
+  'xmlns:ss'   => "urn:schemas-microsoft-com:office:spreadsheet" 
+  }) do
+
+  xml.Styles do
+   xml.Style 'ss:ID' => 'Default', 'ss:Name' => 'Normal' do
+     xml.Alignment 'ss:Vertical' => 'Bottom'
+     xml.Borders
+     xml.Font 'ss:FontName' => 'Verdana'
+     xml.Interior
+     xml.NumberFormat
+     xml.Protection
+   end
+   xml.Style 'ss:ID' => 's22' do
+     xml.NumberFormat 'ss:Format' => 'General Date'
+   end
+  end
+
+  xml.Worksheet 'ss:Name' => 'Users' do
+    xml.Table do
+      # Header
+      xml.Row do
+        xml.Cell do
+          xml.Data 'Όνομα Ελληνικά', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Επίθετο Ελληνικά', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Όνομα Αγγλικά', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Επίθετο Αγγλικά', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Ιδιότητα', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Οργανισμός', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Τμήμα', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'e-mail', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Τηλέφωνο', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Επιστ. Τομέας', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Ημερομηνία Εγγραφής', 'ss:Type' => 'String'
+        end
+        xml.Cell do
+          xml.Data 'Subject DN', 'ss:Type' => 'String'
+        end
+      end
+
+      # Rows
+      for person in @people
+        xml.Row do
+          xml.Cell do
+            xml.Data person.first_name_el, 'ss:Type' => 'String'
+          end
+          xml.Cell do
+            xml.Data person.last_name_el, 'ss:Type' => 'String'
+          end
+          xml.Cell do
+            xml.Data person.first_name_en, 'ss:Type' => 'String'
+          end
+          xml.Cell do
+            xml.Data person.last_name_en, 'ss:Type' => 'String'
+          end
+          xml.Cell do
+            xml.Data person.position, 'ss:Type' => 'String'
+          end
+          xml.Cell do
+            xml.Data person.organization.name_el , 'ss:Type' => 'String'
+          end
+          xml.Cell do
+            xml.Data person.department , 'ss:Type' => 'String'
+          end
+          xml.Cell do
+            xml.Data person.email , 'ss:Type' => 'String'
+          end
+          xml.Cell do
+            xml.Data person.work_phone , 'ss:Type' => 'String'
+          end
+          xml.Cell do
+            if person.scientific_field
+              xml.Data person.scientific_field.description , 'ss:Type' => 'String'
+            else
+              xml.Data "" , 'ss:Type' => 'String'
+            end            
+          end
+          xml.Cell("ss:StyleID" => "s22") do
+            xml.Data person.created_at.strftime("%Y-%m-%dT%H:%M:%S.000"), 'ss:Type' => 'DateTime'
+          end
+          xml.Cell do
+            if person.distinguished_names.last
+              xml.Data person.distinguished_names.last.subject_dn , 'ss:Type' => 'String'
+            else
+              xml.Data "" , 'ss:Type' => 'String'
+            end            
+          end
+        end
+      end
+    end
+  end
+
+end

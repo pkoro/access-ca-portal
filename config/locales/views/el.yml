@@ -1,0 +1,4 @@
+el:
+  views:
+    logged_in_as: logged in as
+    not_logged_in: not logged in

@@ -1,0 +1,44 @@
+<% if error_messages_for(:csr) != "" %>
+<br />
+<div class="error_box">
+	<%= error_messages_in_gr_for(:csr) %>
+</div>
+<br />
+<% end %>
+<fieldset>
+	<legend>Παραγωγή κλειδιού και αποστολή αιτήσεως στην Α.Π.</legend>
+	<div class="blue_box">
+	<p>
+		Επιλέξτε το μέγεθος του προσωπικού κλειδιού που θέλετε να δημιουργήσετε
+		και προχωρήστε στην αποστολή.
+	</p>
+	<p>
+		ΠΡΟΣΟΧΗ: Το μέγεθος του κλειδιού πρέπει να
+		ΜΗΝ είναι μικρότερο από 1024 bits. Προτεινόμενη τιμή είναι τα 1024 bits.
+	</p> 
+	</div>
+	<% form_tag :action => 'submit_mozilla_csr' do %>
+	<input type="hidden" name="emailAddress" value="<%= @person.email %>">
+<%
+	if Certificate.find(:first, :conditions => ["owner_id = ? and owner_type = 'Person'", @person.id], :order => "id DESC")
+	  person_cn = X509Certificate::CertificateReader.new(Certificate.find(:first, :conditions => ["owner_id =? and owner_type = 'Person'", @person.id], :order => "id DESC").body).certificate[:dnElements][3]["Value"]
+	else 
+	  person_cn = @person.first_name_en.capitalize + " " + @person.last_name_en.capitalize
+	end
+%>
+	<input type="hidden" name="commonName" value="<%=person_cn %>">
+	<input type="hidden" name="organizationName" value="HellasGrid">
+<%
+	if Certificate.find(:first, :conditions => ["owner_id = ? and owner_type = 'Person'", @person.id], :order => "id DESC")
+	  person_ou = X509Certificate::CertificateReader.new(Certificate.find(:first, :conditions => ["owner_id =? and owner_type = 'Person'", @person.id], :order => "id DESC").body).certificate[:dnElements][2]["Value"]
+	else 
+	  person_ou = @person.organization.domain
+	end
+%>
+	<input type="hidden" name="organizationalUnitName" value="<%= person_ou %>">
+	<input type="hidden" name="countryName" value="GR">
+	<label for="SPKAC">Μέγεθος κλειδιού:</label><br />
+	<keygen name="SPKAC" class="textbox"><br /><br />
+	<input type="submit" value="Αποστολή" class="textbox">
+	<% end %>
+</fieldset>

@@ -1,0 +1,23 @@
+<applet codeBase="/jars" code="HGProxy.class" ARCHIVE="HGProxy.jar,cog-jglobus-1.5.0.jar,jce-jdk13-131.jar,libbrowser.jar" width=0 height=0 name="myproxy" id="myproxy" MAYSCRIPT>
+	<PARAM NAME=myproxyusername VALUE="<%= @usercert %>" />
+	<PARAM NAME=myproxyserver VALUE="myproxy.grid.auth.gr" />
+	<PARAM NAME=myproxyserverport VALUE="7512" />
+	<PARAM NAME=proxyStrength VALUE="512" />
+	<PARAM NAME=credLifeTime VALUE="168" />
+	<PARAM NAME=renewerdn VALUE="*/CN=wms0*.egee-see.org" />
+</applet>
+<p>Επιλεγμένο keystore: </p>
+<p>
+	<INPUT TYPE="textbox" Name="SelectedKeystore" ID="SelectedKeystore" readonly=true>
+	<INPUT TYPE="button" Name="SelectKeystore" VALUE="Αλλαγή" onClick="jsSelectKeystore()">
+</p>
+<p>Επιλεγμένο Πιστοποιητικό: </p>
+<p>
+	<INPUT TYPE="textbox" Name="SelectedCertificate" ID="SelectedCertificate" readonly=true>
+	<INPUT TYPE="button" Name="SelectCertificate" VALUE="Αλλαγή" onClick="jsSelectCertificate()">
+</p>
+<p>
+	<INPUT TYPE="button" Name="MyProxyInit" VALUE="MyProxy Init" onClick="jsMyProxyInit()">
+	<INPUT TYPE="button" Name="SaveLocalProxy" VALUE="Αποθήκευση τοπικού Proxy" onClick="jsSaveLocalProxy()">
+</p>
+	

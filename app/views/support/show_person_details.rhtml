@@ -1,0 +1,170 @@
+<% if params[:version ] %>
+	<% @person.revert_to(params[:version]) %>
+<% end %>
+<table border="0" cellspacing="0" cellpadding="10px" width="700px">
+	<tr>
+		<td width="420px">
+			
+			<% if @person.versions.size > 1 %>
+			Ιστορικό Καταχώρησης: 
+			<% @person.versions.size.downto(1) do |ver| %>
+				<%= link_to_unless_current ver, person_details_url(:id => @person.id, :version => ver) %>
+			<% end %>
+			<% end %><br />
+			<table border="0" cellspacing="0" cellpadding="0" width="400px" class="PersonDetails">
+				<tr>
+					<th width="150px">Όνομα</th>
+					<td width="250px">
+						<table cellspacing="0" cellpadding="0" width="250px">
+							<tr>
+								<td style="border-bottom: 0px"><table cellspacing="0" cellpadding="0" width="125px">
+									<tr><th>Ελληνικά</th></tr>
+									<tr><td style="border-bottom: 0px; text-align: center;"><%= @person.first_name_el %>&nbsp;</td></tr>
+								</table>
+							</td>
+							<td style="border-bottom: 0px; border-right: 0px">
+								<table cellspacing="0" cellpadding="0" width="125px">
+									<tr><th style="border-right: 0px">Αγγλικά</th></tr>
+									<tr><td style="border-bottom: 0px; border-right: 0px; text-align: center;"><%= @person.first_name_en %></td></tr>
+								</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<th>Επώνυμο</th>
+					<td width="250px">
+						<table botder="0" cellspacing="0" cellpadding="0" width="250px">
+							<tr>
+								<td style="border-bottom: 0px">
+									<table cellspacing="0" cellpadding="0" width="125px">
+										<tr><th>Ελληνικά</th></tr>
+										<tr><td style="border-bottom: 0px; text-align: center;"><%= @person.last_name_el %>&nbsp;</td></tr>
+									</table>
+								</td>
+								<td style="border-bottom: 0px; border-right: 0px">
+									<table cellspacing="0" cellpadding="0" width="125px">
+										<tr><th style="border-right: 0px">Αγγλικά</th></tr>
+										<tr><td style="border-bottom: 0px; border-right: 0px; text-align: center;"><%= @person.last_name_en %></td></tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<th>E-mail</th>
+					<td style="padding: 5px;"><%= @person.email %></td>
+				</tr>
+				
+				<tr>
+					<th>Οργανισμός</th>
+					<td style="padding: 5px;"><%= @person.organization.name_el %></td>
+				</tr>
+				<tr>
+					<th>Τηλέφωνο εργασίας</th>
+					<td style="padding: 5px;"><%= @person.work_phone %></td>
+				</tr>
+				<tr>
+					<th>Επιστημονικός τομέας</th>
+					<td style="padding: 5px;"><%= @person.scientific_area %></td>
+				</tr>
+				<tr>
+					<th>Τμήμα</th>
+					<td style="padding: 5px;"><%= @person.department %></td>
+				</tr>
+				<tr>
+					<th>Ιδιότητα</th>
+					<td style="padding: 5px;"><%= @person.position %></td>
+				</tr>
+			</table>
+			<br />
+			<fieldset style="width: 380px">
+				<legend>Προσωπικό Πιστοποιητικό</legend>
+				<p>	<% if @person.personal_certificate %>
+					O χρήστης έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε: <%= @person.personal_certificate.created_at %>
+					<% else %>
+					Ο χρήστης ΔΕΝ έχει ψηφιακό πιστοποιητικό
+					<% end %>
+				</p>
+			</fieldset>
+			<br />
+			<fieldset style="width: 380px">
+				<legend>Καταχωρημένα Ονόματα</legend>
+				<p style="font-size: 10px">	
+					<% if @person.distinguished_names.size > 0 %>
+					<% i = 0 %>
+					<% @person.distinguished_names.each do |dn| %>
+						<% if i >0 %><br /><% end %>
+						<%= dn.subject_dn %><% i = i +1 %>
+					<% end %>
+					<% end %>
+				</p>
+			</fieldset>
+			<br />
+			<fieldset style="width: 380px">
+				<legend>Ενεργές αιτήσεις</legend>
+				<table>
+					<tr>
+						<th align="right">Αιτήσεις Ψηφιακών Πιστοποιητικών:</th>
+						<td><%= @person.certificate_requests.size %></td>
+					</tr>
+					<tr>
+						<th align="right">Αιτήσεις για UI:</th>
+						<td><%= @person.ui_requests.size %></td>
+					</tr>
+					<tr>
+						<th align="right">Αιτήσεις για SEE VO:</th>
+						<td><%= @person.see_vo_requests.size %></td>
+					</tr>
+				</table>
+			</fieldset>
+		</td>
+		<td width="270px" valign="top">
+			<!--
+			<table width="270px" cellspacing="0" cellpadding="5">
+				<tr>
+					<th style="text-align: right;">Certificate Requests:</th>
+					<td><%= @person.certificate_requests.size %></td>
+				</tr>
+				<% @person.certificate_requests.each do |req| %>
+				<tr>
+					<th style="text-align: right; color: red;">
+						CSR_<%= @person.organization.domain.upcase %>_<%= req.id %>:
+					</th>
+					<td>
+						<%= req.status %>
+					</td>
+				</tr>
+				<% end %>
+				<tr>
+					<th style="text-align: right; colspan="2">Personal Certificates</th>
+				</tr>
+				<tr>
+					<td colspan="2">
+							<% if @person.personal_certificate %>
+							O χρήστης έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε: <%= @person.personal_certificate.created_at %> (<%= @person.personal_certificate.id %>)
+							<% else %>
+							Ο χρήστης ΔΕΝ έχει ψηφιακό πιστοποιητικό
+							<% end %>
+					</td>
+				<tr>
+					<th style="text-align: right;">Registered DNs:</th>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="font-size: 9px">
+						<% if @person.distinguished_names.size > 0 %>
+						<% i = 0 %>
+						<% @person.distinguished_names.each do |dn| %>
+							<% if i >0 %><br /><% end %><%= dn.subject_dn %><% i = i +1 %>
+						<% end %>
+						<% end %>
+					</td>
+				</tr>
+			</table>
+		-->&nbsp;
+		</td>
+	</tr>
+</table>

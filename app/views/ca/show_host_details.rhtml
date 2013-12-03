@@ -1,0 +1,118 @@
+<% if params[:version ] %>
+	<% @host.revert_to(params[:version]) %>
+<% end %>
+<table border="0" cellspacing="0" cellpadding="10px" width="700px">
+  <tr>
+    <td width="420px">
+      <% if @host.versions.size > 1 %>
+        Ιστορικό Καταχώρησης: 
+        <% @host.versions.size.downto(1) do |ver| %>
+          <%= link_to_unless_current ver, ra_host_details_url(:id => @host.id, :version => ver) %>
+        <% end %>
+      <% end %>
+      <br />
+      <fieldset style="width: 600px">
+        <legend>Στοιχεία Διαχειριστή</legend>			
+        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="PersonDetails">
+          <tr>
+            <th width="33%">Όνομα</th>
+            <td width="66%">
+              <table cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                  <td style="border-bottom: 0px">
+                    <table cellspacing="0" cellpadding="0" width="200">
+                      <tr><th>Ελληνικά</th></tr>
+                      <tr><td style="border-bottom: 0px; text-align: center;"><%= @host.admin.first_name_el %>&nbsp;</td></tr>
+                    </table>
+                  </td>
+                  <td style="border-bottom: 0px; border-right: 0px">
+                    <table cellspacing="0" cellpadding="0" width="200">
+                      <tr><th style="border-right: 0px">Αγγλικά</th></tr>
+                      <tr><td style="border-bottom: 0px; border-right: 0px; text-align: center;"><%= @host.admin.first_name_en %></td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <th width="33%">Επίθετο</th>
+            <td width="66%">
+              <table cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                  <td style="border-bottom: 0px">
+                    <table cellspacing="0" cellpadding="0" width="200">
+                      <tr><th>Ελληνικά</th></tr>
+                      <tr><td style="border-bottom: 0px; text-align: center;"><%= @host.admin.last_name_el %>&nbsp;</td></tr>
+                    </table>
+                  </td>
+                  <td style="border-bottom: 0px; border-right: 0px">
+                    <table cellspacing="0" cellpadding="0" width="200">
+                      <tr><th style="border-right: 0px">Αγγλικά</th></tr>
+                      <tr><td style="border-bottom: 0px; border-right: 0px; text-align: center;"><%= @host.admin.last_name_en %></td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <th>email</th>
+            <td style="padding: 5px;"><%= @host.admin.email %></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset style="width: 600px">
+        <legend>Στοιχεία Διακομιστή</legend>			
+        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="PersonDetails">
+          <tr>
+            <th>FQDN</th>
+            <td style="padding: 5px;"><%= @host.fqdn %></td>
+          </tr>
+          <tr>
+            <th>Οργανισμός</th>
+            <td style="padding: 5px;"><%= @host.organization.name_el %></td>
+          </tr>
+          <tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset style="width: 600px">
+        <legend>Πιστοποιητικό Διακομιστή</legend>
+        <p>
+          <% if @host.certificate %>
+            O διακομιστής έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε: <%= @host.certificate.created_at %>
+          <% else %>
+            Ο διακομιστής ΔΕΝ έχει ψηφιακό πιστοποιητικό
+          <% end %>
+        </p>
+      </fieldset>
+      <br />
+      <fieldset style="width: 600px">
+        <legend>Καταχωρημένα Ονόματα</legend>
+        <p style="font-size: 10px">	
+          <% if @host.distinguished_names.size > 0 %>
+            <% i = 0 %>
+            <% @host.distinguished_names.each do |dn| %>
+              <% if i >0 %><br /><% end %>
+              <%= dn.subject_dn %><% i = i +1 %>
+            <% end %>
+          <% end %>
+        </p>
+      </fieldset>
+      <br />
+      <fieldset style="width: 600px">
+        <legend>Ενεργές αιτήσεις</legend>
+        <table>
+          <tr>
+			<th align="right">Αιτήσεις Ψηφιακών Πιστοποιητικών:</th>
+            <td><%= @host.certificate_requests.size %></td>
+          </tr>
+        </table>
+      </fieldset>
+    </td>
+    <td width="270px" valign="top">
+      &nbsp;
+    </td>
+  </tr>
+</table>

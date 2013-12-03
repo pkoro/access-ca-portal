@@ -1,0 +1,34 @@
+<% if flash[:notice]%>
+<div style="border: green solid 1px; padding: 10px; width: 450px; text-align: center">
+	<p><%= flash[:notice] %></p>
+</div>
+<br />
+<% end %>
+
+<% form_tag :action=> "submit_see_vo_request" do %>
+  
+  <fieldset id="editFormFields">
+	<legend>Αίτηση πρόσβασης στο SEE VO</legend>
+	<p style="padding-right: 20px;">
+		Για να εγγραφείτε στο SEE VO πρέπει να αποδεχτείτε την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid
+	</p>
+	
+	<div align="center" style="border: grey solid 1px; padding: 10px; width: 400px">
+	<table border="0" cellspacing="10" cellpadding="0">
+		<tr>
+			<td width="20">
+				<%= check_box(:see_vo_request, :accepted_aup, {:class => "textbox"})%>
+			</td>
+			<td width="400"><p>Αποδέχομαι την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid όπως περιγράφονται
+				<%= link_to "εδώ", "http://www.hellasgrid.gr/about/acceptable-usage-policy/", :popup => true %></p>
+			</td>
+		</tr>
+	</table>
+	</div>
+	<br />
+	<center>
+		<input type="submit" value="Αποστολή" class="textbox" />
+	</center>
+  </fieldset>
+
+<% end %>

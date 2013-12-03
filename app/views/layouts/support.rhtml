@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title><%= page_title %></title>
+<%= stylesheet_link_tag 'style' %>
+<%= stylesheet_link_tag 'main' %>
+<%= stylesheet_link_tag 'page' %>
+<%= javascript_include_tag 'prototype', 'effects', 'scriptaculous' %>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="/javascripts/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30053219-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" align="center" border="0" width="980">
+  <tr>
+    <td class="color00" align="right">
+	
+	<span class="pageTopMenu">Logged in as: <%= session[:usercert] %></span>  &nbsp; &nbsp;
+	</td>
+  </tr>
+</table>
+<table cellspacing="0" cellpadding="0" align="center" border="0" width="980">
+  <tr>
+    <td><table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+          <td style="background: url(/images/banner-user-support.jpg) no-repeat left; " height="157" width="980"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td class="color00" height="20">
+		<!--<ul id="topMenu">
+        <li id="cms"> <a href="">&nbsp;</a>
+        </li>
+        <li id="newusers"> <a href="">Νέοι χρήστες </a>
+          <ul>
+            <li id="newusers/register"><%= link_to("Αίτηση ψηφιακού πιστοποιητικού", :action => "registration_form") %></li>
+            <li id="users/joinseevo"> <%= link_to("Αίτηση πρόσβασης στο SEE VO <br />(πιστοποίηση με φηφιακό πιστοποιητικό)", "https://www.grid.auth.gr/services/voms/SEE/request.php") %></li>
+            <li id="users/joinseevo"> <%= link_to("Αίτηση πρόσβασης σε UI <br />(πιστοποίηση με φηφιακό πιστοποιητικό)", :controller => "account", :action => "request_ui_access") %></li>
+          </ul>
+        </li>
+        <li id="users"> <a href="">Υπάρχoντες χρήστες</a>
+          <ul>
+			<li id="users/certificaterenewal"> <a href="">Ανανέωση πιστοποιητικού</a> </li>
+          </ul>
+        </li>
+        <li id="admin"> <a href="">ΣΕΜΙΝΑΡΙΑ</a>
+        </li>
+      </ul>-->
+		<span class="pageTopMenu" style="padding-left: 10px">
+			<%= webapp_path %>
+		</span>
+	</td>
+  </tr>
+  
+  
+  <tr>
+    <td><table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+		  <% if @action != "index" %>
+          <td class="leftCol" valign="top" width="200" id="leftColContainer">
+			<ul id="links">
+			<li class="linksHead">Πληροφορίες</li>
+			<li><%= link_to 'Λίστα Εγγεγραμμένων Χρηστών', :action => 'list_people' %></li>
+			<li><%= link_to 'Λίστα αιτήσεων για πιστοποιητικό', :action => 'list_certificate_requests' %></li>
+			<li><%= link_to 'Λίστα αιτήσεων για SEE VO', :action => 'list_see_vo_requests' %></li>
+			<li><%= link_to 'Λίστα αιτήσεων για πρόσβαση σε UI', :action => 'list_ui_requests' %></li>
+			<li><%= link_to 'Αρχείο εγγεγραμένων χρηστών σε Excel 2003 format', :action => 'export_registered_users' %>
+            </ul>
+            <div  style="margin-top:5px;color:#505050;text-decoration:none;padding-left:5px;font-weight:bold;">
+            <% if @page_info %>
+				<%= @page_info %>
+			<% end %>
+			</div>
+          </td>
+		  <% end %>
+		
+          <td class="contentBody" valign="top" width="700" id="contentContainer">
+          	<%= @content_for_layout %>
+          </td>
+          <!-- <td width="250" class="contentBody">&nbsp;</td> -->
+        </tr>
+       <!-- <tr>
+          <td width="200"><img height="1" width="200" src="style/spacer.gif"></td>
+          <td width="630"><img height="1" width="422" src="style/spacer.gif"></td>
+        </tr>
+		-->
+      </table></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="pageFooter">AUTH SCC (HellasGrid User Registration r<%= Config.revision %>)</td>
+  </tr>
+</table>
+<p align="center">
+	<%= link_to(image_tag("eu.gif", :style => "vertical-align: middle; border-style: solid; border-width: 2px"),"http://europa.eu.int") %>
+	&nbsp;
+	<%= link_to(image_tag("ktp.gif", :style => "vertical-align: middle; border-style: solid; border-width: 2px"),"http://www.infosoc.gr") %>
+	&nbsp;
+	<%= link_to(image_tag("HellasGrid.png", :style => "vertical-align: middle; border-style: solid; border-width: 2px"), "http://www.hellasgrid.gr") %>
+</p>
+<p align="center">
+	<%= link_to(image_tag("grnet.gif", :style => "vertical-align: middle; border-style: solid; border-width: 2px"), "http://www.grnet.gr") %>
+</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<div align="center">
+	<div style="width: 70	0px">
+		<h1>Listing Requests for UI access</h1>
+		
+		<table class="tablelist" cellspacing="0" cellpadding="4px">
+  			<tr>
+				<th style="color: #4F4F4F; font-weight: normal;">ID</th>
+				<th style="color: #4F4F4F; font-weight: normal;">Όνομα</th>
+				<th style="color: #4F4F4F; font-weight: normal;">E-mail</th>
+				<th style="color: #4F4F4F; font-weight: normal;">Create At</th>
+				<th colspan="2"></th>
+  			</tr>
+  			<% @ui_requests.each_with_index do |ui, i| %>
+			<% person = ui.person %>
+			<% row_class = i%2 == 0 ? "even" : "odd" %> 
+  			<tr class="<%= row_class %>">
+    			<td><%= ui.id %></td>
+				<td><%= person.last_name_en %> <%= person.first_name_en %></td>
+    			<td><%= link_to person.email, :action => 'show_person_details', :id => person %></td>
+				<td><%= ui.created_at.mday %>/<%= ui.created_at.month %>/<%= ui.created_at.year %></td>
+			</tr>
+			<% end %>
+		</table>
+		<br />
+		<br/>
+		<div align="right" style="position: relative;">
+			<%= will_paginate @ui_requests %>  
+
+		</div>
+	</div>
+</div>

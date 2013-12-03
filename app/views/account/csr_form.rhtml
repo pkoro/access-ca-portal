@@ -1,0 +1,49 @@
+<center>
+	<h1>Ανανέωση πιστοποιητικού</h1>
+</center>
+<br />
+<div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
+	<p><%= session[:usercert] %></p>
+</div>
+<br />
+<p>
+	Στη συνέχεια μπορείτε να προχωρήσετε στη δημιουργία του προσωπικού σας κλειδιού
+	και την αποστολή της αίτησης στην Αρχή Πιστοποίησης. Ανάλογα με τον τύπο
+	του browser που έχετε θα σας εμφανιστούν μία ή δύο επιλογές.
+</p>
+
+<p>		
+	<% if request.user_agent !~ /MSIE/ %>
+	<fieldset>
+		<legend><%= image_tag("firefox-safari-logo.png", :style => "border: 0") %></legend>
+		<p>
+			Για να δημιουργήσετε το προσωπικό σας κλειδί σε Mozilla, Netscape, Safari <font color='red'>(προσοχή μην χρησιμοποιείτε Google Chrome σε αυτό το βήμα καθώς δεν υποστηρίζει την διαδικασία παραγωγής πρσωπικού κλειδιού)</font> ακολουθήστε αυτόν τον
+			<%= link_to("σύνδεσμο", {:action => "mozilla_csr"}, :confirm => @gen_in_browser_confirmation) %> <%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "mozilla_csr"}, :confirm => @gen_in_browser_confirmation) %>	
+		</p>
+	</fieldset>
+	<% elsif request.user_agent !~ /Windows NT 6\./ && request.user_agent !~ /MSIE 8\.0/ %>
+	<fieldset>
+		<legend><%= image_tag("ie7_thumb_logo.jpg", :style => "border: 0") %></legend>
+		<p>Για να δημιουργήσετε το προσωπικό σας κλειδί σε Internet Explorer, ακολουθήστε αυτόν τον
+			<%= link_to("σύνδεσμο", {:action => "iexplorer_csr"}, :confirm => @gen_in_browser_confirmation) %> <%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "iexplorer_csr"}, :confirm => @gen_in_browser_confirmation) %>	
+		</p>
+	</fieldset>
+	<% elsif request.user_agent =~ /Windows NT 6\./ %>
+	<fieldset>
+		<legend><%= image_tag("ie7_thumb_logo.jpg", :style => "border: 0") %></legend>
+		<p>Για να δημιουργήσετε το προσωπικό σας κλειδί σε Internet Explorer, ακολουθήστε αυτόν τον
+			<%= link_to("σύνδεσμο", {:action => "iexplorer_vista_csr"}, :confirm => @gen_in_browser_confirmation) %> <%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "iexplorer_vista_csr"}, :confirm => @gen_in_browser_confirmation) %>
+		</p>
+	</fieldset>
+	<% end %>
+	<br />
+	<fieldset>
+		<legend><%= image_tag("bash-logo.png", :style => "border: 0") %></legend>
+		<p>Αν έχετε ήδη δημιουργήσει το προσωπικό σας κλειδί και την αντίστοιχη αίτηση πιστοποιητικού
+			σε κάποιο User Interface, ακολουθήστε αυτόν τον <%= link_to("σύνδεσμο", :action => "manual_csr") %>
+			<%= link_to(image_tag("go.jpg", :style => "border: 0"), :action => "manual_csr") %>
+		</p>
+	</fieldset>
+
+</p>
+

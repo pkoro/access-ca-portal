@@ -1,0 +1,46 @@
+<%unless @requests.empty? %>
+  <div align="right">
+    <%= link_to (image_tag("excel.jpg", :style => "border: 0", :alt => "Export in Excel format"), :action => "export_excel") %>
+  </div>
+<%end%>
+<div align="center">
+  <div style="width: 70 0px">
+    <%unless @requests.empty? then %>
+      <h1>Κατάλογος διακομιστών υπο την διαχείριση του:<br /> <%= session[:usercert] %></h1>
+      <table class="tablelist" cellspacing="0" cellpadding="4px">
+        <tr>
+          <td>FQDN</td>
+          <td>Subject DN</td>
+          <td>Ημερ. Δημιουργίας</td>
+          <td>Τελευταία Ανανέωση</td>
+          <td>Κατάσταση</td>
+        </tr>
+        <% @requests.each_with_index do |request, i| %>
+          <% 
+          subject=X509Certificate::RequestReader.new(request.body).request[:Subject].to_s 
+          if subject.split("/CN=")[1].include?("/")
+            fqdn=subject.split("/CN=")[1].split("/")[1]
+          else
+            fqdn=subject.split("/CN=")[1]
+          end 
+          %>
+          <% row_class = i%2 == 0 ? "even" : "odd" %> 
+          <tr class="<%= row_class %>">
+            <td><%= fqdn %></td>
+            <td><%= subject %></td>
+            <td><%= request.created_at.mday %>/<%= request.created_at.month %>/<%= request.created_at.year %></td>
+            <td><%= request.updated_at.mday %>/<%= request.updated_at.month %>/<%= request.updated_at.year %></td>
+            <td><%= request.status %></td>
+          </tr>
+        <% end %>
+      </table>
+      <br />
+      <br/>
+      <div align="right" style="position: relative;">
+        <%= will_paginate @hosts %>
+      </div>
+    <% else %>
+      <h1>Δεν υπάρχει κανένας διακομιστής υπό την διαχείριση σας.</h1>
+    <%end%>
+  </div>
+</div>

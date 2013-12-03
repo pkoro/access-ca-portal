@@ -1,0 +1,45 @@
+<center>
+	<h1>Η αίτησή σας έχει αποσταλλεί στην Αρχή Πιστοποίησης ΗellasGrid CA</h1>
+</center>
+<br />
+<div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
+	<p>CSR_<%= @cert_request.organization.domain.upcase %>_<%= @cert_request.id %></p>
+</div>
+<br />
+<p>
+	Η αίτησή σας έχει αποσταλλεί  στην Αρχή Πιστοποίησης ΗellasGrid CA και
+	παράλληλα  ενημερώθηκε η  Αρχή Ταυτοποίησης  (Α.Τ.) που  εξυπηρετεί το
+	οργανισμό σας για να επιβεβαιώσει την αίτηση.
+</p>
+
+<p>
+	Μπορείτε να παρακολουθείτε την κατάσταση της αίτησεώς σας μέσω του web
+	ακολουθώντας αυτόν τον <%= link_to "σύνδεσμο", @csr_status_link %>
+</p>
+
+<p>
+	Για κάθε αίτηση που αποστέλλεται στην Α.Π., δημιουργείται ένα τυχαίο κλείδί
+	με το οποίο έχει κανείς πρόσβαση στα στοιχεία της αιτήσεως. Το κλειδί για την
+	δική σας αίτηση είναι:
+</p>  
+
+<div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
+	<p><%= @cert_request.uniqueid %></p>
+</div>
+
+<p>
+	Η Α.Τ. που εξυπηρετεί την περιοχή σας είναι η:
+</p>  
+
+<div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
+	<p><%= @ra_info %></p>
+</div>
+<br />
+<p>
+	Περισσότερες πληροφορίες για τις Α.Τ. της Α.Π. HellasGrid CA μπορείτε να βρείτε <a href="http://www.grid.auth.gr/el/services/hellasgrid-ca/">εδώ</a>.
+</p>
+<br />
+<p>
+	Ηλεκτρονικό αντίγραφο του παραπάνω κειμένου έχει αποσταλλεί ηλεκτρονικά στην
+	διεύθυνση: <%= @admin.email %>
+</p>

@@ -1,0 +1,74 @@
+<center>
+<div style="border: #26a solid 1px; padding: 20px; text-align: left;">
+	<% if @csr %>
+	<strong>Κατάσταση αιτήσως: <%= @csr.status %></strong>
+	<% if @csr.status == "signed" %>
+	<p>Το ψηφιακό πιστοποιητικό σας έχει υπογραφεί από την Αρχή Πιστοποίησης
+	ΗellasGrid CA και μπορείτε να το κατεβάσετε από τον ακόλουθο σύνδεσμο:</p>
+
+	 <p><%= link_to @get_cert_link, @get_cert_link %></p>
+
+	 <p>Το στοιχεία του πιστοποιητικού σας είναι τα ακόλουθα:</p>
+	 <table border="0" cellspacing="5" cellpadding="0">
+		<tr>
+			<th style="text-align: right">Subject DN:</th>
+			<td><%= @crt.subject_dn.to_s %></td>
+		<tr>
+			<th style="text-align: right">Εκδούσα Αρχή:</th>
+			<td>HellasGrid CA</td>
+		</tr>
+		<tr>
+			<th style="text-align: right">Ημερομηνία έκδοσης:</th>
+			<td><%= @crt.created_at %></td>
+		</tr>
+		<tr>
+			<% if @crt.owner_type == "Person" %>
+              <th style="text-align: right">E-mail:</th>
+			  <td><%= @crt.owner.email %></td>
+			<% else %>
+              <th style="text-align: right">FQDN:</th>
+			  <td><%= @crt.owner.fqdn %></td>
+			<% end %>
+	    </tr>
+		<tr>
+			<th style="text-align: right">Έγκυρο για:</th>
+			<td>12 μήνες</td>
+		</tr>
+	</table>
+	<% end %>
+	<% else %>
+	<strong>Δεν υπάρχει αίτηση</strong>
+	<% end %>
+</div>
+<br />
+<br />
+<h2>Επεξήγηση καταστάσεων αιτήσεως πιστοποιητικού</h2>
+<table border="0" cellspacing="0" cellpadding="10" width="400px">
+	<tr>
+		<th valign="top">pending:</th>
+		<td>
+			Η αίτηση έχει αποσταλλεί στην Αρχή Πιστοποίησης και έχει ενημερωθεί
+			η Αρχή Ταυτοποίησης του Ίδρύματός.
+		</td>
+	</tr>
+	<tr>
+		<th valign="top">approved:</th>
+		<td>
+			Η Αρχή Ταυτοποίησης έχει εγκρίνει την αίτηση. Εκκρεμεί η υπογραφή
+			του πιστοποιητικού από την Αρχή Πιστοποίησης.
+		</td>
+	</tr>
+	<tr>
+		<th valign="top">signed:</th>
+		<td>
+			Το πιστοποιητικό έχει υπογραφεί από την Αρχή Πιστοποίησης.
+		</td>
+	</tr>
+	<tr>
+		<th valign="top">rejected:</th>
+		<td>
+			Η αίτηση έχει απορριφθεί από την Αρχή Ταυτοποίησης.
+		</td>
+	</tr>
+</table>
+</center>

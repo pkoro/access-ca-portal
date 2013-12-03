@@ -1,0 +1,14 @@
+Ο χρήστης:
+<% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
+  	<%=@person.first_name_en + " " + @person.last_name_en %>, <%= @person.email %>
+<% else %>
+  	<%=@person.first_name_el + " " + @person.last_name_el %>, <%= @person.email %>
+<% end %>
+
+έχει κάνει αίτηση για <% if @csr.owner_type == "Person" %>προσωπικό πιστοποιητικό<% else %> πιστοποιητικό για τον διακομιστή:
+  <%=@fqdn%><% end %>
+
+στην Α.Π. HellasGrid CA. 
+
+Μπορείτε δείτε την αίτηση στην διεύθυνση:
+  <%= @csr_url %>

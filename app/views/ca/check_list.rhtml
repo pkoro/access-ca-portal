@@ -1,0 +1,25 @@
+	<h1>CRLs</h1>
+	<table width=100%>
+		<tr>
+			<td><strong>Όνομα Α.Π.</strong></td>
+			<td><strong>Ημερ. λήξης CRL</strong></td>
+			<td><strong>Κατάσταση</strong></td>
+		</tr>
+		<% @CRLs.each do |crl| %>
+		<tr>
+			<td><%=link_to(crl[:CAName], crl[:url])%></td>
+			<td>
+				<%= crl[:object].next_update %>
+			</td>
+			<td>
+				<%= if crl[:object].next_update.to_s.to_date < crl[:critical].days.since.to_s.to_date then
+					"CRITICAL"
+				elsif crl[:object].next_update.to_s.to_date < crl[:warning].days.since.to_s.to_date then
+					"WARNING"
+				else
+					"OK"
+				end %>
+			</td>
+		</tr>
+		<% end %>
+	<table>

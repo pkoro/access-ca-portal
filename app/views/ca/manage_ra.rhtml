@@ -1,0 +1,26 @@
+<div align="center">
+	<div style="width: 700px">
+		<h1>Αρχές Ταυτοποίησης της Α.Π.</h1>
+		<table class="tablelist" cellspacing="0" cellpadding="4px">
+  			<tr>
+    			<%= sort_header_tag('id', :caption => 'ID')%>
+				<%= sort_header_tag('description', :caption => 'Περιγραφή')%>
+				<th style="color: #4F4F4F; font-weight: normal;">Οργανισμός</th>
+  			</tr>
+  			<% @RAs.each_with_index do |ra, i|
+            row_class = i%2 == 0 ? "even" : "odd" %>
+            <tr class="<%= row_class %>">
+              <td><%= ra.id %></td>
+              <td><%= link_to(ra.description, :action => 'edit_ra', :id => ra.id) %></td>
+              <td><%= if ra.organization; ra.organization.name_el; else; "N/A"; end %></td>
+            </tr>
+			<% end %>
+		</table>
+		<br />
+		<%= link_to 'Προσθήκη νέας Α.Τ.', :action=> "new_ra" %>
+		<br />
+		<div align="right" style="position: relative;">
+		  <%= will_paginate @RAs %>
+		</div>
+	</div>
+</div>

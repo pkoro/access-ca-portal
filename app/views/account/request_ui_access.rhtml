@@ -1,0 +1,22 @@
+<h1>Αίτηση πρόσβασης σε User Interface του HellasGrid</h1>
+<p>
+	<%= flash[:notice] %>
+</p>
+
+<% form_tag :action=> "send_request_for_ui_access" do %>
+<fieldset id="editFormFields">
+	<legend>Φόρμα αίτησης</legend>
+	<table border="0" cellspacing="10" cellpadding="0">
+		<tr>
+			<td valign="top"><label for="ui_request_hg_ui">Επιλέξτε το κοντινότερο σε εσάς UI</label></td>
+			<td><%= select(:ui_request, :hg_ui, [
+			['UI Αθήνας', 'ui_athens'],
+			['UI Θεσσαλονίκης', 'ui_thessaloniki'],
+			['UI Κρήτης', 'ui_crete'],
+			['UI Πάτρας', 'ui_patra']
+			])%></td>
+		</tr>
+	</table>
+	<input type="submit" value="Αποστολή" class="textbox" />
+</fieldset>
+<% end %>

@@ -1,0 +1,22 @@
+<div align="center">
+	<div style="width: 70	0px">
+		<h1>Listing Certificate Requests</h1>
+		
+		<table class="tablelist" cellspacing="0" cellpadding="4px">
+  			<tr>
+    			<%= sort_header_tag('id', :caption => 'ID')%>
+				<th style="color: #4F4F4F; font-weight: normal;">E-mail / FQDN</th>
+				<%= sort_header_tag('status', :caption => 'Status')%>
+				<%= sort_header_tag('created_at', :caption => 'Creation Date')%>
+  			</tr>
+  			<% @certificate_requests.each_with_index do |csr, i| %>
+              <%= create_csr_list_row(csr,i) %>
+			<% end %>
+		</table>
+		<br />
+		<br/>
+		<div align="right" style="position: relative;">
+		  <%= will_paginate @certificate_requests %>
+		</div>
+	</div>
+</div>

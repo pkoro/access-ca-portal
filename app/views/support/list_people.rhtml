@@ -1,0 +1,49 @@
+<div align="right">
+	<%= link_to (image_tag("excel.jpg", :style => "border: 0", :alt => "Export in Excel format"), :action => "export_registered_users") %>
+</div>
+
+<div align="center">
+	<div style="width: 70	0px">
+		<h1>Listing People from HellasGrid CA</h1>
+		
+		<table class="tablelist" cellspacing="0" cellpadding="4px">
+  			<tr>
+    			<%= sort_header_tag('last_name_en', :caption => 'Name')%>
+				<%= sort_header_tag('email', :caption => 'E-mail')%>
+				<%= sort_header_tag('name_el', :caption => 'Organization', :association => 'organizations')%>
+				
+				<!-- <th style="color: #4F4F4F; font-weight: normal;">Organization</th> -->
+				<%= sort_header_tag('position', :caption => 'Position')%>
+				<%= sort_header_tag('created_at', :caption => 'Creation Date')%>
+				<%= sort_header_tag('updated_at', :caption => 'Last Updated')%>
+				<th colspan="5"></th>
+  			</tr>
+  			<tr>
+  			  <th>&nbsp;</th>
+  			  <th style="color: #4F4F4F; font-weight: normal;">Subject DN<th>
+  			</tr>
+  			<% @people.each_with_index do |person, i| %>
+			<% row_class = i%2 == 0 ? "even" : "odd" %> 
+  			<tr class="<%= row_class %>">
+    			<td><%= person.first_name_en %> <%= person.last_name_en %></td>
+    			<td><%= person.email %></td>
+				  <td><%= if person.organization; person.organization.name_el; else "N/A"; end  %></td>
+				  <td><%= person.position %></td>
+				  <td><%= person.created_at.mday %>/<%= person.created_at.month %>/<%= person.created_at.year %></td>
+				  <td><%= person.updated_at.mday %>/<%= person.updated_at.month %>/<%= person.updated_at.year %></td>
+  			  <td><%= link_to 'Details', :action => 'show_person_details', :id => person %></td>
+  			</tr>
+    		<tr>
+    		  <td>&nbsp;</td>
+				  <td><%= if person.distinguished_names.last; person.distinguished_names.last.subject_dn; else "N/A"; end %><td>
+  			</tr>
+			<% end %>
+		</table>
+		<br />
+		<br/>
+		<div align="right" style="position: relative;">
+			 <%= will_paginate @people %>
+
+		</div>
+	</div>
+</div>

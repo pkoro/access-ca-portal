@@ -1,0 +1,32 @@
+<% if flash[:notice]%>
+<div style="border: green solid 1px; padding: 10px; width: 450px; text-align: center">
+	<p><%= flash[:notice] %></p>
+</div>
+<br />
+<% end %>
+
+<div aling="center" width="450">
+	<table border="0" cellspacing="10">
+		<tr>
+			<th style="text-align: right; border-bottom: 1px solid Black; font: bold 12px Verdana, Geneva, Arial, Helvetica, sans-serif;">
+				Υπηρεσία MyProxy
+			</th>
+		</tr>
+		<tr>
+			<td style="text-align: left" valign="top">
+				<ul class="accountMainPageMenu" style="list-style: none; text-align: left">
+					<li>
+						<%= link_to "Δημιουργία και καταχώρηση MyProxy πιστοποιητικού", :action => "create_myproxy" %>
+					</li>
+					<li>
+						<%= link_to "Προβολή πληροφοριών MyProxy πιστοποιητικού", :action => "myproxy_info" %>
+					</li>
+					<li>
+						<%= link_to "SSH πρόσβαση", "/gsissh/jws.jnlp" %>
+					</li>
+				</ul>
+			</td>
+		</tr>
+		
+	</table>
+</div>

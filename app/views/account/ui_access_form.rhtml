@@ -1,0 +1,38 @@
+<% if flash[:notice]%>
+<div style="border: green solid 1px; padding: 10px; width: 450px; text-align: center">
+	<p><%= flash[:notice] %></p>
+</div>
+<br />
+<% end %>
+
+<% form_tag :action=> "submit_ui_request" do %>
+  
+  <fieldset id="editFormFields">
+	<legend>Αίτηση πρόσβασης σε UI</legend>
+	<p style="padding-right: 20px;">
+		Στο πεδίο που ακολουθεί θα βρείτε τη λίστα με τα διαθέσιμα User Interface που
+		λειτουργούν στα πλαίσια της εθνικής υποδομής HellasGrid.</p>
+	<p style="padding-right: 20px;">Έπιλέξτε το User Interface
+		που εξυπηρετεί την γεωγραφική περιοχή στην οποία βρίσκεται ο οργανισμός σας.
+	</p>
+		<div align="center" style="padding-right: 20px">
+		 &nbsp;<%= select(:ui_request, :user_interface, [
+		['Αθήνα', 'HG-01-GRNET'],
+		['Θεσσαλονίκη', 'HG-03-AUTH'],
+		['Κρήτη', 'HG-05-FORTH'],
+		['Πάτρα', 'ΗG-04-CTI']
+		], {:include_blank => false}, {:class => "textbox"})%><input type="submit" value="Αποστολή" class="textbox" />
+	</div>
+	<table border="0" cellspacing="10" cellpadding="0">
+		<tr>
+			<td width="20">
+				<%= check_box(:ui_request, :accepted_aup, {:class => "textbox"})%>
+			</td>
+			<td width="400"><p>Αποδέχομαι την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid όπως περιγράφονται
+				<%= link_to "εδώ", "http://www.hellasgrid.gr/about/acceptable-usage-policy/", :popup => true %></p>
+			</td>
+		</tr>
+	</table>
+  </fieldset>
+
+<% end %>

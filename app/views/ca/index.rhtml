@@ -1,0 +1,22 @@
+<fieldset>
+	<legend>Α.Π. HellasGrid CA</legend>
+	<p>
+	  <% if CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).empty? %>
+	    Δεν υπάρχουν μη ταυτοποιημένες αιτήσεις για υπογραφή πιστοποιητικού σε αναμονή.
+	  <% elsif CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).size > 1  %>
+	      Αυτή την στιγμή υπάρχουν <%= CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).size %> μη ταυτοποιημένες αιτήσεις για πιστοποιητικο σε αναμονή.
+	  <% else %>
+	      Αυτή την στιγμή υπάρχεί 1 μη ταυτοποιημένη αιτήση για πιστοποιητικο σε αναμονή.
+	  <% end %>
+	</p>
+	<p>
+	  <% if CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).empty? %>
+	    Δεν υπάρχουν ταυτοποιημένες αιτήσεις για υπογραφή πιστοποιητικού σε αναμονή.
+	  <% elsif CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).size > 1  %>
+	      Αυτή την στιγμή υπάρχουν <%= CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).size %> ταυτοποιημένες αιτήσεις για πιστοποιητικο σε αναμονή.
+	  <% else %>
+	      Αυτή την στιγμή υπάρχεί 1 ταυτοποιημένη αιτήση για πιστοποιητικο σε αναμονή.
+	  <% end %>
+	</p>
+</fieldset>
+<br />

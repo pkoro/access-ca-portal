@@ -1,0 +1,17 @@
+th.header { 
+    background-image: url(/images/jquery/tablesorter/bg.gif);     
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: center left; 
+    padding-left: 20px; 
+    margin-left: -1px; 
+}
+
+th.headerSortUp { 
+    background-image: url(/images/jquery/tablesorter/asc.gif); 
+}
+
+th.headerSortDown { 
+    background-image: url(/images/jquery/tablesorter/desc.gif); 
+}
