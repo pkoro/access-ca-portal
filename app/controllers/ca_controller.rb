@@ -343,6 +343,8 @@ private
           has_access=true
         when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Anastasis Andronidis"
           has_access=true
+        when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Nikolaos Triantafyllidis"
+          has_access=true
         when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Konstantina Chanioti"
           has_access=true
         when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Dimitrios Folias"
