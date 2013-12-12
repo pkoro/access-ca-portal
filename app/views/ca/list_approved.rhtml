@@ -1,22 +1,54 @@
 <div align="center">
 	<div style="width: 700px">
 		<h1>Αιτήσεις πιστοποιητικών σε αναμονή για υπογραφή από την Α.Π.</h1>
-		<table class="tablelist" cellspacing="0" cellpadding="4px">
+		<table class="tablelist" id="tablelist" cellspacing="0" cellpadding="4px">
+		<thead>
   			<tr>
-    			<%= sort_header_tag('certificate_requests.id', :caption => 'ID')%>
-				<th style="color: #4F4F4F; font-weight: normal;">FQDN/E-mail</th>
-				<%= sort_header_tag('organizations.name_el', :caption => 'Οργανισμός')%>
-				<%= sort_header_tag('created_at', :caption => 'Ημερομηνία αίτησης')%>
-				<%= sort_header_tag('updated_at', :caption => 'Τελευταία ανανέωση')%>
+				<th>ID</th>
+				<th>FQDN/E-mail</th>
+				<th>Οργανισμός</th>
+				<th>Ημερομηνία αίτησης</th>
+				<th>Τελευταία ανανέωση</th>				
   			</tr>
+		</thead>
   			<% @certificate_requests.each_with_index do |csr, i| %>
               <%= create_approved_csr_list_row(csr,i) %>
 			<% end %>
 		</table>
-		<br />
-		<br/>
-		<div align="right" style="position: relative;">
-			<%= will_paginate @certificate_requests %> 
-		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+jQuery.extend( jQuery.fn.dataTableExt.oSort, {
+    "date-uk-pre": function ( a ) {
+        var ukDatea = a.split('/');
+        return (ukDatea[2] + ukDatea[1] + ukDatea[0]) * 1;
+    },
+ 
+    "date-uk-asc": function ( a, b ) {
+        return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+    },
+ 
+    "date-uk-desc": function ( a, b ) {
+        return ((a < b) ? 1 : ((a > b) ? -1 : 0));
+    }
+} );
+
+jQuery(document).ready(function() {
+	jQuery('#tablelist').dataTable({
+		"sPaginationType": "full_numbers",
+		"bLengthChange": false,
+		"iDisplayLength": 5,
+		"bSortClasses": false,
+		"aaSorting": [[ 3, "desc" ]],
+		"aoColumns": [
+		            { "sType": "numeric" },
+		            { "sType": "string" },
+		            { "sType": "string" },
+		            { "sType": "date-uk" },
+		            { "sType": "date-uk" },					
+					]
+				}
+		);
+} );
+</script>
