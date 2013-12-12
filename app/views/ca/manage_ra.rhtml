@@ -1,26 +1,58 @@
 <div align="center">
 	<div style="width: 700px">
 		<h1>Αρχές Ταυτοποίησης της Α.Π.</h1>
-		<table class="tablelist" cellspacing="0" cellpadding="4px">
+		<table class="tablelist" id="tablelist" cellspacing="0" cellpadding="4px">
+		 <thead>
   			<tr>
-    			<%= sort_header_tag('id', :caption => 'ID')%>
-				<%= sort_header_tag('description', :caption => 'Περιγραφή')%>
-				<th style="color: #4F4F4F; font-weight: normal;">Οργανισμός</th>
+    			<th>ID</th>
+				<th>Περιγραφή</th>
+				<th>Οργανισμός</th>
   			</tr>
-  			<% @RAs.each_with_index do |ra, i|
-            row_class = i%2 == 0 ? "even" : "odd" %>
-            <tr class="<%= row_class %>">
-              <td><%= ra.id %></td>
-              <td><%= link_to(ra.description, :action => 'edit_ra', :id => ra.id) %></td>
-              <td><%= if ra.organization; ra.organization.name_el; else; "N/A"; end %></td>
-            </tr>
+		 </thead>
+		 <% @RAs.each_with_index do |ra, i|
+     		row_class = i%2 == 0 ? "even" : "odd" %>
+        	<tr class="<%= row_class %>">
+          	  	<td><%= ra.id %></td>
+               	<td><%= link_to(ra.description, :action => 'edit_ra', :id => ra.id) %></td>
+              	<td><%= if ra.organization; ra.organization.name_el; else; "N/A"; end %></td>
+        	</tr>
 			<% end %>
 		</table>
 		<br />
-		<%= link_to 'Προσθήκη νέας Α.Τ.', :action=> "new_ra" %>
+			<%= link_to 'Προσθήκη νέας Α.Τ.', :action=> "new_ra" %>
 		<br />
-		<div align="right" style="position: relative;">
-		  <%= will_paginate @RAs %>
-		</div>
-	</div>
+     </div>
 </div>
+
+<script type="text/javascript">
+jQuery.extend( jQuery.fn.dataTableExt.oSort, {
+    "date-uk-pre": function ( a ) {
+        var ukDatea = a.split('/');
+        return (ukDatea[2] + ukDatea[1] + ukDatea[0]) * 1;
+    },
+ 
+    "date-uk-asc": function ( a, b ) {
+        return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+    },
+ 
+    "date-uk-desc": function ( a, b ) {
+        return ((a < b) ? 1 : ((a > b) ? -1 : 0));
+    }
+} );
+
+jQuery(document).ready(function() {
+	jQuery('#tablelist').dataTable({
+		"sPaginationType": "full_numbers",
+		"bLengthChange": false,
+		"iDisplayLength": 3,
+		"bSortClasses": false,
+		"aaSorting": [[ 0, "desc" ]],
+		"aoColumns": [
+		            { "sType": "numeric" },
+		            { "sType": "string" },
+		            { "sType": "string" },			
+					]
+				}
+		);
+} );
+</script>
