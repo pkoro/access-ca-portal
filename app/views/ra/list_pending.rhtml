@@ -10,7 +10,6 @@
 		<th>FQDN/E-mail</th>
 		<th>Οργανισμός</th>
 		<th>Ημερομηνία αίτησης</th>
-		<th>Αιτών</th>
       </tr>
 	 </thead>
       <% @certificate_requests.each_with_index do |csr, i| %>
@@ -51,7 +50,6 @@ jQuery(document).ready(function() {
 		            { "sType": "string" },
 		            { "sType": "string" },
 		            { "sType": "date-uk" },
-		            { "sType": "string" },
 					]
 				}
 		);
