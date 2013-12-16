@@ -119,7 +119,7 @@ class CaController < ApplicationController
         @action_title = "Λίστα αιτήσεων για υπογραφή"
         sort_init 'created_at'
         sort_update
-        @certificate_requests = CertificateRequest.paginate :page => params[:page], :per_page => 20, :order => sort_clause, :conditions => "status='approved'", :include => :organization
+        @certificate_requests = CertificateRequest.paginate :page => params[:page], :per_page => 50, :order => sort_clause, :conditions => "status='approved'", :include => :organization
       }
       wants.xml {
         reqs=[]
@@ -148,7 +148,7 @@ class CaController < ApplicationController
   end
   
   def list_rejected
-    @action_title = "Λίστα απορρυφθέντων αιτήσεων"
+    @action_title = "Λίστα απορριφθέντων αιτήσεων"
     sort_init 'created_at'
     sort_update
     # @certificate_requests = CertificateRequest.paginate :page => params[:page], :order => sort_clause, :conditions => "status='rejected'", :include => :organization
@@ -182,7 +182,7 @@ class CaController < ApplicationController
     sort_init 'certificates.updated_at','desc'
     sort_update
     # @certificates = Certificate.paginate :page => params[:page], :per_page => 20, :order => sort_clause, :joins => "inner join People on certificates.owner_id = people.id", :conditions => "certificates.owner_type = 'Person'"  
-    @certificates = Certificate.find(:all, :order => 'certificates.updated_at DESC', :joins => "inner join People on certificates.owner_id = people.id", :conditions => @organizations + " AND certificates.owner_type = 'Person'")
+    @certificates = Certificate.find(:all, :order => 'certificates.updated_at DESC', :joins => "inner join People on certificates.owner_id = people.id", :conditions =>"certificates.owner_type like 'Person'")
   end
 
   def list_host_certificates
@@ -190,7 +190,7 @@ class CaController < ApplicationController
     sort_init 'certificates.updated_at','desc'
     sort_update
     # @certificates = Certificate.paginate :page => params[:page], :per_page => 20, :order => sort_clause, :joins => "inner join Hosts on certificates.owner_id = hosts.id", :conditions => "certificates.owner_type = 'Host'"  
-    @certificates = Certificate.find(:all, :order => 'certificates.updated_at DESC', :joins => "inner join Hosts on certificates.owner_id = hosts.id", :conditions => @organizations + " AND certificates.owner_type = 'Host'")
+    @certificates = Certificate.find(:all, :order => 'certificates.updated_at DESC', :joins => "inner join Hosts on certificates.owner_id = hosts.id", :conditions =>"certificates.owner_type like 'Host'")
   end
   
   def check_list
