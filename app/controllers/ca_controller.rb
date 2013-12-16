@@ -148,14 +148,14 @@ class CaController < ApplicationController
   end
   
   def list_rejected
-    @organizations = "('false'"
-    RaOrganizationRelation.find(:all,:conditions=>["ra_id = ?",@ra_membership.ra_id]).each {|rel| @organizations += " OR organization_id = "+  rel.organization_id.to_s}
-    @organizations += ")"
+    # @organizations = "('false'"
+#     RaOrganizationRelation.find(:all,:conditions=>["ra_id = ?",@ra_membership.ra_id]).each {|rel| @organizations += " OR organization_id = "+  rel.organization_id.to_s}
+#     @organizations += ")"
     @action_title = "Λίστα απορρυφθέντων αιτήσεων"
     sort_init 'created_at'
     sort_update
-    # @certificate_requests = CertificateRequest.paginate :page => params[:page], :per_page => 20, :order => sort_clause, :conditions => "status='rejected'", :include => :organization
-    @certificate_requests = CertificateRequest.find(:all, :order => 'created_at', :conditions => @organizations + " AND status='rejected'", :include => :organization)
+    @certificate_requests = CertificateRequest.paginate :page => params[:page], :order => sort_clause, :conditions => "status='rejected'", :include => :organization
+    # @certificate_requests = CertificateRequest.find(:all, :order => 'created_at', :conditions => @organizations + " AND status='rejected'", :include => :organization)
   end
 
   def show_person_details
