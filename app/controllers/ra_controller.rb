@@ -29,7 +29,7 @@ class RaController < ApplicationController
     @action_title = "Λίστα αιτήσεων για υπογραφή"
     sort_init 'created_at'
     sort_update
-    #@certificate_requests = CertificateRequest.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :conditions => @organizations + " AND status='approved'", :include => :organization
+    # @certificate_requests = CertificateRequest.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :conditions =>        @organizations + " AND status='approved'", :include => :organization
     @certificate_requests = CertificateRequest.find(:all, :order => 'created_at', :conditions => @organizations + " AND status='approved'", :include => :organization)
   end
 

@@ -135,7 +135,7 @@ class CaController < ApplicationController
           else
             alt_names = "email.1 = " + Person.find(@csr.owner_id).email
           end
-          request[:body] =  @csr.body
+            request[:body] =  @csr.body
           request[:csr_type] =  @csr.csrtype
           request[:owner_type] =  req.request[:Type]
           request[:altnames] =  alt_names
@@ -148,6 +148,9 @@ class CaController < ApplicationController
   end
   
   def list_rejected
+    @organizations = "('false'"
+    RaOrganizationRelation.find(:all,:conditions=>["ra_id = ?",@ra_membership.ra_id]).each {|rel| @organizations += " OR organization_id = "+  rel.organization_id.to_s}
+    @organizations += ")"
     @action_title = "Λίστα απορρυφθέντων αιτήσεων"
     sort_init 'created_at'
     sort_update
