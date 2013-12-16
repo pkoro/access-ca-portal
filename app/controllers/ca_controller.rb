@@ -152,7 +152,7 @@ class CaController < ApplicationController
     sort_init 'created_at'
     sort_update
     # @certificate_requests = CertificateRequest.paginate :page => params[:page], :order => sort_clause, :conditions => "status='rejected'", :include => :organization
-    @certificate_requests = CertificateRequest.find(:all, :order => 'created_at', :conditions =>"AND status='rejected'", :include => :organization)
+    @certificate_requests = CertificateRequest.find(:all, :order => 'created_at', :conditions =>"status like 'rejected'", :include => :organization)
   end
 
   def show_person_details
