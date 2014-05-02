@@ -348,6 +348,8 @@ private
           has_access=true
         when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Nikolaos Triantafyllidis"
           has_access=true
+        when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Alexandra Charalampidou"
+          has_access=true
         when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Konstantina Chanioti"
           has_access=true
         when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Dimitrios Folias"
