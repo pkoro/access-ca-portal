@@ -110,7 +110,7 @@ class CaController < ApplicationController
     @action_title = "Λίστα αιτήσεων για ταυτοποίηση"
     sort_init 'created_at'
     sort_update
-    @certificate_requests = CertificateRequest.paginate :page => params[:page], :per_page => 20, :order => sort_clause, :conditions => "status='pending'", :include => :organization
+    @certificate_requests = CertificateRequest.paginate :page => params[:page], :per_page => 50, :order => sort_clause, :conditions => "status='pending'", :include => :organization
   end
 
   def list_approved
