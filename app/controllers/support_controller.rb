@@ -76,9 +76,9 @@ private
       case Person.find(session[:userid]).personal_certificate.subject_dn
       when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Christos Kanellopoulos"
         has_access=true
-      when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Christos Triantafyllidis"
-        has_access=true
       when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Nikolaos Triantafyllidis"
+        has_access=true
+      when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Danai Andreadi"
         has_access=true
       when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Paschalis Korosoglou"
         has_access=true
