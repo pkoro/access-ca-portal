@@ -217,13 +217,13 @@ class CaController < ApplicationController
     crl[:warning] = 30
     crl[:critical] = 23
     @CRLs << crl
-    crl = Hash.new
-    crl[:CAName] = "SEE-GRID CA"
-    crl[:url] = "http://www.grid.auth.gr/pki/seegrid-ca/services/crl/crl-v2.pem"
-    crl[:object] = OpenSSL::X509::CRL.new(open(crl[:url]).read)
-    crl[:warning] = 23
-    crl[:critical] = 16
-    @CRLs << crl
+    # crl = Hash.new
+#     crl[:CAName] = "SEE-GRID CA"
+#     crl[:url] = "http://www.grid.auth.gr/pki/seegrid-ca/services/crl/crl-v2.pem"
+#     crl[:object] = OpenSSL::X509::CRL.new(open(crl[:url]).read)
+#     crl[:warning] = 23
+#     crl[:critical] = 16
+#     @CRLs << crl
   end
   
   def upload_certs
