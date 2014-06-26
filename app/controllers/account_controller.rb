@@ -408,7 +408,7 @@ class AccountController < ApplicationController
         flash[:notice] = "Το ψηφιακό σας πιστοποιητικό έχει ενεργοποιηθεί"
         redirect_to :controller => params[:redirected_from_controller], :action => params[:redirected_from_action]
       else
-        flash[:notice] = "Αν δεν αποδεχθείτε τους όρους χρήσης του ψηφιακού σας πιστοποιητικο ΔΕΝ μπορείτε να το χρησιμοποιήσετε και θα ανακληθεί οριστικά εντός 7 ημερών από την ημέρα εκδόσεώς του."
+        flash[:notice] = "Αν δεν αποδεχθείτε τους όρους χρήσης του ψηφιακού σας πιστοποιητικού ΔΕΝ μπορείτε να το χρησιμοποιήσετε και θα ανακληθεί οριστικά εντός 7 ημερών από την ημέρα εκδόσεώς του."
         redirect_to :action => "accept_personal_certificate", :id => @uniqueid
       end
     else
