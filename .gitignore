@@ -3,3 +3,4 @@
 *deploy.rb
 TEST-CA/
 Capfile
+log/
