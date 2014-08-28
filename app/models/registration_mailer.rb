@@ -278,7 +278,7 @@ class RegistrationMailer < ActionMailer::Base
   def notification_for_expiration(expire_in_a_week, expire_in_a_month)
     @headers['Content-Transfer-Encoding'] = "8bit"
     @subject = "These certificates will expire soon"
-    @recipients = "ctria@grid.auth.gr"
+    @recipients = "pkoro@grid.auth.gr"
     @charset = "utf-8"
     @from = "support@grid.auth.gr"
     @body["expire_in_a_week"] = expire_in_a_week
