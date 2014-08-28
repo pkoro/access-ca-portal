@@ -13,7 +13,7 @@ pending_requests = ""
 certificate_requests.each do |cert_req|
   # O account και ο host controller (x509 authentication) κάνουν log: Created csr with id 
   # Ο register (email authentication) κάνει log: Created CSR with id 
-  if cert_req.owner.last_id_check_on? && cert_req.owner.last_id_check_on > 3.years.ago && !RegistrationLog.find(:first, :conditions =>["action = 'Created csr with id = ?'",cert_req.id]).nil?
+  if cert_req.owner.last_id_check_on? && cert_req.owner.last_id_check_on > 5.years.ago && !RegistrationLog.find(:first, :conditions =>["action = 'Created csr with id = ?'",cert_req.id]).nil?
     pending_requests += cert_req.owner.email + ", https://access.hellasgrid.gr/ra/show_request_details/" + cert_req.id.to_s + "\n"
   end
 end
