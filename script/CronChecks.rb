@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+
+require "./config/environment"
+
 include X509Certificate
 #sync certificate status
 Certificate.find(:all, :conditions => ["status = 'valid'"]).each {|crt|
