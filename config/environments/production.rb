@@ -26,7 +26,7 @@ config.action_mailer.raise_delivery_errors = true
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
-  :address => "10.206.123.82",
+  :address => "127.0.0.1",
   :port => 25,
   :domain => "grid.auth.gr"
 }
