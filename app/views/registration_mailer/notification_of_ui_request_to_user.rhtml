@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-</head>
-<body>
 Αξιότιμε χρήστη,
 
-<p>η αίτησή σας για πρόσβαση στο UI με τα παρακάτω στοιχεία έχει καταχωρηθεί επιτυχώς.</p>
+η αίτησή σας για πρόσβαση στο UI με τα παρακάτω στοιχεία έχει καταχωρηθεί επιτυχώς.
 
-<p>
 Name: <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
   	<%=@person.first_name_en + " " + @person.last_name_en %>
 <% else %>
   	<%=@person.first_name_el + " " + @person.last_name_el %>
 <% end %>
-<br>
+
 E-mail: <%= @person.email %>
 
-</p>
-<p>Μέσα στις επόμενες ημέρες θα λάβετε τα στοιχεία πρόσβασης στο UI μέσω e-mail.</p>
+
+
+Μέσα στις επόμενες ημέρες θα λάβετε τα στοιχεία πρόσβασης στο UI μέσω e-mail.
 
 Με εκτίμηση,
 Hellasgrid Support Team
-</body>
-</html>
