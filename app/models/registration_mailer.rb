@@ -266,6 +266,15 @@ class RegistrationMailer < ActionMailer::Base
      @body["person"] = person
   end
   
+  def notification_of_see_vo_request_to_user(person)
+      @headers['Content-Transfer-Encoding'] = "8bit"
+      @subject = "Request for SEE VO membership acknowledged"
+      @recipients = person.email
+      @charset = "utf-8"
+      @from = "see-vo@grid.auth.gr"
+      @body["person"] = person
+  end
+  
   def notification_of_nwchem_vo_request(person, recipients)
     @headers['Content-Transfer-Encoding'] = "8bit"
      @subject = "Request for nwchem VO membership"
