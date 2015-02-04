@@ -247,6 +247,15 @@ class RegistrationMailer < ActionMailer::Base
      @body["person"] = person
      @body["ui"] = ui
   end
+  
+  def notification_of_ui_request_to_user(person)
+      @headers['Content-Transfer-Encoding'] = "8bit"
+      @subject = "UI request acknowledged"
+      @recipients = person.email
+      @charset = "utf-8"
+      @from = "support@grid.auth.gr"
+      @body["person"] = person
+  end
 
   def notification_of_see_vo_request(person, recipients)
     @headers['Content-Transfer-Encoding'] = "8bit"

@@ -17,7 +17,7 @@ class RegisterController < ApplicationController
     @scientific_fields = ScientificField.find(:all).map {|o| [truncate(o.description, 40), o.id]}
   end
   
-  # Pros8eth enan kainourgio xrhsth sthn database. An uparxei
+  # Pros8etei enan kainourgio xrhsth sthn database. An uparxei
   # error kanei render to action tou registration_form. Prepei
   # na ksanaparoume tous organismous!
   def add_new_person

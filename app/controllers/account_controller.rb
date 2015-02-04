@@ -291,6 +291,7 @@ class AccountController < ApplicationController
                   :action => "Created UI request with id = " + record.id.to_s,
                   :data => record.to_yaml)
       RegistrationMailer.deliver_notification_of_ui_request(@person, params[:ui_request][:user_interface],"user-support@hellasgrid.gr")
+      RegistrationMailer.deliver_notification_of_ui_request_to_user(@person)
       flash[:notice] = "Η αίτησή σας έχει αποσταλλεί στην ομάδα υποστήριξης του HellasGrid"
       redirect_to :action => "index"
     else
