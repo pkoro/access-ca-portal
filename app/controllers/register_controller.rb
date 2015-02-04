@@ -4,7 +4,11 @@ class RegisterController < ApplicationController
   # First page/action
   def index
     render_comatose :page=>"home", :layout => true
-  end 
+  end
+  
+  def about_ca
+      render_comatose :page=>"about_ca", :layout => true
+  end
   
   # Show the person registration form
   # Pairnw tous organismous apo th db. H truncate
