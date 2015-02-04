@@ -2,8 +2,7 @@
 
 η αίτησή σας για πρόσβαση στο UI με τα παρακάτω στοιχεία έχει καταχωρηθεί επιτυχώς.
 
-Name: <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
-  	<%=@person.first_name_en + " " + @person.last_name_en %>
+Name: <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %><%=@person.first_name_en + " " + @person.last_name_en %>
 <% else %>
   	<%=@person.first_name_el + " " + @person.last_name_el %>
 <% end %>

@@ -2,8 +2,7 @@
 
 η αίτησή σας για το SEE VO με τα παρακάτω στοιχεία έχει καταχωρηθεί επιτυχώς.
 
-Name: <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
-  	<%=@person.first_name_en + " " + @person.last_name_en %>
+Name: <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %><%=@person.first_name_en + " " + @person.last_name_en %>
 <% else %>
   	<%=@person.first_name_el + " " + @person.last_name_el %>
 <% end %>
@@ -12,7 +11,7 @@ E-mail: <%= @person.email %>
 
 
 
-Μέσα στις επόμενες ημέρες θα λάβετε mail ενημέρωσης σχετικά την ένταξή σας στο SEE VO.
+Μέσα στις επόμενες ημέρες θα λάβετε mail ενημέρωσης σχετικά την εγγραφή σας στο SEE VO.
 
 Με εκτίμηση,
 Hellasgrid Support Team
