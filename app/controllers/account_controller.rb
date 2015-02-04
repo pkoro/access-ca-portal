@@ -325,6 +325,7 @@ class AccountController < ApplicationController
                   :action => "Created SEE VO request with id = " + record.id.to_s,
                   :data => record.to_yaml)
       RegistrationMailer.deliver_notification_of_see_vo_request(@person,"rt-vo-services@grid.auth.gr")
+      RegistrationMailer.deliver_notification_of_see_vo_request_to_user(@person)
       flash[:notice] = "Η αίτησή σας έχει αποσταλλεί στην ομάδα υποστήριξης του SEE VO"
       redirect_to :action => "index"
     else
