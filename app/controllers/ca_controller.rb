@@ -14,7 +14,7 @@ class CaController < ApplicationController
     @action_title = "Διαχείρηση Α.Τ."
     sort_init 'registration_authorities.id','asc'
     sort_update
-    @RAs = RegistrationAuthority.paginate :page => params[:page], :per_page => 25, :order => sort_clause
+    @RAs = RegistrationAuthority.paginate :page => params[:page], :per_page => 30, :order => sort_clause
   end
   
   def edit_ra
