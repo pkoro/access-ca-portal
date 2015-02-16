@@ -165,3 +165,10 @@ legend {
 	text-indent: -1em;
 }
 
+#ca_table {
+	border-collapse: collapse;
+}
+
+.ca_row td {
+	border: 1px solid black;
+}
