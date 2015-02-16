@@ -7,7 +7,7 @@ class RegisterController < ApplicationController
   end
   
   def about_ca
-      render_comatose :page=>"about_ca", :layout => true
+      render :page=>"about_ca", :layout => true
   end
   
   # Show the person registration form
