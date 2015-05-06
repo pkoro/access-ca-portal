@@ -169,6 +169,6 @@ legend {
 	border-collapse: collapse;
 }
 
-.ca_row td {
-	border: 1px solid black;
-}
++.ca_column td {
+        border: 1px solid black;
+ }
