@@ -1,4 +1,4 @@
-Ένας χρήστης (έστω ο <%= if @person.first_name_el.empty? or @person.last_name_el.empty? then @person.first_name_en + " " + @person.last_name_en  else @person.first_name_el + " " + @person.last_name_el end %>, <%= @person.email %> )
+Ένας χρήστης, ο <%= if @person.first_name_el.empty? or @person.last_name_el.empty? then @person.first_name_en + " " + @person.last_name_en  else @person.first_name_el + " " + @person.last_name_el end %>, <%= @person.email %>,
 
 
 έχει κάνει αίτηση για προσωπικό πιστοποιητικό στην Α.Π. HellasGrid CA ΑΛΛΑ δεν υπάρχει Α.Τ. να τον εξυπηρετήσει.
