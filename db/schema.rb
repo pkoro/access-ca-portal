@@ -26,10 +26,10 @@ ActiveRecord::Schema.define(:version => 20130213155222) do
     t.string   "uniqueid"
     t.string   "csrtype"
     t.string   "owner_type",      :default => "Person", :null => false
-    t.integer  "requestor_id",                          :null => false
+    t.integer  "requestor_id",    :default => 0,        :null => false
     t.integer  "ra_id"
-    t.text     "body",                                  :null => false
-    t.integer  "organization_id",                       :null => false
+    t.text     "body",            :default => "",       :null => false
+    t.integer  "organization_id", :default => 0,        :null => false
   end
 
   create_table "certificates", :force => true do |t|
@@ -42,9 +42,6 @@ ActiveRecord::Schema.define(:version => 20130213155222) do
     t.datetime "created_at",                   :null => false
     t.datetime "updated_at",                   :null => false
   end
-
-  add_index "certificates", ["owner_id"], :name => "ownerid_index"
-  add_index "certificates", ["owner_type"], :name => "ownertype_index"
 
   create_table "comatose_page_versions", :force => true do |t|
     t.integer  "comatose_page_id"
@@ -85,10 +82,10 @@ ActiveRecord::Schema.define(:version => 20130213155222) do
   end
 
   create_table "email_confirmations", :force => true do |t|
-    t.string   "user_hash",    :null => false
+    t.string   "user_hash",                                       :null => false
     t.integer  "person_id"
     t.datetime "confirmed_on"
-    t.datetime "created_at",   :null => false
+    t.datetime "created_at",   :default => '2015-05-14 15:39:31', :null => false
   end
 
   create_table "host_administration_requests", :force => true do |t|
@@ -131,31 +128,24 @@ ActiveRecord::Schema.define(:version => 20130213155222) do
 
   create_table "people", :force => true do |t|
     t.string   "department"
-    t.string   "position",            :default => "",    :null => false
-    t.string   "email",               :default => "",    :null => false
-    t.string   "work_phone",          :default => "",    :null => false
+    t.string   "position",            :default => "", :null => false
+    t.string   "email",               :default => "", :null => false
+    t.string   "work_phone",          :default => "", :null => false
     t.string   "scientific_area"
-    t.string   "first_name_el",       :default => "",    :null => false
-    t.string   "first_name_en",       :default => "",    :null => false
-    t.string   "last_name_el",        :default => "",    :null => false
-    t.string   "last_name_en",        :default => "",    :null => false
+    t.string   "first_name_el",       :default => "", :null => false
+    t.string   "first_name_en",       :default => "", :null => false
+    t.string   "last_name_el",        :default => "", :null => false
+    t.string   "last_name_en",        :default => "", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "organization_id"
-    t.integer  "email_confirmation",  :default => 0,     :null => false
-    t.integer  "sex",                 :default => 0,     :null => false
+    t.integer  "email_confirmation",  :default => 0,  :null => false
+    t.integer  "sex",                 :default => 0,  :null => false
     t.integer  "version"
     t.integer  "last_id_check_by"
     t.datetime "last_id_check_on"
     t.integer  "scientific_field_id"
-    t.string   "persistence_token"
-    t.string   "perishable_token",    :default => "",    :null => false
-    t.boolean  "active",              :default => false
-    t.boolean  "deleted",             :default => false
   end
-
-  add_index "people", ["organization_id"], :name => "organizationid_index"
-  add_index "people", ["perishable_token"], :name => "index_people_on_perishable_token"
 
   create_table "person_versions", :force => true do |t|
     t.integer  "person_id"
@@ -177,10 +167,6 @@ ActiveRecord::Schema.define(:version => 20130213155222) do
     t.integer  "last_id_check_by"
     t.datetime "last_id_check_on"
     t.integer  "scientific_field_id"
-    t.string   "persistence_token"
-    t.string   "perishable_token",    :default => "",    :null => false
-    t.boolean  "active",              :default => false
-    t.boolean  "deleted",             :default => false
   end
 
   create_table "prace_t1_requests", :force => true do |t|
@@ -213,21 +199,6 @@ ActiveRecord::Schema.define(:version => 20130213155222) do
     t.string   "person_dn"
     t.string   "action"
     t.text     "data"
-  end
-
-  create_table "roles", :force => true do |t|
-    t.string   "name",              :limit => 40
-    t.string   "authorizable_type", :limit => 40
-    t.integer  "authorizable_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "roles_users", :force => true do |t|
-    t.integer  "person_id"
-    t.integer  "role_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "scientific_fields", :force => true do |t|

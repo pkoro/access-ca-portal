@@ -38,6 +38,7 @@ Rails::Initializer.run do |config|
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   config.i18n.load_path += Dir[File.join(RAILS_ROOT, 'config', 'locales', '**', '*.{rb,yml}')]
+  config.i18n.enforce_available_locales = false
   config.i18n.default_locale = :el  
 end
 

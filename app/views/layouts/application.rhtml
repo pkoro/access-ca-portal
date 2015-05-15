@@ -63,7 +63,7 @@
 	<body style="background: #535353;">
 		<div class="container" style="background-color: Black;">
 		  <div class="column span-24 last" style="text-align:right; color: #BEBEBE;">
-			  <% if session.has_key? :usercert %> Logged in as: <%=  session[:usercert] %><% else %>Not Logged In<% end %> &nbsp; &nbsp;
+          <% if session[:usercert] %> <%= I18n.t "views.logged_in_as" %>: <%=  session[:usercert] %> <% else %> <%= I18n.t "views.not_logged_in" %><% end %> &nbsp; &nbsp;
 	    </div>
 		</div>
 		<div class="container" style="background: #fff; overflow: hidden;">

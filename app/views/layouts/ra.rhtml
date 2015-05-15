@@ -37,7 +37,7 @@
   <tr>
     <td class="color00" align="right">
 	
-	<span class="pageTopMenu">Logged in as: <%= session[:usercert] %></span>  &nbsp; &nbsp;
+	<span class="pageTopMenu"><%= I18n.t "views.logged_in_as" %>:  <%= session[:usercert] %></span>  &nbsp; &nbsp;
 
 	</td>
   </tr>
@@ -65,13 +65,13 @@
 		  <% if @action != "index" %>
           <td class="leftCol" valign="top" width="200" id="leftColContainer">
 			<ul id="Procedure" style="padding: 5px" >
-			<li class="leftMenuHead">Επιλογές</li>
-			<li><%= link_to_unless_current 'Λίστα αιτήσεων σε αναμονή για ταυτοποίηση', :action => 'list_pending' %></li>
-			<li><%= link_to_unless_current 'Λίστα αιτήσεων σε αναμονή για υπογραφή', :action => 'list_approved' %></li>
-			<li><%= link_to_unless_current 'Λίστα απορριφθέντων αιτήσεων', :action => 'list_rejected' %></li>
-			<li><%= link_to_unless_current 'Λίστα πιστοποιητικών χρηστών', :action => 'list_user_certificates' %></li>
-			<li><%= link_to_unless_current 'Λίστα πιστοποιητικών διακομιστών', :action => 'list_host_certificates' %></li>
-			<li><%= link_to_unless_current 'Διαχείριση Α.Τ.', :action => 'manage_operators' %></li>
+			<li class="leftMenuHead"><%= I18n.t "views.layouts.ca_ra.options"%></li>
+			<li><%= link_to_unless_current "#{I18n.t "views.layouts.ca_ra.identification_pending_list"}", :action => 'list_pending' %></li>
+			<li><%= link_to_unless_current "#{I18n.t "views.layouts.ca_ra.signing_pending_list"}", :action => 'list_approved' %></li>
+			<li><%= link_to_unless_current "#{I18n.t "views.layouts.ca_ra.rejected_list"}", :action => 'list_rejected' %></li>
+			<li><%= link_to_unless_current "#{I18n.t "views.layouts.ca_ra.user_certificate_list"}", :action => 'list_user_certificates' %></li>
+			<li><%= link_to_unless_current "#{I18n.t "views.layouts.ca_ra.server_certificate_list"}", :action => 'list_host_certificates' %></li>
+			<li><%= link_to_unless_current "#{I18n.t "views.layouts.ca_ra.manage_ra"}", :action => 'manage_operators' %></li>
             </ul>
             <div  style="margin-top:5px;color:#505050;text-decoration:none;padding-left:5px;font-weight:bold;">
             <% if @page_info %>

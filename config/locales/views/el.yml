@@ -1,4 +1,50 @@
 el:
   views:
-    logged_in_as: logged in as
-    not_logged_in: not logged in
+    logged_in_as: Συνδεδεμένος ως
+    not_logged_in: Μη Συνδεδεμενος
+    contact: Επικοινωνία
+    layouts:
+      common:
+        registered_users: Υπάρχοντες Χρήστες
+        registered_users_text: "Αν στο παρελθόν είχατε αποκτήσει ψηφιακό πιστοποιητικό από την Α.Π. ΗellasGrid CA το οποίο έχει πλέον λήξει, συμπληρώστε στο πεδίο που ακολουθεί το e-mail σας για να	προχωρήσετε στη διαδικασία αίτησης καινούργιου φηφιακού πιστοποιητικού."
+        already_have_certificate: Έχετε ήδη πιστοποιητικό από την Αρχή Πιστοποίησης HellasGrid CA;
+        already_have_certificate_text: "Σε περίπτωση που έχετε ήδη πιστοποιητικό από την Αρχή Πιστοποίησης	HellasGrid CA (και είναι εγκατεστημένο στον browser σας), μπορείτε να επισκεφθείτε τη"
+        management_page: σελίδα διαχείρισης
+        already_have_certificate_text_2:" του προσωπικού σας λογαριασμού	παρακάμπτωντας την διαδικασία της εγγραφής σας στο HellasGrid."
+        search: Αναζήτηση
+        send_application_title: Αποστολή αιτήσεως
+      register:
+        process: Διαδικασία
+        registration_title: Καταχώρηση προσωπικών στοιχείων
+        certificate_application: Αίτηση ψηφιακού πιστοποιητικού
+        certificate_application_title: Αίτηση ψηφιακού πιστοποιητικού
+      account:
+        update_personal_data_title: Ενημέρωση προσωπικών στοιχείων
+        renew_certificate_application_title: Αίτηση ανανέωσης ψηφιακού πιστοποιητικού
+        access_ui_application_title: Αίτηση πρόσβασης σε UI
+        access_seevo_application_title: Αίτηση πρόσβασης στο SEE VO
+        servers_certificates_title: Πιστοποιητικά Διακομιστών
+        pending_servers_certificates_title: Αιτήσεις πιστοποιητικών σε αναμονή
+      ca_ra:
+        options: Επιλογές
+        identification_pending_list: Λίστα αιτήσεων σε αναμονή για ταυτοποίηση
+        signing_pending_list: Λίστα αιτήσεων σε αναμονή για υπογραφή
+        rejected_list: Λίστα απορριφθέντων αιτήσεων
+        user_certificate_list: Λίστα πιστοποιητικών χρηστών
+        server_certificate_list: Λίστα πιστοποιητικών διακομιστών
+        manage_ra: Διαχείριση Α.Τ.
+      cert:
+        operations: Λειτουργίες
+        search_certificate: Αναζήτηση πιστοποιητικού
+        check_application_progress: Έλεγχος κατάστασης αίτησης
+        check_installed_certificate_browser: Έλεγχος εγκατεστημένου πιστοποιητικού στον browser
+      host:
+        process: Διαδικασία
+        server_list: Κατάλογος διακομιστών
+        new_certificate_application: Αίτηση νέου πιστοποιητικού
+      layout_cert_in_browser_test:
+      
+      myproxy:
+        
+      support:
+      

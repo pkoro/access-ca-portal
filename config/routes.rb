@@ -43,46 +43,50 @@ ActionController::Routing::Routes.draw do |map|
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
   # You can have the root of your site routed by hooking up '' 
   # -- just remember to delete public/index.html.
-  map.comatose_admin 
-
-  map.resource :person
-
-  map.connect '', :controller => 'site' , :action => 'show'
+  # map.comatose_root ''
   
-  map.connect '/about_ca', :controller => 'register', :action => 'about_ca'
+  map.comatose_admin
+  # map.comatose_root ''
 
-  # Allow downloading Web Service WSDL as a file with an extension
-  # instead of a file named 'wsdl'
-  map.connect ':controller/service.wsdl', :action => 'wsdl'
+  map.with_options :name_prefix => "", :path_prefix => ":locale" do |locale|
 
-  # Install the default route as the lowest priority.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+    locale.connect '', :controller => 'site' , :action => 'show'
   
-  map.person_details "support/show_person_details/:id/version/:version",
-                    :controller => "support",
-                    :action => "show_person_details",
-                    :id => /\d+/,
-                    :version => nil
+    locale.connect '/about_ca', :controller => 'register', :action => 'about_ca'
 
-  map.ra_person_details "ra/show_person_details/:id/version/:version",
-                    :controller => "ra",
-                    :action => "show_person_details",
-                    :id => /\d+/,
-                    :version => nil
+    # # Allow downloading Web Service WSDL as a file with an extension
+    # # instead of a file named 'wsdl'
+    # map.connect ':controller/service.wsdl', :action => 'wsdl'
+
+    # Install the default route as the lowest priority.
+    locale.connect ':controller/:action/:id'
+    locale.connect ':controller/:action/:id.:format'
+  
+    locale.person_details "support/show_person_details/:id/version/:version",
+                      :controller => "support",
+                      :action => "show_person_details",
+                      :id => /\d+/,
+                      :version => nil
+
+    locale.ra_person_details "ra/show_person_details/:id/version/:version",
+                      :controller => "ra",
+                      :action => "show_person_details",
+                      :id => /\d+/,
+                      :version => nil
                     
-  map.host_details "host/show_host_details/:id/version/:version",
-                    :controller => "host",
-                    :action => "show_host_details",
-                    :id => /\d+/,
-                    :version => nil
+    locale.host_details "host/show_host_details/:id/version/:version",
+                      :controller => "host",
+                      :action => "show_host_details",
+                      :id => /\d+/,
+                      :version => nil
 
-  map.ra_host_details "ra/show_host_details/:id/version/:version",
-                    :controller => "ra",
-                    :action => "show_host_details",
-                    :id => /\d+/,
-                    :version => nil
+    locale.ra_host_details "ra/show_host_details/:id/version/:version",
+                      :controller => "ra",
+                      :action => "show_host_details",
+                      :id => /\d+/,
+                      :version => nil
 
-  # if no route matches... render the relevant comatose page
-  map.connect '*id' , :controller => 'site' , :action => 'show'                 
+    # if no route matches... render the relevant comatose page
+    locale.connect '*id' , :controller => 'site' , :action => 'show'
+  end
 end

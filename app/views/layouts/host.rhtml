@@ -56,10 +56,10 @@
 		  <% if params[:action] != "index" %>
           <td class="leftCol" valign="top" width="200" id="leftColContainer" style="padding: 1px">
 			<ul id="Procedure" style="padding: 5px">
-            	<li class="leftMenuHead">Διαδικασία</li>
-				<li><%= link_to_unless_current "Κατάλογος διακομιστών", :action => "list" %></li>
-				<li><%= link_to_unless_current "Αίτηση νέου ψηφιακού πιστοποιητικού", :action => "manual_csr" %></li>
-				<li><%= link_to_unless_current "Αποστολή αιτήσεως", :action => "csr_receipt" %></li>
+            	<li class="leftMenuHead"><%= I18n.t "views.layouts.host.process"%></li>
+				<li><%= link_to_unless_current "#{I18n.t "views.layouts.host.server_list"}", :action => "list" %></li>
+				<li><%= link_to_unless_current "#{I18n.t "views.layouts.host.new_certificate_application"}", :action => "manual_csr" %></li>
+				<li><%= link_to_unless_current "#{I18n.t "views.layouts.common.send_application_title"}", :action => "csr_receipt" %></li>
             	<br /><br /><br /><br />
 				<li class="leftMenuHead">Επικοινωνία</li>
 				<li><%= mail_to "support@grid.auth.gr", "GridAUTH Support", :encode => "javascript" %></li>
@@ -82,18 +82,16 @@
           <td width="250" class="contentBody" valign="top" id="leftBox">
 			<% if params[:controller] == "register" && params[:action] == "registration_form" %>
 			<fieldset style="width: 230px; padding-left: 5px; padding-right: 1px;">
-				<legend>Υπάρχοντες Χρήστες</legend>
+				<legend><%= I18n.t "views.layouts.common.registered_users"%></legend>
 				<p style="padding-right: 20px; text-align: left;">
-					Αν στο παρελθόν είχατε αποκτήσει ψηφιακό πιστοποιητικό από την Α.Π. ΗellasGrid CA
-					το οποίο έχει πλέον λήξει , συμπληρώστε στο πεδίο που ακολουθεί το e-mail σας για να
-					προχωρήσετε στη διαδικασία αίτησης καινούργιου φηφιακού πιστοποιητικού.
+          <%= I18n.t "views.layouts.common.registered_users_text"%>
 				</p>	
 				<% form_tag :action=> "load_session" do %>
 					<div align="left" style="padding-right: 20px">
-					<label  for="person_email"><div style="text-align: left;">Αναζήτηση E-mail</div></label>
+					<label  for="person_email"><div style="text-align: left;"><%= I18n.t "views.layouts.register.search"%> e-mail</div></label>
 					<%= text_field(:person, :email, :class => "textbox", :size => "20") %>
 					</div>
-					<input type="submit" value="Αναζήτηση" class="textbox" />
+					<input type="submit" value="<%= I18n.t "views.layouts.register.search"%>" class="textbox" />
 				</p>
 				<% end %>
 			</fieldset>
@@ -101,11 +99,8 @@
 			<% elsif params[:controller] == "register" && params[:action] == "index" %>
 			<br />
 			<div style="border: grey solid 1px; padding: 10px; width: 300px">
-				<h1 style="font-size: 12px">Έχετε ήδη πιστοποιητικό από την Αρχή Πιστοποίησης HellasGrid CA;</h1>
-				<p>Σε περίπτωση που έχετε ήδη πιστοποιητικό από την Αρχή Πιστοποίησης
-					HellasGrid CA (και είναι εγκατεστημένο στον browser σας), μπορείτε να επισκεφθείτε τη 
-					<%= link_to "σελίδα διαχείρισης", :controller => "account" %> του προσωπικού σας λογαριασμού
-					παρακάμπτωντας την διαδικασία της εγγραφής σας στο HellasGrid.
+				<h1 style="font-size: 12px"><%= I18n.t "views.layouts.common.already_have_certificate"%></h1>
+				<p><%= I18n.t "views.layouts.common.already_have_certificate_text"%> <%= link_to "#{I18n.t "views.layouts.common.management_page"}", :controller => "account" %> <%= I18n.t "views.layouts.common.already_have_certificate_text_2"%>
 				</p>
 			</div>
 			<% end %>

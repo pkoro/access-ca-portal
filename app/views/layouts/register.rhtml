@@ -36,7 +36,7 @@
   <tr>
     <td class="color00" align="right">
 	
-	<span class="pageTopMenu"><% if session[:usercert] %> Logged in as: <%=  session[:usercert] %><% else %>Not Logged In<% end %></span>  &nbsp; &nbsp;
+	<span class="pageTopMenu"><% if session[:usercert] %> <%= I18n.t "views.logged_in_as" %>: <%=  session[:usercert] %> <% else %> <%= I18n.t "views.not_logged_in" %> <% end %></span>  &nbsp; &nbsp;
 	</td>
   </tr>
 </table>
@@ -73,23 +73,23 @@
 	</span>
 	</td>
   </tr>
-
+<!--Check again -->
   <tr>
     <td><table cellpadding="0" cellspacing="0" border="0" width="100%">
         <tr>
 		  <% if params[:action] != "index" %>
           <td class="leftCol" valign="top" width="200" id="leftColContainer" style="padding: 1px">
 			<ul id="Procedure" style="padding: 5px">
-            	<li class="leftMenuHead">Διαδικασία</li>
-				<li><%= link_to_unless_current "Καταχώρηση προσωπικών στοιχείων", :action => "registration_form" %></li>
+            	<li class="leftMenuHead"><%= I18n.t "views.layouts.register.process" %></li>
+				<li><%= link_to_unless_current "#{I18n.t "views.layouts.register.registration_title"}", :action => "registration_form" %></li>
 				<% if (params[:action] == "iexplorer_csr") || (params[:action] == "mozilla_csr") || (params[:action] == "manual_csr") %>
-				<li>Αίτηση ψηφιακού πιστοποιητικόυ</li>
+				<li><%= I18n.t "views.layouts.register.certificate_application"%></li>
 				<% else %>
-				<li><%= link_to_unless_current "Αίτηση ψηφιακού πιστοποιητικού", :action => "csr_form" %></li>
+				<li><%= link_to_unless_current "#{I18n.t "views.layouts.register.certificate_application_title"}", :action => "csr_form" %></li>
 			  	<% end %>
-				<li><%= link_to_unless_current "Αποστολή αιτήσεως", :action => "csr_receipt" %></li>
+				<li><%= link_to_unless_current "#{I18n.t "views.layouts.common.send_application_title"}", :action => "csr_receipt" %></li>
             	<br /><br /><br /><br />
-				<li class="leftMenuHead">Επικοινωνία</li>
+				<li class="leftMenuHead"><%= I18n.t "views.contact"%></li>
 				<li><%= mail_to "support@grid.auth.gr", "GridAUTH Support", :encode => "javascript" %></li>
 			</ul>
             <div  style="margin-top:5px;color:#505050;text-decoration:none;padding-left:5px;font-weight:bold;">
@@ -110,18 +110,16 @@
 			<% if params[:controller] == "register" && params[:action] == "registration_form" %>
       <td width="250" class="contentBody" valign="top" id="leftBox">
 			<fieldset style="width: 230px; padding-left: 5px; padding-right: 1px;">
-				<legend>Υπάρχοντες Χρήστες</legend>
+				<legend><%= I18n.t "views.layouts.common.registered_users"%></legend>
 				<p style="padding-right: 20px; text-align: left;">
-					Αν στο παρελθόν είχατε αποκτήσει ψηφιακό πιστοποιητικό από την Α.Π. ΗellasGrid CA
-					το οποίο έχει πλέον λήξει , συμπληρώστε στο πεδίο που ακολουθεί το e-mail σας για να
-					προχωρήσετε στη διαδικασία αίτησης καινούργιου φηφιακού πιστοποιητικού.
+          <%= I18n.t "views.layouts.common.registered_users_text"%>
 				</p>	
 				<% form_tag :action=> "load_session" do %>
 					<div align="left" style="padding-right: 20px">
-					<label  for="person_email"><div style="text-align: left;">Αναζήτηση E-mail</div></label>
+					<label  for="person_email"><div style="text-align: left;"><%= I18n.t "views.layouts.register.search"%> e-mail</div></label>
 					<%= text_field(:person, :email, :class => "textbox", :size => "20") %>
 					</div>
-					<input type="submit" value="Αναζήτηση" class="textbox" />
+					<input type="submit" value="<%= I18n.t "views.layouts.register.search"%>" class="textbox" />
 				</p>
 				<% end %>
 			</fieldset>

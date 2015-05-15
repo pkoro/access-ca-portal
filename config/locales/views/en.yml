@@ -1,0 +1,44 @@
+en:
+  views:
+    logged_in_as: Logged in as
+    not_logged_in: Not logged in
+    contact: Contact
+    layouts:
+      common:
+        registered_users: Registered Users
+        registered_users_text: "If in the past you had acquired a certificate from Hellasgrid CA that has expired, fill in the following field with your e-mail to proceed with the process of applying for a new certificate"
+        already_have_certificate: Do you already have a Hellasgrid CA certificate?
+        already_have_certificate_text: "In case you already have a Hellasgrid CA certificate (and it's installed in your browser), you can visit the"
+        management_page: management page
+        already_have_certificate_text_2:" of your personal account in Hellasgrid, overriding the registration process."
+        search: Search
+        send_application_title: Submit application
+      register:
+        process: Process
+        registration_title: Register personal details
+        certificate_application: Certificate application
+        certificate_application_title: Personal certificate application
+      account:
+        update_personal_data_title: Update personal data
+        renew_certificate_application_title: Certificate renewal application
+        access_ui_application_title: UI access application
+        access_seevo_application_title: SEE VO access application
+        servers_certificates_title: Servers certificates
+        pending_servers_certificates_title: Pending servers certificates
+      ca_ra:
+        options: Options
+        identification_pending_list: Pending identification applications list
+        signing_pending_list: Pending singing applications list
+        rejected_list: Rejected applications list
+        user_certificate_list: Users certificates list
+        server_certificate_list: Servers certificates list
+        manage_ra: Manage RA
+      cert:
+        operations: Operations
+        search_certificate: Search certificate
+        check_application_progress: Check application progress
+        check_installed_certificate_browser: Check browser for installed certificate
+      host:
+        process: Process
+        server_list: Server list
+        new_certificate_application: New certificate application
