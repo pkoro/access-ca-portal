@@ -344,7 +344,7 @@ private
           has_access=true
         when "/C=GR/O=HellasGrid/OU=auth.gr/CN=George Fergadis"
           has_access=true
-        when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Anastasis Andronidis"
+        when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Stefanos Laskaridis"
           has_access=true
         when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Nikolaos Triantafyllidis"
           has_access=true
