@@ -68,12 +68,12 @@
         <tr>
           <td class="leftCol" valign="top" width="200" id="leftColContainer" style="padding: 1px">
 						<ul id="Procedure" style="padding: 5px">
-							<li class="leftMenuHead">Μενού</li>
-							<li><%= link_to_unless_current "Δημιουργία και καταχώρηση MyProxy πιστοποιητικού", :action => "create_myproxy" %></li>
-							<li><%= link_to_unless_current "Προβολή πληροφοριών MyProxy πιστοποιητικού", :action => "myproxy_info" %></li>
-							<li><%= link_to "SSH πρόσβαση", "/gsissh/jws.jnlp" %></li>
+							<li class="leftMenuHead"><%=I18n.t "views.layouts.myproxy.menu"%></li>
+							<li><%= link_to_unless_current "#{I18n.t "views.layouts.myproxy.create_register_myproxy_certificate"}", :action => "create_myproxy" %></li>
+							<li><%= link_to_unless_current "#{I18n.t "views.layouts.myproxy.view_myproxy_certificate_issue"}", :action => "myproxy_info" %></li>
+							<li><%= link_to "SSH #{I18n.t "views.layouts.myproxy.access"}", "/gsissh/jws.jnlp" %></li>
             	<br /><br /><br /><br />
-							<li class="leftMenuHead">Επικοινωνία</li>
+							<li class="leftMenuHead"><%=I18n.t "views.contact"%></li>
 							<li><%= mail_to "support@grid.auth.gr", "GridAUTH Support", :encode => "javascript" %></li>
 						</ul>
             <div  style="margin-top:5px;color:#505050;text-decoration:none;padding-left:5px;font-weight:bold;">
@@ -88,18 +88,16 @@
           <td width="250" class="contentBody" valign="top" id="leftBox">
 			<% if params[:controller] == "register" && params[:action] == "registration_form" %>
 			<fieldset style="width: 230px; padding-left: 5px; padding-right: 1px;">
-				<legend>Υπάρχοντες Χρήστες</legend>
+				<legend><%=I18n.t "views.layouts.common.registered_users"%></legend>
 				<p style="padding-right: 20px; text-align: left;">
-					Αν στο παρελθόν είχατε αποκτήσει ψηφιακό πιστοποιητικό από την Α.Π. ΗellasGrid CA
-					το οποίο έχει πλέον λήξει , συμπληρώστε στο πεδίο που ακολουθεί το e-mail σας για να
-					προχωρήσετε στη διαδικασία αίτησης καινούργιου φηφιακού πιστοποιητικού.
+					<%=I18n.t "views.layouts.common.registered_users_text"%>
 				</p>	
 				<% form_tag :action=> "load_session" do %>
 					<div align="left" style="padding-right: 20px">
-					<label  for="person_email"><div style="text-align: left;">Αναζήτηση E-mail</div></label>
+					<label  for="person_email"><div style="text-align: left;"><%=I18n.t "views.layouts.common.search"%> E-mail</div></label>
 					<%= text_field(:person, :email, :class => "textbox", :size => "20") %>
 					</div>
-					<input type="submit" value="Αναζήτηση" class="textbox" />
+					<input type="submit" value="<%= I18n.t "views.layouts.register.search"%>" class="textbox" />
 				</p>
 				<% end %>
 			</fieldset>

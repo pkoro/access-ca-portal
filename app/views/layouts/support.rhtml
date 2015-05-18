@@ -75,12 +75,12 @@
 		  <% if @action != "index" %>
           <td class="leftCol" valign="top" width="200" id="leftColContainer">
 			<ul id="links">
-			<li class="linksHead">Πληροφορίες</li>
-			<li><%= link_to 'Λίστα Εγγεγραμμένων Χρηστών', :action => 'list_people' %></li>
-			<li><%= link_to 'Λίστα αιτήσεων για πιστοποιητικό', :action => 'list_certificate_requests' %></li>
-			<li><%= link_to 'Λίστα αιτήσεων για SEE VO', :action => 'list_see_vo_requests' %></li>
-			<li><%= link_to 'Λίστα αιτήσεων για πρόσβαση σε UI', :action => 'list_ui_requests' %></li>
-			<li><%= link_to 'Αρχείο εγγεγραμένων χρηστών σε Excel 2003 format', :action => 'export_registered_users' %>
+			<li class="linksHead"><%= I18n.t "views.layouts.support.information"%></li>
+			<li><%= link_to "#{I18n.t "views.layouts.support.registered_users_list"}", :action => 'list_people' %></li>
+			<li><%= link_to "#{I18n.t "views.layouts.support.certificate_request_list"}", :action => 'list_certificate_requests' %></li>
+			<li><%= link_to "#{I18n.t "views.layouts.support.seevo_request_list"}", :action => 'list_see_vo_requests' %></li>
+			<li><%= link_to "#{I18n.t "views.layouts.support.ui_request_list"}", :action => 'list_ui_requests' %></li>
+			<li><%= link_to "#{I18n.t "views.layouts.support.registered_users_excel"}", :action => 'export_registered_users' %>
             </ul>
             <div  style="margin-top:5px;color:#505050;text-decoration:none;padding-left:5px;font-weight:bold;">
             <% if @page_info %>

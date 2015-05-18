@@ -6,11 +6,11 @@ el:
     layouts:
       common:
         registered_users: Υπάρχοντες Χρήστες
-        registered_users_text: "Αν στο παρελθόν είχατε αποκτήσει ψηφιακό πιστοποιητικό από την Α.Π. ΗellasGrid CA το οποίο έχει πλέον λήξει, συμπληρώστε στο πεδίο που ακολουθεί το e-mail σας για να	προχωρήσετε στη διαδικασία αίτησης καινούργιου φηφιακού πιστοποιητικού."
-        already_have_certificate: Έχετε ήδη πιστοποιητικό από την Αρχή Πιστοποίησης HellasGrid CA;
-        already_have_certificate_text: "Σε περίπτωση που έχετε ήδη πιστοποιητικό από την Αρχή Πιστοποίησης	HellasGrid CA (και είναι εγκατεστημένο στον browser σας), μπορείτε να επισκεφθείτε τη"
+        registered_users_text: "Αν στο παρελθόν είχατε αποκτήσει ψηφιακό πιστοποιητικό από την Α.Π. ΗellasGrid CA το οποίο έχει πλέον λήξει, συμπληρώστε στο πεδίο που ακολουθεί το e-mail σας για να  προχωρήσετε στη διαδικασία αίτησης καινούργιου φηφιακού πιστοποιητικού."
+        already_have_certificate: Έχετε ήδη πιστοποιητικό από την Αρχή Πιστοποίησης HellasGrid CA
+        already_have_certificate_text: "Σε περίπτωση που έχετε ήδη πιστοποιητικό από την Αρχή Πιστοποίησης  HellasGrid CA (και είναι εγκατεστημένο στον browser σας), μπορείτε να επισκεφθείτε τη"
         management_page: σελίδα διαχείρισης
-        already_have_certificate_text_2:" του προσωπικού σας λογαριασμού	παρακάμπτωντας την διαδικασία της εγγραφής σας στο HellasGrid."
+        already_have_certificate_text_b: "του προσωπικού σας λογαριασμού  παρακάμπτωντας την διαδικασία της εγγραφής σας στο HellasGrid."
         search: Αναζήτηση
         send_application_title: Αποστολή αιτήσεως
       register:
@@ -42,9 +42,16 @@ el:
         process: Διαδικασία
         server_list: Κατάλογος διακομιστών
         new_certificate_application: Αίτηση νέου πιστοποιητικού
-      layout_cert_in_browser_test:
-      
-      myproxy:
-        
       support:
-      
+        information: Πληροφορίες
+        registered_users_list: Λίστα εγγεγραμμένων χρηστών
+        certificate_request_list: Λίστα αιτήσεων για πιστοποιητικό
+        seevo_request_list: Λίστα αιτήσεων για SEE VO
+        ui_request_list: Λίστα αιτήσεων για πρόσβαση σε UI
+        registered_users_excel: Αρχείο εγγεγραμένων χρηστών σε Excel 2003 format
+      myproxy:
+        menu: Μενού
+        create_register_myproxy_certificate: Δημιουργία και καταχώρηση myproxy πιστοποιητικού
+        view_myproxy_certificate_info: Προβολή πληροφοριών myproxy πιστοποιητικού
+        access: Πρόσβαση
+

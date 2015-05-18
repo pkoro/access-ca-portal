@@ -7,10 +7,10 @@ en:
       common:
         registered_users: Registered Users
         registered_users_text: "If in the past you had acquired a certificate from Hellasgrid CA that has expired, fill in the following field with your e-mail to proceed with the process of applying for a new certificate"
-        already_have_certificate: Do you already have a Hellasgrid CA certificate?
+        already_have_certificate: "Do you already have a Hellasgrid CA certificate?"
         already_have_certificate_text: "In case you already have a Hellasgrid CA certificate (and it's installed in your browser), you can visit the"
         management_page: management page
-        already_have_certificate_text_2:" of your personal account in Hellasgrid, overriding the registration process."
+        already_have_certificate_text_b: " of your personal account in Hellasgrid, overriding the registration process."
         search: Search
         send_application_title: Submit application
       register:
@@ -42,3 +42,15 @@ en:
         process: Process
         server_list: Server list
         new_certificate_application: New certificate application
+      support:
+        information: Information
+        registered_users_list: Registered users list
+        certificate_request_list: Pending certificate requests list
+        seevo_request_list: Pending SEE VO requests list
+        ui_request_list: Pending requests for UI access
+        registered_users_excel: Registered users file in Excel 2003 format
+      myproxy:
+        menu: Menu
+        create_register_myproxy_certificate: Create and register myproxy certificate
+        view_myproxy_certificate_info: View myproxy certificate information
+        access: Access
