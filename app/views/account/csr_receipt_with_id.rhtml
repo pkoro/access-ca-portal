@@ -1,5 +1,5 @@
 <center>
-	<h1>Η αίτησή σας έχει αποσταλλεί στην Αρχή Πιστοποίησης ΗellasGrid CA</h1>
+	<h1><%=I18n.t "views.account.request_sent"%></h1>
 </center>
 <br />
 <div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
@@ -7,29 +7,24 @@
 </div>
 <br />
 <p>
-	Η αίτησή σας έχει αποσταλλεί  στην Αρχή Πιστοποίησης ΗellasGrid CA και
-	παράλληλα  ενημερώθηκε η  Αρχή Ταυτοποίησης  (Α.Τ.) που  εξυπηρετεί το
-	οργανισμό   σας.  Εντός   μίας   εβδομάδας   πρέπει  να   επισκεφθείτε
-	αυτοπροσώπως το γραφείο της Α.Τ. έχοντας μαζί σας:
+  <%=I18n.t "views.account.request_sent_visit_ra"%>:
 </p>
 
 <ol>
-	<li><p>την αστυνομική ταυτότητα ή το διαβατήριό σας</p></li>
-	<li><p>κάποιο έγγραφο που  να πιστοποιεί την σχέση σας μετον οργανισμό,</p></li>
-	<li><p>αντίγραφο των παραπάνω,</p></li>
-	<li><p>μια εκτύπωση του παρόντος κειμένου.</p></li>
+	<li><p><%=I18n.t "views.account.id_card_or_passport"%>,</p></li>
+	<li><p><%=I18n.t "views.account.relation_to_org"%>,</p></li>
+	<li><p><%=I18n.t "views.account.copies"%>,</p></li>
+	<li><p><%=I18n.t "views.account.print_of_this_text"%>.</p></li>
 </ol>
 
 
 <p>
-	Μπορείτε να παρακολουθείτε την κατάσταση της αιτήσεώς σας μέσω του web
-	ακολουθώντας αυτόν τον <%= link_to "σύνδεσμο", @csr_status_link %>
+	<%=I18n.t "views.account.to_watch_request_progress"%>
+	<%=I18n.t "views.account.follow_this"%> <%= link_to "#{I18n.t "views.account.link"}", @csr_status_link %>
 </p>
 
 <p>
-	Για κάθε αίτηση που αποστέλλεται στην Α.Π., δημιουργείται ένα τυχαίο κλειδί
-	με το οποίο έχει κανείς πρόσβαση στα στοιχεία της αιτήσεως. Το κλειδί για την
-	δική σας αίτηση είναι:
+	<%=I18n.t "views.account.new_key_creation"%>
 </p>  
 
 <div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
@@ -37,7 +32,7 @@
 </div>
 
 <p>
-	Η Α.Τ. που εξυπηρετεί την περιοχή σας είναι η:
+	<%=I18n.t "views.account.regional_ra"%>:
 </p>  
 
 <div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
@@ -45,10 +40,9 @@
 </div>
 <br />
 <p>
-	Περισσότερες πληροφορίες για τις Α.Τ. της Α.Π. HellasGrid CA μπορείτε να βρείτε <a href="http://www.grid.auth.gr/el/services/hellasgrid-ca/">εδώ</a>.
+	<%=I18n.t "views.account.more_info_on_ca_ra"%> <a href="http://www.grid.auth.gr/el/services/hellasgrid-ca/"><%=I18n.t "views.account.here"%></a>.
 </p>
 <br />
 <p>
-	Ηλεκτρονικό αντίγραφο του παραπάνω κειμένου έχει αποσταλλεί ηλεκτρονικά στην
-	διεύθυνση: <%= @person.email %>
+	<%=I18n.t "views.account.mail_copy_sent"%>: <%= @person.email %>
 </p>

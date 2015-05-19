@@ -36,15 +36,13 @@ function loader()
 
 
 <fieldset>
-	<legend>Παραγωγή κλειδιού και αποστολή αιτήσεως στην Α.Π.</legend>
+	<legend><%=I18n.t "views.account.create_key_send_ca"%></legend>
 	<div class="blue_box">
 	<p>
-		Επιλέξτε το μέγεθος του προσωπικού κλειδιού που θέλετε να δημιουργήσετε
-		και προχωρήστε στην αποστολή. 
+		<%=I18n.t "views.account.select_key_size"%>
 	</p>
 	<p>
-		ΠΡΟΣΟΧΗ: Ο crypto provider που πρέπει να χρησιμοποιηθεί στον Internet
-		Explorer είναι ο Microsoft Enhanced (προεπιλεγμένη τιμή)
+		<%=I18n.t "views.account.warning_crypto_ie"%>
 	</p> 
 	</div>
 <% form_tag ({:action => 'submit_iexplorer_vista_csr'}, {:name => "GetData"}) do %>
@@ -71,6 +69,6 @@ function loader()
 	<input type="hidden" name="newkey" value="">
 	<label for="csp">Crypto Provider:</label></br />
 	<select name="csp" class="textbox"></select>
-	<input type="button" value="Αποστολή" name="submit_button" class="textbox" OnClick="GenReq()">
+	<input type="button" value="<%=I18n.t "views.send"%>" name="submit_button" class="textbox" OnClick="GenReq()">
 	<% end %>
 </fieldset>

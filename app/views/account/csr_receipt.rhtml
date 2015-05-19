@@ -1,5 +1,5 @@
 <center>
-	<h1>Η αίτησή σας έχει αποσταλλεί στην Αρχή Πιστοποίησης ΗellasGrid CA</h1>
+	<h1><%=I18n.t "views.account.request_sent"%></h1>
 </center>
 <br />
 <div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
@@ -7,16 +7,13 @@
 </div>
 <br />
 <p>
-	Μπορείτε να παρακολουθείτε την κατάσταση της αιτήσεώς σας μέσω του web
-	στη διεύθυνση:
+	<%=I18n.t "views.account.to_watch_request_progress"%>	<%=I18n.t "views.account.follow_this"%> <%=I18n.t "views.account.link"%>
 </p>
 
 <p><%= link_to @csr_status_link, @csr_status_link %></p>
 
 <p>
-	Για κάθε αίτηση που αποστέλλεται στην Α.Π., δημιουργείται ένα τυχαίο κλειδί
-	με το οποίο έχει κανείς πρόσβαση στα στοιχεία της αιτήσεως. Το κλειδί για την
-	δική σας αίτηση είναι:
+	<%=I18n.t "views.account.new_key_creation"%>:
 </p>  
 
 <div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
@@ -24,6 +21,5 @@
 </div>
 <br />
 <p>
-	Ηλεκτρονικό αντίγραφο του παραπάνω κειμένου έχει αποσταλλεί ηλεκτρονικά στην
-	διεύθυνση: <%= @person.email %>
+	<%=I18n.t "views.account.mail_copy_sent"%>: <%= @person.email %>
 </p>

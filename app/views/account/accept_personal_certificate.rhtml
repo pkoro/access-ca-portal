@@ -11,12 +11,11 @@
   <input type="hidden" name="redirected_from_controller" value="<%= params[:redirected_from_controller] %>">
   <input type="hidden" name="redirected_from_action" value="<%= params[:redirected_from_action] %>">
   <fieldset id="editFormFields">
-	<legend>Αποδοχή Όρων Χρήσης  Ψηφιακού Πιστοποιητικού</legend>
+	<legend><%=I18n.t "views.account.accept_terms_of_certificate"%></legend>
 	<p style="padding-right: 20px;">
-		Για να ενεργοποιηθεί το ψηφιακό πιστοποιητικό σας πρέπει να αποδεχθείτε τους όρους χρήσης του ψηφιακού
-		πιστοποιητικού όπως αυτοί περιγράφονται στο 
-		<%= link_to "Kείμενο Πολιτικής", "http://crl.grid.auth.gr/hellasgrid-ca-2006/cps/HellasGrid-CA-CP-CPS.pdf", :popup => true %>
-		της Αρχής Πιστοποίησης ΗellasGrid CA
+		<%=I18n.t "views.account.accept_terms_notice"%>
+		<%= link_to "#{I18n.t "views.account.terms_text"}", "http://www.grid.auth.gr/pki/hellasgrid-ca-2006/documents/cps/HellasGrid-CA-CP-CPS.pdf", :popup => true %>
+		<%=I18n.t "views.account.accept_terms_notice_2"%>
 	</p>
 	
 	<div align="center" style="border: grey solid 1px; padding: 10px; width: 400px">
@@ -26,9 +25,7 @@
 				<input type="checkbox" name="accept_policy" class ="textbox">
 			</td>
 			<td width="400">
-				<p>Έχω διαβάσει το Κείμενο Πολιτικής της Αρχής Πιστοποίσης ΗellasGrid CA
-				   με O.I.D. 1.3.6.1.4.1.16515.20.1.1.2.3 και αποδέχομαι τους όρους χρήσης 
-				  του ψηφιακού μου πιστοποιητικού
+				<p><%=I18n.t "views.account.personal_cert_accept_terms_declare"%> <%= @crt.owner.fqdn %>
 				</p>
 			</td>
 		</tr>
@@ -44,8 +41,7 @@
 <% else %>
 <div style="border: green solid 1px; padding: 10px; width: 450px; text-align: center">
 	<p>
-		Δεν έχετε αποδεχθεί τους όρους χρήσης του πιστοποιητικού το οποίο χρησιμοποιείτε.
-		Το πιστοποιητικό θα ανακληθεί οριστικά εντός 7 ημερών από την ημέρα εκδόσεώς του.
+    <%=I18n.t "views.account.host_terms_not_accepted_notice"%>
 	</p>
 </div>
 <% end %>

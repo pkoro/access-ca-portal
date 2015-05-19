@@ -6,18 +6,18 @@
 <% end %>
 
 <% form_tag :action=> "update_personal_information" do %>
-  
+<!-- <%=I18n.t "views.account."%> -->
   <fieldset id="editFormFields">
-	<legend>Ενημέρωση Στοιχείων</legend>
+	<legend><%=I18n.t "views.account.update_data"%></legend>
 	<table border="0" cellspacing="0" cellpadding="0" width="400px">
 		<tr>
-			<td width="150px"><label for="person_first_name">Όνομα</label></td>
+			<td width="150px"><label for="person_first_name"><%=I18n.t "views.account.name"%></label></td>
 			<td width="250px">
 				<table botder="0" cellspacing="0" cellpadding="0">
 					<tr>
-						<td><label for="person_first_name_el">Ελληνικά</label><br />
+						<td><label for="person_first_name_el"><%=I18n.t "views.account.greek"%></label><br />
 							<%= text_field :person, :first_name_el, :class => "textbox", :size => "20" %>						</td>
-						<td><label for="person_first_name_en">Αγγλικά</label><br />
+						<td><label for="person_first_name_en"><%=I18n.t "views.account.english"%></label><br />
 							<%= text_field :person, :first_name_en, :class => "textbox", :size => "20" %>
 						</td>
 					</tr>
@@ -25,14 +25,14 @@
 			</td>
 		</tr>
 		<tr>
-			<td><label for="person_last_name">Επώνυμο</label></td>
+			<td><label for="person_last_name"><%=I18n.t "views.account.surname"%></label></td>
 			<td width="250px">
 				<table botder="0" cellspacing="0" cellpadding="0">
 					<tr>
-						<td><label for="person_last_name_el">Ελληνικά</label><br />
+						<td><label for="person_last_name_el"><%=I18n.t "views.account.greek"%></label><br />
 							<%= text_field :person, :last_name_el, :class => "textbox", :size => "20" %>
 						</td>
-						<td><label for="person_last_name_en">Αγγλικά</label><br />
+						<td><label for="person_last_name_en"><%=I18n.t "views.account.english"%></label><br />
 							<%= text_field :person, :last_name_en, :class => "textbox", :size => "20" %>
 						</td>
 					</tr>
@@ -44,33 +44,33 @@
 			<td><%= text_field :person, :email, :class => "textbox", :size => "20" %></td>
 		</tr>
 		<tr>
-			<td><label for="person_organization_id">Οργανισμός</label></td>
+			<td><label for="person_organization_id"><%=I18n.t "views.account.organization"%></label></td>
 			<td height="40"><%= select(:person, :organization_id, @organizations, {:include_blank => false}, {:class => "textbox"})%></td>
 		</tr>
 		<tr>
-			<td><label for="person_work_phone">Τηλέφωνο εργασίας</label></td>
+			<td><label for="person_work_phone"><%=I18n.t "views.account.work_tel"%></label></td>
 			<td><%= text_field :person, :work_phone, :class => "textbox", :size => "20" %></td>
 		</tr>
 		<tr>
-			<td><label for="person_scientific_field_id">Επιστημονικός τομέας</label></td>
+			<td><label for="person_scientific_field_id"><%=I18n.t "views.account.scientific_field"%></label></td>
 			<td height="40"><%= select(:person, :scientific_field_id, @scientific_fields, {:include_blank => false}, {:class => "textbox"})%></td>
 		</tr>
 		<tr>
-			<td><label for="person_deparmtent">Τμήμα</label></td>
+			<td><label for="person_deparmtent"><%=I18n.t "views.account.department"%></label></td>
 			<td><%= text_field :person, :department, :class => "textbox", :size => "20" %></td>
 		</tr>
 		<tr>
-			<td><label for="person_position">Ιδιότητα</label></td>
+			<td><label for="person_position"><%=I18n.t "views.account.property"%></label></td>
 			<td height="40"><%= select(:person, :position, [
-			['Ερευνητής', 'Researcher'],
-			['Καθηγητής', 'Faculty'],
-			['Τεχνικό Προσωπικό', 'Staff'],
-			['Φοιτητής', 'Student']
+			["#{I18n.t "views.account.researcher"}", 'Researcher'],
+			["#{I18n.t "views.account.faculty"}", 'Faculty'],
+			["#{I18n.t "views.account.staff"}", 'Staff'],
+			["#{I18n.t "views.account.student"}", 'Student']
 			], {:include_blank => false}, {:class => "textbox"})%></td>
 		</tr>
 		<tr>
 			<td colspan="2">
-				<input type="submit" value="Ενημέρωση" class="textbox" />
+				<input type="submit" value="<%=I18n.t "views.account.update"%>" class="textbox" />
 			</td>
 		</tr>
 	</table>

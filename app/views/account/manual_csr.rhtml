@@ -6,18 +6,15 @@
 <br />
 <% end %>
 <p>
-	Κάντε copy/paste εντός της φόρμας το certificate request. 
-	Αν χρησιμοποιήσατε κάποιο User Interface, το certificate request 
-	είναι τα περιεχόμενα του αρχείου usercert_request.pem, το οποίο 
-	βρίσκεται στον φάκελο .globus του καταλόγου σας στο UI.
+	<%=I18n.t "views.account.manual_csr_guide"%>
 </p>	
 <% form_tag :action=> "submit_csr" do %>
   
   <fieldset id="editFormFields">
-	<legend>Αίτηση Ψηφιακού Πιστοποιητικού</legend>
+	<legend><%=I18n.t "views.layouts.register.certificate_application"%></legend>
 	<label for="certificate_request_body">Certificate Signing Request (CSR)</label><br />
 	<%= text_area("certificate_request", "body", {:cols => "64", :rows => "20", :class => "csrbox"}) %>
-    <input type="submit" value="Αποστολή αίτησης" class="textbox">
+    <input type="submit" value="<%=I18n.t "views.send"%>" class="textbox">
   </fieldset>
   
 <% end %>

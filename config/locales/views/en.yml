@@ -3,6 +3,8 @@ en:
     logged_in_as: Logged in as
     not_logged_in: Not logged in
     contact: Contact
+    send: Send
+    here: here
     layouts:
       common:
         registered_users: Registered Users
@@ -54,3 +56,93 @@ en:
         create_register_myproxy_certificate: Create and register myproxy certificate
         view_myproxy_certificate_info: View myproxy certificate information
         access: Access
+    account:
+      ## accept_host_certificate ## accept_personal_certificate
+      accept_terms_of_certificate: Accept Certificate Terms of Usage
+      accept_terms_notice: "..."
+      terms_text: Policy text
+      accept_terms_notice_2: "of Hellasgrid CA"
+      host_cert_accept_terms_declare: "I have read the Policy Text of Hellasgrid CA with O.I.D. 1.3.6.1.4.1.23877.8.1.1.2.0 and I accept the certificate terms of usage for the host."
+      personal_cert_accept_terms_declare: "I have read the Policy Text of Hellasgrid CA with O.I.D. 1.3.6.1.4.1.16515.20.1.1.2.3 and I accept the personal certificate terms of usage."
+      host_terms_not_accepted_notice: "You have not accepted the certificate terms of usage you are to use. The certificate will be revoked in 7 days from its creation."
+      ## CSR Form
+      renew_certificate: Renew Certificate
+      csr_intro_process: "Next, you can continue with the creation of your personal key and send your request form to the Certification Authority. According to the browser you are using, you will be presented with one or two choices."
+      to_create_your_personal_key_in: "To create your personal in"
+      follow_this: follow this
+      link: link
+      do_not_use_chrome: "warning. Do not use Google Chrome browser in this step, as it does not support the personal key creation process"
+      if_already_created_personal_key_certificate: "If you already have created your personal key and the respective certificate request in a User Interface"
+      ## CSR Form ##CSR Receipt
+      request_sent: "Your request has been sent to Hellasgrid CA"
+      request_sent_visit_ra: "Your request has been sent to Hellasgrid CA and your organization's Registration Authority has been notified. During the following week, you have to visit in person the RA office having with you"
+      id_card_or_passport: "your ID or passport"
+      relation_to_org: "a document that certifies your relation to the organization"
+      copies: a copy of the above
+      print_of_this_text: a printed copy of this document
+      to_watch_request_progress: "To watch the progress of your request, you can"
+      new_key_creation: "For each request sent to the CA, a random key is generated with which one can access the details of the request. The key for your request is"
+      regional_ra: "The RA that serves your region is"
+      more_info_on_ca_ra: "More information about the RAs and the Hellasgrid CA can be found"
+      here: here
+      mail_copy_sent: "A digital copy of the text above has been sent to the following e-mail address"
+      ## edit_personal_information:
+      update_data: Update Details
+      name: Name
+      surname: Surnmae
+      organization: Organization
+      work_tel: Work telephone
+      scientific_field: Scientific Field
+      department: Department
+      property: Property
+      researcher: Researcher
+      faculty: Faculty
+      staff: Staff
+      student: Student
+      greek: Greek
+      english: English
+      update: Update
+      ## ui_access_form
+      request_ui_access: UI access request
+      avail_uis: "In the following field you can find a list with the available User Interfaces that operate within Hellasgrid national infrastructure"
+      select_ui: "Select a User Interface that serves the region your organization resides."
+      athens: Athens
+      thessaloniki: Thessaloniki
+      crete: Crete
+      patra: Patra
+      accept_ui_policy: "I accept the access policy and the usage terms of Hellasgrid infrastructure as described"
+      ## iexplorer_csr ## iexplorer_vista_csr
+      create_key_send_ca: Create key and send to CA
+      select_key_size: "Select the size of your personal key you are to create and send"
+      warning_crypto_ie: "WARNING: The crypto provider which must be used in Internet Explorer is Microsoft Enhanced (default value)"
+      ## index
+      personal_data: Personal Data
+      update_cert: Renew Certificate
+      access_seevo: Access to SEE VO
+      access_ui: Access to UI
+      host_certs: Hosts Certificates
+      pending_certs: Pending certificate requests
+      ## pending crcs
+      pending_crcs_ra: Pending certificates for RA confirmation
+      type: Type
+      req_date: Request date
+      ## manual_csr
+      manual_csr_guide: "Copy and paste inside the form the certificate request. In case you used some UI, the certificate request is the contents of the file usercert_request.pem, located under .globus directory inside your home folder."
+      ## mozilla_csr
+      warning_key_size: "WARNING: The size of the key MUST NOT be under 1024 bits. The recommended value is 1024 bits."
+      key_size: Key size
+      ## request_ui_access
+      request_form: Request form
+      select_closest_ui: Select the UI closest to you
+      ## see_vo
+      request_access_seevo: Access request for SEE VO
+      must_accept_seevo_terms: "In order to register in SEE VO, you must accept the access policy and the terms of usage of Hellasgrid infrastructure"
+      accept_access_terms: "I accept the access policy and the terms of usage of Hellasgrid, as described"
+      ## show_person_details
+      registration_history: Registrations history
+      personal_certificate: Personal certificate
+      user_has_certificate: The user has certificate published in
+      user_without_certificate: The user does not has a certificate
+      registered_names: Registered names
+      active_requests: Active requests
+      certificate_requests: Certificate requests

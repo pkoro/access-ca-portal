@@ -3,6 +3,8 @@ el:
     logged_in_as: Συνδεδεμένος ως
     not_logged_in: Μη Συνδεδεμενος
     contact: Επικοινωνία
+    send: Αποστολή
+    here: εδώ
     layouts:
       common:
         registered_users: Υπάρχοντες Χρήστες
@@ -54,4 +56,109 @@ el:
         create_register_myproxy_certificate: Δημιουργία και καταχώρηση myproxy πιστοποιητικού
         view_myproxy_certificate_info: Προβολή πληροφοριών myproxy πιστοποιητικού
         access: Πρόσβαση
-
+    account:
+      ## accept_host_certificate ## accept_personal_certificate
+      accept_terms_of_certificate: Αποδοχή Όρων Χρήσης Ψηφιακού Πιστοποιητικού
+      accept_terms_notice: "Για να ενεργοποιηθεί το ψηφιακό πιστοποιητικό σας πρέπει να αποδεχθείτε τους όρους χρήσης του ψηφιακού πιστοποιητικού όπως αυτοί περιγράφονται στο "
+      terms_text: Κείμενο Πολιτικής
+      accept_terms_notice_2: "της Αρχής Πιστοποίησης Hellasgrid CA"
+      host_cert_accept_terms_declare: "Έχω διαβάσει το Κείμενο Πολιτικής της Αρχής Πιστοποίησης ΗellasGrid CA με O.I.D. 1.3.6.1.4.1.23877.8.1.1.2.0 και αποδέχομαι τους όρους χρήσης του ψηφιακού πιστοποιητικού για τον διακομιστή"
+      personal_cert_accept_terms_declare: "Έχω διαβάσει το Κείμενο Πολιτικής της Αρχής Πιστοποίσης ΗellasGrid CA με O.I.D. 1.3.6.1.4.1.16515.20.1.1.2.3 και αποδέχομαι τους όρους χρήσης του ψηφιακού μου πιστοποιητικού"
+      host_terms_not_accepted_notice: "Δεν έχετε αποδεχθεί τους όρους χρήσης του πιστοποιητικού το οποίο χρησιμοποιείτε. Το πιστοποιητικό θα ανακληθεί οριστικά εντός 7 ημερών από την ημέρα εκδόσεώς του."
+      ## CSR Form
+      renew_certificate: Ανανέωση Πιστοποιητικού
+      csr_intro_process: "Στη συνέχεια μπορείτε να προχωρήσετε στη δημιουργία του προσωπικού σας κλειδιού	και την αποστολή της αίτησης στην Αρχή Πιστοποίησης. Ανάλογα με τον τύπο	του browser που έχετε θα σας εμφανιστούν μία ή δύο επιλογές."
+      to_create_your_personal_key_in: "Για να δημιουργήσετε το προσωπικό σας κλειδί σε"
+      follow_this: ακολουθήστε αυτόν το
+      link: σύνδεσμο
+      do_not_use_chrome: "προσοχή μην χρησιμοποιείτε Google Chrome σε αυτό το βήμα καθώς δεν υποστηρίζει την διαδικασία παραγωγής πρσωπικού κλειδιού"
+      if_already_created_personal_key_certificate: "Αν έχετε ήδη δημιουργήσει το προσωπικό σας κλειδί και την αντίστοιχη αίτηση πιστοποιητικού σε κάποιο User Interface"
+      ## CSR Form ##CSR Receipt
+      request_sent: "Η αίτησή σας έχει αποσταλλεί στην Αρχή Πιστοποίησης ΗellasGrid CA"
+      request_sent_visit_ra: "Η αίτησή σας έχει αποσταλλεί  στην Αρχή Πιστοποίησης ΗellasGrid CA και	παράλληλα  ενημερώθηκε η  Αρχή Ταυτοποίησης  (Α.Τ.) που  εξυπηρετεί το	οργανισμό   σας.  Εντός   μίας   εβδομάδας   πρέπει  να   επισκεφθείτε	αυτοπροσώπως το γραφείο της Α.Τ. έχοντας μαζί σας"
+      id_card_or_passport: "την αστυνομική ταυτότητα ή το διαβατήριό σας"
+      relation_to_org: "κάποιο έγγραφο που να πιστοποιεί την σχέση σας με τον οργανισμό"
+      copies: αντίγραφο των παραπάνω
+      print_of_this_text: μια εκτύπωση του παρόντος κειμένου
+      to_watch_request_progress: "Για να παρακολουθείτε την κατάσταση της αιτήσεώς σας μέσω του web, μπορείτε να"
+      new_key_creation: "Για κάθε αίτηση που αποστέλλεται στην Α.Π.,δημιουργείται ένα τυχαίο κλειδί με το οποίο έχει κανείς πρόσβαση στα στοιχεία της αιτήσεως. Το κλειδί για τη δική σας αίτηση είναι"
+      regional_ra: "Η Α.Τ. που εξυπηρετεί την περιοχή σας είναι η"
+      more_info_on_ca_ra: "Περισσότερες πληροφορίες για τις Α.Τ. της Α.Π. HellasGrid CA μπορείτε να βρείτε"
+      here: εδώ
+      mail_copy_sent: "Ηλεκτρονικό αντίγραφο του παραπάνω κειμένου έχει αποσταλλεί ηλεκτρονικά στη διεύθυνση"
+      ## edit_personal_information:
+      update_data: Ενημέρωση Στοιχείων
+      name: Όνομα
+      surname: Επώνυμο
+      organization: Οργανισμός
+      work_tel: Τηλεφωνο εργασίας
+      scientific_field: Επιστημονικός τομέας
+      department: Τμήμα
+      property: Ιδιότητα
+      researcher: Ερευνητής
+      faculty: Καθηγητής
+      staff: Τεχνικό προσωπικό
+      student: Φοιτητής
+      greek: Ελληνικά
+      english: Αγγλικά
+      update: Ενημέρωση
+      ## ui_access_form
+      request_ui_access: Αίτηση Πρόσβασης σε UI
+      avail_uis: "Στο πεδίο που ακολουθεί θα βρείτε τη λίστα με τα διαθέσιμα User Interface που λειτουργούν στα πλαίσια της εθνικής υποδομής HellasGrid."
+      select_ui: "Έπιλέξτε το User Interface που εξυπηρετεί την γεωγραφική περιοχή στην οποία βρίσκεται ο οργανισμός σας:"
+      athens: Αθήνα
+      thessaloniki: Θεσσαλονίκη
+      crete: Κρήτη
+      patra: Πάτρα
+      accept_ui_policy: "Αποδέχομαι την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid όπως περιγράφονται"
+      ## iexplorer_csr ## iexplorer_vista_csr
+      create_key_send_ca: Παραγωγή κλειδιού και αποστολή αιτήσεως στην Α.Π.
+      select_key_size: "Επιλέξτε το μέγεθος του προσωπικού κλειδιού που θέλετε να δημιουργήσετε και προχωρήστε στην αποστολή."
+      warning_crypto_ie: "ΠΡΟΣΟΧΗ: Ο crypto provider που πρέπει να χρησιμοποιηθεί στον Internet Explorer είναι ο Microsoft Enhanced (προεπιλεγμένη τιμή)"
+      ## index
+      personal_data: Προσωπικά Στοιχεία
+      update_cert: Ανανέωση Πιστοποιητικού
+      access_seevo: Πρόσβαση σε SEE VO
+      access_ui: Πρόσβαση σε UI
+      host_certs: Πιστοποιητικά Διακομιστών
+      pending_certs: Αιτήσεις πιστοποιητικών σε αναμονή
+      ## pending crcs
+      pending_crcs_ra: Αιτήσεις πιστοποιητικών σε αναμονή για επιβεβαιωσή από την Α.Τ
+      type: Τύπος
+      req_date: Ημερομηνία αίτησης
+      ## manual_csr
+      manual_csr_guide: "Κάντε copy/paste εντός της φόρμας το certificate request. Αν χρησιμοποιήσατε κάποιο User Interface, το certificate request  είναι τα περιεχόμενα του αρχείου usercert_request.pem, το οποίο	βρίσκεται στον φάκελο .globus του καταλόγου σας στο UI."
+      ## mozilla_csr
+      warning_key_size: "ΠΡΟΣΟΧΗ: Το μέγεθος του κλειδιού πρέπει να	ΜΗΝ είναι μικρότερο από 1024 bits. Προτεινόμενη τιμή είναι τα 1024 bits."
+      key_size: Μέγεθος κλειδιού
+      ## request_ui_access
+      request_form: Φόρμα αίτησης
+      select_closest_ui: Επιλέξτε το κοντινότερο σε εσάς UI
+      ## see_vo
+      request_access_seevo: Αίτηση πρόσβασης στο SEE VO
+      must_accept_seevo_terms: "Για να εγγραφείτε στο SEE VO πρέπει να αποδεχτείτε την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid"
+      accept_access_terms: "Αποδέχομαι την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid όπως περιγράφονται"
+      ## show_person_details
+      registration_history: Ιστορικό καταχώρησης
+      personal_certificate: Προσωπικό πιστοποιητικό
+      user_has_certificate: Ο χρήστης έχει ψηφιακό πιστοποιητικό το οποίο εκδόθηκε
+      user_without_certificate: Ο χρήστης δεν έχει ψηφιακό πιστοποιητικό
+      registered_names: Καταχωρημένα ονόματα
+      active_requests: Ενεργές αιτήσεις
+      certificate_requests: Αιτήσεις Ψηφιακών Πιστοποιητικών
+    ca:
+    
+    cert:
+      
+    host:
+      
+    myproxy:
+      
+    ra:
+      
+    register:
+      
+    registration_mailer:
+      
+    support:
+      
