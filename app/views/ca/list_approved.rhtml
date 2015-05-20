@@ -1,14 +1,15 @@
 <div align="center">
 	<div style="width: 700px">
-		<h1>Αιτήσεις πιστοποιητικών σε αναμονή για υπογραφή από την Α.Π.</h1>
+        <!--<%=I18n.t "views.ca."%> -->
+		<h1><%=I18n.t "views.ca.pending_certificates_to_sign"%></h1>
 		<table class="tablelist" id="tablelist" cellspacing="0" cellpadding="4px">
 		<thead>
   			<tr>
 				<th>ID</th>
 				<th>FQDN/E-mail</th>
-				<th>Οργανισμός</th>
-				<th>Ημερομηνία αίτησης</th>
-				<th>Τελευταία ανανέωση</th>				
+				<th><%=I18n.t "views.ca.organization"%></th>
+				<th><%=I18n.t "views.ca.req_date"%></th>
+				<th><%=I18n.t "views.ca.last_update"%></th>				
   			</tr>
 		</thead>
   			<% @certificate_requests.each_with_index do |csr, i| %>

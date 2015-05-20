@@ -147,7 +147,78 @@ el:
       active_requests: Ενεργές αιτήσεις
       certificate_requests: Αιτήσεις Ψηφιακών Πιστοποιητικών
     ca:
-    
+      ## check_list
+      ca_name: Όνομα Α.Π.
+      exp_date_crl: Ημερομηνία λήξης CRL
+      state: Κατάσταση #status
+      ## edit_ra
+      description: Περιγραφή
+      ra_namangement: Διαχείριση Α.Τ.
+      served_organization: Οργανισμοί που εξυπηρετούνται
+      insert: Εισαγωγή
+      insert_new: Εισαγωγή νέου
+      remove: Αφαίρεση
+      register: Καταχώρηση
+      ## index
+      no_pending_requests: "Δεν υπάρχουν μη ταυτοποιημένες αιτήσεις για υπογραφή πιστοποιητικού σε αναμονή."
+      number_of_pending_requests: "Αυτή τη στιγμή υπάρχουν %{number_of_pending_requests} μη ταυτοποιημένες αιτήσεις για πιστοποιητικό σε αναμονή."
+      one_pending_request: "Αυτή την στιγμή υπάρχεί 1 μη ταυτοποιημένη αιτήση για πιστοποιητικο σε αναμονή."
+      no_approved_requests: "Δεν υπάρχουν ταυτοποιημένες αιτήσεις για υπογραφή πιστοποιητικού σε αναμονή."
+      number_of_approved_requests: "Αυτή την στιγμή υπάρχουν %{number_of_pending_requests} ταυτοποιημένες αιτήσεις για πιστοποιητικό σε αναμονή."
+      one_approved_request: "Αυτή την στιγμή υπάρχεί 1 ταυτοποιημένη αιτήση για πιστοποιητικο σε αναμονή."
+      ## list_approved ## list_host_certificates ## list_pending
+      ## list_rejected
+      pending_certificates_to_sign: "Αιτήσεις πιστοποιητικών σε αναμονή για υπογραφή από την Α.Π."
+      organization: Οργανισμός
+      req_date: Ημερομηνία αίτησης
+      last_update: Τελευταία ανανέωση
+      type: Τύπος
+      host_certs_signed_by_ca: "Πιστοποιητικά διακομιστών που έχουν υπογραφεί από την Α.Π."
+      subject: Υποκείμενο
+      pending_requests: "Αιτήσεις πιστοποιητικών σε αναμονή για επιβεβαίωση από την Α.Π."
+      rejected_requests: "Αιτήσεις πιστοποιητικών που έχουν απορριφθεί από την Α.Π."
+      ## list_user_certificates
+      certs_signed_by_ca: "Πιστοποιητικά χρηστών που έχουν υπογραφεί από την Α.Π."
+      full_name: Ονοματεπώνυμο
+      ## manage_ra
+      ras: Αρχές Ταυτοποίησης της Α.Π.
+      add_new_ra: Προσθήκη νέας Α.Τ.
+      ## show_certificate_details
+      update_at: Ανανέωση στις
+      requestor: Αιτών
+      certified_entity: Πιστοποιούμενη οντότητα
+      certificate_details: Στοιχεία πιστοποιητικού
+      req_details: Στοιχεία αίτησης
+      key: Κλειδί
+      ## show_host_details ## show person details ## show request details
+      req_history: Ιστορικό Καταχώρησης
+      manager_details: Στοιχεία Διαχειριστή
+      greek: Ελληνικά
+      english: Αγγλικά
+      server_details: Στοιχεία Διακομιστή
+      host_certificate: Πιστοποιητικό Διακομιστή
+      host_has_certificate: "O διακομιστής έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε"
+      host_without_certificate: "Ο διακομιστής ΔΕΝ έχει ψηφιακό πιστοποιητικό"
+      registered_names: Καταχωρημένα Ονόματα
+      active_requests: Ενεργές Αιτήσεις
+      certificate_requests: Αιτήσεις Ψηφιακών Πιστοποιητικών
+      name: Όνομα
+      surname: Επώνυμο
+      organization: Οργανισμός
+      work_tel: Τηλεφωνο εργασίας
+      scientific_field: Επιστημονικός τομέας
+      department: Τμήμα
+      property: Ιδιότητα
+      researcher: Ερευνητής
+      faculty: Καθηγητής
+      staff: Τεχνικό προσωπικό
+      student: Φοιτητής
+      greek: Ελληνικά
+      english: Αγγλικά
+      update: Ενημέρωση
+      personal_certificate: Προσωπικό Πιστοποιητικό
+      user_has_certificate: "O χρήστης έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε"
+      user_without_certificate: "Ο χρήστης ΔΕΝ έχει ψηφιακό πιστοποιητικό"
     cert:
       
     host:

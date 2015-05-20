@@ -1,12 +1,12 @@
 <div align="center">
 	<div style="width: 700px">
-		<h1>Αρχές Ταυτοποίησης της Α.Π.</h1>
+		<h1><%=I18n.t "views.ca.ras"%></h1>
 		<table class="tablelist" id="tablelist" cellspacing="0" cellpadding="4px">
 		 <thead>
   			<tr>
     			<th>ID</th>
-				<th>Περιγραφή</th>
-				<th>Οργανισμός</th>
+				<th><%=I18n.t "views.ca.description"%></th>
+				<th><%=I18n.t "views.ca.organization"%></th>
   			</tr>
 		 </thead>
 		 <% @RAs.each_with_index do |ra, i|
@@ -19,7 +19,7 @@
 			<% end %>
 		</table>
 		<br />
-			<%= link_to 'Προσθήκη νέας Α.Τ.', :action=> "new_ra" %>
+			<%= link_to "#{I18n.t "views.ca.add_new_ra"}", :action=> "new_ra" %>
 		<br />
      </div>
 </div>

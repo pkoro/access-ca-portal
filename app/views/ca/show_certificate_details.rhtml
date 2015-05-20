@@ -3,15 +3,15 @@
     <td width="420px">
       <table border="0" cellspacing="0" cellpadding="0" width="400px" class="PersonDetails">
         <tr>
-          <th>Κατάσταση</th>
+          <th><%=I18n.t "views.ca.state"%></th>
           <td style="padding: 5px;"><%= @crt.status %></td>
         </tr>
         <tr>
-          <th>Ανανέωση στις</th>
+          <th><%=I18n.t "views.ca.update_at"%></th>
           <td style="padding: 5px;"><%= @crt.updated_at %></td>
         </tr>
         <tr>
-          <th>Αιτών</th>
+          <th><%=I18n.t "views.ca.requestor"%></th>
           <td style="padding: 5px;">
             <%if @crt.owner_type == "Host"%>
               <%= link_to @crt.owner.admin.email, :action => 'show_person_details', :id => @crt.owner.admin.id %>
@@ -21,7 +21,7 @@
           </td>
         </tr>
         <tr>
-          <th>Πιστοποιούμενη οντότητα</th>
+          <th><%=I18n.t "views.ca.certified_entity"%></th>
           <% if @crt.owner_type == "Person" %>
             <td style="padding: 5px;">
               <%= link_to @crt.owner.email, :action => 'show_person_details', :id => @crt.owner.id %>
@@ -33,7 +33,7 @@
           <% end %>
         </tr>
         <tr>
-          <th>Στοιχεία Πιστοποιητικού</th>
+          <th><%=I18n.t "views.ca.certificate_details"%></th>
           <td style="padding: 5px;">
           <% @CrtReader.certificate[:dnElements].each_value do |dnEl| %>
             <%= dnEl['Type'] %> = <%= dnEl['Value'] %>
@@ -42,7 +42,7 @@
           </td>
         </tr>
         <tr>
-          <th>Κλειδί</th>
+          <th><%=I18n.t "views.ca.key"%></th>
           <td style="padding: 5px;"><%= @CrtReader.certificate[:Certificate].public_key.type.to_s.split("::")[2] %>  (<%= @CrtReader.certificate[:Certificate].public_key.to_text.match(/\d+/)[0] %> bit)</td>
         </tr>
         <tr>

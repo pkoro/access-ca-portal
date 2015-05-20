@@ -1,9 +1,9 @@
 	<h1>CRLs</h1>
 	<table width=100%>
 		<tr>
-			<td><strong>Όνομα Α.Π.</strong></td>
-			<td><strong>Ημερ. λήξης CRL</strong></td>
-			<td><strong>Κατάσταση</strong></td>
+			<td><strong><%=I18n.t "views.ca.ca_name"%></strong></td>
+			<td><strong><%=I18n.t "views.ca.exp_date_crl"%></strong></td>
+			<td><strong><%=I18n.t "views.ca.state"%></strong></td>
 		</tr>
 		<% @CRLs.each do |crl| %>
 		<tr>

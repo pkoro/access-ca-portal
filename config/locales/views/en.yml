@@ -146,3 +146,69 @@ en:
       registered_names: Registered names
       active_requests: Active requests
       certificate_requests: Certificate requests
+    ca:
+      ## check_list
+      ca_name: CA Name
+      exp_date_crl: CRL Expiration Date
+      state: Status
+      ## edit_ra
+      description: Description
+      ra_namangement: RA Management
+      served_organization: Organization served
+      insert: Insert
+      insert_new: Insert new
+      remove: Remove
+      register: Register
+      ## index
+      no_pending_requests: "There are no pending uncertified requests to be signed."
+      number_of_pending_requests: "At the moment, there are  %{number_of_pending_requests} pending uncertified requests for certificate."
+      one_pending_request: "At the moment, there is 1 pending uncertified request for certificate."
+      no_approved_requests: "There are not pending requests for certificate."
+      number_of_approved_requests: "At the moment, there are  %{number_of_pending_requests} pending approved requests to be signed."
+      one_approved_request: "At the moment ,there is one pending approved request to be signed."
+      ## list_approved ## list_host_certificates ## list_pending
+      ## list_rejected
+      pending_certificates_to_sign: "Pending certificates to be singed by the CA"
+      req_date: Request date
+      last_update: Last renewal
+      type: Type
+      host_certs_signed_by_ca: "Hosts certificates signed by the CA"
+      subject: Subject
+      pending_requests: "Pending certificate requests for approval by the CA"
+      rejected_requests: "Certificate requests that have been rejected by the CA"
+      ## list_user_certificates
+      certs_signed_by_ca: "User certificates signed by the CA"
+      full_name: Full name
+      ## manage_ra
+      ras: Registration Authority of the CA
+      add_new_ra: Add new RA
+      ## show_certificate_details
+      update_at: Updated at
+      requestor: Requestor
+      certified_entity: Certified entity
+      certificate_details: Certificate Details
+      req_details: Request Details
+      key: Key
+      ## show_host_details ## show person details ## show request details
+      req_history: Request History
+      manager_details: Manager Details
+      greek: Greek
+      english: English
+      server_details: Server Details
+      host_certificate: Server Certificate
+      host_has_certificate: "The server has certificate signed on"
+      host_without_certificate: "The server does not have any signed certificates"
+      registered_names: Registered Names
+      active_requests: Active Requests
+      certificate_requests: Certificate Requests
+      name: Name
+      surname: Surname
+      organization: Organization
+      work_tel: Work phone
+      scientific_field: Scientific Field
+      department: Department
+      property: Property
+      update: Update
+      personal_certificate: Personal Certificate
+      user_has_certificate: "The user has certificate issued on"
+      user_without_certificate: "The user does NOT have any certificates"

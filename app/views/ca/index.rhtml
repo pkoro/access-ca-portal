@@ -1,21 +1,23 @@
 <fieldset>
-	<legend>Α.Π. HellasGrid CA</legend>
+	<legend>HellasGrid CA</legend>
 	<p>
+    <!--<%=I18n.t "views.ca."%> -->
+        <!-- "#{I18n.t "views.ca"}" -->
 	  <% if CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).empty? %>
-	    Δεν υπάρχουν μη ταυτοποιημένες αιτήσεις για υπογραφή πιστοποιητικού σε αναμονή.
+	    <%=I18n.t "views.ca.no_pending_requests"%>
 	  <% elsif CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).size > 1  %>
-	      Αυτή την στιγμή υπάρχουν <%= CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).size %> μη ταυτοποιημένες αιτήσεις για πιστοποιητικο σε αναμονή.
+	      <%=I18n.t "views.ca.number_of_pending_requests" :number_of_pending_requests => CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).size%>
 	  <% else %>
-	      Αυτή την στιγμή υπάρχεί 1 μη ταυτοποιημένη αιτήση για πιστοποιητικο σε αναμονή.
+	      <%=I18n.t "views.ca.one_pending_request"%>
 	  <% end %>
 	</p>
 	<p>
 	  <% if CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).empty? %>
-	    Δεν υπάρχουν ταυτοποιημένες αιτήσεις για υπογραφή πιστοποιητικού σε αναμονή.
+	    <%=I18n.t "views.ca.no_approved_requests"%>
 	  <% elsif CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).size > 1  %>
-	      Αυτή την στιγμή υπάρχουν <%= CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).size %> ταυτοποιημένες αιτήσεις για πιστοποιητικο σε αναμονή.
+	      <%=I18n.t "views.ca.number_of_approved_requests" :number_of_pending_requests => CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).size%>
 	  <% else %>
-	      Αυτή την στιγμή υπάρχεί 1 ταυτοποιημένη αιτήση για πιστοποιητικο σε αναμονή.
+	      <%=I18n.t "views.ca.one_approved_request"%>
 	  <% end %>
 	</p>
 </fieldset>

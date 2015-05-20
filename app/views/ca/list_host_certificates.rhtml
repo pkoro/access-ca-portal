@@ -1,14 +1,14 @@
 <div align="center">
 	<div style="width: 700px">
-		<h1>Πιστοποιητικά διακομιστών που έχουν υπογραφεί από την Α.Π.</h1>
+		<h1><%=I18n.t "views.ca.hosts_certs_signed_by_ca"%></h1>
 		<br />
 		<table class="tablelist" id="tablelist" cellspacing="0" cellpadding="4px">
 		<thead>
   			<tr>
 				<th>FQDN</th>
 				<th>Status</th>
-				<th>Υποκείμενο</th>
-				<th>Τελευταία ανανέωση</th>
+				<th><%=I18n.t "views.ca.subject"%></th>
+				<th><%=I18n.t "views.ca.last_update"%></th>
   			</tr>
 		</thead>
   			<% @certificates.each_with_index do |crt, i| %>

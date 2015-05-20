@@ -1,18 +1,20 @@
 <div align="center">
   <% form_tag :action=> "save_ra" do %>
   <div style="width: 700px">
-    <h1>Διαχείρηση Α.Τ.</h1>
+<!--<%=I18n.t "views.ca."%> -->
+    <!-- "#{I18n.t "views.ca"}" -->
+    <h1><%=I18n.t "views.ca.ra_management"%></h1>
     <%= hidden_field :ra, :id %><br />
-    <label for="description">Περιγραφή:</label><br />
+    <label for="description"><%=I18n.t "views.ca.description"%></label><br />
     <%= text_field :ra, :description, :class => "textbox", :size => "40" %><br />
-    <label for="organizations">Οργανισμοί που εξυπηρετούνται:</label><br />
+    <label for="organizations"><%=I18n.t "views.ca.served_organization"%></label><br />
     <select id="organizations" name="ra[organization_ids][]" multiple="multiple" size="10" class="textbox">
       <%= options_from_collection_for_select(@all_organizations, :id, :name_el, @selected_organizations) %>
     </select><br />
     <label>RA Managers:</label><br />
     <table class="tablelist" cellspacing="0" cellpadding="4px">
       <tr>
-        <th>Όνομα</th>
+        <th><%=I18n.t "views.ca.name"%></th>
         <th>email</th>
         <th></th>
       </tr>
@@ -21,7 +23,7 @@
         <tr class="<%= row_class %>">
           <td><%= membership.member.first_name_en %> <%= membership.member.last_name_en %></td>
           <td><%= membership.member.email %></td>
-          <td><%= link_to 'Αφαίρεση', :action => 'remove_ra_staff', :id => membership.id %></td>
+          <td><%= link_to "#{I18n.t "views.ca.remove"}", :action => 'remove_ra_staff', :id => membership.id %></td>
         </tr>
       <% end %>
     </table>
@@ -29,7 +31,7 @@
     <label>RA Operators:</label><br />
     <table class="tablelist" cellspacing="0" cellpadding="4px">
       <tr>
-        <th>Όνομα</th>
+        <th><%=I18n.t "views.ca.name"%></th>
         <th>email</th>
         <th></th>
       </tr>
@@ -38,33 +40,33 @@
         <tr class="<%= row_class %>">
           <td><%= membership.member.first_name_en %> <%= membership.member.last_name_en %></td>
           <td><%= membership.member.email %></td>
-          <td><%= link_to 'Αφαίρεση', :action => 'remove_ra_staff', :id => membership.id %></td>
+          <td><%= link_to "#{I18n.t "views.ca.remove"}", :action => 'remove_ra_staff', :id => membership.id %></td>
         </tr>
       <% end %>
     </table>
     <br />
-    <input type="submit" value="Καταχώρηση" class="textbox" />
+    <input type="submit" value="<%=I18n.t "views.ca.register"%>" class="textbox" />
   </div>
   <% end %>
   <% form_tag :action=> "edit_ra" do %>
   <%= hidden_field :ra, :id %><br />
     <fieldset id="editFormFields">
-      <legend>Εισαγωγή νέου RA Manager</legend>
+      <legend><%=I18n.t "views.ca.insert_new"%> RA Manager</legend>
       <table cellspacing="0" cellpadding="4px" border="0">
         <tr>
           <th valign="top"><label for="ra_access_dn">subject DN:</label></th>
           <td valign="top"><%= text_field(:new_ra_manager, :dn, :class => "textbox", :size => "33") %></td>
-          <td valign="top"><input type="submit" value="Εισαγωγή" class="textbox"></td>
+          <td valign="top"><input type="submit" value="<%=I18n.t "views.ca.insert"%>" class="textbox"></td>
         </tr>
       </table>
     </fieldset>
     <fieldset id="editFormFields">
-      <legend>Εισαγωγή νέου RA Operator</legend>
+      <legend><%=I18n.t "views.ca.insert_new"%> RA Operator</legend>
       <table cellspacing="0" cellpadding="4px" border="0">
         <tr>
           <th valign="top"><label for="ra_access_dn">subject DN:</label></th>
           <td valign="top"><%= text_field(:new_ra_operator, :dn, :class => "textbox", :size => "33") %></td>
-          <td valign="top"><input type="submit" value="Εισαγωγή" class="textbox"></td>
+          <td valign="top"><input type="submit" value="<%=I18n.t "views.ca.insert"%>" class="textbox"></td>
         </tr>
       </table>
     </fieldset>
