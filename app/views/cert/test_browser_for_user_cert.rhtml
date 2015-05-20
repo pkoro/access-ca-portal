@@ -1,10 +1,10 @@
 <% if session[:usercert ]%>
 <center>
-<h1>Βρέθηκε εγκατεστημένο πιστοποιητικό στον browser σας</h1>
+<h1><%=I18n.t "views.cert.cert_found"%></h1>
 </center>
 <br />
 <p>
-Στον browser σας υπάρχει εγκατεστημένο ψηφιακό πιστοποιητικό με Subject DN:
+<%=I18n.t "views.cert.cert_with_dn"%>:
 </p>
 <div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
 	<p><%= session[:usercert] %></p>
@@ -12,7 +12,6 @@
 
 <% else %>
 <center>
-<h1>Δεν υπάρχει ψηφιακό πιστοποιητικό εγκατεστημένο στον browser σας, 
-	το οποίο να είναι υπογεγραμμένο από την Α.Π. ΗellasGrid CA </h1>
+<h1><%=I18n.t "views.cert.no_cert"%> </h1>
 </center>
 <% end %>

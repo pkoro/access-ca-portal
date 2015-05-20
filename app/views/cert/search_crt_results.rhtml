@@ -1,6 +1,6 @@
 <% if (@person or @host) and @cert %>
 <center>
-<h1>Ψηφιακό πιστοποιητικό για: <%= if @cert.owner_type == "Person" then @cert.owner.email else @cert.owner.fqdn end %></h1>
+<h1><%=I18n.t "views.cert.cert"%> <%=I18n.t "views.cert.for"%>: <%= if @cert.owner_type == "Person" then @cert.owner.email else @cert.owner.fqdn end %></h1>
 <br />
 <table class="PersonDetails" cellspacing="0" cellpadding="0">
 	<tr>
@@ -12,22 +12,22 @@
 		<td><%= X509Certificate::CertificateReader.new(@cert.body).certificate[:Certificate].issuer.to_s %></td>
 	</tr>
 	<tr>
-		<th valign="top">Εγκυρό από:</th>
+		<th valign="top"><%=I18n.t "views.cert.valid_from"%>:</th>
 		<td><%= X509Certificate::CertificateReader.new(@cert.body).certificate[:Certificate].not_before.to_s %></td>
 	</tr>
 	<tr>
-		<th valign="top">Έγκυρο εώς:</th>
+		<th valign="top"><%=I18n.t "views.cert.valid_to"%>:</th>
 		<td><%= X509Certificate::CertificateReader.new(@cert.body).certificate[:Certificate].not_after.to_s %></td>
 	</tr>
 	<tr>
-		<th valign="top">Πιστοποιητικό:</th>
+		<th valign="top"><%=I18n.t "views.cert.cert"%>:</th>
 		<td><pre><%= @cert.body %></pre></td>
 	</tr>
     <% if @cert.owner_type == "Person" %>
 	<tr>
 		<td colspan="2">
 			<center>
-			<%= link_to "Εγκατάσταση πιστοποιητικού στον browser", :action => "load_cert", :id => @cert.certificate_request_uniqueid %>
+			<%= link_to "#{I18n.t "views.cert.install_cert_browser"}", :action => "load_cert", :id => @cert.certificate_request_uniqueid %>
 			</center>
 		</td>
 	</tr>
@@ -37,7 +37,7 @@
 <% else %>
 <div class="error_box">
 	<span style="color: red; height: 500; text-align: center">
-	Η οντότητα δεν υπάρχει ή δεν έχει έγκυρο πιστοποιητικό
+	<%=I18n.t "views.cert.no_entity_or_cert"%>
 	</span>
 	<br /><br /><br /><br /><br /><br />
 </div>

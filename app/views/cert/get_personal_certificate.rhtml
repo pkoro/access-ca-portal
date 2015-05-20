@@ -1,53 +1,46 @@
 <% if @crt %>
-<h1>Εγκατάσταση Ψηφιακού πιστοποιητικού</h1>
+<h1><%=I18n.t "views.cert.install_certificate"%></h1>
 
 <p>
-	Το ψηφιακό πιστοποιητικό σας έχει υπογραφεί από την Αρχή Πιστοποίησης
-	HellasGrid CA και μπορεί να χρησιμοποιηθεί για χρονικό διάστημα ενός
-	έτους.
+	<%=I18n.t "views.cert.signed_cert_text"%>
 </p>
 <p>
-	Για να αποκτήσετε το ψηφιακό πιστοποιητικό σας πρέπει: <br />
-	<li>Να εγκαταστήσετε το ψηφιακό πιστοποιητικό σας στον browser σας</li>
-	<li>Να αποδεχτείτε τους όρους χρήσης του ψηφιακού πιστοποιητικού</li>
+	<%=I18n.t "views.cert.get_certificate"%>: <br />
+	<li><%=I18n.t "views.cert.must_install_cert_browser"%></li>
+	<li><%=I18n.t "views.cert.must_accept_cert_terms"%></li>
 </p>
 
-<h2>Εγκατάσταση Ψηφιακού πιστοποιητικού</h2>
+<h2><%=I18n.t "views.cert.install_certificate"%></h2>
 
 <% if @csr.csrtype =~ /ie/ || @csr.csrtype =~ /spkac/ %>
 <p>
-	Η παραγωγή της αιτήσεως για ψηφιακό πιστοποιητικό έγινε μέσω browser. Για να εγκαταστήσετε
-	το ψηφιακό πιστοποιητικό σας πρέπει να χρησιμοποιήσετε τον ίδιο υπολογιστή και τον ίδιο
-	browser από τον οποίο πραγματοποιήσατε τη διαδικασία της αιτήσεως. Για να ολοκληρωθεί η
-	διαδικασία της εγκατάστασης του ψηφιακού πιστοποιητικού  ακολουθήστε τον σύνδεσμο
-	<%= link_to "Εγκατάσταση πιστοποιητικού στον browser", :action => "load_cert", :id => @crt.certificate_request_uniqueid %>.
+  <%=I18n.t "views.cert.same_browser_download"%>, <%=I18n.t "views.cert.follow_link"%>
+	<%= link_to "#{I18n.t "view.cert.install_cert_browser"}", :action => "load_cert", :id => @crt.certificate_request_uniqueid %>.
 </p>
 
 <% else %>
 <p>
-	Για να κατεβάσετε το ψηφιακό πιστοποιητικό σας στον υπολογιστή σας, ακολουθήστε τον
-	σύνδεσμο <%= link_to "Μεταφόρτωση προσωπικού ψηφιακού πιστοποιητικού", :action => "download_cert", :id => @crt.certificate_request_uniqueid %>.
-	 Οδηγίες για την εγκατάσταση του πιστοποιητικού σας στον browser μπορείτε να βρείτε σε αυτόν τον 
-	<%= link_to "σύνδεσμο", "http://www.grid.auth.gr/pki/hellasgrid-ca/documents/" %>. 
+	<%=I18n.t "views.cert.to_download_cert"%>, <%=I18n.t "views.cert.follow_link"%>
+  <%= link_to "#{I18n.t "views.cert.download_cert"}", :action => "download_cert", :id => @crt.certificate_request_uniqueid %>.
+	 <%=I18n.t "views.cert.install_cert_guide"%>, <%=I18n.t "views.cert.follow_link"%>
+	<%= link_to "#{I18n.t "views.cert.instructions"}", "http://www.grid.auth.gr/pki/hellasgrid-ca/documents/" %>. 
 </p>
 
 <% end %>
 
-<h2>Αποδοχή Όρων Χρήσης Πιστοποιητικού</h2>
+<h2><%=I18n.t "views.cert.accept_cert_terms"%></h2>
 
 <p>
-	Πρέπει εντος 7 εργάσιμων ημερών να ολοκληρώσετε την 
-	<%=link_to "διαδικασία αποδοχής", :controller => "account", :action => "accept_personal_certificate", :id => @crt.certificate_request_uniqueid %>
-	των όρων χρήσης του ψηφιακού σας πιστοποιητικού. Σε περίπτωση που το διάστημα παρέλθει το ψηφιακό
-	πιστοποιητικό θα ανακληθεί αυτόματα.
+	<%=I18n.t "views.cert.complete_in_7_days"%> 
+	<%=link_to "#{I18n.t "views.cert.accept_process"}", :controller => "account", :action => "accept_personal_certificate", :id => @crt.certificate_request_uniqueid %>
+	<%=I18n.t "views.cert.of_the_terms"%>
 </p>
 
 <p>
-	ΠΡΟΣΟΧΗ: Πρέπει να έχετε εγκαταστήσει επιτυχώς το ψηφιακό πιστοποιητικό σας στον browser. Μπορείτε
-	να το επιβεβαιώσετε στην άκόλουθη σελίδα: <br />
-	<%= link_to "Έλεγχος εγκατεστημένου πιστοποιητικού στον browser", {:action => "test_browser_for_user_cert", :id => "new_window"}, :trailing_slash => true, :popup => ['new_window', 'height=400, width=550'] %>
+  <%=I18n.t "views.cert.certificate_installation_warning"%>: <br />
+	<%= link_to "#{I18n.t "views.cert.check_installed_cert"}", {:action => "test_browser_for_user_cert", :id => "new_window"}, :trailing_slash => true, :popup => ['new_window', 'height=400, width=550'] %>
 </p>
 
 <% else %>
- <h1>Δεν βρέθηκε πιστοποιητικό</h1>
+ <h1><%=I18n.t "views.cert.no_cert_found"%></h1>
 <% end %>

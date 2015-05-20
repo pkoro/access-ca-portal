@@ -1,15 +1,14 @@
 	<fieldset style="width: 400px; padding-left: 5px; padding-right: 1px;">
-		<legend>Αναζήτηση πιστοποιητικού</legend>
+		<legend><%=I18n.t "views.cert.search_cert"%></legend>
 		<p style="text-align: left;">
-			Συμπληρώστε στη φόρμα την ηλεκτρονική διεύθυνση του χρήστη ή το FQDN του διακομιστή του οποιού
-			επιθυμείτε να βρείτε το ψηφιακό πιστοποιητικό.
+			<%=I18n.t "views.cert.fill_form"%>
 		</p>	
 		<% form_tag :action=> "search_crt_results" do %>
 			<div align="left" style="padding-right: 20px">
 			<label  for="certificate_alt_name"><div style="text-align: left;">E-mail / FQDN</div></label>
 			<%= text_field(:cert, :alt_name, :class => "textbox", :size => "40") %>
 			</div>
-			<input type="submit" value="Αναζήτηση" class="textbox" />
+			<input type="submit" value="<%=I18n.t "views.cert.seach"%>" class="textbox" />
 		</p>
 		<% end %>
 	</fieldset>

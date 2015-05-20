@@ -212,3 +212,63 @@ en:
       personal_certificate: Personal Certificate
       user_has_certificate: "The user has certificate issued on"
       user_without_certificate: "The user does NOT have any certificates"
+    cert:
+      ## get_host_certificate ## get_personal_certificate
+      install_certificate: Install certificate
+      signed_cert_text: "Your certificate has been signed by Hellasgrid CA and can be used for one year."
+      get_ceritificate: "In order to acquire a certificate, you have to"
+      must_install_cert_browser: "Install the certificate in your browser"
+      must_accept_cert_terms: "Accept the terms of usage for the certificate"
+      same_browser_download: "The request creation process has been completed through a browser. To install the certificate you must use the same browser on the same computer with the one you fulfilled the request. To complete the process of the certificate installation"
+      to_download_cert: "To download the certificate to your computer"
+      follow_link: follow thw link
+      install_cert_browser: Install certificate in browser
+      download_cert: Download certificate
+      download_host_cert: Download host certificate
+      accept_cert_terms: Accept Certificate terms of usage
+      complete_in_7_days: "You must accept during the following 7 working days"
+      accept_process: acceptance process
+      of_the_terms: "the terms of usage of the certificate. Otherwise, the certificate will be revoked automatically."
+      install_cert_guide: "For instructions related to installing the certificate in your browser"
+      instructions: instructions
+      certificate_installation_warning: "WARNING: You must have successfully installed your certificate in your browser. You can verify that in the following page"
+      check_installed_cert: "Check installed certificate in browser"
+      no_cert_found: No certificate found
+      ## monitor_request_results
+      req_status: Request status
+      cert_details: "Your certificate details are the following"
+      issuer: Issuer
+      date_issued: Date issued
+      validity: Valid for
+      months: Months
+      no_request: No request found
+      explain_states: "Certificate state explanation"
+      pending_state: "The request has been sent to the Certification Authority and the Registration Authority of your institution has been notified."
+      approved_state: "The Certification Authority has approved your request. Pending signing of your certificate from the Certification Authority."
+      signed_state: "The certificate has been signed by the Certification Authority."
+      rejected_state: "The request has been rejected by the Registration Authority."
+      search_cert_req: Search certificate request
+      fill_form_hash: Fill your request hash in the host.
+      req_hash: Request hash
+      search: Search
+      ## search_crt_results
+      cert: Certificate
+      for: for
+      valid_from: Valid from
+      valid_to: Valid to
+      no_entity_or_cert: "No valid entity or certificate"
+      ## search_crt
+      search_cert: Search certificate
+      fill_form: "Fill in the user email or the host FQDN, whose certificate you are searching, in the form."
+      ## show_request_details
+      state: State
+      last_update: Last update
+      requestor: Requestor
+      certified_entity: Certified Entity
+      type: Type
+      req_details: Request Details
+      key: Key
+      ## test_browser_for_user_cert
+      cert_found: Certificate found in your browser
+      cert_with_dn: Installed certificate in your browser with Subject DN
+      no_cert: "No certificate found installed in your browser, which is signed by the Hellasgrid CA"
