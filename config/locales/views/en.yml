@@ -328,3 +328,71 @@ en:
       create_and_register_myproxy_cert: "Create and store MyProxy certificate"
       info_on_myproxy: "Show MyProxy certificate information"
       ssh_access: "SSH access"
+    ra:
+      ## index
+      no_pending_requests_ra: "No pending certificate requests to sign for this RA"
+      number_of_pending_requests: "At the moment, there are %{number_of_pending_requests} pending certificate requests for this RA"
+      one_pending_request: "At the moment there is one pending certificate request for this RA"
+      no_pending_requests: "No pending certificate requests to sign."
+      approval_prereq: "Prerequisite for approving a certificate request is the meeting in person with the user."
+      meeting_details: "During this meeting, the data given by the user must be crossed referenced with their ID or any equivalent document(with photo), as well as their relation with the declared organization."
+      host_details: "In case of a host/server request, the meeting with the user is not required, as long as the relation with the declared organization can be verified."
+      ## list_approved
+      requests_to_sign: Pending requests for singing by the CA
+      organization: Organization
+      req_date: Request date
+      last_update: Last update
+      ## list_host_certificates
+      signed_ca_host_requests: Server certificates signed by the CA
+      ## list_pending
+      certs_to_approve_ra: "Pending certificates to approve by the RA"
+      ## list_rejected
+      rejected_certs_ra: "Rejected requests by the RA"
+      type: Type
+      requestor: Requestor
+      ## list_user_certificates
+      user_signed_certs_ca: User certificates signed by the CA
+      full_name: Full name
+      state: State
+      ## manage_operators
+      remove: Remove
+      insert_new_ra_operator: Insert new RA Operator
+      insert: Insert
+      ## show_certificate_details
+      updated_at: Updated at
+      requestor: Requestor
+      certified_entity: Certified entity
+      cert_details: Certificate details
+      ca: Certification Authority
+      valid_from: Valid from
+      valid_to: Valid to
+      key: Key
+      ## show_host_details ## show_person_details
+      registration_history: Registration history
+      manager_details: Manager details
+      server_details: Server details
+      greek: Greek
+      english: English
+      name: Nmae
+      surname: Surname
+      organization: Organization
+      work_tel: Work phone
+      scientific_field: Scientific field
+      department: Department
+      property: Property
+      server_certificate: Server Certificate
+      server_has_certificate: The server has a certificate issued
+      server_without_certificate: The server DOES NOT have a certificate
+      registered_names: Registered Names
+      active_requests: Active requests
+      cert_requests: Certificate requests
+      user_has_cert: "The user has cert that was issued on"
+      user_without_cert: "The user DOES NOT have a certificate"
+      ## show_request_details
+      req_details: Request details
+      id_checked: ID has been checked
+      user_mail_updates: The user wants informational messages
+      req_checked: Request has been checked
+      accept: Accept
+      reject: Reject
+      

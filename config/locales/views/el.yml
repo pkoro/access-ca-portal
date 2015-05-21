@@ -325,7 +325,7 @@ el:
       active_requests: Ενεργές αιτήσεις
       cert_requests: Αιτήσεις ψηφιακών πιστοποιητικών
     myproxy:
-      ## create_myproxy
+      ## create_myproxy ## myproxy_info
       selected: Επιλεγμένο
       certificate: Πιστοποιητικό
       change: Αλλαγή
@@ -336,7 +336,73 @@ el:
       info_on_myproxy: "Προβολή πληροφοριών MyProxy πιστοποιητικού"
       ssh_access: "SSH πρόσβαση"
     ra:
-      
+      ## index
+      no_pending_requests_ra: "Δεν υπάρχουν αιτήσεις για υπογραφή πιστοποιητικού σε αναμονή σε αυτή την A.T."
+      number_of_pending_requests: "Αυτή τη στιγμή υπάρχουν %{number_of_pending_requests} αιτήσεις για πιστοποιητικό σε αναμονή σε αυτή την Α.Τ."
+      one_pending_request: "Αυτή τη στιγμή υπάρχεί 1 αιτήση για πιστοποιητικο σε αναμονή σε αυτή την Α.Τ."
+      no_pending_requests: "Δεν υπάρχουν αιτήσεις για υπογραφή πιστοποιητικού σε αναμονή."
+      approval_prereq: "Προϋπόθεση για την εγκριση για υπογραφή μιας αίτηση είναι η αυτοπροσώπως συνάντηση με τον χρήστη."
+      meeting_details: "Στη συνάντηση αυτή πρέπει να επιβεβαιωθούν τα στοιχεία του χρήστη με βάση την αστυνομική του ταυτότητα ή άλλο ισοδύναμο έγγραφο (με φωτογραφία) καθώς και η σχέση του χρήστη με τον οργανισμό που έχει δηλώσει."
+      host_details: "Σε περίπτωση αίτησης για διακομιστή δεν είναι είναι απαραίτητη η συνάντηση και αρκεί η επιβεβαίωση της σχέσης διακομιστή με τον διαχειριστή και τον οργανισμό που έχει δηλωθεί."
+      ## list_approved
+      requests_to_sign: Αιτήσεις πιστοποιητικών σε αναμονή για υπογραφή από την Α.Π.
+      organization: Οργανισμός
+      req_date: Ημερομηνία αίτησης
+      last_update: Τελευταία ανανέωση
+      ## list_host_certificates
+      signed_ca_host_requests: Πιστοποιητικά διακομιστών που έχουν υπογραφεί από την Α.Π.
+      ## list_pending
+      certs_to_approve_ra: "Αιτήσεις πιστοποιητικών σε αναμονή για επιβεβαιωσή από την Α.Τ."
+      ## list_rejected
+      rejected_certs_ra: "Αιτήσεις πιστοποιητικών που έχουν απορριφθεί από την Α.Τ."
+      type: Τύπος
+      requestor: Αιτών
+      ## list_user_certificates
+      user_signed_certs_ca: Πιστοποιητικά χρηστών που έχουν υπογραφεί από την Α.Π.
+      full_name: Ονοματεπώνυμο
+      state: Κατάσταση
+      ## manage_operators
+      remove: Αφαίρεση
+      insert_new_ra_operator: Εισαγωγή νέου RA Operator
+      insert: Εισαγωγή
+      ## show_certificate_details
+      state: Κατάσταση
+      updated_at: Ανανέωση στις
+      requestor: Αιτών
+      certified_entity: Πιστοποιούμενη οντότητα
+      cert_details: Στοιχεία Πιστοποιητικού
+      ca: Αρχή Πιστοποίησης
+      valid_from: Έγκυρο από
+      valid_to: Έγκυρο έως
+      key: Κλειδί
+      ## show_host_details ## show_person_details
+      registration_history: Ιστορικό καταχώρησης
+      manager_details: Στοιχεία Διαχειριστή
+      server_details: Στοιχεία Διακομιστή
+      greek: Ελληνικά
+      english: Αγγλικά
+      name: Όνομα
+      surname: Επώνυμο
+      organization: Οργανισμός
+      work_tel: Τηλεφωνο εργασίας
+      scientific_field: Επιστημονικός τομέας
+      department: Τμήμα
+      property: Ιδιότητα
+      server_certificate: Πιστοποιητικό διακομιστή
+      server_has_certificate: O διακομιστής έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε
+      server_without_certificate: Ο διακομιστής ΔΕΝ έχει ψηφιακό πιστοποιητικό
+      registered_names: Καταχωρημένα Ονόματα
+      active_requests: Ενεργές αιτήσεις
+      cert_requests: Αιτήσεις ψηφιακών πιστοποιητικών
+      user_has_cert: "O χρήστης έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε"
+      user_without_cert: "Ο χρήστης ΔΕΝ έχει ψηφιακό πιστοποιητικό"
+      ## show_request_details
+      req_details: Στοιχεία αίτησης
+      id_checked: Έχει γίνει έλεγχος ταυτότητας
+      user_mail_updates: Ο χρήστης επιθυμεί ενημερωτικά μηνύματα
+      req_checked: Έχει γίνει έλεγχος αίτησης
+      accept: Αποδοχή 
+      reject: Απόρριψη
     register:
       
     registration_mailer:

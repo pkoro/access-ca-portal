@@ -3,22 +3,22 @@
     <td width="420px">
       <table border="0" cellspacing="0" cellpadding="0" width="400px" class="PersonDetails">
         <tr>
-          <th>Κατάσταση</th>
+          <th><%=I18n.t "views.ra.state"%></th>
           <td style="padding: 5px;"><%= @req.status %></td>
         </tr>
         <tr>
-          <th>Ανανέωση στις</th>
+          <th><%=I18n.t "views.ra.updated_at"%></th>
           <td style="padding: 5px;"><%= @req.updated_at %></td>
         </tr>
         <tr>
-          <th>Αιτών</th>
+          <th><%=I18n.t "views.ra.requestor"%></th>
           <td style="padding: 5px;">
             <%= link_to @req.requestor.email, :action => 'show_person_details', :id => @req.requestor.id %>
           </td>
         </tr>
         <% if @req.owner_id!=0 %>
           <tr>
-            <th>Οντότητα προς πιστοποίηση</th>
+            <th><%=I18n.t "views.ra.certified_entity"%></th>
             <% if @req.owner_type == "Person" %>
               <td style="padding: 5px;">
                 <%= link_to @req.owner.email, :action => 'show_person_details', :id => @req.owner.id %>
@@ -31,11 +31,11 @@
           </tr>
         <% end %>
         <tr>
-          <th>Τύπος Αίτησης</th>
+          <th><%=I18n.t "views.ra.type"%></th>
           <td style="padding: 5px;"><%= @req.csrtype %></td>
         </tr>
         <tr>
-          <th>Στοιχεία Αίτησης</th>
+          <th><%=I18n.t "views.ra.req_details"%></th>
           <td style="padding: 5px;">
           <% @ReqReader.request[:dnElements].each_value do |dnEl| %>
             <%= dnEl['Type'] %> = <%= dnEl['Value'] %>
@@ -44,7 +44,7 @@
           </td>
         </tr>
         <tr>
-          <th>Κλειδί</th>
+          <th><%=I18n.t "views.ra.key"%></th>
           <td style="padding: 5px;"><%= @ReqReader.request[:Object].public_key.type.to_s.split("::")[2] %>  (<%= @ReqReader.request[:Object].public_key.to_text.match(/\d+/)[0] %> bit)</td>
         </tr>
         <tr>
@@ -66,18 +66,18 @@
 <% form_tag :action=> "accept_csr" do %>
           <% if @req.owner_type == "Person" %>
 	          <div>
-	            <input type="checkbox" name="checked_id">Έχει γίνει έλεγχος ταυτότητας
+	            <input type="checkbox" name="checked_id"><%=I18n.t "views.ra.id_checked"%>
 	          </div>
 	          <div>
-	            <input type="checkbox" name="newsletter">Ο χρήστης επιθυμεί ενημερωτικά μηνύματα
+	            <input type="checkbox" name="newsletter"><%=I18n.t "views.ra.user_mail_updates"%>
 	          </div>
           <% end %>
           <div>
-            <input type="checkbox" name="checked_req">Έχει γίνει έλεγχος αίτησης
+            <input type="checkbox" name="checked_req"><%=I18n.t "views.ra.req_checked"%>
           </div>
           <p align="left">
             <input type="hidden" name="request" value="<%=@req.id%>">
-            <input type="submit" value="Αποδοχή" class="textbox">  
+            <input type="submit" value="<%=I18n.t "views.ra.accept"%>" class="textbox">  
           </p>
 <% end %>
         </td>
@@ -93,7 +93,7 @@
           </div>
           <p align="right">
             <input type="hidden" name="request" value="<%=@req.id%>">
-            <input type="submit" value="Απόρριψη" class="textbox">  
+            <input type="submit" value="<%=I18n.t "views.ra.reject"%>" class="textbox">  
           </p>
 <% end %>
         </td>
