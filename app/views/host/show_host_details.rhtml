@@ -5,30 +5,30 @@
   <tr>
     <td width="420px">
       <% if @host.versions.size > 1 %>
-        Ιστορικό Καταχώρησης: 
+        <%=I18n.t "views.host.registration_history"%>: 
         <% @host.versions.size.downto(1) do |ver| %>
           <%= link_to_unless_current ver, host_details_url(:id => @host.id, :version => ver) %>
         <% end %>
       <% end %>
       <br />
       <fieldset style="width: 600px">
-        <legend>Στοιχεία Διαχειριστή</legend>			
+        <legend><%=I18n.t "views.host.manager_details"%></legend>			
         <table border="0" cellspacing="0" cellpadding="0" width="100%" class="PersonDetails">
           <tr>
-            <th width="33%">Όνομα</th>
+            <th width="33%"><%=I18n.t "views.host.name"%></th>
             <td width="66%">
               <table cellspacing="0" cellpadding="0" width="100%">
                 <tr>
                   <td style="border-bottom: 0px">
                     <table cellspacing="0" cellpadding="0" width="200">
-                      <tr><th>Ελληνικά</th></tr>
+                      <tr><th><%=I18n.t "views.host.greek"%></th></tr>
                       <tr><td style="border-bottom: 0px; text-align: center;">
 						<%= if @host.admin && @host.admin.first_name_el; @host.admin.first_name_el; end %>&nbsp;</td></tr>
                     </table>
                   </td>
                   <td style="border-bottom: 0px; border-right: 0px">
                     <table cellspacing="0" cellpadding="0" width="200">
-                      <tr><th style="border-right: 0px">Αγγλικά</th></tr>
+                      <tr><th style="border-right: 0px"><%=I18n.t "views.host.english"%></th></tr>
                       <tr><td style="border-bottom: 0px; border-right: 0px; text-align: center;"><%= if @host.admin && @host.admin.first_name_en; @host.admin.first_name_en; end %>&nbsp;</td></tr>
                     </table>
                   </td>
@@ -37,19 +37,19 @@
             </td>
           </tr>
           <tr>
-            <th width="33%">Επίθετο</th>
+            <th width="33%"><%=I18n.t "views.host.surname"%></th>
             <td width="66%">
               <table cellspacing="0" cellpadding="0" width="100%">
                 <tr>
                   <td style="border-bottom: 0px">
                     <table cellspacing="0" cellpadding="0" width="200">
-                      <tr><th>Ελληνικά</th></tr>
+                      <tr><th><%=I18n.t "views.host.greek"%></th></tr>
                       <tr><td style="border-bottom: 0px; text-align: center;"><%= if @host.admin && @host.admin.last_name_el; @host.admin.last_name_el; end %>&nbsp;</td></tr>
                     </table>
                   </td>
                   <td style="border-bottom: 0px; border-right: 0px">
                     <table cellspacing="0" cellpadding="0" width="200">
-                      <tr><th style="border-right: 0px">Αγγλικά</th></tr>
+                      <tr><th style="border-right: 0px"><%=I18n.t "views.host.english"%></th></tr>
                       <tr><td style="border-bottom: 0px; border-right: 0px; text-align: center;"><%= if @host.admin && @host.admin.last_name_en; @host.admin.last_name_en; end %>&nbsp;</td></tr>
                     </table>
                   </td>
@@ -64,31 +64,31 @@
         </table>
       </fieldset>
       <fieldset style="width: 600px">
-        <legend>Στοιχεία Διακομιστή</legend>			
+        <legend><%=I18n.t "views.host.server_details"%></legend>			
         <table border="0" cellspacing="0" cellpadding="0" width="100%" class="PersonDetails">
           <tr>
             <th>FQDN</th>
             <td style="padding: 5px;"><%= @host.fqdn %></td>
           </tr>
           <tr>
-            <th>Οργανισμός</th>
+            <th><%=I18n.t "views.host.organization"%></th>
             <td style="padding: 5px;"><%= @host.organization.name_el %></td>
           </tr>
           <tr>
             <% if @host.admin_id == Person.find_by_dn(session[:usercert]).id %>
               <% form_tag :action=> "remove" do %>
-                <th>Εργασίες</th>
+                <th><%=I18n.t "views.host.tasks"%></th>
                 <input type="hidden" name="fqdn" value="<%=@host.fqdn%>">
                 <td style="padding: 5px;">
-                  <input type="submit" value="Διαγραφή" class="textbox">  
+                  <input type="submit" value="<%=I18n.t "views.host.remove"%>" class="textbox">  
                 </td>
               <% end %>
             <% else %>
               <% form_tag :action=> "request_administration" do %>
-                <th>Εργασίες</th>
+                <th><%=I18n.t "views.host.tasks"%></th>
                 <input type="hidden" name="fqdn" value="<%=@host.fqdn%>">
                 <td style="padding: 5px;">
-                  <input type="submit" value="Αίτηση για διαχείρηση αυτού του διακομιστή" class="textbox">  
+                  <input type="submit" value="<%=I18n.t "views.host.request_for_server_management"%>" class="textbox">  
                 </td>
               <% end %>
             <% end %>
@@ -97,18 +97,19 @@
       </fieldset>
       <br />
       <fieldset style="width: 600px">
-        <legend>Πιστοποιητικό Διακομιστή</legend>
+        
+        <legend><%=I18n.t "views.host.server_certificate"%></legend>
         <p>
           <% if @host.certificate %>
-            O διακομιστής έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε: <%= @host.certificate.created_at %>
+            <%=I18n.t "views.host.server_has_certificate"%>: <%= @host.certificate.created_at %>
           <% else %>
-            Ο διακομιστής ΔΕΝ έχει ψηφιακό πιστοποιητικό
+            <%=I18n.t "views.host.server_without_certificate"%>
           <% end %>
         </p>
       </fieldset>
       <br />
       <fieldset style="width: 600px">
-        <legend>Καταχωρημένα Ονόματα</legend>
+        <legend><%=I18n.t "views.host.registerd_names"%></legend>
         <p style="font-size: 10px">	
           <% if @host.distinguished_names.size > 0 %>
             <% i = 0 %>
@@ -121,10 +122,10 @@
       </fieldset>
       <br />
       <fieldset style="width: 600px">
-        <legend>Ενεργές αιτήσεις</legend>
+        <legend><%=I18n.t "views.host.active_requests"%></legend>
         <table>
           <tr>
-			<th align="right">Αιτήσεις Ψηφιακών Πιστοποιητικών:</th>
+			<th align="right"><%=I18n.t "views.host.cert_requests"%>:</th>
             <td><%= @host.certificate_requests.size %></td>
           </tr>
         </table>

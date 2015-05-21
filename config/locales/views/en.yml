@@ -271,4 +271,49 @@ en:
       ## test_browser_for_user_cert
       cert_found: Certificate found in your browser
       cert_with_dn: Installed certificate in your browser with Subject DN
-      no_cert: "No certificate found installed in your browser, which is signed by the Hellasgrid CA"
+      no_cert: "No certificate found installed in your browser, which is signed by the Hellasgrid CA."
+    host:
+      ## csr_receipt
+      request_sent: "Your request has been sent to Hellasgrid CA"
+      request_text: "Your request has been sent to Hellasgrid CA and your organization's Registration Authority has been notified to approve it."
+      check_state: "In order to watch the status of your request through the web"
+      visit_this: follow this
+      link: link
+      new_key_creation: "For each request sent to the CA, a random key is generated with which one can access the details of the request. The key for your request is"
+      regional_ra: "The RA that serves your region is"
+      more_info_on_ca_ra: More information about the RAs and the Hellasgrid CA can be found
+      mail_copy_sent: "A digital copy of the text above has been sent to the following e-mail address"
+      ## list ## manual_cs ## pending_requests
+      server_catalog: Server catalog under management of
+      organization: Organization
+      date_created: Date created
+      no_active_certificate: No active certificate
+      no_managing_server: No server under your managment.
+      info: Details
+      find: Find
+      register_new_server: Register new server
+      manual_csr_guide: "Copy and paste inside the form the certificate request. In case you used some UI, the certificate request is the contents of the file usercert_request.pem, located under .globus directory inside your home folder."
+      certificate_application: Certificate Application
+      ## show_host_details
+      last_update: Last Update
+      registration_history: Registration history
+      manager_details: Manager details
+      server_details: Server details
+      greek: Greek
+      english: English
+      name: Nmae
+      surname: Surname
+      organization: Organization
+      work_tel: Work phone
+      scientific_field: Scientific field
+      department: Department
+      property: Property
+      remove: Remove
+      tasks: Tasks
+      request_for_server_management: "Request to manage this server"
+      server_certificate: Server certificate
+      server_has_certificate: The server has a certificate issued
+      server_without_certificate: The server DOES NOT have a certificate
+      registered_names: Registered Names
+      active_requests: Active requests
+      cert_requests: Certificate requests

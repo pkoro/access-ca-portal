@@ -280,7 +280,50 @@ el:
       cert_with_dn: Στον browser σας υπάρχει εγκατεστημένο ψηφιακό πιστοποιητικό με Subject DN
       no_cert: "Δεν υπάρχει ψηφιακό πιστοποιητικό εγκατεστημένο στον browser σας, το οποίο να είναι υπογεγραμμένο από την Α.Π. ΗellasGrid CA."
     host:
-      
+      ## csr_receipt
+      request_sent: "Η αίτησή σας έχει αποσταλλεί στην Αρχή Πιστοποίησης ΗellasGrid CA"
+      request_text: "Η αίτησή σας έχει αποσταλλεί  στην Αρχή Πιστοποίησης ΗellasGrid CA και	παράλληλα  ενημερώθηκε η  Αρχή Ταυτοποίησης  (Α.Τ.) που  εξυπηρετεί το	οργανισμό σας για να επιβεβαιώσει την αίτηση."
+      check_state: "Για να παρακολουθείσετε την κατάσταση της αιτήσεώς σας μέσω του web"
+      visit_this: ακολουθήστε αυτό το
+      link: σύνδεσμο
+      new_key_creation: "Για κάθε αίτηση που αποστέλλεται στην Α.Π.,δημιουργείται ένα τυχαίο κλειδί με το οποίο έχει κανείς πρόσβαση στα στοιχεία της αιτήσεως. Το κλειδί για τη δική σας αίτηση είναι"
+      regional_ra: "Η Α.Τ. που εξυπηρετεί την περιοχή σας είναι η"
+      more_info_on_ca_ra: "Περισσότερες πληροφορίες για τις Α.Τ. της Α.Π. HellasGrid CA μπορείτε να βρείτε"
+      mail_copy_sent: "Ηλεκτρονικό αντίγραφο του παραπάνω κειμένου έχει αποσταλλεί ηλεκτρονικά στη διεύθυνση"
+      ## list ## manual_cs ## pending_requests
+      server_catalog: Κατάλογος διακομιστών υπό τη διαχείριση του
+      organization: Οργανισμός
+      date_created: Ημερομηνία δημιουργίας
+      no_active_certificate: Δεν υπάρχει ενεργό πιστοποιητικό
+      no_managing_server: Δεν υπάρχει κανένας διακομιστής υπό την διαχείρισή σας.
+      info: Πληροφορίες
+      find: Εύρεση
+      register_new_server: Καταχώρηση νέου διακομιστή
+      manual_csr_guide: "Κάντε copy/paste εντός της φόρμας το certificate request. Αν χρησιμοποιήσατε κάποιο User Interface, το certificate request  είναι τα περιεχόμενα του αρχείου usercert_request.pem, το οποίο	βρίσκεται στον φάκελο .globus του καταλόγου σας στο UI."
+      certificate_application: Αίτηση ψηφιακού πιστοποιητικού
+      ## show_host_details
+      last_update: Τελευταία ανανέωση
+      registration_history: Ιστορικό καταχώρησης
+      manager_details: Στοιχεία Διαχειριστή
+      server_details: Στοιχεία Διακομιστή
+      greek: Ελληνικά
+      english: Αγγλικά
+      name: Όνομα
+      surname: Επώνυμο
+      organization: Οργανισμός
+      work_tel: Τηλεφωνο εργασίας
+      scientific_field: Επιστημονικός τομέας
+      department: Τμήμα
+      property: Ιδιότητα
+      remove: Διαγραφή
+      tasks: Εργασίες
+      request_for_server_management: "Αίτηση για διαχείριση αυτού του διακομιστή"
+      server_certificate: Πιστοποιητικό διακομιστή
+      server_has_certificate: O διακομιστής έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε
+      server_without_certificate: Ο διακομιστής ΔΕΝ έχει ψηφιακό πιστοποιητικό
+      registered_names: Καταχωρημένα Ονόματα
+      active_requests: Ενεργές αιτήσεις
+      cert_requests: Αιτήσεις ψηφιακών πιστοποιητικών
     myproxy:
       
     ra:

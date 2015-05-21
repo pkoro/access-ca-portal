@@ -15,12 +15,12 @@
 <div align="center">
   <div style="width: 70 0px">
     <%unless @hosts.empty? then %>
-      <h1>Κατάλογος διακομιστών υπο την διαχείριση του:<br /> <%= session[:usercert] %></h1>
+      <h1><%=I18n.t "views.host.server_catalog"%>:<br /> <%= session[:usercert] %></h1>
       <table class="tablelist" cellspacing="0" cellpadding="4px">
         <tr>
           <%= sort_header_tag('fqdn', :caption => 'FQDN')%>
-          <%= sort_header_tag('name_el', :caption => 'Οργανισμός', :association => 'organizations')%>
-          <%= sort_header_tag('created_at', :caption => 'Ημερ. Δημιουργίας')%>
+          <%= sort_header_tag('name_el', :caption => "#{I18n.t "views.host.organization"}", :association => 'organizations')%>
+          <%= sort_header_tag('created_at', :caption => "#{I18n.t "views.host.date_created"}")%>
           <th style="color: #4F4F4F; font-weight: normal;">Λήξη πιστοποιητικού</th>
           <th colspan="5"></th>
         </tr>
@@ -35,9 +35,9 @@
               @expire = X509Certificate::CertificateReader.new(host_obj.certificate.body).certificate[:ExpirationDate] %>
               <td align="center"><%= @expire.mday.to_s + "/" + @expire.month.to_s + "/" + @expire.year.to_s %></td>            
             <%else%>
-              <td align="center">Δεν υπάρχει ενεργό πιστοποιητικό</td>
+              <td align="center"><%=I18n.t "views.host.no_active_certificate"%></td>
             <%end%>
-            <td><%= link_to 'Πληροφορίες', :action => 'show_host_details', :id => host %></td>
+            <td><%= link_to "#{I18n.t "views.host.info"}", :action => 'show_host_details', :id => host %></td>
           </tr>
         <% end %>
       </table>
@@ -47,13 +47,13 @@
         <%= will_paginate @hosts %>
       </div>
     <% else %>
-      <h1>Δεν υπάρχει κανένας διακομιστής υπό την διαχείριση σας.</h1>
+      <h1><%=I18n.t "views.host.no_managing_server"%></h1>
     <%end%>
   </div>
   <% form_tag :action=> "find" do %>
     FQDN: <input type="text" name="fqdn" value="">
-    <input type="submit" value="Εύρεση" class="textbox">  
+    <input type="submit" value="<%=I18n.t "views.host.find"%>" class="textbox">  
   <% end %>
   <br/>
-  <%= link_to 'Καταχώρηση νέου διακομιστή', :action => 'manual_csr' %>
+  <%= link_to "#{I18n.t "views.host.register_new_server"}", :action => 'manual_csr' %>
 </div>

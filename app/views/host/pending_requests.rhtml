@@ -6,13 +6,13 @@
 <div align="center">
   <div style="width: 70 0px">
     <%unless @requests.empty? then %>
-      <h1>Κατάλογος διακομιστών υπο την διαχείριση του:<br /> <%= session[:usercert] %></h1>
+      <h1><%=I18n.t "views.host.server_catalog"%>:<br /> <%= session[:usercert] %></h1>
       <table class="tablelist" cellspacing="0" cellpadding="4px">
         <tr>
           <td>FQDN</td>
           <td>Subject DN</td>
-          <td>Ημερ. Δημιουργίας</td>
-          <td>Τελευταία Ανανέωση</td>
+          <td><%=I18n.t "views.host.date_created"%></td>
+          <td><%=I18n.t "views.host.last_update"%></td>
           <td>Κατάσταση</td>
         </tr>
         <% @requests.each_with_index do |request, i| %>
@@ -40,7 +40,8 @@
         <%= will_paginate @hosts %>
       </div>
     <% else %>
-      <h1>Δεν υπάρχει κανένας διακομιστής υπό την διαχείριση σας.</h1>
+      <h1><%=I18n.t "views.host.no_managing_server"%>
+      </h1>
     <%end%>
   </div>
 </div>
