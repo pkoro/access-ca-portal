@@ -484,3 +484,24 @@ en:
       ## reject_email_address
       team_notified_on_prob: The management team has been notified on the problem caused during registration.
       sorry: We are sorry for the mishap.
+    registration_mailer:
+      
+    support:
+      name: Name
+      surname: Surnmae
+      organization: Organization
+      work_tel: Work telephone
+      scientific_field: Scientific Field
+      department: Department
+      property: Property
+      greek: Greek
+      english: English
+      registration_history: Registration history
+      registered_names: Registered names
+      active_requests: Active requests
+      personal_certificate: Personal certificate
+      user_has_certificate: "The user has certificate issued on"
+      user_without_certificate: "The user does NOT have any certificates"
+      certificate_requests: Certificate requests
+      ui_requests: Requests for UI
+      seevo_requests: Requests for SEE VO

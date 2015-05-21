@@ -489,6 +489,23 @@ el:
       team_notified_on_prob: Η ομάδα διαχείρισης ενημερώθηκε για την προβληματική καταχώρηση.
       sorry: Συγγνώμη για την ταλαιπωρία.
     registration_mailer:
-      
+
     support:
-      
+      name: Όνομα
+      surname: Επώνυμο
+      organization: Οργανισμός
+      work_tel: Τηλεφωνο εργασίας
+      scientific_field: Επιστημονικός τομέας
+      department: Τμήμα
+      property: Ιδιότητα
+      greek: Ελληνικά
+      english: Αγγλικά
+      registration_history: Ιστορικό καταχώρησης
+      registered_names: Καταχωρημένα ονόματα
+      active_requests: Ενεργές αιτήσεις
+      personal_certificate: Προσωπικό πιστοποιητικό
+      user_has_certificate: Ο χρήστης έχει ψηφιακό πιστοποιητικό το οποίο εκδόθηκε
+      user_without_certificate: Ο χρήστης δεν έχει ψηφιακό πιστοποιητικό
+      certificate_requests: Αιτήσεις Ψηφιακών Πιστοποιητικών
+      ui_requests: Αιτήσεις για UI
+      seevo_requests: Αιτήσεις για SEE VO
