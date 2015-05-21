@@ -6,18 +6,18 @@
 	<PARAM NAME=credLifeTime VALUE="168" />
 	<PARAM NAME=renewerdn VALUE="*/CN=wms0*.egee-see.org" />
 </applet>
-<p>Επιλεγμένο keystore: </p>
+<p><%=I18n.t "views.myproxy.selected"%> keystore: </p>
 <p>
 	<INPUT TYPE="textbox" Name="SelectedKeystore" ID="SelectedKeystore" readonly=true>
 	<INPUT TYPE="button" Name="SelectKeystore" VALUE="Αλλαγή" onClick="jsSelectKeystore()">
 </p>
-<p>Επιλεγμένο Πιστοποιητικό: </p>
+<p><%=I18n.t "views.myproxy.selected"%> <%=I18n.t "views.myproxy.certificate"%>: </p>
 <p>
 	<INPUT TYPE="textbox" Name="SelectedCertificate" ID="SelectedCertificate" readonly=true>
-	<INPUT TYPE="button" Name="SelectCertificate" VALUE="Αλλαγή" onClick="jsSelectCertificate()">
+	<INPUT TYPE="button" Name="SelectCertificate" VALUE="<%=I18n.t "views.myproxy.change"%>" onClick="jsSelectCertificate()">
 </p>
 <p>
 	<INPUT TYPE="button" Name="MyProxyInit" VALUE="MyProxy Init" onClick="jsMyProxyInit()">
-	<INPUT TYPE="button" Name="SaveLocalProxy" VALUE="Αποθήκευση τοπικού Proxy" onClick="jsSaveLocalProxy()">
+	<INPUT TYPE="button" Name="SaveLocalProxy" VALUE="<%=I18n.t "views.myproxy.save_local_proxy"%>" onClick="jsSaveLocalProxy()">
 </p>
 	

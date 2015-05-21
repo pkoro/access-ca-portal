@@ -317,3 +317,14 @@ en:
       registered_names: Registered Names
       active_requests: Active requests
       cert_requests: Certificate requests
+    myproxy:
+      ## create_myproxy ## myproxy_info
+      selected: Selected
+      certificate: Certificate
+      change: Change
+      save_local_proxy: Save local Proxy
+      ## index
+      service: Service
+      create_and_register_myproxy_cert: "Create and store MyProxy certificate"
+      info_on_myproxy: "Show MyProxy certificate information"
+      ssh_access: "SSH access"

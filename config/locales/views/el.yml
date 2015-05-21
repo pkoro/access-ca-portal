@@ -325,7 +325,16 @@ el:
       active_requests: Ενεργές αιτήσεις
       cert_requests: Αιτήσεις ψηφιακών πιστοποιητικών
     myproxy:
-      
+      ## create_myproxy
+      selected: Επιλεγμένο
+      certificate: Πιστοποιητικό
+      change: Αλλαγή
+      save_local_proxy: Αποθήκευση τοπικού Proxy
+      ## index
+      service: Υπηρεσία
+      create_and_register_myproxy_cert: "Δημιουργία και καταχώρηση MyProxy πιστοποιητικού"
+      info_on_myproxy: "Προβολή πληροφοριών MyProxy πιστοποιητικού"
+      ssh_access: "SSH πρόσβαση"
     ra:
       
     register:
