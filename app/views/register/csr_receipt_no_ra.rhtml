@@ -1,5 +1,5 @@
 <center>
-	<h1>Η αίτησή σας έχει αποσταλλεί στην Αρχή Πιστοποίησης ΗellasGrid CA</h1>
+	<h1><%=I18n.t "views.register.request_sent"%></h1>
 </center>
 <br />
 <div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
@@ -7,17 +7,12 @@
 </div>
 <br />
 <p>
-	Η αίτησή σας έχει αποσταλλεί  στην Αρχή Πιστοποίησης ΗellasGrid CA ωστόσο
-	προς το παρον ΔΕΝ υπάρχει κάποια Α.Τ. που να εξυπηρετεί τον οργανισμό σας.
-	Μολις δημιουργηθεί Α.Τ. στο ίδρυμα σας θα ενημερωθείτε για την διαδικασία
-	που θα πρέπει να ακολουθήσετε για να ταυτοποιηθείτε.
+	<%=I18n.t "views.register.request_sent"%>, <%=I18n.t "views.register.no_ra_for_org"%>
 </p>
 
 <br />
 <p>
-	Για κάθε αίτηση που αποστέλλεται στην Α.Π., δημιουργείται ένα τυχαίο κλειδί
-	με το οποίο έχει κανείς πρόσβαση στα στοιχεία της αιτήσεως. Το κλειδί για την
-	δική σας αίτηση είναι:
+	<%=I18n.t "views.register.new_key_creation"%>:
 </p>  
 
 <div align="center" style="border: grey solid 1px; padding: 10px; width: 450px">
@@ -26,12 +21,11 @@
 
 
 <p>
-	Μπορείτε να παρακολουθείτε την κατάσταση της αιτήσεώς σας μέσω του web
-	ακολουθώντας αυτόν τον <%= link_to "σύνδεσμο", @csr_status_link %>
+	<%=I18n.t "views.register.to_watch_request_progress"%>
+	<%=I18n.t "views.register.follow_this"%> <%= link_to "#{I18n.t "views.register.link"}", @csr_status_link %>
 </p>
 
 <br />
 <p>
-	Ηλεκτρονικό αντίγραφο του παραπάνω κειμένου έχει αποσταλλεί ηλεκτρονικά στην
-	διεύθυνση: <%= @person.email %>
+	<%=I18n.t "views.register.mail_copy_sent"%>: <%= @person.email %>
 </p>

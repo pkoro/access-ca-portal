@@ -1,17 +1,17 @@
-<h1>Σφάλμα μη εγγεγραμένου χρήστη!</h1>
+<h1><%=I18n.t "views.register.missing_registration"%></h1>
 <p>
 	<%= flash[:notice] %>
 </p>
 
 <% form_tag :action=> "load_session" do %>
 <fieldset id="editFormFields">
-	<legend>Αναζήτηση Εγγραφής Χρήστη</legend>
+	<legend><%=I18n.t "views.register.search_user_registration"%></legend>
 	<table border="0" cellspacing="10" cellpadding="0">
 		<tr>
 			<td valign="top"><label for="person_email">Email</label></td>
 			<td><%= text_field(:person, :email, :class => "textbox") %></td>
 		</tr>
 	</table>
-	<input type="submit" value="Αναζήτηση" class="textbox" />
+	<input type="submit" value="<%=I18n.t "views.search"%>" class="textbox" />
 </fieldset>
 <% end %>

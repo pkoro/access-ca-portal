@@ -6,15 +6,13 @@
 <br />
 <% end %>
 <fieldset>
-	<legend>Παραγωγή κλειδιού και αποστολή αιτήσεως στην Α.Π.</legend>
+	<legend><%=I18n.t "views.register.create_key_send_ca"%></legend>
 	<div class="blue_box">
 	<p>
-		Επιλέξτε το μέγεθος του προσωπικού κλειδιού που θέλετε να δημιουργήσετε
-		και προχωρήστε στην αποστολή.
+		<%=I18n.t "views.register.select_key_size"%>
 	</p>
 	<p>
-		ΠΡΟΣΟΧΗ: Το μέγεθος του κλειδιού πρέπει να
-		ΜΗΝ είναι μικρότερο από 1024 bits. Προτεινόμενη τιμή είναι τα 1024 bits.
+		<%=I18n.t "views.register.warning_key_size"%>
 	</p> 
 	</div>
 	<% form_tag :action => 'submit_mozilla_csr' do %>
@@ -37,8 +35,8 @@
 %>
 	<input type="hidden" name="organizationalUnitName" value="<%= person_ou %>">
 	<input type="hidden" name="countryName" value="GR">
-	<label for="SPKAC">Μέγεθος κλειδιού:</label><br />
+	<label for="SPKAC"><%=I18n.t "views.register.key_size"%>:</label><br />
 	<keygen name="SPKAC" class="textbox"><br /><br />
-	<input type="submit" value="Αποστολή" class="textbox">
+	<input type="submit" value="<%=I18n.t "views.send"%>" class="textbox">
 	<% end %>
 </fieldset>

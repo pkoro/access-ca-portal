@@ -5,6 +5,7 @@ en:
     contact: Contact
     send: Send
     here: here
+    search: Search
     layouts:
       common:
         registered_users: Registered Users
@@ -395,4 +396,91 @@ en:
       req_checked: Request has been checked
       accept: Accept
       reject: Reject
+    register:
+      ## about_ca
       
+      ## add_new_person
+      successful_registration: Successful registration of your contact details
+      confirm_address: "In order to proceed with the process of issuing a certificate, it is necessary that the contact capabilities with you be verified, in the e-mail you declared."
+      sent_mail: "For this reason, we have sent an e-mail to the address"
+      visit_link: "that contains the link which you have to visit for verifying your mail."
+      ## confirm_email_address
+      no_email_to_approve: There is no e-mail address for validation.
+      ## csr_form ## csr_receipt_no_ra ## csr_receipt
+      warning: WARNING
+      must_install_certificate_browser: "It is necessary that you install the HellasGrid CA certificate in your browser. The installation will begin automatically, by following this"
+      link: link
+      csr_intro_process: "Next, you can continue with the creation of your personal key and send your request form to the Certification Authority. According to the browser you are using, you will be presented with one or two choices."
+      to_create_your_personal_key_in: "To create your personal in"
+      follow_this: follow this
+      link: link
+      do_not_use_chrome: "warning. Do not use Google Chrome browser in this step, as it does not support the personal key creation process"
+      if_already_created_personal_key_certificate: "If you already have created your personal key and the respective certificate request in a User Interface"
+      request_sent: "Your request has been sent to Hellasgrid CA"
+      request_sent_visit_ra: "Your request has been sent to Hellasgrid CA and your organization's Registration Authority has been notified. During the following week, you have to visit in person the RA office having with you"
+      id_card_or_passport: "your ID or passport"
+      relation_to_org: "a document that certifies your relation to the organization"
+      copies: a copy of the above
+      print_of_this_text: a printed copy of this document
+      to_watch_request_progress: "To watch the progress of your request, you can"
+      new_key_creation: "For each request sent to the CA, a random key is generated with which one can access the details of the request. The key for your request is"
+      regional_ra: "The RA that serves your region is"
+      more_info_on_ca_ra: "More information about the RAs and the Hellasgrid CA can be found"
+      no_ra_for_org: "however, there is NO RA that serves your organization. As soon as a new RA is created in your institution, you will be notified for the process to be followed in order to get verified."
+      mail_copy_sent: "A digital copy of the text above has been sent to the following e-mail address"
+      id_card_or_passport: "your ID or passport"
+      relation_to_org: "a document that certifies your relation to the organization"
+      copies: a copy of the above
+      print_of_this_text: a printed copy of this document
+      to_watch_request_progress: "To watch the progress of your request, you can"
+      request_sent_visit_ra: "Your request has been sent to Hellasgrid CA and your organization's Registration Authority has been notified. During the following week, you have to visit in person the RA office having with you"
+      ## iexplorer_csr ## iexplorer_vista_csr
+      create_key_send_ca: Create key and send to CA
+            select_key_size: "Select the size of your personal key you are to create and send"
+      warning_crypto_ie: "WARNING: The crypto provider which must be used in Internet Explorer is Microsoft Enhanced (default value)"
+      ## index
+      must_import_cert_1: "In order to use the application, you have to improt the Hellasgrid CA certificate"
+      must_import_cert_2: "as well as the one of HellasGrid Root CA"
+      import: import
+      that_has_signed: that has signed the certificate
+      more_info_on_ca: For more information on 
+      access_grid_process: Process for accessing Grid for new users
+      acquire_cert: Get your certificate from the national Certification Authority Hellasgrid CA.
+      access_ui: Gain Access to one of the User Interfaces of HellasGrid (Certificate required)
+      register_vo: Register in VO (Certificate required)
+      host_cert: Submit request for server or service certificate. (For Hellasgrid Site Administrators. Certificate required) 
+      ## load_session
+      verify_mail: E-mail address verification
+      before_proceeding: "Before you proceed with issuing a new certificate, it is necessary that we confirm the address"
+      is_owned: is yours
+      sent_mail: "For this reason, we have sent an e-mail"
+      visit_link: "that contains the link which you have to visit to confirm the validity of your email address."
+      ## manual_csr
+      manual_csr_guide: "Copy and paste inside the form the certificate request. In case you used some UI, the certificate request is the contents of the file usercert_request.pem, located under .globus directory inside your home folder."
+      certificate_request: Certificate request
+      send_request: Send request
+      ## missing_registration
+      missing_registration: Registered User not found!
+      search_user_registration: Search User Registration
+      ## mozilla_csr
+      warning_key_size: "WARNING: The size of the key MUST NOT be under 1024 bits. The recommended value is 1024 bits."
+      key_size: Key size
+      ## registration_form
+      new_user_registration: New user registration
+      name: Name
+      surname: Surnmae
+      organization: Organization
+      work_tel: Work telephone
+      scientific_field: Scientific Field
+      department: Department
+      property: Property
+      researcher: Researcher
+      faculty: Faculty
+      staff: Staff
+      student: Student
+      greek: Greek
+      english: English
+      register: Register
+      ## reject_email_address
+      team_notified_on_prob: The management team has been notified on the problem caused during registration.
+      sorry: We are sorry for the mishap.

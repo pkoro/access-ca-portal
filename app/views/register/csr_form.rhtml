@@ -8,11 +8,9 @@
 
 	<% if !session[:installed_ca_cert]  %>
 	<fieldset>
-		<legend>ΠΡΟΣΟΧΗ</legend>
+		<legend><%=I18n.t "views.register.warning"%></legend>
 		<p>
-		    Είναι απαραίτητο  να εγκαταστήσετε στον browser σας το πιστοποιητικό της Αρχής 
-		    Πιστοποίησης HellasGrid CA. Η εγκατάσταση θα ξεκινήσει αυτόματα ακολουθώντας 
-		    αυτόν τον <%= link_to("σύνδεσμο", :action => "load_ca_cert") %>
+		    <%=I18n.t "views.register.must_install_certificate_browser"%><%= link_to("#{I18n.t "views.register.link"}", :action => "load_ca_cert") %>
 			<%= link_to(image_tag("go.jpg", :style => "border: 0"), :action => "load_ca_cert") %>
 		</p>
 	</fieldset>
@@ -20,9 +18,7 @@
 	<% end %>
 
 	<p>
-		Στη συνέχεια μπορείτε να προχωρήσετε στη δημιουργία του προσωπικού σας κλειδιού
-		και την αποστολή της αίτησης στην Αρχή Πιστοποίησης. Ανάλογα με τον τύπο
-		του browser που έχετε θα σας εμφανιστούν μία ή δύο επιλογές.
+		<%=I18n.t "views.register.csr_intro_process"%>
 	</p>
 
 	<p>		
@@ -30,30 +26,29 @@
 		<fieldset>
 			<legend><%= image_tag("firefox-safari-logo.png", :style => "border: 0") %></legend>
 			<p>
-				Για να δημιουργήσετε το προσωπικό σας κλειδί σε Mozilla, Netscape, Safari <font color='red'>(προσοχή μην χρησιμοποιείτε Google Chrome σε αυτό το βήμα καθώς δεν υποστηρίζει την διαδικασία παραγωγής πρσωπικού κλειδιού)</font> ακολουθήστε αυτόν τον
-				<%= link_to("σύνδεσμο", {:action => "mozilla_csr"}, :confirm => @gen_in_browser_confirmation) %> <%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "mozilla_csr"}, :confirm => @gen_in_browser_confirmation) %>	
+				<%=I18n.t "views.register.to_create_your_personal_key_in"%> Mozilla, Netscape, Safari <font color='red'>(<%=I18n.t "views.register.do_not_use_chrome"%>)</font> <%=I18n.t "views.register.follow_this"%>
+				<%= link_to("#{I18n.t "views.register.link"}", {:action => "mozilla_csr"}, :confirm => @gen_in_browser_confirmation) %> <%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "mozilla_csr"}, :confirm => @gen_in_browser_confirmation) %>	
 			</p>
 		</fieldset>
 		<% elsif request.user_agent !~ /Windows NT 6\./ %>
 		<fieldset>
 			<legend><%= image_tag("ie7_thumb_logo.jpg", :style => "border: 0") %></legend>
-			<p>Για να δημιουργήσετε το προσωπικό σας κλειδί σε Internet Explorer, ακολουθήστε αυτόν τον
-				<%= link_to("σύνδεσμο", {:action => "iexplorer_csr"}, :confirm => @gen_in_browser_confirmation) %> <%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "iexplorer_csr"}, :confirm => @gen_in_browser_confirmation) %>	
+			<p><%=I18n.t "views.register.to_create_your_personal_key_in"%> Internet Explorer, <%=I18n.t "views.register.follow_this"%>
+				<%= link_to("#{I18n.t "views.register.link"}", {:action => "iexplorer_csr"}, :confirm => @gen_in_browser_confirmation) %> <%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "iexplorer_csr"}, :confirm => @gen_in_browser_confirmation) %>	
 			</p>
 		</fieldset>
 		<% else %>
 		<fieldset>
 			<legend><%= image_tag("ie7_thumb_logo.jpg", :style => "border: 0") %></legend>
-			<p>Για να δημιουργήσετε το προσωπικό σας κλειδί σε Internet Explorer, ακολουθήστε αυτόν τον
-				<%= link_to("σύνδεσμο", {:action => "iexplorer_vista_csr"}, :confirm => @gen_in_browser_confirmation) %> <%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "iexplorer_csr"}, :confirm => @gen_in_browser_confirmation) %>
+			<p><%=I18n.t "views.register.to_create_your_personal_key_in"%> Internet Explorer, <%=I18n.t "views.register.follow_this"%>
+				<%= link_to("#{I18n.t "views.register.link"}", {:action => "iexplorer_vista_csr"}, :confirm => @gen_in_browser_confirmation) %> <%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "iexplorer_csr"}, :confirm => @gen_in_browser_confirmation) %>
 			</p>
 		</fieldset>
 		<% end %>
 		<br />
 		<fieldset>
 			<legend><%= image_tag("bash-logo.png", :style => "border: 0") %></legend>
-			<p>Αν έχετε ήδη δημιουργήσει το προσωπικό σας κλειδί και την αντίστοιχη αίτηση πιστοποιητικού
-				σε κάποιο User Interface, ακολουθήστε αυτόν τον <%= link_to("σύνδεσμο", :action => "manual_csr") %>
+			<p><%=I18n.t "views.register.if_already_created_personal_key_certificate"%>, <%=I18n.t "views.register.follow_this"%> <%= link_to("#{I18n.t "views.register.link"}", :action => "manual_csr") %>
 				<%= link_to(image_tag("go.jpg", :style => "border: 0"), :action => "manual_csr") %>
 			</p>
 		</fieldset>

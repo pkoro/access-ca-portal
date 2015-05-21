@@ -1,35 +1,35 @@
 <fieldset>
-  <legend>ΠΡΟΣΟΧΗ</legend>
+  <legend><%=I18n.t "views.register.warning"%></legend>
   <p>
-    Για να χρησιμοποιήσετε την εφαρμογή θα πρέπει να εισάγετε το πιστοποιητικό της Α.Π. HellasGrid CA (<a href="http://crl.grid.auth.gr/hellasgrid-ca-2006/cert/82b36fca.cacrt">εισαγωγή</a>) καθώς επίσης και της Α.Π. HellasGrid Root CA (<a href="http://crl.grid.auth.gr/hellasgrid-root-ca-2006/cert/28a58577.cacrt">εισαγωγή</a>) που έχει υπογράψει αυτό το πιστοποιητικό. Περισότερες πληροφορίες για την Α.Π. HellasGrid CA μπορείτε να βρείτε <%= link_to "εδώ", :controller => "register", :action => "about_ca" %>.
+    <%=I18n.t "views.register.must_import_cert_1"%> (<a href="http://crl.grid.auth.gr/hellasgrid-ca-2006/cert/82b36fca.cacrt"><%=I18n.t "views.register.import"%></a>) <%=I18n.t "views.register.must_import_cert_2"%> (<a href="http://crl.grid.auth.gr/hellasgrid-root-ca-2006/cert/28a58577.cacrt"><%=I18n.t "views.register.import"%></a>) <%=I18n.t "views.register.that_has_signed"%>. <%=I18n.t "views.register.more_info_on_ca"%> <%=I18n.t "views.register.follow_this"%> <%= link_to "#{I18n.t "views.register.link"}", :controller => "register", :action => "about_ca" %>.
   </p>
 </fieldset>
 <br />
 
 
-<h1>Διαδικασία πρόσβασης στο Grid για νέους χρήστες</h1>
+<h1<%=I18n.t "views.register.access_grid_process"%></h1>
 
 <table border="0" cellspacing="0" cellpadding="0">
 	<tr>
 		<td width="50px"><%= link_to(image_tag("one.png", :style => "border: 0"), {:action => "registration_form"})%></td>
-		<td><p>Αποκτήστε το ψηφιακό πιστοποιητικό σας από την εθνική Αρχή Πιστοποίησης HellasGrid CA
+		<td><p><%=I18n.t "views.register.acquire_cert"%>
 			<%= link_to(image_tag("go.jpg", :style => "border: 0"), {:action => "registration_form"})%>
 			</p></td>
 	</tr>
 	<tr>
 		<td width="50px"><%= link_to(image_tag("two.png", :style => "border: 0"), {:controller => "account", :action => "ui_access_form"}) %></td>
-		<td><p>Αποκτήστε πρόσβαση σε ένα από τα User Interfaces του HellasGrid (Απαιτείται ψηφιακό πιστοποιητικό)
+		<td><p><%=I18n.t "views.register.access_ui"%>
 			<%= link_to(image_tag("go.jpg", :style => "border: 0"), {:controller => "account", :action => "ui_access_form"}) %></p>
 		</td>
 	</tr>
 	<tr>
 		<td width="50px"><%= link_to(image_tag("three.png", :style => "border: 0"), :controller => "account", :action => "index") %></td>
-		<td><p>Εγγραφείτε σε VO (Απαιτείται ψηφιακό πιστοποιητικό)
+		<td><p><%=I18n.t "views.register.register_vo"%>
 			<%= link_to(image_tag("go.jpg", :style => "border: 0"), :controller => "account", :action => "index") %></p>
 		</td>
 	</tr>
 	<tr>
-		<td><p>Υποβάλετε αίτηση ψηφιακού πιστοποιητικού για διακομιστή ή υπηρεσία (Για Hellasgrid Site Administrators. Απαιτείται ψηφιακό πιστοποιητικό) 
+		<td><p><%=I18n.t "views.register.host_cert"%>
 			<%= link_to(image_tag("go.jpg", :style => "border: 0"), {:controller => "host", :action => "list"}) %></p>
 		</td>
 	</tr>
