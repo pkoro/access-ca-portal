@@ -485,7 +485,93 @@ en:
       team_notified_on_prob: The management team has been notified on the problem caused during registration.
       sorry: We are sorry for the mishap.
     registration_mailer:
-      
+      ## confirm_ownership_of_email_address
+      to_proceed_follow_link: "To proceed with the new certificate request process, please follow this link in your browser."
+      visit_in_7_days: "This link has been generated automatically during your registration and is unique to you. For the following 7 days, this link will remain active. In case you don't visit this link during this period of time, you registration will automatically be deleted from the Hellasgrid User Registration system."
+      ## confirmation_of_email_address
+      dear: Dear
+      user: user
+      confirm_address: "In order to proceed with the process of issuing a certificate, it is necessary that the contact capabilities with you be verified, in the e-mail you declared."
+      invalid_registration: "In case you did NOT register in Hellasgrid, probably some third person used your e-mail address as a means of contact. If so, you can inform us about this problematic registration by following this link"
+      wait_7_days_to_invalidate: "Alternatively, you could wait the 7 days period to pass, counting from today, when the registration request will automatically be deleted from our system."
+      more_info_grid: "For more information on the National Grid Infrastructure of Hellasgrid, you can follow its website"
+      yours_sincerely: "Yours sincerely"
+      grid_management_team: The Grid Management Team
+      auth: Aristotle University of Thessaloniki
+      ## notification_of_expiration
+      expire_in_less_than: The certificated for the following entities will expire in less than
+      one_week: a WEEK
+      one_month: a MONTH
+      more_info_in: More info in
+      ## notification_of_csr_approval
+      one_cert_req_to_sign: There is one validated certificate request ready to be signed.
+      req_for: The request if for the entity
+      goto_csr: You can see the request in the following address
+      ## notification_of_csr_renewal_to_ra ## notification_of_csr_submission_to_ra ## notification_of_csr_submission_to_ra
+      the_user: The user
+      has_requested: Has requested for a
+      personal_cert: personal certificate
+      host_cert: host/server certificate
+      to_hellasgrid: to Hellasgrid CA
+      user_visit_to_ra: The user has visited the RA for the last time on
+      no_check_id: so the identification checking is not required.
+      # notification_of_csr_renewal_to_user
+      check_req_progress: You can watch the status of your request through the web in this address
+      new_key_creation: "For each request sent to the CA, a random key is generated with which one can access the details of the request. The key for your request is"
+      no_ra: BUT there is no RA in the region.
+      ## notification_of_csr_submission_to_user_no_ra
+      request_sent: "Your request has been sent to the Certification Authority ΗellasGrid CA"
+      no_ra_for_org: "however, there is NO RA that serves your organization. As soon as a new RA is created in your institution, you will be notified for the process to be followed in order to get verified."
+      mail_copy_sent: "A digital copy of the text above has been sent to the following e-mail address"
+      ## notification_of_csr_submission_to_user ## notification_of_host_csr_submission_to_user
+      request_sent_visit_ra: "Η αίτησή σας έχει αποσταλλεί  στην Αρχή Πιστοποίησης ΗellasGrid CA και	παράλληλα  ενημερώθηκε η  Αρχή Ταυτοποίησης  (Α.Τ.) που  εξυπηρετεί το	οργανισμό   σας.  Εντός   μίας   εβδομάδας   πρέπει  να   επισκεφθείτε	αυτοπροσώπως το γραφείο της Α.Τ. έχοντας μαζί σας"
+      id_card_or_passport: "your ID or passport"
+      relation_to_org: "a document that certifies your relation to the organization"
+      copies: a copy of the above
+      print_of_this_text: a printed copy of this document
+      to_watch_request_progress: "To watch the progress of your request, you can"
+      follow_link: ακολουθήστε το σύνδεσμο
+      regional_ra: "Η Α.Τ. που εξυπηρετεί την περιοχή σας είναι η"
+      more_info_on_ca_ra: "Περισσότερες πληροφορίες για τις Α.Τ. της Α.Π. HellasGrid CA μπορείτε να βρείτε"
+      ## notification_of_host_certificate_expiration ## notification_of_user_certificate_expiration
+      dearest_sir_madam: Dearest Sir/Madam
+      inform_host_related: "on behalf of the Certification Authority Hellasgrid CA, we would like to inform you that the host certificate with the following details"
+      expires_in_less_than: is to expire in less than
+      days: days
+      new_host_cert_req: "We are reminding you that the request submission for a new host request is fulfilled through the link"
+      auto_mail: "The present e-mail has been sent by the automated user notification system of the Certification Authority Hellasgrid CA. For any problem, you can address to "
+      inform_cert_related: "on behalf of the Certification Authority Hellasgrid CA, we would like to inform you that the certificate with the following details"
+      new_certificate_request: "In order to acquire a new certificate, you have to follow the link https://access.hellasgrid.gr/account, before the valid certificate gets expired, using a browser with the current certificate installed, and follow the link 'Renew Certificate'"
+      avail_period: "The new certificate will be signed in a period of one working day and you will be notified by e-mail from the moment it will be available for download."
+      note: Note
+      note_1_text: "Since you submit a new request for a certificate before the valid one expires, you do not have to visit the Registration Authority serving your institution. The request will be forwarded from the Registration Authority to the Certification Authority and in the period of one working day, your certificate will be signed and sent to you through an automated mail containing a link to acquire it."
+      note_2_text:
+        installed_cert_browser: "To check if your certificate is installed in the browser you are using, you can follow this link"
+        not_installed_cert_browser: "If your currently valid certificate is not installed in the browser you are using, you have to visit this link"
+        new_cert_process: "and in the field 'Existing Users' perform a search of your account, using your e-mail. After you validate your e-mail address, you can continue to the request for a new certificate. In this case, the validation process will have to be performed once again by the Registration Authority of your organization."
+      ## notification_of_new_certificate_to_ra
+      signed_cert_notification: "A certificate you confirmed has been signed by the Certification Authority of Hellasgrid CA and can be downloaded through the following link"
+      cert_details: "The certificate details are the following"
+      ## notification_of_new_certificate_to_user
+      cert_signed_download: "Your certificate has been signed by the Certification Authority of Hellasgrid CA and you can download it by entering the following link in the browser you used to fulfill your certificate request"
+      cert_browser_ui_install: "To export your certificate from your browser and install it in the User Interface, follow the Starting Guide in Grid"
+      new_user_text: "Since you are a new user of Grid, you can find useful information in Hellasgrid's wiki [2] and in the official page of the Hellasgrid Infrastructure [3]. For any question related to using the Grid, you can contact the user support team at"
+      ## notification_of_pending_requests
+      pending_requests_certified_user: "There are the following pending requests whose related user has been recently verified by the RA and the system using their personal certificate."
+      ## notification_of_see_vo_request_to_user ## notification_of_ui_request_to_user
+      your_request_for: your request for
+      with_details: with the following details
+      has_been_registered: has been successfully registered
+      follows_mail: "During the following days, you will receive a notification mail related to your registration"
+      in_seevo: in SEE VO
+      and_ui_credentials: and the UI credentials
+      ## notification_of_see_vo_request
+      with: with
+      with_dn: With DN
+      has_been_signed_by_ca: And has been signed by the CA
+      ## notification_of_ui_request
+      full_details: The full data of whom can be found in the page
+      has_requested_ui_access: has requested for UI access
     support:
       name: Name
       surname: Surnmae

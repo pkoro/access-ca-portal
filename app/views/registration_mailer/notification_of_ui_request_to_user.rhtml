@@ -1,6 +1,6 @@
-Αξιότιμε χρήστη,
+<%=I18n.t "views.registration_mailer.dear"%> <%=I18n.t "views.registration_mailer.user"%>,
 
-η αίτησή σας για πρόσβαση στο UI με τα παρακάτω στοιχεία έχει καταχωρηθεί επιτυχώς.
+<%=I18n.t "views.registration_mailer.your_request_for"%> UI <%=I18n.t "views.registration_mailer.with_details"%> <%=I18n.t "views.registration_mailer.has_been_registered"%>
 
 Name: <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %><%=@person.first_name_en + " " + @person.last_name_en %>
 <% else %>
@@ -11,7 +11,7 @@ E-mail: <%= @person.email %>
 
 
 
-Μέσα στις επόμενες ημέρες θα λάβετε τα στοιχεία πρόσβασης στο UI μέσω e-mail.
+<%=I18n.t "views.registration_mailer.follows_email"%> <%=I18n.t "views.registration_mailer.and_ui_credentials"%>.
 
-Με εκτίμηση,
+<%=I18n.t "views.registration_mailer.yours_sincerely"%>,
 Hellasgrid Support Team

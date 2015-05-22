@@ -1,18 +1,18 @@
-Ο χρήστης:
+<%=I18n.t "views.registration_mailer.the_user"%>:
 <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
   	<%=@person.first_name_en + " " + @person.last_name_en %>, <%= @person.email %>
 <% else %>
   	<%=@person.first_name_el + " " + @person.last_name_el %>, <%= @person.email %>
 <% end %>
 
-έχει κάνει αίτηση για <% if @csr.owner_type == "Person" %>προσωπικό πιστοποιητικό<% else %> πιστοποιητικό για τον διακομιστή:
+<%=I18n.t "views.registration_mailer.has_requested"%> <% if @csr.owner_type == "Person" %><%=I18n.t "views.registration_mailer.personal_cert"%><% else %> <%=I18n.t "views.registration_mailer.host_cert"%>:
   <%=@fqdn%><% end %>
 
-στην Α.Π. HellasGrid CA. 
+<%=I18n.t "views.registration_mailer.to_hellasgrid"%>. 
 
-Μπορείτε δείτε την αίτηση στην διεύθυνση:
+<%=I18n.t "views.registration_mailer.goto_csr"%>:
   <%= @csr_url %>
 
-Ο χρήστης έχει επισκευθεί τελευταία φορά την Α.Τ. στις:
+<%=I18n.t "views.registration_mailer.user_visit_to_ra"%>:
 <%=@person.last_id_check_on.to_s %>
-οπότε δεν είναι υποχρεωτικός ο έλεγχος της ταυτότητας του.
+<%=I18n.t "views.registration_mailer.no_check_id"%>

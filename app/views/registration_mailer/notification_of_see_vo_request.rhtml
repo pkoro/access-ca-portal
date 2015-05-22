@@ -1,4 +1,4 @@
-Ο χρήστης:
+<%=I18n.t "views.registration_mailer.the_user"%>:
 <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
   	<%=@person.first_name_en + " " + @person.last_name_en %>
 <% else %>
@@ -17,9 +17,9 @@
   <%= X509Certificate::CertificateReader.new(Certificate.find(:first,:order => "id DESC",:conditions => ["owner_type = 'Person' and owner_id = ?", @person.id]).body).certificate[:Certificate].issuer %>
 
 
-Template για απάντηση:
+<!-- Template για απάντηση:
 
 Your request for membership to the SEE VO has been processed and approved.
 
 On behalf of the SEE VO Admin,
-First_name Last_name
+First_name Last_name -->

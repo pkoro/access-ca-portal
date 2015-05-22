@@ -1,9 +1,8 @@
-Ένα ψηφιακό πιστοποιητικό που επιβεβαιώσατε έχει υπογραφεί από την Αρχή Πιστοποίησης
-ΗellasGrid CA και μπορείτε να το κατεβάσετε από τον ακόλουθο σύνδεσμο:
+<%=I18n.t "views.registration_mailer.signed_cert_notification"%>:
 
  <%= @get_cert_link %>
 
- Το στοιχεία του πιστοποιητικού είναι τα ακόλουθα:
+ <%=I18n.t "views.registration_mailer.cert_details"%>:
 
           Subject DN: <%= @crt.subject_dn %>
         Εκδούσα Αρχή: HellasGrid CA

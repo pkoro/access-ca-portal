@@ -1,6 +1,6 @@
-Υπάρχει μια αίτηση πιστοποιητικού επιβεβαιωμένη και έτοιμη για υπογραφή.
+<%=I18n.t "views.registration_mailer.one_cert_req_to_sign"%>
 
-Η αίτηση είναι για την οντότητα:
+<%=I18n.t "views.registration_mailer.req_for"%>
 <%= 
 if @csr.owner_type == "Person"
 	@csr.owner.email
@@ -9,5 +9,5 @@ else
 end
  %>
 
-Μπορείτε δείτε την αίτηση στην διεύθυνση:
+<%=I18n.t "views.registration_mailer.goto_csr"%>:
   <%= @csr_url %>

@@ -2,25 +2,20 @@
 
 	          CSR_<%= @cert_request.organization.domain.upcase %>_<%= @cert_request.id %>
 
-Η αίτησή σας έχει αποσταλλεί στην Αρχή Πιστοποίησης ΗellasGrid CA και 
-παράλληλα ενημερώθηκε η Αρχή Ταυτοποίησης (Α.Τ.) που εξυπηρετεί το
-οργανισμό σας για να επιβεβαιώσει την αίτηση.
+<%=I18n.t "views.registration_mailer.request_sent_visit_ra"%>
 
-Μπορείτε να παρακολουθείτε την κατάσταση της αιτήσεώς σας μέσω του web
-στη διεύθυνση:
+<%=I18n.t "views.registration_mailer.to_watch_request_progress"%> <%=I18n.t "views.registration_mailer.follow_link"%>:
 
   <%= @csr_status_link %>
 
-Για κάθε αίτηση  που αποστέλλεται στην Α.Π.,  δημιουργείται ένα τυχαίο
-κλειδί με το οποίο έχει κανείς  πρόσβαση στα στοιχεία της αιτήσεως. Το
-κλειδί για την δική σας αίτηση είναι:
+<%=I18n.t "views.registration_mailer.new_key_creation"%>:
 
             <%= @cert_request.uniqueid %>
 
-	Η Α.Τ. που εξυπηρετεί την περιοχή σας είναι η:
+	<%=I18n.t "views.registration_mailer.regional_ra"%>:
 
 	<%= @ra_info %>
 
-	Περισσότερες πληροφορίες για τις Α.Τ. της Α.Π. HellasGrid CA μπορείτε να βρείτε εδώ: 
+	<%=I18n.t "views.registration_mailer.more_info_on_ra_ca"%>: 
 
 	http://www.grid.auth.gr/el/services/hellasgrid-ca/

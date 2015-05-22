@@ -1,11 +1,8 @@
-Το ψηφιακό πιστοποιητικό σας έχει υπογραφεί από την Αρχή  Πιστοποίησης
-ΗellasGrid CA και μπορείτε να το εγκαταστήσετε εισάγοντας τον ακόλουθο
-σύνδεσμο στον  browser  που  χρησιμοποιήσατε  για  να  υποβάλλετε  την 
-ηλεκτρονική αίτηση:
+<%=I18n.t "views.registration_mailer.cert_signed_download"%>:
 
  <%= @get_cert_link %>
 
- Το στοιχεία του πιστοποιητικού σας είναι τα ακόλουθα:
+ <%=I18n.t "views.registration_mailer.cert_details"%>:
 
           Subject DN: <%= @crt.subject_dn %>
         Εκδούσα Αρχή: HellasGrid CA
@@ -14,14 +11,9 @@
         Έγκυρο μέχρι: <%= X509Certificate::CertificateReader.new(@crt.body).certificate[:ExpirationDate]%>
         
         
-Για να εξάγετε το πιστοποιητικό από τον browser και να το εγκαταστήσετε
-στο User Interface ακολουθήστε τον Οδηγό Εισαγωγής στο Grid [1].
+<%=I18n.t "views.registration_mailer.cert_browser_ui_install"%> [1].
 
-Εφόσον  είστε  νέος  χρήστης  του  Grid  μπορείτε  να  βρείτε  χρήσιμες
-πληροφορίες στο  Wiki του HellasGrid [2]  και  στην επίσημη  σελίδα της 
-Υποδομής HellasGrid [3]. Επίσης  για  οποιαδήποτε  απορία  σας  σχετικά 
-με τη χρήση του Grid μπορείτε να επικοινωνείτε με την ομάδα υποστήριξης 
-χρηστών στο user-support@hellasgrid.gr.
+<%=I18n.t "views.registration_mailer.new_user_text"%> user-support@hellasgrid.gr.
 
 [1] http://goc.grid.auth.gr/wiki/bin/view/Groups/ALL/GridUserRegistration#Certificate_backup
 [2] https://wiki.hellasgrid.gr/wiki/bin/view/HellasGrid/GOC/UsersSection

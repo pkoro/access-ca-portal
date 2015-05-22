@@ -1,6 +1,6 @@
-Αξιότιμε/η Κύριε/Κυρία, 
+<%=I18n.t "views.registration_mailer.dearest_sir_madam"%>, 
 
-εκ μέρους της Αρχής Πιστοποίησης HellasGrid θα θέλαμε να σας ενημερώσουμε ότι το πιστοποιητικό διακομιστή με τα ακόλουθα στοιχεία:
+<%=I18n.t "views.registration_mailer.inform_host_related"%>:
 <% l = sprintf("%20s", "Serial: ") %><%= l %> <%= @Serial %>
 <% l = sprintf("%20s", "Subject DN: ") %><%= l %> <%= @subjectDN %>
 <% l = sprintf("%20s", "Issue Date: ") %><%= l %> <%= @IssueDate %>
@@ -8,9 +8,9 @@
 <% l = sprintf("%20s", "Host FQDN: ") %><%= l %> <%= @fqdn %>
 <% l = sprintf("%20s", "Requestor's email: ") %><%= l %> <%= @email %>
 
-πρόκειται να λήξει σε διάστημα μικρότερο των <%= @days %> ημερών. 
+<%=I18n.t "views.registration_mailer.expires_in_less_than"%> <%= @days %> <%=I18n.t "views.registration_mailer.days"%>. 
 
-Σας υπενθυμίζουμε ότι η υποβολή αίτησης για νέο ψηφιακό πιστοποιητικό διακομιστή γίνεται μέσω του συνδέσμου https://access.hellasgrid.gr/host/manual_csr.
+<%=I18n.t "views.registration_mailer.new_host_cert_req"%> https://access.hellasgrid.gr/host/manual_csr.
 
 ---
-Το παρόν e-mail στάλθηκε από το αυτοματοποιημένο σύστημα ειδοποίησης χρηστών της Αρχής Πιστοποίησης HellasGrid CA. Για οποιοδήποτε πρόβλημα μπορείτε να απευθυνθείτε στο support@grid.auth.gr.
+<%=I18n.t "views.registration_mailer.auto_mail"%> support@grid.auth.gr.

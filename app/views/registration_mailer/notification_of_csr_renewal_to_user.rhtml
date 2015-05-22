@@ -2,13 +2,10 @@
 
 	          CSR_<%= @person.organization.domain.upcase %>_<%= @person.active_personal_csr.id %>
 
-Μπορείτε να παρακολουθείτε την κατάσταση της αιτήσεώς σας μέσω του web
-στη διεύθυνση:
+<%=I18n.t "views.registration_mailer.check_req_progress"%>:
 
   <%= @csr_status_link %>
 
-Για κάθε αίτηση  που αποστέλλεται στην Α.Π.,  δημιουργείται ένα τυχαίο
-κλειδί με το οποίο έχει κανείς  πρόσβαση στα στοιχεία της αιτήσεως. Το
-κλειδί για την δική σας αίτηση είναι:
+<%=I18n.t "views.registration_mailer.new_key_creation"%>:
 
             <%= @person.active_personal_csr.uniqueid %>

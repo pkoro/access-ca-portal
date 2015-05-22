@@ -1,6 +1,6 @@
-Αξιότιμε χρήστη,
+<%=I18n.t "views.registration_mailer.dear"%> <%=I18n.t "views.registration_mailer.user"%>,
 
-η αίτησή σας για το SEE VO με τα παρακάτω στοιχεία έχει καταχωρηθεί επιτυχώς.
+<%=I18n.t "views.registration_mailer.your_request_for"%> SEE VO <%=I18n.t "views.registration_mailer.with_details"%> <%=I18n.t "views.registration_mailer.has_been_registered"%>.
 
 Name: <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %><%=@person.first_name_en + " " + @person.last_name_en %>
 <% else %>
@@ -11,7 +11,7 @@ E-mail: <%= @person.email %>
 
 
 
-Μέσα στις επόμενες ημέρες θα λάβετε mail ενημέρωσης σχετικά την εγγραφή σας στο SEE VO.
+<%=I18n.t "views.registration_mailer.follows_mail"%> <%=I18n.t "views.registration_mailer.in_seevo"%>.
 
-Με εκτίμηση,
+<%=I18n.t "views.registration_mailer.yours_sincerely"%>,
 Hellasgrid Support Team

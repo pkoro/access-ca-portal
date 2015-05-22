@@ -2,20 +2,13 @@
 
 	          CSR_<%= @person.organization.domain.upcase %>_<%= @person.active_personal_csr.id %>
 
-Η αίτησή σας έχει αποσταλλεί στην Αρχή Πιστοποίησης ΗellasGrid CA ωστόσο
-προς το παρον ΔΕΝ υπάρχει κάποια Α.Τ. που να εξυπηρετεί τον οργανισμό σας. 
-Μολις δημιουργηθεί Α.Τ. στο ίδρυμα σας θα ενημερωθείτε για την διαδικασία 
-που θα πρέπει να ακολουθήσετε για να ταυτοποιηθείτε.
+<%=I18n.t "views.registration_mailer.request_sent"%> <%=I18n.t "views.registration_mailer.no_ra_for_org"%>
 
 
-
-Για κάθε αίτηση  που αποστέλλεται στην Α.Π.,  δημιουργείται ένα τυχαίο
-κλειδί με το οποίο έχει κανείς  πρόσβαση στα στοιχεία της αιτήσεως. Το
-κλειδί για την δική σας αίτηση είναι:
+<%=I18n.t "views.registration_mailer.new_key_creation"%>:
 
             <%= @person.active_personal_csr.uniqueid %>
 
-Μπορείτε να παρακολουθείτε την κατάσταση της αιτήσεώς σας μέσω του web
-στη διεύθυνση:
+<%=I18n.t "views.registration_mailer.check_req_progress"%>:
 
   <%= @csr_status_link %>
