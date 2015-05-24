@@ -6,11 +6,10 @@
 <% end %>
 
 <% form_tag :action=> "submit_see_vo_request" do %>
-<!--<%I18n.t "views.account."%> -->
   <fieldset id="editFormFields">
-	<legend><%I18n.t "views.account.request_access_seevo"%></legend>
+	<legend><%=I18n.t "views.account.request_access_seevo"%></legend>
 	<p style="padding-right: 20px;">
-		<%I18n.t "views.account.must_accept_seevo_terms"%>
+		<%=I18n.t "views.account.must_accept_seevo_terms"%>
 	</p>
 	
 	<div align="center" style="border: grey solid 1px; padding: 10px; width: 400px">
@@ -19,7 +18,7 @@
 			<td width="20">
 				<%= check_box(:see_vo_request, :accepted_aup, {:class => "textbox"})%>
 			</td>
-			<td width="400"><p><%I18n.t "views.account.accept_access_terms"%>
+			<td width="400"><p><%=I18n.t "views.account.accept_access_terms"%>
 				<%= link_to "#{I18n.t "views.here"}", "http://www.hellasgrid.gr/?page_id=1743", :popup => true %></p>
 			</td>
 		</tr>

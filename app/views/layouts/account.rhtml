@@ -62,7 +62,7 @@
         <tr>
           <td class="leftCol" valign="top" width="200" id="leftColContainer" style="padding: 1px">
 			<ul id="Procedure" style="padding: 5px">
-            	<li class="leftMenuHead">Μενού</li>
+            	<li class="leftMenuHead"><%=I18n.t "views.layouts.common.menu"%></li>
 				<li><%= link_to_unless_current "#{I18n.t "views.layouts.account.update_personal_data_title"}", :action => "edit_personal_information" %></li>
 				<% if (params[:action] == "iexplorer_csr") || (params[:action] == "mozilla_csr") || (params[:action] == "manual_csr") %>
 				<li>Αίτηση ανανέωσης ψηφιακού πιστοποιητικόυ</li>
@@ -77,7 +77,7 @@
 				
 			  	<% end %>
             	<br /><br /><br /><br />
-				<li class="leftMenuHead">Επικοινωνία</li>
+				<li class="leftMenuHead"><%=I18n.t "views.layouts.common.contact"%></li>
 				<li><%= mail_to "support@grid.auth.gr", "GridAUTH Support", :encode => "javascript" %></li>
 			</ul>
             <div  style="margin-top:5px;color:#505050;text-decoration:none;padding-left:5px;font-weight:bold;">

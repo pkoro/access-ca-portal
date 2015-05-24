@@ -61,7 +61,7 @@
 				<li><%= link_to_unless_current "#{I18n.t "views.layouts.host.new_certificate_application"}", :action => "manual_csr" %></li>
 				<li><%= link_to_unless_current "#{I18n.t "views.layouts.common.send_application_title"}", :action => "csr_receipt" %></li>
             	<br /><br /><br /><br />
-				<li class="leftMenuHead">Επικοινωνία</li>
+				<li class="leftMenuHead"><%=I18n.t "views.layouts.common.contact"%></li>
 				<li><%= mail_to "support@grid.auth.gr", "GridAUTH Support", :encode => "javascript" %></li>
 			</ul>
             <div  style="margin-top:5px;color:#505050;text-decoration:none;padding-left:5px;font-weight:bold;">

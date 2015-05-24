@@ -74,12 +74,12 @@
 		  <% if params[:action] != "index" %>
           <td class="leftCol" valign="top" width="200" id="leftColContainer" style="padding: 1px">
 			<ul id="Procedure" style="padding: 5px">
-            	<li class="leftMenuHead"><%= I18n.t "views.cert.operations" %></li>
-				<li><%= link_to_unless_current "#{I18n.t "views.cert.search_certificate"}", :action => "search_crt" %></li>
-				<li><%= link_to_unless_current "#{I18n.t "views.cert.check_application_progress"}", :action => "monitor_request" %></li>
-				<li><%= link_to_unless_current "#{I18n.t "views.cert.check_installed_certificate_browser"}", :controller => "cert", :action => "test_browser_for_user_cert", :trailing_slash => true %></li>
+            	<li class="leftMenuHead"><%= I18n.t "views.layouts.cert.operations" %></li>
+				<li><%= link_to_unless_current "#{I18n.t "views.layouts.cert.search_certificate"}", :action => "search_crt" %></li>
+				<li><%= link_to_unless_current "#{I18n.t "views.layouts.cert.check_application_progress"}", :action => "monitor_request" %></li>
+				<li><%= link_to_unless_current "#{I18n.t "views.layouts.cert.check_installed_certificate_browser"}", :controller => "cert", :action => "test_browser_for_user_cert", :trailing_slash => true %></li>
             	<br /><br /><br /><br />
-				<li class="leftMenuHead">Επικοινωνία</li>
+				<li class="leftMenuHead"><%=I18n.t "views.layouts.common.contact"%></li>
 				<li><%= mail_to "support@grid.auth.gr", "GridAUTH Support", :encode => "javascript" %></li>
 			</ul>
             <div  style="margin-top:5px;color:#505050;text-decoration:none;padding-left:5px;font-weight:bold;">

@@ -116,10 +116,10 @@
 				</p>	
 				<% form_tag :action=> "load_session" do %>
 					<div align="left" style="padding-right: 20px">
-					<label  for="person_email"><div style="text-align: left;"><%= I18n.t "views.layouts.register.search"%> e-mail</div></label>
+					<label  for="person_email"><div style="text-align: left;"><%= I18n.t "views.search"%> e-mail</div></label>
 					<%= text_field(:person, :email, :class => "textbox", :size => "20") %>
 					</div>
-					<input type="submit" value="<%= I18n.t "views.layouts.register.search"%>" class="textbox" />
+					<input type="submit" value="<%= I18n.t "views.search"%>" class="textbox" />
 				</p>
 				<% end %>
 			</fieldset>

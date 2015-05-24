@@ -16,6 +16,8 @@ el:
         already_have_certificate_text_b: "του προσωπικού σας λογαριασμού  παρακάμπτωντας την διαδικασία της εγγραφής σας στο HellasGrid."
         search: Αναζήτηση
         send_application_title: Αποστολή αιτήσεως
+        menu: Μενού
+        contact: Επικοινωνία
       register:
         process: Διαδικασία
         registration_title: Καταχώρηση προσωπικών στοιχείων
@@ -302,6 +304,7 @@ el:
       register_new_server: Καταχώρηση νέου διακομιστή
       manual_csr_guide: "Κάντε copy/paste εντός της φόρμας το certificate request. Αν χρησιμοποιήσατε κάποιο User Interface, το certificate request  είναι τα περιεχόμενα του αρχείου usercert_request.pem, το οποίο	βρίσκεται στον φάκελο .globus του καταλόγου σας στο UI."
       certificate_application: Αίτηση ψηφιακού πιστοποιητικού
+      certificate_expiration: Λήξη πιστοποιητικού
       ## show_host_details
       last_update: Τελευταία ανανέωση
       registration_history: Ιστορικό καταχώρησης

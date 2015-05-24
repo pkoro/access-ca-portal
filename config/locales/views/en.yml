@@ -16,6 +16,8 @@ en:
         already_have_certificate_text_b: " of your personal account in Hellasgrid, overriding the registration process."
         search: Search
         send_application_title: Submit application
+        menu: Menu
+        contact: Contact
       register:
         process: Process
         registration_title: Register personal details
@@ -90,7 +92,7 @@ en:
       ## edit_personal_information:
       update_data: Update Details
       name: Name
-      surname: Surnmae
+      surname: Surname
       organization: Organization
       work_tel: Work telephone
       scientific_field: Scientific Field
@@ -295,6 +297,7 @@ en:
       register_new_server: Register new server
       manual_csr_guide: "Copy and paste inside the form the certificate request. In case you used some UI, the certificate request is the contents of the file usercert_request.pem, located under .globus directory inside your home folder."
       certificate_application: Certificate Application
+      certificate_expiration: Certificate expiration
       ## show_host_details
       last_update: Last Update
       registration_history: Registration history
@@ -302,7 +305,7 @@ en:
       server_details: Server details
       greek: Greek
       english: English
-      name: Nmae
+      name: Name
       surname: Surname
       organization: Organization
       work_tel: Work phone
@@ -374,7 +377,7 @@ en:
       server_details: Server details
       greek: Greek
       english: English
-      name: Nmae
+      name: Name
       surname: Surname
       organization: Organization
       work_tel: Work phone
@@ -436,7 +439,7 @@ en:
       request_sent_visit_ra: "Your request has been sent to Hellasgrid CA and your organization's Registration Authority has been notified. During the following week, you have to visit in person the RA office having with you"
       ## iexplorer_csr ## iexplorer_vista_csr
       create_key_send_ca: Create key and send to CA
-            select_key_size: "Select the size of your personal key you are to create and send"
+      select_key_size: "Select the size of your personal key you are to create and send"
       warning_crypto_ie: "WARNING: The crypto provider which must be used in Internet Explorer is Microsoft Enhanced (default value)"
       ## index
       must_import_cert_1: "In order to use the application, you have to improt the Hellasgrid CA certificate"
@@ -468,7 +471,7 @@ en:
       ## registration_form
       new_user_registration: New user registration
       name: Name
-      surname: Surnmae
+      surname: Surname
       organization: Organization
       work_tel: Work telephone
       scientific_field: Scientific Field
@@ -574,7 +577,7 @@ en:
       has_requested_ui_access: has requested for UI access
     support:
       name: Name
-      surname: Surnmae
+      surname: Surname
       organization: Organization
       work_tel: Work telephone
       scientific_field: Scientific Field

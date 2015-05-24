@@ -21,7 +21,7 @@
           <%= sort_header_tag('fqdn', :caption => 'FQDN')%>
           <%= sort_header_tag('name_el', :caption => "#{I18n.t "views.host.organization"}", :association => 'organizations')%>
           <%= sort_header_tag('created_at', :caption => "#{I18n.t "views.host.date_created"}")%>
-          <th style="color: #4F4F4F; font-weight: normal;">Λήξη πιστοποιητικού</th>
+          <th style="color: #4F4F4F; font-weight: normal;"><%=I18n.t "views.host.certificate_expiration"%></th>
           <th colspan="5"></th>
         </tr>
         <% @hosts.each_with_index do |host, i| %>

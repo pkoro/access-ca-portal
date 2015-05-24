@@ -70,7 +70,7 @@
 						<ul id="Procedure" style="padding: 5px">
 							<li class="leftMenuHead"><%=I18n.t "views.layouts.myproxy.menu"%></li>
 							<li><%= link_to_unless_current "#{I18n.t "views.layouts.myproxy.create_register_myproxy_certificate"}", :action => "create_myproxy" %></li>
-							<li><%= link_to_unless_current "#{I18n.t "views.layouts.myproxy.view_myproxy_certificate_issue"}", :action => "myproxy_info" %></li>
+							<li><%= link_to_unless_current "#{I18n.t "views.layouts.myproxy.view_myproxy_certificate_info"}", :action => "myproxy_info" %></li>
 							<li><%= link_to "SSH #{I18n.t "views.layouts.myproxy.access"}", "/gsissh/jws.jnlp" %></li>
             	<br /><br /><br /><br />
 							<li class="leftMenuHead"><%=I18n.t "views.contact"%></li>
@@ -97,7 +97,7 @@
 					<label  for="person_email"><div style="text-align: left;"><%=I18n.t "views.layouts.common.search"%> E-mail</div></label>
 					<%= text_field(:person, :email, :class => "textbox", :size => "20") %>
 					</div>
-					<input type="submit" value="<%= I18n.t "views.layouts.register.search"%>" class="textbox" />
+					<input type="submit" value="<%= I18n.t "views.search"%>" class="textbox" />
 				</p>
 				<% end %>
 			</fieldset>
