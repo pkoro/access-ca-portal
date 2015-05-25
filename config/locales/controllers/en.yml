@@ -1,0 +1,72 @@
+en:
+  controllers:
+    common:
+      registration_first_notice: "It seems like you have NOT completed the registration process. In case you already have registered in the past, please insert your e-mail address in the relevant field of the form so that we validate your registration."
+    account: # has lots in common with register
+      account_management: Account management
+      update_personal_details: Update personal details
+      personal_details_updated_notice: Your personal details have been updated
+      select_cert_req_method: Select Method of Certificate Request creation
+      warning_cert_in_browser: "WARNING: By following this process, your personal key will be created inside the browser you are using. To acquire your personal certificate, when this is signed by the Certification Authority, you must use the SAME computer and the SAME browser."
+      already_created_cert_form: Existent Certificate Request Form
+      cert_req_form_from: "Certificate Request Form"
+      cert_req_details: "Certificate Request details"
+      access_form_for: "Request Access to"
+      req_sent_notice: "Your request has been sent to the support team of"
+      must_accept_terms_notice: "You must accept the access policy and the terms of usage of the Hellasgrid infrastructure."
+      personal_cert_form: "Personal Certificate Acceptance Form"
+      host_cert_form: "Host/Server Certificate Acceptance Form"
+      cert_issued_notice: "Your certificate has been activated"
+      must_accept_cert_terms: "If you don't accept the terms of usage of your personal certificate, you CANNOT use it and it will be revoked definitely in 7 days from its issue date."
+      pending_csrs_list: "Pending requests list"
+      user_details: "User details"
+    ca: # applies to ra controller as well
+      manage_ra: "Manage RA"
+      new_ra: "New RA"
+      pending_req_list: "Pending requests for identification"
+      pending_req_to_sign: "Pending requests to sign"
+      rejected_req_list: "Rejected requests list"
+      user_details: "User details"
+      host_details: "Host/Server details"
+      req_details: "Request details"
+      cert_details: "Certificate details"
+      user_certs: "User certificates"
+      host_certs: "Host/Server certificates"
+      everyday_tasks: "Everyday tasks"
+    cert:
+      watch_cert_req: "Certificate request monitor"
+      search_cert: "Search certificate"
+      personal_cert: "Personal certificate"
+      host_cert: "Host/Server certificate"
+      cert_check_browser: "Check certificate in browser"
+      req_details: "Request details"
+    host:
+      host_list: "Hosts/Servers list"
+      pending_req_list: "Pending requests list"
+      host_details: "Host/Server details"
+      insert_cert_req: "Insert new certificate request"
+      cert_req_details: "Certificate Request Details"
+      host_with_fqdn: The host/server with FQND
+      not_under_command: "is not under your command."
+      has_valid_cert: "has an activated certificate and it's impossible to be deleted."
+      is_deleted: has been deleted
+      does_not_exist: does not exist
+      not_found: is not found
+      req_to_manage_host: "Your request for management of the host/server with FQDN"
+      registered: has been registered
+    myproxy:
+      myproxy_service: "MyProxy service"
+      create_register_myproxy_cert: "Create and register MyProxy certificate"
+      view_myproxy_cert: "View details of MyProxy certificate"
+    people:
+      user_registration_form: "User Registration Form"
+    register:
+      user_registration_form: "User Registration Form"
+      email_address_registered_notice: "The e-mail address %{email} has been validated successfully"
+      wrong_mail_notice: "Wrong e-mail address"
+    support:
+      registered_users_list: "Registered users list"
+      user_details: "User details"
+      cert_req_list: "Certificate requests list"
+      seevo_req_list: "Requests list for SEE VO"
+      ui_req_list: "Requests list for ΗellasGrid UI"

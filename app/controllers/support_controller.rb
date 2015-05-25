@@ -23,31 +23,31 @@ class SupportController < ApplicationController
   end
 
   def list_people
-    @action_title = "Λίστα εγγεγραμμένων χρηστών"
+    @action_title = "#{I18n.t "controllers.support.registered_users_list"}"
     sort_init 'last_name_el'
     sort_update
     @people = Person.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :include => [:organization]
   end
 
   def show_person_details
-    @action_title = "Πληροφορίες χρήστη"
+    @action_title = "#{I18n.t "controllers.support.user_details"}"
     @person = Person.find(params[:id])
   end
   
   def list_certificate_requests
-    @action_title = "Λίστα αιτήσεων για ψηφιακά πιστοποιητικά"
+    @action_title = "#{I18n.t "controllers.support.cert_req_list"}"
     sort_init 'created_at'
     sort_update
     @certificate_requests = CertificateRequest.paginate :page=>params[:page], :per_page => 20, :order => sort_clause
   end
   
   def list_see_vo_requests
-    @action_title = "Λίστα αιτήσεων για το SEE VO"
+    @action_title = "#{I18n.t "controllers.support.seevo_req_list"}"
     @see_vo_requests = SeeVoRequest.paginate :page=>params[:page], :per_page => 20, :order => "created_at DESC"
   end
   
   def list_ui_requests
-    @action_title = "Λίστα αιτήσεων για πρόσβαση σε ΗellasGrid UI"
+    @action_title = "#{I18n.t "controllers.support.ui_req_list"}"
     @ui_requests = UiRequest.paginate :page=>params[:page], :per_page => 20, :order => "created_at DESC"
   end
   

@@ -6,17 +6,18 @@ class MyproxyController < ApplicationController
   before_filter :get_user_dn
   before_filter :check_accepted_certificate
 	
+  
   def index
-	  @action_title = "Υπηρεσία MyProxy"
+	  @action_title = "#{I18n.t "controllers.myproxy.myproxy_service"}"
   end
   
   def create_myproxy
-    @action_title = "Δημιουργία και καταχώρηση MyProxy πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.myproxy.create_register_myproxy_cert"}"
     @usercert = session[:usercert]
   end
 
   def myproxy_info
-    @action_title = "Προβολή πληροφοριών MyProxy πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.myproxy.view_myproxy_cert"}"
     @usercert = session[:usercert]
   end
 end

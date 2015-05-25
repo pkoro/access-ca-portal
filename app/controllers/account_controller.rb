@@ -7,23 +7,24 @@ class AccountController < ApplicationController
   before_filter :get_user_dn
   before_filter :check_accepted_certificate, :except => [:accept_personal_certificate, :submit_certificate_acceptance]
 	
+  # "#{I18n.t "controllers.account."}"
   def index
-	  @action_title = "Διαχείριση λογαριασμού"
+	  @action_title = "#{I18n.t "controllers.account.account_management"}"
   end
   
   def edit_personal_information
-    @action_title = "Ενημέρωση προσωπικών στοιχείων"
+    @action_title = "#{I18n.t "controllers.account.update_personal_details"}"
     @organizations = Organization.find(:all,:order => "name_el ASC").map {|o| [truncate(o.name_el, 40), o.id]}
     @scientific_fields = ScientificField.find(:all).map {|o| [truncate(o.description, 40), o.id]}
     @person = Person.find_by_dn(session[:usercert])
   end
   
   def update_personal_information
-    @action_title = "Ενημέρωση προσωπικών στοιχείων"
+    @action_title = "#{I18n.t "controllers.account.update_personal_details"}"
     @person = Person.find(session[:userid])
 
     if @person.update_attributes(params[:person])
-      flash[:notice] = "Τα προσωπικά σας στοιχεία ενημερώθηκαν"
+      flash[:notice] = "#{I18n.t "controllers.account.personal_details_updated_notice"}"
       record = @person
       RegistrationLog.create( :date => DateTime.now,
                   :from => request.env['HTTP_X_FORWARDED_FOR'],
@@ -48,21 +49,16 @@ class AccountController < ApplicationController
   end
   
   def csr_form
-    @action_title = "Επιλογή Μεθόδου Παραγωγής της Αιτήσεως Πιστοποιητικού"
-    @gen_in_browser_confirmation = "ΠΡΟΣΟΧΗ: Ακολουθώντας τη διαδικασία αυτή το προσωπικό " +
-                                    "σας κλειδί θα δημιουργηθεί ΕΝΤΟΣ του browser που " + 
-                                    "χρησιμοποιείτε.\n\nΓια να παραλάβετε το ψηφιακό πιστοποιητικό " +
-                                    "σας όταν υπογραφεί από την Αρχή Πιστοποίησης, θα πρέπει " +
-                                    "να χρησιμοποιείσετε τον ΙΔΙΟ υπολογιστή και τον ΙΔΙΟ " +
-                                    "browser."
+    @action_title = "#{I18n.t "controllers.account.select_cert_req_method"}"
+    @gen_in_browser_confirmation = "#{I18n.t "controllers.account.warning_cert_in_browser"}"
   end
   # Forma gia submition etoimou CSR. An den bre8ei to session xrhsth
   # ton stelnei sthn arxikh forma tou registration
   def manual_csr
-    @action_title = "Φόρμα Υπάρχουσας Αίτησης Πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.account.already_created_cert_form"}"
     @person = Person.find_by_dn(session[:usercert])
     if ! @person
-      flash[:notice] = "Από ότι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."  
+      flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}"
       redirect_to :action => "registration_form"
     end
   end
@@ -70,10 +66,10 @@ class AccountController < ApplicationController
   # Forma gia submission apo Mozilla*. An den bre8ei to session xrhsth
   # ton stelnei sthn arxikh forma tou registration
   def mozilla_csr
-    @action_title = "Φόρμα Αίτησης Πιστοποιητικού από Mozilla/*"
+    @action_title = "#{I18n.t "controllers.account.cert_req_form_from"} Mozilla/*"
     @person = Person.find_by_dn(session[:usercert])
     if ! @person
-      flash[:notice] = "Από ότι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."  
+      flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}"  
       redirect_to :action => "registration_form"
     end
   end
@@ -81,16 +77,16 @@ class AccountController < ApplicationController
   # Forma gia submission apo IE. An den bre8ei to session xrhsth
   # ton stelnei sthn arxikh forma tou registration
   def iexplorer_csr
-    @action_title = "Φόρμα Αίτησης Πιστοποιητικου από IE"
+    @action_title = "#{I18n.t "controllers.account.cert_req_form_from"} IE"
     @person = Person.find_by_dn(session[:usercert])
     if ! @person
-      flash[:notice] = "Από ότι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."  
+      flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}"  
       redirect_to :action => "registration_form"
     end
   end
   
   def iexplorer_vista_csr 
-   	@action_title = "Φόρμα Αίτησης Πιστοποιητικου από IE" 
+   	@action_title = "#{I18n.t "controllers.account.cert_req_form_from"} IE" 
     @person = Person.find_by_dn(session[:usercert])     
   end
   
@@ -100,7 +96,7 @@ class AccountController < ApplicationController
   # sto csr_receipt, alliws kanei render thn action
   # manual_csr kai emfanizei ta la8h
   def submit_csr
-    @action_title = "Φόρμα Υπάρχουσας Αίτησης Πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.account.already_created_cert_form"}"
     uniqueid = Digest::SHA1::hexdigest Time.now.to_f.to_s
     @person = Person.find_by_dn(session[:usercert])
     csrReader = RequestReader.new(params[:certificate_request][:body])
@@ -133,7 +129,7 @@ class AccountController < ApplicationController
   # sto csr_receipt, alliws kanei render to action
   # mozilla_csr
   def submit_mozilla_csr
-    @action_title = "Φόρμα Αίτησης Πιστοποιητικού από Mozilla/*"
+    @action_title = "#{I18n.t "controllers.account.cert_req_form_from"} Mozilla/*"
     @person = Person.find_by_dn(session[:usercert])
     
     uniqueid = Digest::SHA1::hexdigest Time.now.to_f.to_s
@@ -152,7 +148,7 @@ class AccountController < ApplicationController
     @csr.status = "pending"
     @csr.csrtype = "spkac"
     @csr.uniqueid = uniqueid
-    # for debuging: (prepei na ginoun hash ola pou akolouthoun meta)
+    # for debugging: (prepei na ginoun hash ola pou akolouthoun meta)
     # @csr = csr
     # render :inline => "<pre><%= @csr.body %></pre>"
     @csr.requestor_id = @person.id
@@ -176,7 +172,7 @@ class AccountController < ApplicationController
   # sto csr_receipt, alliws kanei render to action
   # iexplorer_csr
   def submit_iexplorer_csr
-    @action_title = "Φόρμα Αίτησης Πιστοποιητικου από IE"
+    @action_title = "#{I18n.t "controllers.account.cert_req_form_from"} IE"
     uniqueid = Digest::SHA1::hexdigest Time.now.to_f.to_s
     @person = Person.find_by_dn(session[:usercert])
     certificate_request = "-----BEGIN CERTIFICATE REQUEST-----\n"
@@ -207,7 +203,7 @@ class AccountController < ApplicationController
   end
   
   def submit_iexplorer_vista_csr 
-    @action_title = "Φόρμα Αίτησης Πιστοποιητικου από IE" 
+    @action_title = "#{I18n.t "controllers.account.cert_req_form_from"} IE"
     uniqueid = Digest::SHA1::hexdigest Time.now.to_f.to_s 
     @person = Person.find_by_dn(session[:usercert]) 
     certificate_request = "-----BEGIN CERTIFICATE REQUEST-----\n" 
@@ -244,7 +240,7 @@ class AccountController < ApplicationController
   # to action xwris na uparxei to session, tote ton
   # stelnei sthn arxikh selida tou registration
   def csr_receipt
-    @action_title = "Στοιχεία Αίτησης Πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.account.cert_req_details"}"
     if session[:usercert]
       @person = Person.find_by_dn(session[:usercert])
       if !@person.active_personal_csr.nil?
@@ -276,11 +272,11 @@ class AccountController < ApplicationController
   end
   
   def ui_access_form
-    @action_title = "Φόρμα Αίτησης Πρόσβασης σε UI"
+    @action_title = "#{I18n.t "controllers.account.access_form_for"} UI"
   end
   
   def submit_ui_request
-    @action_title = "Φόρμα Αίτησης Πρόσβασης σε UI"
+    @action_title = "#{I18n.t "controllers.account.access_form_for"} UI"
     @person = Person.find_by_dn(session[:usercert])
     if (params[:ui_request]) && params[:ui_request][:accepted_aup] == "1"
       record = UiRequest.create :person_id => @person.id, :user_interface => params[:ui_request][:user_interface], :accepted_aup => params[:ui_request][:accepted_aup]
@@ -292,29 +288,29 @@ class AccountController < ApplicationController
                   :data => record.to_yaml)
       RegistrationMailer.deliver_notification_of_ui_request(@person, params[:ui_request][:user_interface],"user-support@hellasgrid.gr")
       RegistrationMailer.deliver_notification_of_ui_request_to_user(@person)
-      flash[:notice] = "Η αίτησή σας έχει αποσταλλεί στην ομάδα υποστήριξης του HellasGrid"
+      flash[:notice] = "#{I18n.t "controllers.account.req_sent_notice"} HellasGrid"
       redirect_to :action => "index"
     else
-      flash[:notice] = "Πρέπει να αποδεχτείτε την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid"
+      flash[:notice] = "#{I18n.t "controllers.account.must_accept_terms_notice"}"
       redirect_to :action => "ui_access_form"
     end
     
   end
   
   def see_vo_form
-    @action_title = "Φόρμα Αίτησης Πρόσβασης στο SEE VO"
+    @action_title = "#{I18n.t "controllers.account.access_form_for"} SEE VO"
   end
 
-  def nwchem_vo_form
-    @action_title = "Φόρμα Αίτησης Πρόσβασης στο nwchem VO"
-  end
-
-  def prace_t1_form
-    @action_title = "Φόρμα Αίτησης Πρόσβασης στην υποδομή PRACE T1"
-  end
+  # def nwchem_vo_form
+#     @action_title = "Φόρμα Αίτησης Πρόσβασης στο nwchem VO"
+#   end
+#
+#   def prace_t1_form
+#     @action_title = "Φόρμα Αίτησης Πρόσβασης στην υποδομή PRACE T1"
+#   end
   
   def submit_see_vo_request
-    @action_title = "Φόρμα Αίτησης Πρόσβασης στο SEE VO"
+    @action_title = "#{I18n.t "controllers.account.access_form_for"} SEE VO"
     @person = Person.find_by_dn(session[:usercert])
     if (params[:see_vo_request]) && params[:see_vo_request][:accepted_aup] == "1"
       record = SeeVoRequest.create :person_id => @person.id, :accepted_aup => params[:see_vo_request][:accepted_aup]
@@ -326,56 +322,56 @@ class AccountController < ApplicationController
                   :data => record.to_yaml)
       RegistrationMailer.deliver_notification_of_see_vo_request(@person,"rt-vo-services@grid.auth.gr")
       RegistrationMailer.deliver_notification_of_see_vo_request_to_user(@person)
-      flash[:notice] = "Η αίτησή σας έχει αποσταλλεί στην ομάδα υποστήριξης του SEE VO"
+      flash[:notice] = "#{I18n.t "controllers.account.req_sent_notice"} SEE VO"
       redirect_to :action => "index"
     else
-      flash[:notice] = "Πρέπει να αποδεχτείτε την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid"
+      flash[:notice] = "#{I18n.t "controllers.account.must_accept_terms_notice"}"
       redirect_to :action => "see_vo_form"
     end
   end
   
-  def submit_nwchem_vo_request
-    @action_title = "Φόρμα Αίτησης Πρόσβασης στο nwchem VO"
-    @person = Person.find_by_dn(session[:usercert])
-    if (params[:nwchem_vo_request]) && params[:nwchem_vo_request][:accepted_aup] == "1"
-      record = NwchemVoRequest.create :person_id => @person.id, :accepted_aup => params[:nwchem_vo_request][:accepted_aup]
-      RegistrationLog.create( :date => DateTime.now,
-                  :from => request.env['HTTP_X_FORWARDED_FOR'],
-                  :person_id => session[:userid],
-                  :person_dn => session[:usercert],
-                  :action => "Created nwchem VO request with id = " + record.id.to_s,
-                  :data => record.to_yaml)
-      RegistrationMailer.deliver_notification_of_nwchem_vo_request(@person,"rt-vo-services@grid.auth.gr")
-      flash[:notice] = "Η αίτησή σας έχει αποσταλλεί στην ομάδα υποστήριξης του nwchem.vo.hellasgrid.gr VO"
-      redirect_to :action => "index"
-    else
-      flash[:notice] = "Πρέπει να αποδεχτείτε την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid"
-      redirect_to :action => "nwchem_vo_form"
-    end
-  end
-  
-  def submit_prace_t1_request
-    @action_title = "Φόρμα Αίτησης Πρόσβασης στην υποδομή PRACE T1"
-    @person = Person.find_by_dn(session[:usercert])
-    if (params[:prace_t1_request]) && params[:prace_t1_request][:accepted_aup] == "1"
-      record = PraceT1Request.create :person_id => @person.id, :accepted_aup => params[:prace_t1_request][:accepted_aup]
-      RegistrationLog.create( :date => DateTime.now,
-                  :from => request.env['HTTP_X_FORWARDED_FOR'],
-                 :person_id => session[:userid],
-                  :person_dn => session[:usercert],
-                  :action => "Created PRACE T1 request with id = " + record.id.to_s,
-                  :data => record.to_yaml)
-      RegistrationMailer.deliver_notification_of_prace_t1_request(@person,"iliaboti@admin.grnet.gr")
-      flash[:notice] = "Η αίτησή σας έχει αποσταλλεί στην ομάδα υποστήριξης του PRACE T1"
-      redirect_to :action => "index"
-    else
-      flash[:notice] = "Πρέπει να αποδεχτείτε την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής PRACE T1"
-      redirect_to :action => "prace_t1_form"
-    end
-  end
+  # def submit_nwchem_vo_request
+#     @action_title = "Φόρμα Αίτησης Πρόσβασης στο nwchem VO"
+#     @person = Person.find_by_dn(session[:usercert])
+#     if (params[:nwchem_vo_request]) && params[:nwchem_vo_request][:accepted_aup] == "1"
+#       record = NwchemVoRequest.create :person_id => @person.id, :accepted_aup => params[:nwchem_vo_request][:accepted_aup]
+#       RegistrationLog.create( :date => DateTime.now,
+#                   :from => request.env['HTTP_X_FORWARDED_FOR'],
+#                   :person_id => session[:userid],
+#                   :person_dn => session[:usercert],
+#                   :action => "Created nwchem VO request with id = " + record.id.to_s,
+#                   :data => record.to_yaml)
+#       RegistrationMailer.deliver_notification_of_nwchem_vo_request(@person,"rt-vo-services@grid.auth.gr")
+#       flash[:notice] = "Η αίτησή σας έχει αποσταλλεί στην ομάδα υποστήριξης του nwchem.vo.hellasgrid.gr VO"
+#       redirect_to :action => "index"
+#     else
+#       flash[:notice] = "Πρέπει να αποδεχτείτε την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid"
+#       redirect_to :action => "nwchem_vo_form"
+#     end
+#   end
+#
+#   def submit_prace_t1_request
+#     @action_title = "Φόρμα Αίτησης Πρόσβασης στην υποδομή PRACE T1"
+#     @person = Person.find_by_dn(session[:usercert])
+#     if (params[:prace_t1_request]) && params[:prace_t1_request][:accepted_aup] == "1"
+#       record = PraceT1Request.create :person_id => @person.id, :accepted_aup => params[:prace_t1_request][:accepted_aup]
+#       RegistrationLog.create( :date => DateTime.now,
+#                   :from => request.env['HTTP_X_FORWARDED_FOR'],
+#                  :person_id => session[:userid],
+#                   :person_dn => session[:usercert],
+#                   :action => "Created PRACE T1 request with id = " + record.id.to_s,
+#                   :data => record.to_yaml)
+#       RegistrationMailer.deliver_notification_of_prace_t1_request(@person,"iliaboti@admin.grnet.gr")
+#       flash[:notice] = "Η αίτησή σας έχει αποσταλλεί στην ομάδα υποστήριξης του PRACE T1"
+#       redirect_to :action => "index"
+#     else
+#       flash[:notice] = "Πρέπει να αποδεχτείτε την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής PRACE T1"
+#       redirect_to :action => "prace_t1_form"
+#     end
+#   end
 
   def accept_personal_certificate
-    @action_title = "Φόρμα Αποδοχής Προσωπικού Πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.account.personal_cert_form"}"
     if params[:id]
       @person = Person.find_by_dn(session[:usercert])
       uniqueid = params[:id]
@@ -384,7 +380,7 @@ class AccountController < ApplicationController
   end
   
   def accept_host_certificate
-    @action_title = "Φόρμα Αποδοχής Πιστοποιητικού Διακομιστή"
+    @action_title = "#{I18n.t "controllers.account.host_cert_form"}"
     if params[:id]
       @person = Person.find_by_dn(session[:usercert])
       uniqueid = params[:id]
@@ -393,7 +389,7 @@ class AccountController < ApplicationController
   end
   
   def submit_certificate_acceptance
-    @action_title = "Φόρμα Αποδοχής Προσωπικού Πιστοποιητικού"  
+    @action_title = "#{I18n.t "controllers.account.personal_cert_form"}"  
     if params[:id]
       @uniqueid = params[:id]
       if params["accept_policy"]
@@ -407,10 +403,10 @@ class AccountController < ApplicationController
                     :person_dn => session[:usercert],
                     :action => "Accepted cert with id = " + record.id.to_s,
                     :data => record.to_yaml)
-        flash[:notice] = "Το ψηφιακό σας πιστοποιητικό έχει ενεργοποιηθεί"
+        flash[:notice] = "#{I18n.t "controllers.account.cert_issued_notice"}"
         redirect_to :controller => params[:redirected_from_controller], :action => params[:redirected_from_action]
       else
-        flash[:notice] = "Αν δεν αποδεχθείτε τους όρους χρήσης του ψηφιακού σας πιστοποιητικού ΔΕΝ μπορείτε να το χρησιμοποιήσετε και θα ανακληθεί οριστικά εντός 7 ημερών από την ημέρα εκδόσεώς του."
+        flash[:notice] = "#{I18n.t "controllers.account.must_accept_cert_terms"}"
         redirect_to :action => "accept_personal_certificate", :id => @uniqueid
       end
     else
@@ -419,7 +415,7 @@ class AccountController < ApplicationController
   end
 
   def list_pending_csrs
-    @action_title = "Λίστα αιτήσεων σε αναμονή"
+    @action_title = "#{I18n.t "controllers.account.pending_csrs_list"}"
     sort_init 'certificate_requests.id'
     sort_update
     @certificate_requests = CertificateRequest.paginate :page => params[:page], :per_page => 20, :order => sort_clause, :conditions => "requestor_id=" + Person.find_by_dn(session[:usercert]).id.to_s + " AND (status='pending' or status='approved')", :joins => "inner join organizations on certificate_requests.organization_id = organizations.id"
@@ -431,7 +427,7 @@ class AccountController < ApplicationController
   end
   
   def show_person_details
-    @action_title = "Πληροφορίες χρήστη"
+    @action_title = "#{I18n.t "controllers.account.user_details"}"
     @person = Person.find(params[:id])
   end
     

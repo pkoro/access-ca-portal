@@ -16,7 +16,7 @@ class RegisterController < ApplicationController
   # Prosoxh prepei na einai energopoihmeno to UTF8 gia na 
   # gia na doulepsei h truncate
   def registration_form
-    @action_title = "Φόρμα Εγγραφής Χρήστη"
+    @action_title = "#{I18n.t "controllers.register.user_registration_form"}"
     @organizations = Organization.find(:all,:order => "name_el ASC").map {|o| [truncate(o.name_el, 40), o.id]}
     @scientific_fields = ScientificField.find(:all).map {|o| [truncate(o.description, 40), o.id]}
   end
@@ -25,7 +25,7 @@ class RegisterController < ApplicationController
   # error kanei render to action tou registration_form. Prepei
   # na ksanaparoume tous organismous!
   def add_new_person
-    @action_title = "Φόρμα Εγγραφής Χρήστη"
+    @action_title = "#{I18n.t "controllers.register.user_registration_form"}"
     @person = Person.new(params[:person])
     if request.post? and @person.save
       record = @person
@@ -103,7 +103,7 @@ class RegisterController < ApplicationController
       session[:user_id] = person.id
       person.email_confirmation = 1
       person.save
-      flash[:notice] = "Η διεύθυνση επικοινωνίας #{person.email} επιβεβαιώθηκε επιτυχώς"
+      flash[:notice] = "#{I18n.t "controllers.register.email_address_registered_notice", :email => person.email }"
       redirect_to :action => "csr_form"
     else
       redirect_to :action => "index"
@@ -127,7 +127,7 @@ class RegisterController < ApplicationController
       session[:user_id] = person.id
       person.email_confirmation = 1
       person.save
-      flash[:notice] = "Η διεύθυνση επικοινωνίας #{person.email} επιβεβαιώθηκε επιτυχώς"
+      flash[:notice] = "#{I18n.t "controllers.register.email_address_registered_notice", :email => person.email }"
       redirect_to :action => "csr_form"
     else
       redirect_to :action => "index"
@@ -135,7 +135,7 @@ class RegisterController < ApplicationController
   end
   
   def reject_email_address
-    @action_title = "Δήλωση λάθους e-mail διεύθυνσης"
+    @action_title = "#{I18n.t "controllers.register.wrong_mail_notice"}"
     email_confirmation_hash = params[:id]
     confirmation = EmailConfirmation.find_by_user_hash(email_confirmation_hash)
     if confirmation and !confirmation.confirmed_on
@@ -155,16 +155,13 @@ class RegisterController < ApplicationController
   # Selida epiloghs ths me8odou me thn opoia 8a upoblh8ei
   # to certificate_request
   def csr_form
-    @action_title = "Επιλογή Μεθόδου Παραγωγής της Αιτήσεως Πιστοποιητικού"
-    @gen_in_browser_confirmation = "ΠΡΟΣΟΧΗ: Ακολουθώντας τη διαδικασία αυτή το προσωπικό " +
-                                    "σας κλειδί θα δημιουργηθεί ΕΝΤΟΣ του browser που " + 
-                                    "χρησιμοποιείτε.\n\nΓια να παραλάβετε το ψηφιακό πιστοποιητικό " +
-                                    "σας όταν υπογραφεί από την Αρχή Πιστοποίησης, θα πρέπει " +
-                                    "να χρησιμοποιείσετε τον ΙΔΙΟ υπολογιστή και τον ΙΔΙΟ " +
-                                    "browser."
+    @action_title = "#{I18n.t "controllers.account.select_cert_req_method"}"
+    @gen_in_browser_confirmation = "#{I18n.t "controllers.account.warning_cert_in_browser"}"
+    
+    
     @cur_user = session[:user_id]
     if !@cur_user
-      flash[:notice] = "Από ότι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."  
+      flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}"
       redirect_to :action => "missing_registration"
     end
   end
@@ -172,10 +169,10 @@ class RegisterController < ApplicationController
   # Forma gia submition etoimou CSR. An den bre8ei to session xrhsth
   # ton stelnei sthn arxikh forma tou registration
   def manual_csr
-    @action_title = "Φόρμα Υπάρχουσας Αίτησης Πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.account.already_created_cert_form"}"
     @person = Person.find_by_id(session[:user_id])
     if ! @person
-      flash[:notice] = "Από ότι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."  
+      flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}"
       redirect_to :action => "registration_form"
     end
   end
@@ -183,10 +180,10 @@ class RegisterController < ApplicationController
   # Forma gia submission apo Mozilla*. An den bre8ei to session xrhsth
   # ton stelnei sthn arxikh forma tou registration
   def mozilla_csr
-    @action_title = "Φόρμα Αίτησης Πιστοποιητικού από Mozilla/*"
+    @action_title = "#{I18n.t "controllers.account.cert_req_form_from"} Mozilla/*"
     @person = Person.find_by_id(session[:user_id])
     if ! @person
-      flash[:notice] = "Από ότι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."  
+      flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}" 
       redirect_to :action => "registration_form"
     end
   end
@@ -194,19 +191,19 @@ class RegisterController < ApplicationController
   # Forma gia submission apo IE. An den bre8ei to session xrhsth
   # ton stelnei sthn arxikh forma tou registration
   def iexplorer_csr
-    @action_title = "Φόρμα Αίτησης Πιστοποιητικου από IE"
+    @action_title = "#{I18n.t "controllers.account.cert_req_form_from"} IE"
     @person = Person.find_by_id(session[:user_id])
     if ! @person
-      flash[:notice] = "Από ότι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."  
+      flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}"
       redirect_to :action => "registration_form"
     end
   end
   
   def iexplorer_vista_csr 
-   	@action_title = "Φόρμα Αίτησης Πιστοποιητικου από IE" 
+   	@action_title = "#{I18n.t "controllers.account.cert_req_form_from"} IE"
     @person = Person.find_by_id(session[:user_id])
     if ! @person
-      flash[:notice] = "Από ότι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."  
+      flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}" 
       redirect_to :action => "registration_form"
     end     
   end
@@ -328,7 +325,7 @@ class RegisterController < ApplicationController
   end
    
   def submit_iexplorer_vista_csr 
-    @action_title = "Φόρμα Αίτησης Πιστοποιητικου από IE" 
+    @action_title = "#{I18n.t "controllers.account.cert_req_form_from"} IE"
     uniqueid = Digest::SHA1::hexdigest Time.now.to_f.to_s 
     @person = Person.find_by_id(session[:user_id]) 
     certificate_request = "-----BEGIN CERTIFICATE REQUEST-----\n" 
@@ -365,7 +362,7 @@ class RegisterController < ApplicationController
   # to action xwris na uparxei to session, tote ton
   # stelnei sthn arxikh selida tou registration
   def csr_receipt
-    @action_title = "Στοιχεία Αίτησης Πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.account.cert_req_details"}"
     if session[:user_id]
       @person = Person.find(session[:user_id])
       if @person.active_personal_csr

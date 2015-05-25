@@ -1,0 +1,72 @@
+el:
+  controllers:
+    common:
+      registration_first_notice: "Από ό,τι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."
+    account: # has lots in common with register
+      account_management: Διαχείριση λογαριασμού
+      update_personal_details: Ενημέρωση προσωπικών στοιχείων
+      personal_details_updated_notice: Τα προσωπικα σας στοιχεία ενημερώθηκαν
+      select_cert_req_method: Επιλογή Μεθόδου Παραγωγής της Αιτήσεως Πιστοποιητικού
+      warning_cert_in_browser: "ΠΡΟΣΟΧΗ: Ακολουθώντας τη διαδικασία αυτή το προσωπικό σας κλειδί θα δημιουργηθεί ΕΝΤΟΣ του browser που χρησιμοποιείτε. Για να παραλάβετε το ψηφιακό πιστοποιητικό σας όταν υπογραφεί από την Αρχή Πιστοποίησης, θα πρέπει να χρησιμοποιείσετε τον ΙΔΙΟ υπολογιστή και τον ΙΔΙΟ browser."
+      already_created_cert_form: Φόρμα Υπάρχουσας Αίτησης Πιστοποιητικού
+      cert_req_form_from: "Φόρμα Αίτησης Πιστοποιητικού από"
+      cert_req_details: "Στοιχεία Αίτησης Πιστοποιητικού"
+      access_form_for: "Φόρμα Αίτησης Πρόσβασης σε"
+      req_sent_notice: "Η αίτησή σας έχει αποσταλλεί στην ομάδα υποστήριξης του"
+      must_accept_terms_notice: "Πρέπει να αποδεχτείτε την πολιτική πρόσβασης και τους κανόνες χρήσης της υποδομής HellasGrid."
+      personal_cert_form: "Φόρμα Αποδοχής Προσωπικού Πιστοποιητικού"
+      host_cert_form: "Φόρμα Αποδοχής Πιστοποιητικού Διακομιστή"
+      cert_issued_notice: "Το ψηφιακό σας πιστοποιητικό έχει ενεργοποιηθεί"
+      must_accept_cert_terms: "Αν δεν αποδεχθείτε τους όρους χρήσης του ψηφιακού σας πιστοποιητικού, ΔΕΝ μπορείτε να το χρησιμοποιήσετε και θα ανακληθεί οριστικά εντός 7 ημερών από την ημέρα εκδόσεώς του."
+      pending_csrs_list: "Λίστα αιτήσεων σε αναμονή"
+      user_details: "Πληροφορίες χρήστη"
+    ca: # applies to ra controller as well
+      manage_ra: "Διαχείρηση Α.Τ."
+      new_ra: "Νέα Α.Τ."
+      pending_req_list: "Λίστα αιτήσεων για ταυτοποίηση"
+      pending_req_to_sign: "Λίστα αιτήσεων για υπογραφή"
+      rejected_req_list: "Λίστα απορριφθέντων αιτήσεων"
+      user_details: "Πληροφορίες χρήστη"
+      host_details: "Πληροφορίες διακομιστή"
+      req_details: "Πληροφορίες αίτησης"
+      cert_details: "Πληροφορίες πιστοποιητικού"
+      user_certs: "Πιστοποιητικά χρηστών"
+      host_certs: "Πιστοποιητικά διακομιστών"
+      everyday_tasks: "Καθημερινές εργασίες"
+    cert:
+      watch_cert_req: "Παρακολούθηση αιτήσεως πιστοποιητικού"
+      search_cert: "Αναζήτηση πιστοποιητικού"
+      personal_cert: "Προσωπικό πιστοποιητικό"
+      host_cert: "Πιστοποιητικό διακομιστή"
+      cert_check_browser: "Έλεγχος ύπαρξης πιστοποιητικού στον Browser"
+      req_details: "Πληροφορίες αίτησης"
+    host:
+      host_list: "Λίστα διακομιστών"
+      pending_req_list: "Λίστα αιτήσεων σε αναμονή"
+      host_details: "Πληροφορίες διακομιστή"
+      insert_cert_req: "Εισαγωγή αίτησης πιστοποιητικού"
+      cert_req_details: "Στοιχεία Αίτησης Πιστοποιητικού"
+      host_with_fqdn: O διακομιστής με FQDN
+      not_under_command: "δεν είναι υπό την διαχείριση σας."
+      has_valid_cert: "εχει ενεργό πιστοποιητικό και είναι αδύνατο να διαγραφεί."
+      is_deleted: εχει διαγραφεί
+      does_not_exist: δεν υπάρχει
+      not_found: δε βρέθηκε
+      req_to_manage_host: "Η αίτηση για διαχείρηση του διακομιστή με FQDN"
+      registered: καταχωρήθηκε
+    myproxy:
+      myproxy_service: "Υπηρεσία MyProxy"
+      create_register_myproxy_cert: "Δημιουργία και καταχώρηση MyProxy πιστοποιητικού"
+      view_myproxy_cert: "Προβολή πληροφοριών MyProxy πιστοποιητικού"
+    people:
+      user_registration_form: "Φόρμα Εγγραφής Χρήστη"
+    register:
+      user_registration_form: "Φόρμα Εγγραφής Χρήστη"
+      email_address_registered_notice: "Η διεύθυνση επικοινωνίας %{email} επιβεβαιώθηκε επιτυχώς"
+      wrong_mail_notice: "Δήλωση λάθους e-mail διεύθυνσης"
+    support:
+      registered_users_list: "Λίστα εγγεγραμμένων χρηστών"
+      user_details: "Πληροφορίες χρήστη"
+      cert_req_list: "Λίστα αιτήσεων για ψηφιακά πιστοποιητικά"
+      seevo_req_list: "Λίστα αιτήσεων για το SEE VO"
+      ui_req_list: "Λίστα αιτήσεων για πρόσβαση σε ΗellasGrid UI"

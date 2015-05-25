@@ -14,7 +14,7 @@ class RaController < ApplicationController
     @organizations = "('false'"
     RaOrganizationRelation.find(:all,:conditions=>["ra_id = ?",@ra_membership.ra_id]).each {|rel| @organizations += " OR organization_id = "+  rel.organization_id.to_s}
     @organizations += ")"
-    @action_title = "Λίστα αιτήσεων για ταυτοποίηση"
+    @action_title = "#{I18n.t "controllers.ca.pending_req_list"}"
     sort_init 'created_at'
     sort_update
     # @certificate_requests = CertificateRequest.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :conditions => @organizations + " AND status='pending'", :include => :organization
@@ -26,7 +26,7 @@ class RaController < ApplicationController
     @organizations = "('false'"
     RaOrganizationRelation.find(:all,:conditions=>["ra_id = ?",@ra_membership.ra_id]).each {|rel| @organizations += " OR organization_id = "+  rel.organization_id.to_s}
     @organizations += ")"
-    @action_title = "Λίστα αιτήσεων για υπογραφή"
+    @action_title = "#{I18n.t "controllers.ca.pedning_req_to_sign"}"
     sort_init 'created_at'
     sort_update
     # @certificate_requests = CertificateRequest.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :conditions =>        @organizations + " AND status='approved'", :include => :organization
@@ -37,7 +37,7 @@ class RaController < ApplicationController
     @organizations = "('false'"
     RaOrganizationRelation.find(:all,:conditions=>["ra_id = ?",@ra_membership.ra_id]).each {|rel| @organizations += " OR organization_id = "+  rel.organization_id.to_s}
     @organizations += ")"
-    @action_title = "Λίστα απορριφθέντων αιτήσεων"
+    @action_title = "#{I18n.t "controllers.ca.rejected_req_list"}"
     sort_init 'created_at'
     sort_update
     # @certificate_requests = CertificateRequest.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :conditions => @organizations + " AND status='rejected'", :include => :organization
@@ -45,17 +45,17 @@ class RaController < ApplicationController
   end
 
   def show_person_details
-    @action_title = "Πληροφορίες χρήστη"
+    @action_title = "#{I18n.t "controllers.ca.user_details"}"
     @person = Person.find(params[:id])
   end
 
   def show_host_details
-    @action_title = "Πληροφορίες διακομιστή"
+    @action_title = "#{I18n.t "controllers.ca.host_details"}"
     @host = Host.find(params[:id])
   end
   
   def show_request_details
-    @action_title = "Πληροφορίες αίτησης"
+    @action_title = "#{I18n.t "controllers.ca.req_details"}"
     @req = CertificateRequest.find(params[:id].to_i.to_s)
     @ReqReader  = RequestReader.new(@req.body)
     if !RegistrationAuthority.find(@ra_membership.ra_id).organizations.exists?(@req.organization.id)
@@ -64,13 +64,13 @@ class RaController < ApplicationController
   end
 
   def show_certificate_details
-    @action_title = "Πληροφορίες πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.ca.cert_details"}"
     @crt = Certificate.find(params[:id])
     @CrtReader  = CertificateReader.new(@crt.body)
   end
   
   def manage_operators
-    @action_title = "Διαχείριση Α.Τ."
+    @action_title = "#{I18n.t "controllers.ca.manage_ra"}"
     sort_init 'role'
     sort_update
     @ra_membership = RaStaffMembership.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :joins => "inner join People on ra_staff_memberships.member_id = people.id", :conditions => ["ra_id = ?", @ra_membership.ra_id]
@@ -188,7 +188,7 @@ class RaController < ApplicationController
     @organizations = "('false'"
     RaOrganizationRelation.find(:all,:conditions=>["ra_id = ?",@ra_membership.ra_id]).each {|rel| @organizations += " OR organization_id = "+  rel.organization_id.to_s}
     @organizations += ")"
-    @action_title = "Πιστοποιητικά χρηστών"
+    @action_title = "#{I18n.t "controllers.ca.user_certs"}"
     sort_init 'certificates.updated_at','desc'
     sort_update
     # @certificates = Certificate.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :joins => "inner join People on certificates.owner_id = people.id", :conditions => @organizations + " AND certificates.owner_type = 'Person'"
@@ -199,7 +199,7 @@ class RaController < ApplicationController
     @organizations = "('false'"
     RaOrganizationRelation.find(:all,:conditions=>["ra_id = ?",@ra_membership.ra_id]).each {|rel| @organizations += " OR organization_id = "+  rel.organization_id.to_s}
     @organizations += ")"
-    @action_title = "Πιστοποιητικά διακομιστών"
+    @action_title = "#{I18n.t "controllers.ca.host_certs"}"
     sort_init 'certificates.updated_at','desc'
     sort_update
     # @certificates = Certificate.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :joins => "inner join Hosts on certificates.owner_id = hosts.id", :conditions => @organizations + " AND certificates.owner_type = 'Host'"

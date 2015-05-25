@@ -1,13 +1,13 @@
 class CertController < ApplicationController
   include X509LoginHelper
   before_filter :get_user_dn
-  
+  # "#{I18n.t "controllers.cert."}"
   def index
     redirect_to :action => "search_crt"
   end
   
   def monitor_request
-    @action_title = "Παρακολούθηση αιτήσεως πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.cert.watch_cert_req"}"
     uniqueid = params[:id]
     if uniqueid
       @csr = CertificateRequest.find_by_uniqueid(uniqueid)
@@ -24,7 +24,7 @@ class CertController < ApplicationController
   end
   
   def search_crt
-    @action_title = "Αναζήτηση πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.cert.search_cert"}"
   end
   
   def search_crt_results
@@ -66,28 +66,28 @@ class CertController < ApplicationController
   end
   
   def get_personal_certificate
-    @action_title = "Προσωπικό πιστοποιητικό"
+    @action_title = "#{I18n.t "controllers.cert.personal_cert"}"
     uniqueid = params[:id]
     @csr = CertificateRequest.find_by_uniqueid(uniqueid)
     @crt = Certificate.find_not_accepted_certificate_by_uniqueid(uniqueid)
   end
   
   def get_host_certificate
-    @action_title = "Πιστοποιητικό διακομιστή"
+    @action_title = "#{I18n.t "controllers.cert.host_cert"}"
     uniqueid = params[:id]
     @csr = CertificateRequest.find_by_uniqueid(uniqueid)
     @crt = Certificate.find_not_accepted_certificate_by_uniqueid(uniqueid)
   end
 
   def test_browser_for_user_cert
-    @action_title = "Έλεγχος ύπαρξης πιστοποιητικού στον Browser"
+    @action_title = "#{I18n.t "controllers.cert.cert_check_browser"}"
     if params[:id] && params[:id] == "new_window"
       render(:layout => "layout_cert_in_browser_test")
     end
   end
   
   def show_request_details
-    @action_title = "Πληροφορίες αίτησης"
+    @action_title = "#{I18n.t "controllers.cert.req_details"}"
     @req = CertificateRequest.find(params[:id])
     @ReqReader  = X509Certificate::RequestReader.new(@req.body)
   end

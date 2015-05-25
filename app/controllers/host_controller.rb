@@ -11,7 +11,7 @@ class HostController < ApplicationController
   end
 
   def list
-    @action_title = "Λίστα διακομιστών"
+    @action_title = "#{I18n.t "controllers.host.host_list"}"
     admin = Person.find_by_dn(session[:usercert])
     sort_init 'fqdn'
     sort_update
@@ -19,22 +19,22 @@ class HostController < ApplicationController
   end
 
   def pending_requests
-    @action_title = "Λίστα αιτήσεων σε αναμονή"
+    @action_title = "#{I18n.t "controllers.host.pending_req_list"}"
     admin = Person.find_by_dn(session[:usercert])
     @requests = CertificateRequest.paginate :page => params[:page], :conditions => ["owner_type='Host' and requestor_id=? and (status='pending' or status='approved')" , admin.id], :per_page => 20
   end
   
   def show_host_details
-    @action_title = "Πληροφορίες διακομιστή"
+    @action_title = "#{I18n.t "controllers.host.host_details"}"
     @host = Host.find(params[:id])
   end
   
 
   def manual_csr
-    @action_title = "Εισαγωγή αίτησης πιστοποιητικού"
+    @action_title = "#{I18n.t "controllers.host.insert_req_details"}"
     @admin = Person.find_by_dn(session[:usercert])
     if ! @admin
-      flash[:notice] = "Από ότι φαίνεται ΔΕΝ έχετε ολοκληρώσει τη διαδικασία εγγραφής σας. Σε περίπτωση που έχετε εγγραφεί στο παρελθόν παρακαλούμε εισάγετε την ηλεκτρονικής σας διεύθυνση (e-mail) στο πεδίο της φόρμας ώστε να ελέγξουμε την εγγραφής σας."  
+      flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}"  
       redirect_to :controller => "register", :action => "registration_form"
     end
   end
@@ -50,7 +50,7 @@ class HostController < ApplicationController
     if not params[:id]
       redirect_to :action => "manual_csr"
     else
-      @action_title = "Στοιχεία Αίτησης Πιστοποιητικού"
+      @action_title = "#{I18n.t "controllers.host.cert_req_details"}"
       @admin = Person.find_by_dn(session[:usercert])
       @cert_request = CertificateRequest.find_by_uniqueid(params[:id])
       @csr_status_link = url_for(:controller => "cert", :action => "monitor_request", :id => @cert_request.uniqueid)
@@ -106,9 +106,9 @@ class HostController < ApplicationController
       @host = Host.find_by_fqdn(params[:fqdn])
       if @host
         if @host.admin_id != Person.find_by_dn(session[:usercert]).id
-          flash[:notice] = "O διακομιστής με FQDN: " + params[:fqdn] + " δεν είναι υπό την διαχείρηση σας."
+          flash[:notice] = "#{I18n.t "controllers.host.host_with_fqdn"}: " + params[:fqdn] + " #{I18n.t "controllers.host.not_under_command"}"
         elsif @host.certificate          
-          flash[:notice] = "O διακομιστής με FQDN: " + params[:fqdn] + " εχει ενεργό πιστοποιητικό και είναι αδύνατο να διαγραφεί."
+          flash[:notice] = "#{I18n.t "controllers.host.host_with_fqdn"}: " + params[:fqdn] + " #{I18n.t "controllers.host.has_valid_cert"}"
         else
           @host.admin_id = -1
           @host.save
@@ -119,10 +119,10 @@ class HostController < ApplicationController
                       :person_dn => session[:usercert],
                       :action => "Updated host with id = " + record.id.to_s,
                       :data => record.to_yaml)
-          flash[:notice] = "O διακομιστής με FQDN: " + params[:fqdn] + " εχει διαγραφεί."
+          flash[:notice] = "#{I18n.t "controllers.host.host_with_fqdn"}: " + params[:fqdn] + " #{I18n.t "controllers.host.is_deleted"}."
         end
       else
-        flash[:notice] = "Δεν υπάρχει διακομιστής με FQDN:" + params[:fqdn]
+        flash[:notice] = "#{I18n.t "controllers.host.host_with_fqdn"}:" + params[:fqdn] + " #{I18n.t "controllers.host.does_not_exist"}."
       end
     end
     redirect_to :action => "list"
@@ -134,7 +134,7 @@ class HostController < ApplicationController
       if @host
         redirect_to :action => "show_host_details", :id => @host.id
       else
-        flash[:notice] = "Δεν βρέθηκε διακομιστής με FQDN: " + params[:fqdn]
+        flash[:notice] = "#{I18n.t "controllers.host.host_with_fqdn"}: " + params[:fqdn] + " #{I18n.t "controllers.host.not_found"}."
         redirect_to :action => "list"
       end
     else
@@ -158,9 +158,9 @@ class HostController < ApplicationController
                     :action => "Created HostAdministrationRequest with id = " + record.id.to_s,
                     :data => record.to_yaml)
         
-        flash[:notice] = "Η αίτηση για διαχείρηση του διακομιστή με FQDN: " + params[:fqdn] + " καταχωρήθηκε"
+        flash[:notice] = "#{I18n.t "controllers.host.req_to_manage_host"}: " + params[:fqdn] + " #{I18n.t "controllers.host.registered"}"
       else
-        flash[:notice] = "Δεν βρέθηκε διακομιστής με FQDN: " + params[:fqdn]
+        flash[:notice] = "#{I18n.t "controllers.host.host_with_fqdn"}: " + params[:fqdn] + " #{I18n.t "controllers.host.not_found"}"
       end
     end
     redirect_to :action => "list"
