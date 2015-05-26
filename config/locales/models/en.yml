@@ -1,0 +1,50 @@
+en:
+  activerecord:
+    errors:
+      models:
+        certificate_request:
+          invalid_cert_req: "^ Η αίτηση πιστοποιητικού δεν είναι έγκυρη!"
+          csr_structure: "^ Η αίτηση πιστοποιητικού πρέπει να έχει την δομή: /C=GR/O=HellasGrid/OU=&lt;domain name&gt;/CN=&lt;User's Fullname OR Host's FQDN&gt;"
+          first_csr_field: "^ Το πρώτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο C (Country)"
+          second_csr_field: "^ Το δεύτερο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο O (Organization)"
+          third_csr_field: "^ Το τρίτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο OU (Organization Unit)"
+          fourth_csr_field: "^ Το τέταρτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο CN (Common Name)"
+          first_csr_field_val: "^ Η τιμή του πρώτου πεδίου του DN της αίτησης πρέπει να είναι C=GR"
+          second_csr_field_val: "^ Η τιμή του δεύτερου πεδίου του DN της αίτησης πρέπει να είναι O=HellasGrid"
+          existing_req: "^ Έχετε ήδη μια αίτηση πιστοποιητικού σε εκκρεμότητα"
+          unregistered_dns: "^ Το όνομα διακομιστή '%{fqdn}' δεν είναι δηλωμένο στον διακομιστή DNS"
+        host:
+          fqdn_not_empty: "^ The FQDN field must not be empty"
+          fqdn_used: "^ FQDN address already in use. If you wish to take management of the host/server, you should contact <a href=''mailto:support@grid.auth.gr?subject=Change host manager&body=I want to take management of the host/server'>the support team</a>"
+          max_length: "^ The length of each field must not exceed 254 characters"
+          invalid_org: "^ The address of the host/server does not belong to the declared organization"
+          no_dns: "^ The host/server '%{fqdn}' is not registered in the DNS server"
+        person:
+          name: "^ The name"
+          surname: "^ The sunrname"
+          greek_name_not_empty: "in greek must not be empty"
+          greek_chars: "^ in greek must be written in greek characters"
+          english_name_not_empty: "in english must not be empty"
+          latin_chars: "in english must be written in latin characters"
+          phone_not_empty: "^ The telephone number must not be empty"
+          mail_not_empty: "^ E-mail address must not be empty"
+          max_length: "^ The length of each field must not exceed 254 characters"
+          mail_used: "^ E-mail address already used"
+          tel_length: "^ Telephone number must have a length of 10 digits."
+          phone_type: "^ Telephone number must be a landline."
+          phone_num_only: "^ The telephone number must consist of digits only"
+          invalid_mail: "^Invalid e-mail address"
+          first_letter_name_capital: "^ Only the first letter of the name must be capitalized"
+          first_letter_surname_capital: "^ Only the first letter of the surname must be capitalized"
+        registration_authority:
+          desc_not_empty: "^ The description must not be empty"
+        unchecked_person:
+          institutional_mail: "^ The e-mail must be institutional"
+    models:
+      registration_mailer:
+        notification_of_user_certificate_expiration:
+          subject: Notification for personal certificate expiration
+        notification_of_host_certificate_expiration:
+          subject: Notification for host/server certificate expiration
+        notification_of_pending_requests:
+          subject: notification for pending requests to identify

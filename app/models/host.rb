@@ -1,12 +1,12 @@
 class Host < ActiveRecord::Base
   acts_as_versioned
   validates_presence_of   :fqdn,
-                          :message => "^ Η FQDN διεύθυνση δεν πρέπει να είναι κενή"
+                          :message => "#{I18n.t "activerecord.errors.models.host.fqdn_not_empty"}"
   validates_uniqueness_of :fqdn,
-                          :message => "^ Η FQDN διεύθυνση χρησιμοποιείται ήδη.  Αν επιθυμείτε να αναλάβετε την διαχείρηση του θα πρέπει να επικοινωνήστε με την <a href='mailto:support@grid.auth.gr?subject=Αίτηση αλλαγής διαχειρηστή διακομιστή&body=Θέλω να αναλάβω την διαχείρηση του διακομιστή'>ομάδα υποστήριξης</a>"
+                          :message => "#{I18n.t "activerecord.errors.models.host.fqdn_used"}"
   validates_length_of     :fqdn,
                           :maximum => 254,
-                          :message => "^ Το μέγιστο μεγεθος της καταχώρησης για το κάθε πεδίο είναι 254 χαρακτήρες"
+                          :message => "#{I18n.t "activerecord.errors.models.host.max_length"}"
   belongs_to :organization
   belongs_to :admin,
              :class_name => "Person",
@@ -46,10 +46,10 @@ class Host < ActiveRecord::Base
         @isInstitutional = 1
     end
     if @isInstitutional < 1
-      errors.add(:fqdn, "^ Η διεύθυνση του διακομιστή δεν ανοίκει στο οργανισμό που έχετε δηλώσει")
+      errors.add(:fqdn, "#{I18n.t "activerecord.errors.models.host.invalid_org"}")
     end
     IPSocket.getaddress(fqdn)
     rescue SocketError 
-      errors.add(:body, "^ Το host '" + fqdn + "' δεν είναι δηλωμένο στον διακομιστή DNS" )    
+      errors.add(:body, "#{I18n.t "activerecord.errors.models.host.no_dns", :fqdn => fqdn}" )    
   end
 end

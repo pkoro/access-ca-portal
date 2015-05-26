@@ -2,12 +2,12 @@ class UncheckedHost < ActiveRecord::Base
   require 'resolv'
   set_table_name "hosts"
   validates_presence_of   :fqdn,
-                          :message => "^ Η FQDN διεύθυνση δεν πρέπει να είναι κενή"
+                          :message => "#{I18n.t "activerecord.errors.models.host.fqdn_not_empty"}"
   validates_uniqueness_of :fqdn,
-                          :message => "^ Η FQDN διεύθυνση χρησιμοποιείται ήδη.  Αν επιθυμείτε να αναλάβετε την διαχείρηση του θα πρέπει να επικοινωνήστε με την <a href='mailto:support@grid.auth.gr?subject=Αίτηση αλλαγής διαχειρηστή διακομιστή&body=Θέλω να αναλάβω την διαχείρηση του διακομιστή'>ομάδα υποστήριξης</a>"
+                          :message => "#{I18n.t "activerecord.errors.models.host.fqdn_used"}"
   validates_length_of     :fqdn,
                           :maximum => 254,
-                          :message => "^ Το μέγιστο μεγεθος της καταχώρησης για το κάθε πεδίο είναι 254 χαρακτήρες"
+                          :message => "#{I18n.t "activerecord.errors.models.host.max_length"}"
   belongs_to :organization
   belongs_to :admin,
              :class_name => "Person",

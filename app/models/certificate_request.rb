@@ -15,34 +15,34 @@ class CertificateRequest < ActiveRecord::Base
     csr = RequestReader.new(body)
     host = nil
     if csr.valid_request != 1
-      errors.add(:body, "^ Η αίτηση πιστοποιητικού δεν είναι έγκυρη!")
+      errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.invalid_cert_req"}")
     elsif csr.request[:dnElements].size != 4
-      errors.add(:body, "^ Η αίτηση πιστοποιητικού πρέπει να έχει την δομή: /C=GR/O=HellasGrid/OU=&lt;domain name&gt;/CN=&lt;User's Fullname OR Host's FQDN&gt;")
+      errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.csr_structure"}")
     else
       if csr.request[:dnElements][0]['Type'] != "C" 
-        errors.add(:body, "^ Το πρώτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο C (Country)")
+        errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.first_csr_field"}")
       end
       if csr.request[:dnElements][1]['Type'] != "O"
-        errors.add(:body, "^ Το δεύτερο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο O (Organization)")
+        errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.second_csr_field"}")
       end
       if csr.request[:dnElements][2]['Type'] != "OU"
-        errors.add(:body, "^ Το τρίτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο OU (Organization Unit)")
+        errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.third_csr_field"}")
       end
       if csr.request[:dnElements][3]['Type'] != "CN"
-        errors.add(:body, "^ Το τέταρτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο CN (Common Name)")
+        errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.fourth_csr_field"}")
       end
       if csr.request[:dnElements][0]['Value'] != "GR"
-        errors.add(:body, "^ Η τιμή του πρώτου πεδίου του DN της αίτησης πρέπει να είναι C=GR")
+        errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.first_csr_field_val"}")
       end
       if csr.request[:dnElements][1]['Value'] != "HellasGrid" and csr.request[:dnElements][1]['Value'] != "Invalid HellasGrid"
-        errors.add(:body, "^ Η τιμή του δεύτερου πεδίου του DN της αίτησης πρέπει να είναι O=HellasGrid")
+        errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.second_csr_field_val"}")
       end
       self.owner_type = csr.request[:Type]
       if self.owner_type == "Person"
         # check if there is an active CSR for the use
         existing_csr = CertificateRequest::find_active_personal_csr_for_person(self.owner_id)
         if existing_csr
-          errors.add(:body, "^ Έχετε ήδη μια αίτηση πιστοποιητικού σε εκκρεμότητα")
+          errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.existing_req"}")
         end
         self.organization = self.owner.organization
       else
@@ -66,7 +66,7 @@ class CertificateRequest < ActiveRecord::Base
       end
     end
     rescue SocketError 
-      errors.add(:body, "^ Το όνομα διακομιστή '" + @fqdn + "' δεν είναι δηλωμένο στον διακομιστή DNS")
+      errors.add(:body, "#{I18n.t "activerecord.errors.models.certificate_request.unregistered_dns"}", :fqdn => @fqdn)
   end
 
   def self.find_active_personal_csr_for_person(id)

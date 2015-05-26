@@ -1,6 +1,6 @@
 class RegistrationAuthority < ActiveRecord::Base
   validates_presence_of   :description,
-                          :message => "^ Η περιγραφή δεν πρέπει να είναι κενή"
+                          :message => "#{I18n.t "activerecord.errors.models.registration_authority.desc_not_empty"}"
   has_many :ra_staff_memberships,
            :foreign_key => "ra_id"
   has_and_belongs_to_many :organizations,

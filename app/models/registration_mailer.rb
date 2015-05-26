@@ -68,7 +68,7 @@ class RegistrationMailer < ActionMailer::Base
   
   def notification_of_csr_submition_to_user(person, csr_status_link)
     @headers['Content-Transfer-Encoding'] = "8bit"
-     @subject = "Your certificate request has been submited to the HellasGrid CA"
+     @subject = "Your certificate request has been submitted to the HellasGrid CA"
      @recipients = person.email
      @charset = "utf-8"
      @from = "support@grid.auth.gr"
@@ -83,7 +83,7 @@ class RegistrationMailer < ActionMailer::Base
   
   def notification_of_csr_submition_to_user_no_ra(person, csr_status_link)
     @headers['Content-Transfer-Encoding'] = "8bit"
-     @subject = "Your certificate request has been submited to the HellasGrid CA"
+     @subject = "Your certificate request has been submitted to the HellasGrid CA"
      @recipients = person.email
      @charset = "utf-8"
      @from = "support@grid.auth.gr"
@@ -119,7 +119,7 @@ class RegistrationMailer < ActionMailer::Base
   
   def notification_of_csr_renewal_to_user(person, csr_status_link)
     @headers['Content-Transfer-Encoding'] = "8bit"
-     @subject = "Your certificate request has been submited to the HellasGrid CA"
+     @subject = "Your certificate request has been submitted to the HellasGrid CA"
      @recipients = person.email
      @charset = "utf-8"
      @from = "support@grid.auth.gr"
@@ -275,23 +275,23 @@ class RegistrationMailer < ActionMailer::Base
       @body["person"] = person
   end
   
-  def notification_of_nwchem_vo_request(person, recipients)
-    @headers['Content-Transfer-Encoding'] = "8bit"
-     @subject = "Request for nwchem VO membership"
-     @recipients = recipients
-     @charset = "utf-8"
-     @from = "support@grid.auth.gr"
-     @body["person"] = person
-  end
-  
-  def notification_of_prace_t1_request(person, recipients)
-    @headers['Content-Transfer-Encoding'] = "8bit"
-     @subject = "Access request for PRACE T1"
-     @recipients = recipients
-     @charset = "utf-8"
-     @from = "support@grid.auth.gr"
-     @body["person"] = person
-  end
+  # def notification_of_nwchem_vo_request(person, recipients)
+  #   @headers['Content-Transfer-Encoding'] = "8bit"
+  #    @subject = "Request for nwchem VO membership"
+  #    @recipients = recipients
+  #    @charset = "utf-8"
+  #    @from = "support@grid.auth.gr"
+  #    @body["person"] = person
+  # end
+  #
+  # def notification_of_prace_t1_request(person, recipients)
+  #   @headers['Content-Transfer-Encoding'] = "8bit"
+  #    @subject = "Access request for PRACE T1"
+  #    @recipients = recipients
+  #    @charset = "utf-8"
+  #    @from = "support@grid.auth.gr"
+  #    @body["person"] = person
+  # end
 
   def notification_for_expiration(expire_in_a_week, expire_in_a_month)
     @headers['Content-Transfer-Encoding'] = "8bit"
@@ -305,7 +305,7 @@ class RegistrationMailer < ActionMailer::Base
   
   def notification_of_user_certificate_expiration(crt,days)
     @headers['Content-Transfer-Encoding'] = "8bit"
-    @subject = "[HellasGrid CA] Προειδοποίηση επικείμενης λήξης του ψηφιακού σας πιστοποιητικού" 
+    @subject = "[HellasGrid CA] #{I18n.t "activerecord.models.registration_mailer.notification_of_user_certificate_expiration.subject"}" 
     @recipients = crt.owner.email
     @bcc = "team@grid.auth.gr"
     @charset = "utf-8"
@@ -322,7 +322,7 @@ class RegistrationMailer < ActionMailer::Base
 
   def notification_of_host_certificate_expiration(crt,days)
     @headers['Content-Transfer-Encoding'] = "8bit"
-    @subject = "[HellasGrid CA] Προειδοποίηση επικείμενης λήξης του ψηφιακού πιστοποιητικού του διακομιστή " + crt.owner.fqdn 
+    @subject = "[HellasGrid CA] #{I18n.t "activerecord.models.registration_mailer.notification_of_host_certificate_expiration.subject"} " + crt.owner.fqdn 
     @recipients = crt.owner.admin.email
     @bcc = "team@grid.auth.gr"
     @charset = "utf-8"
@@ -364,7 +364,7 @@ class RegistrationMailer < ActionMailer::Base
   
   def notification_of_pending_requests(pending_requests)
     @headers['Content-Transfer-Encoding'] = "8bit"
-    @subject = "[HellasGrid CA] ενημέρωση για αιτήσεις σε αναμονή για ταυτοποιήση"
+    @subject = "[HellasGrid CA] #{I18n.t "activerecord.models.registration_mailer.notification_of_pending_requests.subject"}"
     @recipients = "team@grid.auth.gr"
     @charset = "utf-8"
     @from = "support@grid.auth.gr"

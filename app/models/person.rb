@@ -4,46 +4,46 @@ class Person < ActiveRecord::Base
   
   validates_presence_of :first_name_el,
                         :on => :create,
-                        :message => "^ Το όνομα στα ελληνικά δεν πρέπει να είναι κενό"
+                        :message => "#{I18n.t "activerecord.errors.models.person.name"} #{I18n.t "activerecord.errors.models.person.greek_name_not_empty"}"
   validates_format_of   :first_name_el,
                         :with => /^[Α-Ωα-ωά-ώΆ-Ώ\-]*$/,
-                        :message => "^ Το όνομα στα ελληνικά πρέπει να είναι γραμμένο με ελληνικούς χαρακτήρες"
+                        :message => "#{I18n.t "activerecord.errors.models.person.name"} #{I18n.t "activerecord.errors.models.person.greek_chars"}"
   
   validates_presence_of :first_name_en,
-                        :message => "^ Το όνομα στα αγγλικά δεν πρέπει να είναι κενό"
+                        :message => "#{I18n.t "activerecord.errors.models.person.name"} #{I18n.t "activerecord.errors.models.person.english_name_not_empty"}"
   validates_format_of   :first_name_en,
                         :with =>/^[A-Za-z\-\']*$/,
-                        :message => "^ Το όνομα στα αγγλικά πρέπει να είναι γραμμένο με λατινικούς χαρακτήρες" 
+                        :message => "#{I18n.t "activerecord.errors.models.person.name"} #{I18n.t "activerecord.errors.models.person.latin_chars"}"
   validates_presence_of :last_name_el,
-                        :message => "^ Το επώνυμο στα ελληνικά δεν πρέπει να είναι κενό"
+                        :message => "#{I18n.t "activerecord.errors.models.person.surname"} #{I18n.t "activerecord.errors.models.person.greek_name_not_empty"}"
   validates_format_of   :last_name_el,
                         :with =>/^[Α-Ωα-ωά-ώΆ-Ώ\-]*$/,
-                        :message => "^ Το επώνυμο στα ελληνικά πρέπει να είναι γραμμένο με ελληνικούς χαρακτήρες"
+                        :message => "#{I18n.t "activerecord.errors.models.person.surname"} #{I18n.t "activerecord.errors.models.person.greek_chars"}"
   validates_presence_of :last_name_en,
-                        :message => "^ Το επώνυμο στα αγγλικά δεν πρέπει να είναι κενό"
+                        :message => "#{I18n.t "activerecord.errors.models.person.surname"} #{I18n.t "activerecord.errors.models.person.english_name_not_empty"}"
   validates_format_of   :last_name_en,
                         :with =>/^[A-Za-z\-\']*$/,
-                        :message => "^ Το όνομα στα αγγλικά πρέπει να είναι γραμμένο με λατινικούς χαρακτήρες"
+                        :message => "#{I18n.t "activerecord.errors.models.person.surname"} #{I18n.t "activerecord.errors.models.person.latin_chars"}"
   validates_presence_of :work_phone,
-                        :message => "^ Ο αριθμός τηλεφώνου δεν πρέπει να είναι κενός"
+                        :message => "#{I18n.t "activerecord.errors.models.person.phone_not_empty"}"
   validates_presence_of :email,
-                        :message => "^ Η διεύθυνση e-mail δεν πρέπει να είναι κενή"
+                        :message => "#{I18n.t "activerecord.errors.models.person.mail_not_empty"}"
   validates_length_of   :first_name_el, :first_name_en, :last_name_el, :last_name_en, :email, :department,
                         :on => :create,
                         :maximum => 254,
-                        :message => "^ Το μέγιστο μεγεθος της καταχώρησης για το κάθε πεδίο είναι 254 χαρακτήρες"
+                        :message => "#{I18n.t "activerecord.errors.models.person.max_length"}"
  validates_uniqueness_of  :email,
-                          :message => "^ Η διεύθυνση e-mail χρησιμοποιείται ήδη"
+                          :message => "#{I18n.t "activerecord.errors.models.person.mail_used"}"
   validates_length_of   :work_phone,
                         :is => 10,
-                        :message => "^ Ο αριθμός του τηλεφώνου πρέπει να είναι δεκαψήφιος."
+                        :message => "#{I18n.t "activerecord.errors.models.person.tel_length"}"
   validates_format_of   :work_phone,
                         :with => /^2\d+/,
-                        :message => "^  Ο αριθμός τηλεφώνου πρέπει να αντιστοιχεί σε σταθερό νούμερο"
+                        :message => "#{I18n.t "activerecord.errors.models.person.phone_type"}"
   validates_numericality_of :work_phone,
-                            :message => "^Ο αριθμός τηλεφώνου πρέπει να αποτελείται μόνο από αριθμούς"
+                            :message => "#{I18n.t "activerecord.errors.models.person.phone_num_only"}"
   validates_as_email    :email,
-                        :message => "^Η διεύθυνση e-mail δεν είναι έγκυρη"
+                        :message => "#{I18n.t "activerecord.errors.models.person.invalid_mail"}"
                       
   has_many :personal_requests,
            :class_name => "CertificateRequest",
@@ -106,28 +106,28 @@ class Person < ActiveRecord::Base
       tablename << tmp1.capitalize
     end
     if self.first_name_en != tablename.join("-")
-      errors.add(:first_name_en, "^ Μόνο του πρώτο γράμμα του ονόματος πρέπει να είναι κεφαλαίο")
+      errors.add(:first_name_en, "#{I18n.t "activerecord.errors.models.person.first_letter_name_capital"}")
     end
     tablename = []
     self.first_name_el.split("-").each do |tmp1|
       tablename << tmp1.capitalize
     end
     if self.first_name_el != tablename.join("-")
-      errors.add(:first_name_el, "^ Μόνο του πρώτο γράμμα του ονόματος πρέπει να είναι κεφαλαίο")
+      errors.add(:first_name_el, "#{I18n.t "activerecord.errors.models.person.first_letter_name_capital"}")
     end
     tablename = []
     self.last_name_en.split("-").each do |tmp1|
       tablename << tmp1.capitalize
     end
     if self.last_name_en != tablename.join("-")
-      errors.add(:last_name_en, "^ Μόνο του πρώτο γράμμα του επιθέτου πρέπει να είναι κεφαλαίο")
+      errors.add(:last_name_en, "#{I18n.t "activerecord.errors.models.person.first_letter_surname_capital"}")
     end
     tablename = []
     self.last_name_el.split("-").each do |tmp1|
       tablename << tmp1.capitalize
     end
     if self.last_name_el != tablename.join("-")
-      errors.add(:last_name_el, "^ Μόνο του πρώτο γράμμα του επιθέτου πρέπει να είναι κεφαλαίο")
+      errors.add(:last_name_el, "#{I18n.t "activerecord.errors.models.person.first_letter_surname_capital"}")
     end
   end
   

@@ -1,0 +1,50 @@
+el:
+  activerecord:
+    errors:
+      models:
+        certificate_request:
+          invalid_cert_req: "^ Η αίτηση πιστοποιητικού δεν είναι έγκυρη!"
+          csr_structure: "^ Η αίτηση πιστοποιητικού πρέπει να έχει την δομή: /C=GR/O=HellasGrid/OU=&lt;domain name&gt;/CN=&lt;User's Fullname OR Host's FQDN&gt;"
+          first_csr_field: "^ Το πρώτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο C (Country)"
+          second_csr_field: "^ Το δεύτερο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο O (Organization)"
+          third_csr_field: "^ Το τρίτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο OU (Organization Unit)"
+          fourth_csr_field: "^ Το τέταρτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο CN (Common Name)"
+          first_csr_field_val: "^ Η τιμή του πρώτου πεδίου του DN της αίτησης πρέπει να είναι C=GR"
+          second_csr_field_val: "^ Η τιμή του δεύτερου πεδίου του DN της αίτησης πρέπει να είναι O=HellasGrid"
+          existing_req: "^ Έχετε ήδη μια αίτηση πιστοποιητικού σε εκκρεμότητα"
+          unregistered_dns: "^ Το όνομα διακομιστή '%{fqdn}' δεν είναι δηλωμένο στον διακομιστή DNS"
+        host: # unchecked_host as well
+          fqdn_not_empty: "^ Η FQDN διεύθυνση δεν πρέπει να είναι κενή"
+          fqdn_used: "^ Η FQDN διεύθυνση χρησιμοποιείται ήδη.  Αν επιθυμείτε να αναλάβετε την διαχείρηση του θα πρέπει να επικοινωνήστε με την <a href='mailto:support@grid.auth.gr?subject=Αίτηση αλλαγής διαχειρηστή διακομιστή&body=Θέλω να αναλάβω την διαχείρηση του διακομιστή'>ομάδα υποστήριξης</a>"
+          max_length: "^ Το μέγιστο μεγεθος της καταχώρησης για το κάθε πεδίο είναι 254 χαρακτήρες"
+          invalid_org: "^ Η διεύθυνση του διακομιστή δεν ανήκει στο οργανισμό που έχετε δηλώσει"
+          no_dns: "^ Το host '%{fqdn}' δεν είναι δηλωμένο στον διακομιστή DNS"
+        person:
+          name: "^ Το όνομα"
+          surname: "^ Το επώνυμο"
+          greek_name_not_empty: "στα ελληνικά δεν πρέπει να είναι κενό"
+          greek_chars: "^ Το όνομα στα ελληνικά πρέπει να είναι γραμμένο με ελληνικούς χαρακτήρες"
+          english_name_not_empty: "στα αγγλικά δεν πρέπει να είναι κενό"
+          latin_chars: "στα αγγλικά πρέπει να είναι γραμμένο με λατινικούς χαρακτήρες"
+          phone_not_empty: "^ Ο αριθμός τηλεφώνου δεν πρέπει να είναι κενός"
+          mail_not_empty: "^ Η διεύθυνση e-mail δεν πρέπει να είναι κενή"
+          max_length: "^ Το μέγιστο μεγεθος της καταχώρησης για το κάθε πεδίο είναι 254 χαρακτήρες"
+          mail_used: "^ Η διεύθυνση e-mail χρησιμοποιείται ήδη"
+          tel_length: "^ Ο αριθμός του τηλεφώνου πρέπει να είναι δεκαψήφιος."
+          phone_type: "^  Ο αριθμός τηλεφώνου πρέπει να αντιστοιχεί σε σταθερό νούμερο"
+          phone_num_only: "^Ο αριθμός τηλεφώνου πρέπει να αποτελείται μόνο από αριθμούς"
+          invalid_mail: "^Η διεύθυνση e-mail δεν είναι έγκυρη"
+          first_letter_name_capital: "^ Μόνο του πρώτο γράμμα του ονόματος πρέπει να είναι κεφαλαίο"
+          first_letter_surname_capital: "^ Μόνο του πρώτο γράμμα του επιθέτου πρέπει να είναι κεφαλαίο"
+        registration_authority:
+          desc_not_empty: "^ Η περιγραφή δεν πρέπει να είναι κενή"
+        unchecked_person:
+          institutional_mail: "^ Το e-mail πρέπει να είναι ιδρυματικό"
+    models:
+      registration_mailer:
+        notification_of_user_certificate_expiration:
+          subject: Προειδοποίηση επικείμενης λήξης του ψηφιακού σας πιστοποιητικού
+        notification_of_host_certificate_expiration:
+          subject: Προειδοποίηση επικείμενης λήξης του ψηφιακού πιστοποιητικού του διακομιστή
+        notification_of_pending_requests:
+          subject: ενημέρωση για αιτήσεις σε αναμονή για ταυτοποίηση

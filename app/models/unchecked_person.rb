@@ -26,7 +26,7 @@ class UncheckedPerson < ActiveRecord::Base
       end
     end
     if @isInstitutional < 1
-      errors.add(:email, "^ Το e-mail πρέπει να είναι ιδρυματικό")
+      errors.add(:email, "#{I18n.t "activerecord.errors.models.unchecked_person.institutional_mail"}")
     end
   end
 
