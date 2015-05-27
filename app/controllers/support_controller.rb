@@ -96,6 +96,8 @@ private
         has_access=true
       when "/C=GR/O=HellasGrid/OU=upatras.gr/CN=Kalliopi Giannakopoulou"
         has_access=true
+      when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Stefanos Laskaridis"
+        has_access=true
       else
         has_access=false
       end

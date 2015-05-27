@@ -1,7 +1,7 @@
 module X509LoginHelper
   def get_user_dn
     if local_request?
-      session[:usercert] = "/C=GR/O=HellasGrid/OU=auth.gr/CN=Christos Triantafyllidis"
+      session[:usercert] = "/C=GR/O=HellasGrid/OU=auth.gr/CN=Stefanos Laskaridis"
     end		
     if request.env['HTTP_REDIRECT_SSL_CLIENT_S_DN'] =~ /CN/
         session[:usercert] = request.env['HTTP_REDIRECT_SSL_CLIENT_S_DN']
@@ -42,6 +42,8 @@ module X509LoginHelper
       when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Nikolaos Triantafyllidis"
         has_access=true
       when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Paschalis Korosoglou"
+        has_access=true
+      when "/C=GR/O=HellasGrid/OU=auth.gr/CN=Stefanos Laskaridis"
         has_access=true
       else
         has_access=false
