@@ -47,6 +47,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.comatose_admin
   # map.comatose_root ''
+  map.root :controller => 'site', :action => 'show'
 
   map.with_options :name_prefix => "", :path_prefix => ":locale" do |locale|
 

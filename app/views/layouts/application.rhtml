@@ -64,7 +64,14 @@
 		<div class="container" style="background-color: Black;">
 		  <div class="column span-24 last" style="text-align:right; color: #BEBEBE;">
           <% if session[:usercert] %> <%= I18n.t "views.logged_in_as" %>: <%=  session[:usercert] %> <% else %> <%= I18n.t "views.not_logged_in" %><% end %> &nbsp; &nbsp;
+          <div class="languages span-24 last" style="text-align:right;height:17px;">
+            <ul id="languageMenu" style="margin-top: 2px; margin-bottom: 2px;">
+              <li><%=link_to(image_tag("greek_flag.png"), "/el")%></li>
+              <li><%=link_to(image_tag("en_flag.png"), "/en")%></li>
+            </ul>
+          </div>
 	    </div>
+      
 		</div>
 		<div class="container" style="background: #fff; overflow: hidden;">
       <div id="header" class="span-24" style="background-image: url(/images/banner.png); background-repeat: no-repeat; height: 152px; width: 100%;">
@@ -78,7 +85,6 @@
 			<div class="column span-24 small" id="top-menu" style="background-color: Black; color: #BEBEBE;">
         &nbsp;&nbsp;<%= webapp_path %>
 			</div>
-			
 			<div class="column span-24" style="color: Black; background: url(/images/bg1.png) no-repeat center; background-color: White; font: normal 11px/16px Verdana, Geneva, Arial, Helvetica, sans-serif;	text-align:justify;">
 				<div style="text-align: left;" class="column span-20 append-2 prepend-2 last">
           <% flash.each do |key, msg| %>

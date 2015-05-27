@@ -536,3 +536,21 @@ margin-bottom: 0px;
 #admin a:hover {background-color: #c08962;}
 #topMenu #admin a.selected {padding: 3px 8px 0px 8px;	background-color: #A58120;	color:  white; height: 17px; text-decoration: underline;}
 #topMenu #admin a.selected:hover {color: Black;}
+
+#languageMenu li {
+  list-style-type: none;
+  display: inline;
+  margin:0;
+  padding:0;
+}
+
+.languages div {
+  margin:0;
+  padding:0;
+  height:0;
+}
+
+.languages img {
+  height:12;
+  width:25;
+}

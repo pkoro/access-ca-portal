@@ -38,6 +38,12 @@
     <td class="color00" align="right">
 	
 	<span class="pageTopMenu"><%= I18n.t "views.logged_in_as" %>:  <%= session[:usercert] %></span>  &nbsp; &nbsp;
+  <div class="languages span-24 last" style="text-align:right;height:17px;">
+    <ul id="languageMenu" style="margin-top: 2px; margin-bottom: 2px;">
+      <li><%=link_to(image_tag("greek_flag.png"), "/el")%></li>
+      <li><%=link_to(image_tag("en_flag.png"), "/en")%></li>
+    </ul>
+  </div>
 
 	</td>
   </tr>
