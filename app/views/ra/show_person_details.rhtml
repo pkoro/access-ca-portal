@@ -71,7 +71,7 @@
 					<td style="padding: 5px;"><%= @person.scientific_area %></td>
 				</tr>
 				<tr>
-					<th><%=I18n.t "views.ra.deparment"%></th>
+					<th><%=I18n.t "views.ra.department"%></th>
 					<td style="padding: 5px;"><%= @person.department %></td>
 				</tr>
 				<tr>
@@ -81,7 +81,7 @@
 			</table>
 			<br />
 			<fieldset style="width: 380px">
-				<legend>Προσωπικό Πιστοποιητικό</legend>
+				<legend><%=I18n.t "views.ra.personal_certificate"%></legend>
 				<p>	<% if @person.personal_certificate %>
 					<%=I18n.t "views.ra.user_has_cert"%>: <%= @person.personal_certificate.created_at %>
 					<% else %>

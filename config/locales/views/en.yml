@@ -156,7 +156,7 @@ en:
       state: Status
       ## edit_ra
       description: Description
-      ra_namangement: RA Management
+      ra_management: RA Management
       served_organization: Organization served
       insert: Insert
       insert_new: Insert new
@@ -357,6 +357,7 @@ en:
       ## list_user_certificates
       user_signed_certs_ca: User certificates signed by the CA
       full_name: Full name
+      subject: Subject
       state: State
       ## manage_operators
       remove: Remove
@@ -390,6 +391,7 @@ en:
       registered_names: Registered Names
       active_requests: Active requests
       cert_requests: Certificate requests
+      personal_certificate: Personal Certificate
       user_has_cert: "The user has cert that was issued on"
       user_without_cert: "The user DOES NOT have a certificate"
       ## show_request_details

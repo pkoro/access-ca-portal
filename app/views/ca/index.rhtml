@@ -6,7 +6,7 @@
 	  <% if CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).empty? %>
 	    <%=I18n.t "views.ca.no_pending_requests"%>
 	  <% elsif CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).size > 1  %>
-	      <%=I18n.t "views.ca.number_of_pending_requests" :number_of_pending_requests => CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).size%>
+	      <%=I18n.t "views.ca.number_of_pending_requests", :number_of_pending_requests => CertificateRequest.find(:all,:conditions=>["status = 'pending'"]).size%>
 	  <% else %>
 	      <%=I18n.t "views.ca.one_pending_request"%>
 	  <% end %>
@@ -15,7 +15,7 @@
 	  <% if CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).empty? %>
 	    <%=I18n.t "views.ca.no_approved_requests"%>
 	  <% elsif CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).size > 1  %>
-	      <%=I18n.t "views.ca.number_of_approved_requests" :number_of_pending_requests => CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).size%>
+	      <%=I18n.t "views.ca.number_of_approved_requests", :number_of_pending_requests => CertificateRequest.find(:all,:conditions=>["status = 'approved'"]).size%>
 	  <% else %>
 	      <%=I18n.t "views.ca.one_approved_request"%>
 	  <% end %>

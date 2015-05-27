@@ -156,7 +156,7 @@ el:
       state: Κατάσταση #status
       ## edit_ra
       description: Περιγραφή
-      ra_namangement: Διαχείριση Α.Τ.
+      ra_management: Διαχείριση Α.Τ.
       served_organization: Οργανισμοί που εξυπηρετούνται
       insert: Εισαγωγή
       insert_new: Εισαγωγή νέου
@@ -364,6 +364,7 @@ el:
       ## list_user_certificates
       user_signed_certs_ca: Πιστοποιητικά χρηστών που έχουν υπογραφεί από την Α.Π.
       full_name: Ονοματεπώνυμο
+      subject: Υποκείμενο
       state: Κατάσταση
       ## manage_operators
       remove: Αφαίρεση
@@ -398,6 +399,7 @@ el:
       registered_names: Καταχωρημένα Ονόματα
       active_requests: Ενεργές αιτήσεις
       cert_requests: Αιτήσεις ψηφιακών πιστοποιητικών
+      personal_certificate: Προσωπικό πιστοποιητικό
       user_has_cert: "O χρήστης έχει ψηφιακό πιστοιητικό το οποίο εκδόθηκε"
       user_without_cert: "Ο χρήστης ΔΕΝ έχει ψηφιακό πιστοποιητικό"
       ## show_request_details

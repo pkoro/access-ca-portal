@@ -4,13 +4,13 @@
 	  <% if @ra.find_pending_ra_requests.empty? %>
 	    <%=I18n.t "views.ra.no_pending_requests"%>
 	  <% elsif @ra.find_pending_ra_requests.size > 1  %>
-	      <%=I18n.t "views.ra.number_of_pending_requests" :number_of_pending_requests => @ra.find_pending_ra_requests.size %>
+	      <%=I18n.t "views.ra.number_of_pending_requests", :number_of_pending_requests => @ra.find_pending_ra_requests.size %>
 	  <% else %>
 	      <%=I18n.t "views.ra.onde_pending_request"%>
 	  <% end %>
 	</p>
 	<p>
-	    <%=I18n.t "views.ra.aproval.prereq"%>
+	    <%=I18n.t "views.ra.approval_prereq"%>
 	</p>
 	<p>
 	    <%=I18n.t "views.ra.meeting_details"%>

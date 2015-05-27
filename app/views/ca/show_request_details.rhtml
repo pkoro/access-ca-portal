@@ -35,7 +35,7 @@
           <td style="padding: 5px;"><%= @req.csrtype %></td>
         </tr>
         <tr>
-          <th><%=I18n.t "views.ca.request_details"%></th>
+          <th><%=I18n.t "views.ca.req_details"%></th>
           <td style="padding: 5px;">
           <% @ReqReader.request[:dnElements].each_value do |dnEl| %>
             <%= dnEl['Type'] %> = <%= dnEl['Value'] %>
@@ -44,7 +44,7 @@
           </td>
         </tr>
         <tr>
-          <th><%=I18n.t "views.ca.key"></th>
+          <th><%=I18n.t "views.ca.key"%></th>
           <td style="padding: 5px;"><%= @ReqReader.request[:Object].public_key.type.to_s.split("::")[2] %>  (<%= @ReqReader.request[:Object].public_key.to_text.match(/\d+/)[0] %> bit)</td>
         </tr>
         <tr>
