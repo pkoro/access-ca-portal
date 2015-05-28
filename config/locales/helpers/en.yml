@@ -1,0 +1,13 @@
+en:
+  helpers:
+    could_not_register_details: "Your registration details could not be saved"
+    following_problems: "The following problems prevented the process from being completed"
+    titles:
+      register: Register new users
+      cert: Personal certificates
+      support: Support team
+      acccount: Personal Account Management
+      host: Host certificates
+      ra: Registration Authority
+      ca: Certification Authority
+      myproxy: MyProxy Service

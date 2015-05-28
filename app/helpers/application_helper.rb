@@ -8,9 +8,9 @@ module ApplicationHelper
       content_tag("div",
         content_tag(
           options[:header_tag] || "h2",
-          "Δεν ήταν δυνατόν να καταχωρηθούν τα στοιχεία σας!"
+          "#{I18n.t "helpers.could_not_register_details"}!"
         ) +
-        content_tag("p", "Τα ακόλουθα προβλήματα απέτρεψαν την ολοκλήρωση της διαδικασίας:") +
+        content_tag("p", "#{I18n.t "helpers.following_problems"}:") +
         content_tag("ul", object.errors.full_messages.collect { |msg| content_tag("li", msg) }),
         "id" => options[:id] || "errorExplanation", "class" => options[:class] || "errorExplanation"
       )
@@ -21,14 +21,14 @@ module ApplicationHelper
   
   def page_title
     title = Hash.new
-    title["register"] = "Εγγραφή νέων χρηστών"
-    title["cert"] = "Ψηφιακά Πιστοποιητικά"
-    title["support"] = "Ομάδα Υποστήριξης"
-    title["account"] = "Διαχείριση Προσωπικού Λογαριασμού"
-    title["host"] = "Ψηφιακά πιστοποιητικά διακομιστών"
-    title["ra"] = "Αρχή Ταυτοποίησης"
-    title["ca"] = "Αρχή Πιστοποίησης"
-    title["myproxy"] = "Υπηρεσία MyProxy"
+    title["register"] = "#{I18n.t "helpers.titles.register"}"
+    title["cert"] = "#{I18n.t "helpers.titles.cert"}"
+    title["support"] = "#{I18n.t "helpers.titles.support"}"
+    title["account"] = "#{I18n.t "helpers.titles.account"}"
+    title["host"] = "#{I18n.t "helpers.titles.host"}"
+    title["ra"] = "#{I18n.t "helpers.titles.ra"}"
+    title["ca"] = "#{I18n.t "helpers.titles.ca"}"
+    title["myproxy"] = "#{I18n.t "helpers.titles.myproxy"}"
     
     @page_title || title[params[:controller]]
   end
