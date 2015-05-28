@@ -24,7 +24,7 @@ class SupportController < ApplicationController
 
   def list_people
     @action_title = "#{I18n.t "controllers.support.registered_users_list"}"
-    sort_init 'last_name_el'
+    sort_init 'last_name_en' # internationalized
     sort_update
     @people = Person.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :include => [:organization]
   end

@@ -1,9 +1,5 @@
 <%=I18n.t "views.registration_mailer.the_user"%>:
-<% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
   	<%=@person.first_name_en + " " + @person.last_name_en %>
-<% else %>
-  	<%=@person.first_name_el + " " + @person.last_name_el %>
-<% end %>
 
 <%=I18n.t "views.registration_mailer.with"%> e-mail:
   <%= X509Certificate::CertificateReader.new(Certificate.find(:first,:order => "id DESC",:conditions => ["owner_type = 'Person' and owner_id = ?", @person.id]).body).certificate[:SubjAltNames].split(/, /)[0].split(/:/)[1].downcase %>

@@ -23,10 +23,10 @@ module RaHelper
     end
     result += "<td>" + csr.created_at.mday.to_s + "/" +  csr.created_at.month.to_s + "/" + csr.created_at.year.to_s + "</td>"
     result += "<td>"
-    if csr.requestor.first_name_el.empty? or csr.requestor.last_name_el.empty? then
-      result += csr.requestor.first_name_en + " " + csr.requestor.last_name_en
-    else
+    if csr.requestor.first_name_en.empty? or csr.requestor.last_name_en.empty? then
       result += csr.requestor.first_name_el + " " + csr.requestor.last_name_el
+    else
+      result += csr.requestor.first_name_en + " " + csr.requestor.last_name_en
     end
     if csr.requestor.work_phone and csr.requestor.work_phone.size != 0 
       result += " (" + csr.requestor.work_phone + ")"

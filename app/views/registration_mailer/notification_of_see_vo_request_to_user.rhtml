@@ -2,10 +2,7 @@
 
 <%=I18n.t "views.registration_mailer.your_request_for"%> SEE VO <%=I18n.t "views.registration_mailer.with_details"%> <%=I18n.t "views.registration_mailer.has_been_registered"%>.
 
-Name: <% if @person.first_name_el.empty? or @person.last_name_el.empty? then %><%=@person.first_name_en + " " + @person.last_name_en %>
-<% else %>
-  	<%=@person.first_name_el + " " + @person.last_name_el %>
-<% end %>
+Name: first_name_en + " " + @person.last_name_en %>
 
 E-mail: <%= @person.email %>
 

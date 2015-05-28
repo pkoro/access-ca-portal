@@ -1,9 +1,5 @@
 <%=I18n.t "views.registration_mailer.the_user"%>:
-<% if @person.first_name_el.empty? or @person.last_name_el.empty? then %>
   	<%=@person.first_name_en + " " + @person.last_name_en %>, <%= @person.email %>
-<% else %>
-  	<%=@person.first_name_el + " " + @person.last_name_el %>, <%= @person.email %>
-<% end %>
 
 <%=I18n.t "views.registration_mailer.has_requested"%> <% if @csr.owner_type == "Person" %><%=I18n.t "views.registration_mailer.personal_cert"%><% else %> <%=I18n.t "views.registration_mailer.host_cert"%>:
   <%=@fqdn%><% end %>
