@@ -529,15 +529,15 @@ en:
       no_ra_for_org: "however, there is NO RA that serves your organization. As soon as a new RA is created in your institution, you will be notified for the process to be followed in order to get verified."
       mail_copy_sent: "A digital copy of the text above has been sent to the following e-mail address"
       ## notification_of_csr_submission_to_user ## notification_of_host_csr_submission_to_user
-      request_sent_visit_ra: "Η αίτησή σας έχει αποσταλλεί  στην Αρχή Πιστοποίησης ΗellasGrid CA και	παράλληλα  ενημερώθηκε η  Αρχή Ταυτοποίησης  (Α.Τ.) που  εξυπηρετεί το	οργανισμό   σας.  Εντός   μίας   εβδομάδας   πρέπει  να   επισκεφθείτε	αυτοπροσώπως το γραφείο της Α.Τ. έχοντας μαζί σας"
+      request_sent_visit_ra: "Your request has been sent to Hellasgrid CA and your organization's Registration Authority has been notified. During the following week, you have to visit in person the RA office having with you"
       id_card_or_passport: "your ID or passport"
       relation_to_org: "a document that certifies your relation to the organization"
       copies: a copy of the above
       print_of_this_text: a printed copy of this document
       to_watch_request_progress: "To watch the progress of your request, you can"
-      follow_link: ακολουθήστε το σύνδεσμο
-      regional_ra: "Η Α.Τ. που εξυπηρετεί την περιοχή σας είναι η"
-      more_info_on_ca_ra: "Περισσότερες πληροφορίες για τις Α.Τ. της Α.Π. HellasGrid CA μπορείτε να βρείτε"
+      follow_link: follow the link
+      regional_ra: "The RA that serves your region is"
+      more_info_on_ca_ra: "More information about the RAs and the Hellasgrid CA can be found"
       ## notification_of_host_certificate_expiration ## notification_of_user_certificate_expiration
       dearest_sir_madam: Dearest Sir/Madam
       inform_host_related: "on behalf of the Certification Authority Hellasgrid CA, we would like to inform you that the host certificate with the following details"
@@ -561,6 +561,9 @@ en:
       cert_signed_download: "Your certificate has been signed by the Certification Authority of Hellasgrid CA and you can download it by entering the following link in the browser you used to fulfill your certificate request"
       cert_browser_ui_install: "To export your certificate from your browser and install it in the User Interface, follow the Starting Guide in Grid"
       new_user_text: "Since you are a new user of Grid, you can find useful information in Hellasgrid's wiki [2] and in the official page of the Hellasgrid Infrastructure [3]. For any question related to using the Grid, you can contact the user support team at"
+      issuer: Isser
+      date_issued: Date issued
+      valid_until: Valid until
       ## notification_of_pending_requests
       pending_requests_certified_user: "There are the following pending requests whose related user has been recently verified by the RA and the system using their personal certificate."
       ## notification_of_see_vo_request_to_user ## notification_of_ui_request_to_user
@@ -571,6 +574,7 @@ en:
       in_seevo: in SEE VO
       and_ui_credentials: and the UI credentials
       ## notification_of_see_vo_request
+      has_requested_seevo_access: "has requested for SEE VO access"
       with: with
       with_dn: With DN
       has_been_signed_by_ca: And has been signed by the CA

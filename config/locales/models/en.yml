@@ -3,16 +3,16 @@ en:
     errors:
       models:
         certificate_request:
-          invalid_cert_req: "^ Η αίτηση πιστοποιητικού δεν είναι έγκυρη!"
-          csr_structure: "^ Η αίτηση πιστοποιητικού πρέπει να έχει την δομή: /C=GR/O=HellasGrid/OU=&lt;domain name&gt;/CN=&lt;User's Fullname OR Host's FQDN&gt;"
-          first_csr_field: "^ Το πρώτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο C (Country)"
-          second_csr_field: "^ Το δεύτερο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο O (Organization)"
-          third_csr_field: "^ Το τρίτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο OU (Organization Unit)"
-          fourth_csr_field: "^ Το τέταρτο πεδίο του DN της αίτησης πρέπει να είναι το πεδίο CN (Common Name)"
-          first_csr_field_val: "^ Η τιμή του πρώτου πεδίου του DN της αίτησης πρέπει να είναι C=GR"
-          second_csr_field_val: "^ Η τιμή του δεύτερου πεδίου του DN της αίτησης πρέπει να είναι O=HellasGrid"
-          existing_req: "^ Έχετε ήδη μια αίτηση πιστοποιητικού σε εκκρεμότητα"
-          unregistered_dns: "^ Το όνομα διακομιστή '%{fqdn}' δεν είναι δηλωμένο στον διακομιστή DNS"
+          invalid_cert_req: "^ Invalid certificate request!"
+          csr_structure: "^ The certificate request must be in the form: /C=GR/O=HellasGrid/OU=&lt;domain name&gt;/CN=&lt;User's Fullname OR Host's FQDN&gt;"
+          first_csr_field: "^ The first field of the DN of the request must be the field C (Country)"
+          second_csr_field: "^ The second field of the DN of the request must be the field O (Organization)"
+          third_csr_field: "^ The third field of the DN of the request must be the field OU (Organization Unit)"
+          fourth_csr_field: "^ The fourd field of the DN of the request must be the field CN (Common Name)"
+          first_csr_field_val: "^ The value of the first field for the DN of the request must be C=GR"
+          second_csr_field_val: "^ The value of the second field for the DN of the request must be O=HellasGrid"
+          existing_req: "^ You already have one pending request"
+          unregistered_dns: "^ The host/server name '%{fqdn}' is not registered to the DNS server"
         host:
           fqdn_not_empty: "^ The FQDN field must not be empty"
           fqdn_used: "^ FQDN address already in use. If you wish to take management of the host/server, you should contact <a href=''mailto:support@grid.auth.gr?subject=Change host manager&body=I want to take management of the host/server'>the support team</a>"

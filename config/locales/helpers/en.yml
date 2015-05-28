@@ -6,7 +6,7 @@ en:
       register: Register new users
       cert: Personal certificates
       support: Support team
-      acccount: Personal Account Management
+      account: Personal Account Management
       host: Host certificates
       ra: Registration Authority
       ca: Certification Authority

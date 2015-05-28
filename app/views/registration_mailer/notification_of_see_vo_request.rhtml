@@ -5,21 +5,13 @@
   	<%=@person.first_name_el + " " + @person.last_name_el %>
 <% end %>
 
-Με e-mail:
+<%=I18n.t "views.registration_mailer.with"%> e-mail:
   <%= X509Certificate::CertificateReader.new(Certificate.find(:first,:order => "id DESC",:conditions => ["owner_type = 'Person' and owner_id = ?", @person.id]).body).certificate[:SubjAltNames].split(/, /)[0].split(/:/)[1].downcase %>
 
-έχει κάνει αίτηση για πρόσβαση στο SEE VO
+<%=I18n.t "views.registration_mailer.has_requested_seevo_access"%>
 
-Το DN του είναι:
+<%=I18n.t "views.registration_mailer.with_dn"%>:
   <%= X509Certificate::CertificateReader.new(Certificate.find(:first,:order => "id DESC",:conditions => ["owner_type = 'Person' and owner_id = ?", @person.id]).body).certificate[:Certificate].subject %>
 
-Και έχει υπογραφεί από την Α.Π.:
+<%=I18n.t "views.registration_mailer.has_been_signed_by_ca"%>:
   <%= X509Certificate::CertificateReader.new(Certificate.find(:first,:order => "id DESC",:conditions => ["owner_type = 'Person' and owner_id = ?", @person.id]).body).certificate[:Certificate].issuer %>
-
-
-<!-- Template για απάντηση:
-
-Your request for membership to the SEE VO has been processed and approved.
-
-On behalf of the SEE VO Admin,
-First_name Last_name -->

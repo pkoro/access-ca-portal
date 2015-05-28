@@ -4,11 +4,11 @@
 
  <%=I18n.t "views.registration_mailer.cert_details"%>:
 
-          Subject DN: <%= @crt.subject_dn %>
-        Εκδούσα Αρχή: HellasGrid CA
-  Ημερομηνία έκδοσης: <%= X509Certificate::CertificateReader.new(@crt.body).certificate[:IssueDate] %>
+    Subject DN: <%= @crt.subject_dn %>
+    <%=I18n.t "views.registration_mailer.issuer"%>: HellasGrid CA
+    <%=I18n.t "views.registration_mailer.date_issued"%>: <%= X509Certificate::CertificateReader.new(@crt.body).certificate[:IssueDate] %>
 <%= @altnames %>
-        Έγκυρο μέχρι: <%= X509Certificate::CertificateReader.new(@crt.body).certificate[:ExpirationDate]%>
+    <%=I18n.t "views.registration_mailer.valid_until"%>: <%= X509Certificate::CertificateReader.new(@crt.body).certificate[:ExpirationDate]%>
         
         
 <%=I18n.t "views.registration_mailer.cert_browser_ui_install"%> [1].

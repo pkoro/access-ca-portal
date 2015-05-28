@@ -10,7 +10,7 @@
 	<fieldset>
 		<legend><%=I18n.t "views.register.warning"%></legend>
 		<p>
-		    <%=I18n.t "views.register.must_install_certificate_browser"%><%= link_to("#{I18n.t "views.register.link"}", :action => "load_ca_cert") %>
+		    <%=I18n.t "views.register.must_install_certificate_browser"%> <%= link_to("#{I18n.t "views.register.link"}", :action => "load_ca_cert") %>
 			<%= link_to(image_tag("go.jpg", :style => "border: 0"), :action => "load_ca_cert") %>
 		</p>
 	</fieldset>

@@ -1,4 +1,4 @@
-<%=I18n.t "views.registration_mailer.expire_in_less_than"%> <%=I18n.t "views.registration_mailer.a_week"%>:
+<%=I18n.t "views.registration_mailer.expire_in_less_than"%> <%=I18n.t "views.registration_mailer.one_week"%>:
 <% @expire_in_a_week.each do |crt| %>
 <%=	if crt.owner_type == "Host" 
 		crt.owner.fqdn + " (#{views.registration_mailer.more_info_in}: https://access.hellasgrid.gr/ra/show_certificate_details/" + crt.id.to_s + " )"
@@ -7,7 +7,7 @@
 	end %>
 <% end %>
 
-<%=I18n.t "views.registration_mailer.expire_in_less_than"%> <%=I18n.t "views.registration_mailer.a_month"%>:
+<%=I18n.t "views.registration_mailer.expire_in_less_than"%> <%=I18n.t "views.registration_mailer.one_month"%>:
 <% @expire_in_a_month.each do |crt| %>
 <%=	if crt.owner_type == "Host" 
 		crt.owner.fqdn + " (#{views.registration_mailer.more_info_in}: https://access.hellasgrid.gr/ra/show_certificate_details/" + crt.id.to_s + " )"

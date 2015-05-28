@@ -1,14 +1,16 @@
 <h1 class="entry-title">Αρχή Πιστοποίησης HellasGrid</h1>
-					
-					<div class="entry-content">
-						<p>Το Κέντρο Επιστημονικών Υπολογιστικών Υπηρεσιών Α.Π.Θ. είναι υπεύθυνο για τη διαχείριση και λειτουργία της <strong>εθνικής Αρχής Πιστοποίησης HellasGrid CA</strong> στα πλαίσια της Εθνικής Δράσης Πλεγματικής Υποδομής την οποία συντονίζει η ΕΔΕΤ Α.Ε.</p>
-<p>Η λειτουργία της Α.Π. ξεκίνησε το 2002 με σκοπό την εξυπηρέτηση των Ελλήνων χρηστών των πλεγματικών υποδομών και από τότε ως σήμερα αποτελεί την εθνική Αρχή Πιστοποίησης, η οποία είναι αναγνωρισμένη από την διεθνή ομοσπονδία <strong>International Grid Trust Federation(IGTF)</strong> και ως εκ τούτου τα ψηφιακά πιστοποιητικά που εκδίδει είναι αναγνωρισμένα από όλες τις διεθνείς ερευνητικές υπολογιστικές υποδομές που υποστηρίζουν το <a href="http://www.igtf.net/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.igtf.net']);">IGTF</a>.</p>
-<p>Για την καλύτερη εξυπηρέτηση των Ελλήνων χρηστών έχει δημιουργηθεί ένα δίκτυο από <strong>Αρχές Ταυτοποίησης</strong> σε Πανεπιστημιακά Ιδρύματα και Ινστιτούτα οι οποίες καλύπτουν άμεσα τις ανάγκες του μεγαλύτερου ποσοστού των χρηστών. Στον πίνακα και στον χάρτη που ακολουθούν μπορείτε να βρείτε όλες τις εν ενεργεία Α.Τ.</p>
+
+<!-- <%=I18n.t "views.register."%> -->
+
+<div class="entry-content">
+	<p><%=I18n.t "views.register.about_grid"%></p>
+	<p><%=I18n.t "views.register.about_hg"%> <a href="http://www.igtf.net/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.igtf.net']);">IGTF</a>.</p>
+	<p><%=I18n.t "views.register.about_ras"%></p>
 
 <table id="ca_table">
 <thead>
 	<tr class="ca_row">
-		<th class="ca_column">Αρχή Ταυτοποίησης</th><th class="column-2">Πόλη</th><th class="column-3">Υπεύθυνος (Email)</th><th class="column-4">Χειριστής (Email)</th><th class="column-5">Διεύθυνση</th><th class="column-6">Τηλέφωνο</th>
+		<th class="ca_column"><%=I18n.t "views.register.ra"%></th><th class="column-2"><%=I18n.t "views.register.city"%></th><th class="column-3"><%=I18n.t "views.register.supervisor"%> (Email)</th><th class="column-4"><%=I18n.t "views.register.manager"%> (Email)</th><th class="column-5"><%=I18n.t "views.register.address"%></th><th class="column-6"><%=I18n.t "views.register.tel"%></th>
 	</tr>
 </thead>
 <tbody>
