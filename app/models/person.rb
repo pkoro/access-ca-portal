@@ -1,49 +1,49 @@
 # -*- coding: utf-8 -*-
 class Person < ActiveRecord::Base
   acts_as_versioned
-  
+  # This should be omitted in the english version
   validates_presence_of :first_name_el,
                         :on => :create,
-                        :message => "#{I18n.t "activerecord.errors.models.person.name"} #{I18n.t "activerecord.errors.models.person.greek_name_not_empty"}"
+                        :message => :first_name_el_blank
   validates_format_of   :first_name_el,
                         :with => /^[Α-Ωα-ωά-ώΆ-Ώ\-]*$/,
-                        :message => "#{I18n.t "activerecord.errors.models.person.name"} #{I18n.t "activerecord.errors.models.person.greek_chars"}"
-  
+                        :message => :first_name_el_invalid
   validates_presence_of :first_name_en,
-                        :message => "#{I18n.t "activerecord.errors.models.person.name"} #{I18n.t "activerecord.errors.models.person.english_name_not_empty"}"
+                        :message => :first_name_en_blank
   validates_format_of   :first_name_en,
                         :with =>/^[A-Za-z\-\']*$/,
-                        :message => "#{I18n.t "activerecord.errors.models.person.name"} #{I18n.t "activerecord.errors.models.person.latin_chars"}"
+                        :message => :first_name_el_invalid
+  # This should be omitted in the english version
   validates_presence_of :last_name_el,
-                        :message => "#{I18n.t "activerecord.errors.models.person.surname"} #{I18n.t "activerecord.errors.models.person.greek_name_not_empty"}"
+                        :message => :last_name_el_blank
   validates_format_of   :last_name_el,
                         :with =>/^[Α-Ωα-ωά-ώΆ-Ώ\-]*$/,
-                        :message => "#{I18n.t "activerecord.errors.models.person.surname"} #{I18n.t "activerecord.errors.models.person.greek_chars"}"
+                        :message => :last_name_el_invalid
   validates_presence_of :last_name_en,
-                        :message => "#{I18n.t "activerecord.errors.models.person.surname"} #{I18n.t "activerecord.errors.models.person.english_name_not_empty"}"
+                        :message => :last_name_en_blank
   validates_format_of   :last_name_en,
                         :with =>/^[A-Za-z\-\']*$/,
-                        :message => "#{I18n.t "activerecord.errors.models.person.surname"} #{I18n.t "activerecord.errors.models.person.latin_chars"}"
+                        :message => :last_name_en_invalid
   validates_presence_of :work_phone,
-                        :message => "#{I18n.t "activerecord.errors.models.person.phone_not_empty"}"
+                        :message => :work_phone_blank
   validates_presence_of :email,
-                        :message => "#{I18n.t "activerecord.errors.models.person.mail_not_empty"}"
+                        :message => :email_blank
   validates_length_of   :first_name_el, :first_name_en, :last_name_el, :last_name_en, :email, :department,
                         :on => :create,
                         :maximum => 254,
-                        :message => "#{I18n.t "activerecord.errors.models.person.max_length"}"
+                        :message => :too_long
  validates_uniqueness_of  :email,
-                          :message => "#{I18n.t "activerecord.errors.models.person.mail_used"}"
+                          :message => :email_taken
   validates_length_of   :work_phone,
                         :is => 10,
-                        :message => "#{I18n.t "activerecord.errors.models.person.tel_length"}"
+                        :message => :work_phone_too_long
   validates_format_of   :work_phone,
                         :with => /^2\d+/,
-                        :message => "#{I18n.t "activerecord.errors.models.person.phone_type"}"
+                        :message => :work_phone_invalid
   validates_numericality_of :work_phone,
-                            :message => "#{I18n.t "activerecord.errors.models.person.phone_num_only"}"
+                            :message => :work_phone_other_than
   validates_as_email    :email,
-                        :message => "#{I18n.t "activerecord.errors.models.person.invalid_mail"}"
+                        :message => :email_invalid
                       
   has_many :personal_requests,
            :class_name => "CertificateRequest",
