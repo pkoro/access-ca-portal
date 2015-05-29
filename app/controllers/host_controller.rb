@@ -31,7 +31,7 @@ class HostController < ApplicationController
   
 
   def manual_csr
-    @action_title = "#{I18n.t "controllers.host.insert_req_details"}"
+    @action_title = "#{I18n.t "controllers.host.insert_cert_req"}"
     @admin = Person.find_by_dn(session[:usercert])
     if ! @admin
       flash[:notice] = "#{I18n.t "controllers.common.registration_first_notice"}"  

@@ -15,7 +15,7 @@
 <% if @csr.csrtype =~ /ie/ || @csr.csrtype =~ /spkac/ %>
 <p>
   <%=I18n.t "views.cert.same_browser_download"%>, <%=I18n.t "views.cert.follow_link"%>
-	<%= link_to "#{I18n.t "view.cert.install_cert_browser"}", :action => "load_cert", :id => @crt.certificate_request_uniqueid %>.
+	<%= link_to "#{I18n.t "views.cert.install_cert_browser"}", :action => "load_cert", :id => @crt.certificate_request_uniqueid %>.
 </p>
 
 <% else %>

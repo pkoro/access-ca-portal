@@ -26,7 +26,7 @@ class RaController < ApplicationController
     @organizations = "('false'"
     RaOrganizationRelation.find(:all,:conditions=>["ra_id = ?",@ra_membership.ra_id]).each {|rel| @organizations += " OR organization_id = "+  rel.organization_id.to_s}
     @organizations += ")"
-    @action_title = "#{I18n.t "controllers.ca.pedning_req_to_sign"}"
+    @action_title = "#{I18n.t "controllers.ca.pending_req_to_sign"}"
     sort_init 'created_at'
     sort_update
     # @certificate_requests = CertificateRequest.paginate :page=>params[:page], :per_page => 20, :order => sort_clause, :conditions =>        @organizations + " AND status='approved'", :include => :organization

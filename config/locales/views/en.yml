@@ -13,7 +13,7 @@ en:
         already_have_certificate: "Do you already have a Hellasgrid CA certificate?"
         already_have_certificate_text: "In case you already have a Hellasgrid CA certificate (and it's installed in your browser), you can visit the"
         management_page: management page
-        already_have_certificate_text_b: " of your personal account in Hellasgrid, overriding the registration process."
+        already_have_certificate_text_2: " of your personal account in Hellasgrid, overriding the registration process."
         search: Search
         send_application_title: Submit application
         menu: Menu
@@ -175,7 +175,7 @@ en:
       req_date: Request date
       last_update: Last renewal
       type: Type
-      host_certs_signed_by_ca: "Hosts certificates signed by the CA"
+      hosts_certs_signed_by_ca: "Hosts certificates signed by the CA"
       subject: Subject
       pending_requests: "Pending certificate requests for approval by the CA"
       rejected_requests: "Certificate requests that have been rejected by the CA"
@@ -219,7 +219,7 @@ en:
       ## get_host_certificate ## get_personal_certificate
       install_certificate: Install certificate
       signed_cert_text: "Your certificate has been signed by Hellasgrid CA and can be used for one year."
-      get_ceritificate: "In order to acquire a certificate, you have to"
+      get_certificate: "In order to acquire a certificate, you have to"
       must_install_cert_browser: "Install the certificate in your browser"
       must_accept_cert_terms: "Accept the terms of usage for the certificate"
       same_browser_download: "The request creation process has been completed through a browser. To install the certificate you must use the same browser on the same computer with the one you fulfilled the request. To complete the process of the certificate installation"
