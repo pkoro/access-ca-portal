@@ -62,7 +62,7 @@ en:
     account:
       ## accept_host_certificate ## accept_personal_certificate
       accept_terms_of_certificate: Accept Certificate Terms of Usage
-      accept_terms_notice: "..."
+      accept_terms_notice: "In order fot the certificate to be created, you must accept the terms of usage of the digital certificate"
       terms_text: Policy text
       accept_terms_notice_2: "of Hellasgrid CA"
       host_cert_accept_terms_declare: "I have read the Policy Text of Hellasgrid CA with O.I.D. 1.3.6.1.4.1.23877.8.1.1.2.0 and I accept the certificate terms of usage for the host."
