@@ -26,37 +26,37 @@ xml.Workbook({
       # Header
       xml.Row do
         xml.Cell do
-          xml.Data 'Όνομα Ελληνικά', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.name"} #{I18n.t "views.support.greek"}", 'ss:Type' => 'String'
         end
         xml.Cell do
-          xml.Data 'Επίθετο Ελληνικά', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.surname"} #{I18n.t "views.support.greek"}", 'ss:Type' => 'String'
         end
         xml.Cell do
-          xml.Data 'Όνομα Αγγλικά', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.name"} #{I18n.t "views.support.english"}", 'ss:Type' => 'String'
         end
         xml.Cell do
-          xml.Data 'Επίθετο Αγγλικά', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.surname"} #{I18n.t "views.support.english"}", 'ss:Type' => 'String'
         end
         xml.Cell do
-          xml.Data 'Ιδιότητα', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.property"}", 'ss:Type' => 'String'
         end
         xml.Cell do
-          xml.Data 'Οργανισμός', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.organization"}", 'ss:Type' => 'String'
         end
         xml.Cell do
-          xml.Data 'Τμήμα', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.department"}", 'ss:Type' => 'String'
         end
         xml.Cell do
           xml.Data 'e-mail', 'ss:Type' => 'String'
         end
         xml.Cell do
-          xml.Data 'Τηλέφωνο', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.work_tel"}", 'ss:Type' => 'String'
         end
         xml.Cell do
-          xml.Data 'Επιστ. Τομέας', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.scientific_field"}", 'ss:Type' => 'String'
         end
         xml.Cell do
-          xml.Data 'Ημερομηνία Εγγραφής', 'ss:Type' => 'String'
+          xml.Data "#{I18n.t "views.support.registration_date"}", 'ss:Type' => 'String'
         end
         xml.Cell do
           xml.Data 'Subject DN', 'ss:Type' => 'String'
