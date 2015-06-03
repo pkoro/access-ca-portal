@@ -45,7 +45,7 @@ ActionController::Routing::Routes.draw do |map|
   # -- just remember to delete public/index.html.
   # map.comatose_root ''
   
-  map.comatose_admin
+  # map.comatose_admin
   # map.comatose_root ''
   map.root :controller => 'site', :action => 'show'
 
