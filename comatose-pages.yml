@@ -1,16 +1,42 @@
 --- 
+filter_type: Textile
+body: |-
+  h1. Welcome
+  
+  Your content goes here...
+slug: home-page
 title: Home Page
 children: 
-- title: el
+- filter_type: Textile
+  body: ""
+  slug: el
+  title: el
   children: 
-  - title: web
+  - filter_type: Textile
+    body: ""
+    slug: web
+    title: web
     children: 
-    - title: !binary |
+    - filter_type: Textile
+      body: |
+        <div class="column span-20 last">
+          &nbsp;
+        </div>
+        <div class="column span-12 prepend-2">
+          <%= include "el/web/home/warning" %>
+          <%= include "el/web/home/procedure" %>
+        </div>
+        <div class="column span-4 prepend-1 append-2 last">
+          <%= include "el/web/home/account" %>
+          <%= include "el/web/home/links" %>
+        </div>
+
+      slug: home
+      title: !binary |
         zpXOs86zz4HOsc+Gzq4gzr3Orc+Jzr0gz4fPgc63z4PPhM+Ozr0=
 
       children: 
-      - title: warning
-        filter_type: Textile
+      - filter_type: Textile
         body: !binary |
           PGZpZWxkc2V0Pg0KICA8bGVnZW5kPs6gzqHOn86jzp/Op86XPC9sZWdlbmQ+
           DQogIDxwPg0KICAgIM6TzrnOsSDOvc6xIM+Hz4HOt8+DzrnOvM6/z4DOv865
@@ -27,14 +53,14 @@ children:
           g8+Ezr/PgM6/zrnOt8+EzrnOus+MLiDOoM61z4HOuc+Dz4zPhM61z4HOtc+C
           IM+AzrvOt8+Bzr/Phs6/z4HOr861z4IgzrPOuc6xIM+EzrfOvSDOkS7OoC4g
           SGVsbGFzR3JpZCBDQSDOvM+Azr/Pgc61zq/PhM61IM69zrEgzrLPgc61zq/P
-          hM61IM+Dz4TOv869IDxhIGhyZWY9Ii9hYm91dF9jYSI+zrTOuc66z4TPhc6x
-          zrrPjCDPhM63z4Igz4TPjM+Azr88L2E+Lg0KICA8L3A+DQo8L2ZpZWxkc2V0
-          Pg0KPGJyIC8+
+          hM61IM+Dz4TOv869IDxhIGhyZWY9Ii9lbC9hYm91dF9jYSI+zrTOuc66z4TP
+          hc6xzrrPjCDPhM63z4Igz4TPjM+Azr88L2E+Lg0KICA8L3A+DQo8L2ZpZWxk
+          c2V0Pg0KPGJyIC8+
 
-        keywords: ""
         slug: warning
-      - title: account
-        filter_type: Textile
+        title: warning
+        keywords: ""
+      - filter_type: Textile
         body: !binary |
           PGRpdiBzdHlsZT0iYm9yZGVyOiBncmV5IHNvbGlkIDFweDsgcGFkZGluZzog
           MTBweDsgd2lkdGg6IDMwMHB4Ij4NCiAgPGgxIHN0eWxlPSJmb250LXNpemU6
@@ -47,35 +73,35 @@ children:
           YXNHcmlkIENBICjOus6xzrkgzrXOr869zrHOuSDOtc6zzrrOsc+EzrXPg8+E
           zrfOvM6tzr3OvyDPg8+Ezr/OvSBicm93c2VyIM+DzrHPgiksIM68z4DOv8+B
           zrXOr8+EzrUgzr3OsSDOtc+AzrnPg866zrXPhs64zrXOr8+EzrUgz4TOtyA8
-          YSBocmVmPSIvYWNjb3VudCI+z4POtc67zq/OtM6xIM60zrnOsc+HzrXOr8+B
-          zrnPg863z4I8L2E+IM+Ezr/PhSDPgM+Bzr/Pg8+Jz4DOuc66zr/PjSDPg86x
-          z4IgzrvOv86zzrHPgc65zrHPg868zr/PjSDPgM6xz4HOsc66zqzOvM+Az4TP
-          ic69z4TOsc+CIM+EzrfOvSDOtM65zrHOtM65zrrOsc+Dzq/OsSDPhM63z4Ig
-          zrXOs86zz4HOsc+Gzq7PgiDPg86xz4Igz4PPhM6/IEhlbGxhc0dyaWQuDQog
-          IDwvcD4NCjwvZGl2Pg0KPGJyIC8+DQo=
+          YSBocmVmPSIvZWwvYWNjb3VudCI+z4POtc67zq/OtM6xIM60zrnOsc+HzrXO
+          r8+BzrnPg863z4I8L2E+IM+Ezr/PhSDPgM+Bzr/Pg8+Jz4DOuc66zr/PjSDP
+          g86xz4IgzrvOv86zzrHPgc65zrHPg868zr/PjSDPgM6xz4HOsc66zqzOvM+A
+          z4TPic69z4TOsc+CIM+EzrfOvSDOtM65zrHOtM65zrrOsc+Dzq/OsSDPhM63
+          z4IgzrXOs86zz4HOsc+Gzq7PgiDPg86xz4Igz4PPhM6/IEhlbGxhc0dyaWQu
+          DQogIDwvcD4NCjwvZGl2Pg0KPGJyIC8+DQo=
 
-        keywords: ""
         slug: account
-      - title: procedure
-        filter_type: Textile
+        title: account
+        keywords: ""
+      - filter_type: Textile
         body: "<h1>\xCE\x94\xCE\xB9\xCE\xB1\xCE\xB4\xCE\xB9\xCE\xBA\xCE\xB1\xCF\x83\xCE\xAF\xCE\xB1 \xCF\x80\xCF\x81\xCF\x8C\xCF\x83\xCE\xB2\xCE\xB1\xCF\x83\xCE\xB7\xCF\x82 \xCF\x83\xCF\x84\xCE\xBF Grid \xCE\xB3\xCE\xB9\xCE\xB1 \xCE\xBD\xCE\xAD\xCE\xBF\xCF\x85\xCF\x82 \xCF\x87\xCF\x81\xCE\xAE\xCF\x83\xCF\x84\xCE\xB5\xCF\x82</h1>\r\n\
           \r\n\
-          <div class=\"column span-12\">\r\n  <div class=\"column span-2\">\r\n      <a href=\"/register/registration_form\"><img alt=\"One\" src=\"/images/one.png\" style=\"border: 0\" /></a>\r\n  </div>\r\n  <div class=\"column span-10 last\" style=\"color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;\">\r\n    \xCE\x91\xCF\x80\xCE\xBF\xCE\xBA\xCF\x84\xCE\xAE\xCF\x83\xCF\x84\xCE\xB5 \xCF\x84\xCE\xBF \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCF\x8C \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8C \xCF\x83\xCE\xB1\xCF\x82 \xCE\xB1\xCF\x80\xCF\x8C \xCF\x84\xCE\xB7\xCE\xBD \xCE\xB5\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAE \xCE\x91\xCF\x81\xCF\x87\xCE\xAE \xCE\xA0\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xAF\xCE\xB7\xCF\x83\xCE\xB7\xCF\x82 HellasGrid CA <a href=\"/:locale/register/registration_form\"><img alt=\"Go\" src=\"/images/go.jpg\" style=\"border: 0; margin: 0\" /></a>\r\n  </div>\r\n\
+          <div class=\"column span-12\">\r\n  <div class=\"column span-2\">\r\n      <a href=\"/el/register/registration_form\"><img alt=\"One\" src=\"/images/one.png\" style=\"border: 0\" /></a>\r\n  </div>\r\n  <div class=\"column span-10 last\" style=\"color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;\">\r\n    \xCE\x91\xCF\x80\xCE\xBF\xCE\xBA\xCF\x84\xCE\xAE\xCF\x83\xCF\x84\xCE\xB5 \xCF\x84\xCE\xBF \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCF\x8C \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8C \xCF\x83\xCE\xB1\xCF\x82 \xCE\xB1\xCF\x80\xCF\x8C \xCF\x84\xCE\xB7\xCE\xBD \xCE\xB5\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAE \xCE\x91\xCF\x81\xCF\x87\xCE\xAE \xCE\xA0\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xAF\xCE\xB7\xCF\x83\xCE\xB7\xCF\x82 HellasGrid CA <a href=\"/el/register/registration_form\"><img alt=\"Go\" src=\"/images/go.jpg\" style=\"border: 0; margin: 0\" /></a>\r\n  </div>\r\n\
           </div>\r\n\
           \r\n\
-          <div class=\"column span-12\">\r\n  <div class=\"column span-2\">\r\n      <a href=\"/account/ui_access_form\"><img alt=\"Two\" src=\"/images/two.png\" style=\"border: 0\" /></a>\r\n  </div>\r\n  <div class=\"column span-10 last\" style=\"color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;\">\r\n      \xCE\x91\xCF\x80\xCE\xBF\xCE\xBA\xCF\x84\xCE\xAE\xCF\x83\xCF\x84\xCE\xB5 \xCF\x80\xCF\x81\xCF\x8C\xCF\x83\xCE\xB2\xCE\xB1\xCF\x83\xCE\xB7 \xCF\x83\xCE\xB5 \xCE\xAD\xCE\xBD\xCE\xB1 \xCE\xB1\xCF\x80\xCF\x8C \xCF\x84\xCE\xB1 User Interfaces \xCF\x84\xCE\xBF\xCF\x85 HellasGrid (\xCE\x91\xCF\x80\xCE\xB1\xCE\xB9\xCF\x84\xCE\xB5\xCE\xAF\xCF\x84\xCE\xB1\xCE\xB9 \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCF\x8C \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8C) <a href=\"/account/ui_access_form\"><img alt=\"Go\" src=\"/images/go.jpg\" style=\"border: 0; margin: 0\" /></a>\r\n  </div>\r\n\
+          <div class=\"column span-12\">\r\n  <div class=\"column span-2\">\r\n      <a href=\"/el/account/ui_access_form\"><img alt=\"Two\" src=\"/images/two.png\" style=\"border: 0\" /></a>\r\n  </div>\r\n  <div class=\"column span-10 last\" style=\"color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;\">\r\n      \xCE\x91\xCF\x80\xCE\xBF\xCE\xBA\xCF\x84\xCE\xAE\xCF\x83\xCF\x84\xCE\xB5 \xCF\x80\xCF\x81\xCF\x8C\xCF\x83\xCE\xB2\xCE\xB1\xCF\x83\xCE\xB7 \xCF\x83\xCE\xB5 \xCE\xAD\xCE\xBD\xCE\xB1 \xCE\xB1\xCF\x80\xCF\x8C \xCF\x84\xCE\xB1 User Interfaces \xCF\x84\xCE\xBF\xCF\x85 HellasGrid (\xCE\x91\xCF\x80\xCE\xB1\xCE\xB9\xCF\x84\xCE\xB5\xCE\xAF\xCF\x84\xCE\xB1\xCE\xB9 \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCF\x8C \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8C) <a href=\"/el/account/ui_access_form\"><img alt=\"Go\" src=\"/images/go.jpg\" style=\"border: 0; margin: 0\" /></a>\r\n  </div>\r\n\
           </div>\r\n\
           \r\n\
-          <div class=\"column span-12\">\r\n  <div class=\"column span-2\">\r\n      <a href=\"/account\"><img alt=\"Three\" src=\"/images/three.png\" style=\"border: 0\" /></a>\r\n  </div>\r\n  <div class=\"column span-10 last\" style=\"color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;\">\r\n      \xCE\x95\xCE\xB3\xCE\xB3\xCF\x81\xCE\xB1\xCF\x86\xCE\xB5\xCE\xAF\xCF\x84\xCE\xB5 \xCF\x83\xCE\xB5 VO (\xCE\x91\xCF\x80\xCE\xB1\xCE\xB9\xCF\x84\xCE\xB5\xCE\xAF\xCF\x84\xCE\xB1\xCE\xB9 \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCF\x8C \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8C) <a href=\"/account\"><img alt=\"Go\" src=\"/images/go.jpg\" style=\"border: 0; margin: 0\" /></a>\r\n  </div>\r\n\
+          <div class=\"column span-12\">\r\n  <div class=\"column span-2\">\r\n      <a href=\"/el/account\"><img alt=\"Three\" src=\"/images/three.png\" style=\"border: 0\" /></a>\r\n  </div>\r\n  <div class=\"column span-10 last\" style=\"color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;\">\r\n      \xCE\x95\xCE\xB3\xCE\xB3\xCF\x81\xCE\xB1\xCF\x86\xCE\xB5\xCE\xAF\xCF\x84\xCE\xB5 \xCF\x83\xCE\xB5 VO (\xCE\x91\xCF\x80\xCE\xB1\xCE\xB9\xCF\x84\xCE\xB5\xCE\xAF\xCF\x84\xCE\xB1\xCE\xB9 \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCF\x8C \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8C) <a href=\"/el/account\"><img alt=\"Go\" src=\"/images/go.jpg\" style=\"border: 0; margin: 0\" /></a>\r\n  </div>\r\n\
           </div>\r\n\
           <p>\r\n\
           <p>\r\n\
-          <div class=\"column span-10 last\" style=\"color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px; border-style: solid; border-color:grey; border-width:1px; padding:5px\">\r\n      \xCE\xA5\xCF\x80\xCE\xBF\xCE\xB2\xCE\xAC\xCE\xBB\xCE\xB5\xCF\x84\xCE\xB5 \xCE\xB1\xCE\xAF\xCF\x84\xCE\xB7\xCF\x83\xCE\xB7 \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCE\xBF\xCF\x8D \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCE\xBF\xCF\x8D \xCE\xB3\xCE\xB9\xCE\xB1 \xCE\xB4\xCE\xB9\xCE\xB1\xCE\xBA\xCE\xBF\xCE\xBC\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE \xCE\xAE \xCF\x85\xCF\x80\xCE\xB7\xCF\x81\xCE\xB5\xCF\x83\xCE\xAF\xCE\xB1 (\xCE\x93\xCE\xB9\xCE\xB1 Site Administrators. \xCE\x91\xCF\x80\xCE\xB1\xCE\xB9\xCF\x84\xCE\xB5\xCE\xAF\xCF\x84\xCE\xB1\xCE\xB9 \xCF\x80\xCF\x81\xCE\xBF\xCF\x83\xCF\x89\xCF\x80\xCE\xB9\xCE\xBA\xCF\x8C \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCF\x8C \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8C)  <a href=\"/host/list\"><img alt=\"Go\" src=\"/images/go.jpg\" style=\"border: 0; margin: 0\" /></a>\r\n\
+          <div class=\"column span-10 last\" style=\"color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px; border-style: solid; border-color:grey; border-width:1px; padding:5px\">\r\n      \xCE\xA5\xCF\x80\xCE\xBF\xCE\xB2\xCE\xAC\xCE\xBB\xCE\xB5\xCF\x84\xCE\xB5 \xCE\xB1\xCE\xAF\xCF\x84\xCE\xB7\xCF\x83\xCE\xB7 \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCE\xBF\xCF\x8D \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCE\xBF\xCF\x8D \xCE\xB3\xCE\xB9\xCE\xB1 \xCE\xB4\xCE\xB9\xCE\xB1\xCE\xBA\xCE\xBF\xCE\xBC\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE \xCE\xAE \xCF\x85\xCF\x80\xCE\xB7\xCF\x81\xCE\xB5\xCF\x83\xCE\xAF\xCE\xB1 (\xCE\x93\xCE\xB9\xCE\xB1 Site Administrators. \xCE\x91\xCF\x80\xCE\xB1\xCE\xB9\xCF\x84\xCE\xB5\xCE\xAF\xCF\x84\xCE\xB1\xCE\xB9 \xCF\x80\xCF\x81\xCE\xBF\xCF\x83\xCF\x89\xCF\x80\xCE\xB9\xCE\xBA\xCF\x8C \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCF\x8C \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8C)  <a href=\"/el/host/list\"><img alt=\"Go\" src=\"/images/go.jpg\" style=\"border: 0; margin: 0\" /></a>\r\n\
           </div>"
-        keywords: ""
         slug: procedure
-      - title: links
-        filter_type: Textile
+        title: procedure
+        keywords: ""
+      - filter_type: Textile
         body: !binary |
           PGRpdiBzdHlsZT0iYm9yZGVyOiBncmV5IHNvbGlkIDFweDsgcGFkZGluZzog
           MTBweDsgd2lkdGg6IDMwMHB4Ij4NCiAgPGgxIHN0eWxlPSJmb250LXNpemU6
@@ -83,41 +109,27 @@ children:
           MT4NCiAgPHA+DQogICAgPGEgaHJlZj0iaHR0cDovL3d3dy5oZWxsYXNncmlk
           LmdyIj53d3cuaGVsbGFzZ3JpZC5ncjwvYT4gPGJyIC8+DQogICAgPGEgaHJl
           Zj0iaHR0cHM6Ly93aWtpLmhlbGxhc2dyaWQuZ3IiPndpa2kuaGVsbGFzZ3Jp
-          ZC5ncjwvYT4gPGJyIC8+DQogICAgPGEgaHJlZj0iL2NlcnQiPs6Rzr3Osc62
-          zq7PhM63z4POtyDPgM65z4PPhM6/z4DOv865zrfPhM65zrrOv8+NPC9hPg0K
-          ICA8L3A+DQogIDxwPg0KICAgIM6TzrnOsSDOtc+Bz4nPhM6uz4POtc65z4Ig
-          zq4gz4DPgc6/zrLOu86uzrzOsc+EzrEgz4DOv8+FIM6xz4bOv8+Bzr/Pjc69
-          IM+EzrfOvSDPh8+Bzq7Pg863IM+EzrfPgiDOoM67zrXOs868zrHPhM65zrrO
-          rs+CIM6lz4DOv860zr/OvM6uz4IsIM68z4DOv8+BzrXOr8+EzrUgzr3OsSDO
-          tc+AzrnOus6/zrnOvc+Jzr3Otc6vz4TOtSDOvM61IM+EzrfOvSDOv868zrHO
-          tM6xIM+Fz4DOv8+Dz4TOrs+BzrnOvs63z4I6IDxiciAvPg0KICAgIDxhIGhy
-          ZWY9Im1haWx0bzp1c2VyLXN1cHBvcnRAaGVsbGFzZ3JpZC5nciI+dXNlci1z
-          dXBwb3J0QGhlbGxhc2dyaWQuZ3I8L2E+DQogIDwvcD4NCjwvZGl2Pg==
+          ZC5ncjwvYT4gPGJyIC8+DQogICAgPGEgaHJlZj0iL2VsL2NlcnQiPs6Rzr3O
+          sc62zq7PhM63z4POtyDPgM65z4PPhM6/z4DOv865zrfPhM65zrrOv8+NPC9h
+          Pg0KICA8L3A+DQogIDxwPg0KICAgIM6TzrnOsSDOtc+Bz4nPhM6uz4POtc65
+          z4Igzq4gz4DPgc6/zrLOu86uzrzOsc+EzrEgz4DOv8+FIM6xz4bOv8+Bzr/P
+          jc69IM+EzrfOvSDPh8+Bzq7Pg863IM+EzrfPgiDOoM67zrXOs868zrHPhM65
+          zrrOrs+CIM6lz4DOv860zr/OvM6uz4IsIM68z4DOv8+BzrXOr8+EzrUgzr3O
+          sSDOtc+AzrnOus6/zrnOvc+Jzr3Otc6vz4TOtSDOvM61IM+EzrfOvSDOv868
+          zrHOtM6xIM+Fz4DOv8+Dz4TOrs+BzrnOvs63z4I6IDxiciAvPg0KICAgIDxh
+          IGhyZWY9Im1haWx0bzp1c2VyLXN1cHBvcnRAaGVsbGFzZ3JpZC5nciI+dXNl
+          ci1zdXBwb3J0QGhlbGxhc2dyaWQuZ3I8L2E+DQogIDwvcD4NCjwvZGl2Pg==
 
-        keywords: ""
         slug: links
-      filter_type: Textile
-      body: |
-        <div class="column span-20 last">
-          &nbsp;
-        </div>
-        <div class="column span-12 prepend-2">
-          <%= include "el/web/home/warning" %>
-          <%= include "el/web/home/procedure" %>
-        </div>
-        <div class="column span-4 prepend-1 append-2 last">
-          <%= include "el/web/home/account" %>
-          <%= include "el/web/home/links" %>
-        </div>
-
+        title: links
+        keywords: ""
       keywords: ""
-      slug: home
-    - title: person
+    - filter_type: Textile
+      body: ""
+      slug: person
+      title: person
       children: 
-      - title: !binary |
-          zpXOs86zz4HOsc+Gzq4gzr3Orc6/z4Ugz4fPgc6uz4PPhM63
-
-        filter_type: Textile
+      - filter_type: Textile
         body: !binary |
           PGRpdiBjbGFzcz0ibGVmdENvbCBjb2x1bW4gc3Bhbi00IiBzdHlsZT0icGFk
           ZGluZy1ib3R0b206IDMyNzY3cHg7IG1hcmdpbi1ib3R0b206IC0zMjc2N3B4
@@ -126,65 +138,67 @@ children:
           YWxpZ246IGxlZnQiPg0KICAgICAgPGxpIGNsYXNzPSJsZWZ0TWVudUhlYWQi
           Ps6UzrnOsc60zrnOus6xz4POr86xPC9saT4NCiAgICAgIDxsaT7Oms6xz4TO
           sc+Hz47Pgc63z4POtyDPgM+Bzr/Pg8+Jz4DOuc66z47OvSDPg8+Ezr/Ouc+H
-          zrXOr8+Jzr08L2xpPg0KICAgICAgPGxpPjxhIGhyZWY9Ii9yZWdpc3Rlci9j
-          c3JfZm9ybSI+zpHOr8+EzrfPg863IM+IzrfPhs65zrHOus6/z40gz4DOuc+D
-          z4TOv8+Azr/Ouc63z4TOuc66zr/PjTwvYT48L2xpPg0KICAgICAgPGxpPjxh
-          IGhyZWY9Ii9yZWdpc3Rlci9jc3JfcmVjZWlwdCI+zpHPgM6/z4PPhM6/zrvO
-          riDOsc65z4TOrs+DzrXPic+CPC9hPjwvbGk+DQoNCiAgICAgIDxsaSBzdHls
-          ZT0ibGlzdC1zdHlsZTogbm9uZTsiPiZuYnNwOzwvbGk+DQogICAgICA8bGkg
-          c3R5bGU9Imxpc3Qtc3R5bGU6IG5vbmU7Ij4mbmJzcDs8L2xpPg0KICAgICAg
-          PGxpIHN0eWxlPSJsaXN0LXN0eWxlOiBub25lOyI+Jm5ic3A7PC9saT4NCg0K
-          ICAgICAgPGxpIGNsYXNzPSJsZWZ0TWVudUhlYWQiPs6Vz4DOuc66zr/Ouc69
-          z4nOvc6vzrE8L2xpPg0KICAgICAgPGxpPjwlPSBtYWlsX3RvICJzdXBwb3J0
-          QGdyaWQuYXV0aC5nciIsICJHcmlkQVVUSCBTdXBwb3J0IiwgOmVuY29kZSA9
-          PiAiamF2YXNjcmlwdCIgJT48L2xpPg0KICAgICA8L3VsPg0KICA8L2Rpdj4N
-          CjwvZGl2Pg0KPGRpdiBjbGFzcz0iY29sdW1uIHNwYW4tMTIiIHN0eWxlPSJw
-          YWRkaW5nLWJvdHRvbTogMzI3NjdweDsgbWFyZ2luLWJvdHRvbTogLTMyNzY3
-          cHg7Ij4NCiAgPGZvcm0gYWN0aW9uPSIvcGVyc29uIiBtZXRob2Q9InBvc3Qi
-          Pg0KICAgIDxmaWVsZHNldCBpZD0iZWRpdEZvcm1GaWVsZHMiPg0KICAgICAg
-          PGxlZ2VuZD7Olc6zzrPPgc6xz4bOriDOvc6tzr/PhSDPh8+Bzq7Pg8+Ezrc8
-          L2xlZ2VuZD4NCiAgICAgIDwlPSBpbmNsdWRlICJlbC93ZWIvcGVyc29uL2Zv
-          cm0iICU+DQogICAgPC9maWVsZHNldD4NCiAgPC9mb3JtPg0KPC9kaXY+DQo8
-          ZGl2IGNsYXNzPSJzcGFuLTciIHN0eWxlPSJwYWRkaW5nLWJvdHRvbTogMzI3
-          NjdweDsgbWFyZ2luLWJvdHRvbTogLTMyNzY3cHg7Ij4NCiAgPGZpZWxkc2V0
-          IHN0eWxlPSJ3aWR0aDogMTAwJTsgcGFkZGluZy1sZWZ0OiA1cHg7IHBhZGRp
-          bmctcmlnaHQ6IDFweDsiPg0KICAgIDxsZWdlbmQ+zqXPgM6sz4HPh86/zr3P
-          hM61z4IgzqfPgc6uz4PPhM61z4I8L2xlZ2VuZD4NCiAgICA8cCBzdHlsZT0i
-          cGFkZGluZy1yaWdodDogMjBweDsgdGV4dC1hbGlnbjogbGVmdDsiPg0KICAg
-          ICAgzpHOvSDOtc6vz4PPhM61IM66zqzPhM6/z4fOv8+CIM61zr3PjM+CIM65
-          z4PPh8+Nzr/Ovc+Ezr/PgiDPiM63z4bOuc6xzrrOv8+NIM+AzrnPg8+Ezr/P
-          gM6/zrnOt8+EzrnOus6/z40gzrHPgM+MIM+EzrfOvSDOkS7OoC4gSGVsbGFz
-          R3JpZCDOus6xzrkgzrXPgM65zrjPhc68zrXOr8+EzrUgz4TOt869IM6xzr3O
-          sc69zq3Pic+Dzq4gz4TOv8+FIM61z4DOuc+DzrrOtc+Gz4TOtc6vz4TOtSDP
-          hM63ICLPg861zrvOr860zrEgzrTOuc6xz4fOtc6vz4HOuc+DzrfPgiI6L2Fj
-          Y291bnQgz4TOv8+FIM67zr/Os86xz4HOuc6xz4POvM6/z40gz4POsc+CLiDO
-          kc69IM+Dz4TOvyDPgM6xz4HOtc67zrjPjM69IM61zq/Ph86xz4TOtSDOsc+A
-          zr/Ous+Ezq7Pg861zrkgz4jOt8+GzrnOsc66z4wgz4DOuc+Dz4TOv8+Azr/O
-          uc63z4TOuc66z4wgzrHPgM+MIM+EzrfOvSDOkS7OoC4gzpdlbGxhc0dyaWQg
-          Q0Egz4TOvyDOv8+Azr/Or86/IM6tz4fOtc65IM+AzrvOrc6/zr0gzrvOrs6+
-          zrXOuSDOriDOrc+HzrXOuSDPh86xzrjOtc6vLCDPg8+FzrzPgM67zrfPgc+O
-          z4PPhM61IM+Dz4TOvyDPgM61zrTOr86/IM+Azr/PhSDOsc66zr/Ou86/z4XO
-          uM61zq8gz4TOvyBlLW1haWwgz4POsc+CIM6zzrnOsSDOvc6xIM+Az4HOv8+H
-          z4nPgc6uz4POtc+EzrUgz4PPhM63IM60zrnOsc60zrnOus6xz4POr86xIM6x
-          zq/PhM63z4POt8+CIM61zr3PjM+CIM66zrHOuc69zr/Pjc+BzrPOuc6/z4Ug
-          z4bOt8+GzrnOsc66zr/PjSDPgM65z4PPhM6/z4DOv865zrfPhM65zrrOv8+N
-          Lg0KICAgIDwvcD4NCiAgICA8Zm9ybSBhY3Rpb249Ii9wZXJzb24vcmVfYWN0
-          aXZhdGUiIG1ldGhvZD0icG9zdCI+DQogICAgICA8ZGl2IGFsaWduPSJsZWZ0
-          IiBzdHlsZT0icGFkZGluZy1yaWdodDogMjBweCI+DQogICAgICAgIDxkaXYg
-          c3R5bGU9InRleHQtYWxpZ246IGxlZnQ7Ij4NCiAgICAgICAgICA8bGFiZWwg
-          IGZvcj0icGVyc29uX2VtYWlsX3JlX2FjdGl2YXRlIj4NCiAgICAgICAgICAg
-          IM6Rzr3Osc62zq7PhM63z4POtyBFLW1haWwNCiAgICAgICAgICA8L2xhYmVs
-          Pg0KICAgICAgICA8L2Rpdj4NCiAgICAgICAgPGlucHV0IGNsYXNzPSJ0ZXh0
-          Ym94IiBpZD0icGVyc29uX2VtYWlsX3JlX2FjdGl2YXRlIiBuYW1lPSJwZXJz
-          b25bZW1haWxdIiBzaXplPSIyMCIgdHlwZT0idGV4dCIgLz4NCiAgICAgIDwv
-          ZGl2Pg0KICAgICAgPGlucHV0IHR5cGU9InN1Ym1pdCIgdmFsdWU9Is6Rzr3O
-          sc62zq7PhM63z4POtyIgY2xhc3M9InRleHRib3giIC8+DQogICAgPC9mb3Jt
-          Pg0KICA8L2ZpZWxkc2V0Pg0KPC9kaXY+
+          zrXOr8+Jzr08L2xpPg0KICAgICAgPGxpPjxhIGhyZWY9Ii9lbC9yZWdpc3Rl
+          ci9jc3JfZm9ybSI+zpHOr8+EzrfPg863IM+IzrfPhs65zrHOus6/z40gz4DO
+          uc+Dz4TOv8+Azr/Ouc63z4TOuc66zr/PjTwvYT48L2xpPg0KICAgICAgPGxp
+          PjxhIGhyZWY9Ii9lbC9yZWdpc3Rlci9jc3JfcmVjZWlwdCI+zpHPgM6/z4PP
+          hM6/zrvOriDOsc65z4TOrs+DzrXPic+CPC9hPjwvbGk+DQoNCiAgICAgIDxs
+          aSBzdHlsZT0ibGlzdC1zdHlsZTogbm9uZTsiPiZuYnNwOzwvbGk+DQogICAg
+          ICA8bGkgc3R5bGU9Imxpc3Qtc3R5bGU6IG5vbmU7Ij4mbmJzcDs8L2xpPg0K
+          ICAgICAgPGxpIHN0eWxlPSJsaXN0LXN0eWxlOiBub25lOyI+Jm5ic3A7PC9s
+          aT4NCg0KICAgICAgPGxpIGNsYXNzPSJsZWZ0TWVudUhlYWQiPs6Vz4DOuc66
+          zr/Ouc69z4nOvc6vzrE8L2xpPg0KICAgICAgPGxpPjwlPSBtYWlsX3RvICJz
+          dXBwb3J0QGdyaWQuYXV0aC5nciIsICJHcmlkQVVUSCBTdXBwb3J0IiwgOmVu
+          Y29kZSA9PiAiamF2YXNjcmlwdCIgJT48L2xpPg0KICAgICA8L3VsPg0KICA8
+          L2Rpdj4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0iY29sdW1uIHNwYW4tMTIiIHN0
+          eWxlPSJwYWRkaW5nLWJvdHRvbTogMzI3NjdweDsgbWFyZ2luLWJvdHRvbTog
+          LTMyNzY3cHg7Ij4NCiAgPGZvcm0gYWN0aW9uPSIvcGVyc29uIiBtZXRob2Q9
+          InBvc3QiPg0KICAgIDxmaWVsZHNldCBpZD0iZWRpdEZvcm1GaWVsZHMiPg0K
+          ICAgICAgPGxlZ2VuZD7Olc6zzrPPgc6xz4bOriDOvc6tzr/PhSDPh8+Bzq7P
+          g8+Ezrc8L2xlZ2VuZD4NCiAgICAgIDwlPSBpbmNsdWRlICJlbC93ZWIvcGVy
+          c29uL2Zvcm0iICU+DQogICAgPC9maWVsZHNldD4NCiAgPC9mb3JtPg0KPC9k
+          aXY+DQo8ZGl2IGNsYXNzPSJzcGFuLTciIHN0eWxlPSJwYWRkaW5nLWJvdHRv
+          bTogMzI3NjdweDsgbWFyZ2luLWJvdHRvbTogLTMyNzY3cHg7Ij4NCiAgPGZp
+          ZWxkc2V0IHN0eWxlPSJ3aWR0aDogMTAwJTsgcGFkZGluZy1sZWZ0OiA1cHg7
+          IHBhZGRpbmctcmlnaHQ6IDFweDsiPg0KICAgIDxsZWdlbmQ+zqXPgM6sz4HP
+          h86/zr3PhM61z4IgzqfPgc6uz4PPhM61z4I8L2xlZ2VuZD4NCiAgICA8cCBz
+          dHlsZT0icGFkZGluZy1yaWdodDogMjBweDsgdGV4dC1hbGlnbjogbGVmdDsi
+          Pg0KICAgICAgzpHOvSDOtc6vz4PPhM61IM66zqzPhM6/z4fOv8+CIM61zr3P
+          jM+CIM65z4PPh8+Nzr/Ovc+Ezr/PgiDPiM63z4bOuc6xzrrOv8+NIM+AzrnP
+          g8+Ezr/PgM6/zrnOt8+EzrnOus6/z40gzrHPgM+MIM+EzrfOvSDOkS7OoC4g
+          SGVsbGFzR3JpZCDOus6xzrkgzrXPgM65zrjPhc68zrXOr8+EzrUgz4TOt869
+          IM6xzr3Osc69zq3Pic+Dzq4gz4TOv8+FIM61z4DOuc+DzrrOtc+Gz4TOtc6v
+          z4TOtSDPhM63ICLPg861zrvOr860zrEgzrTOuc6xz4fOtc6vz4HOuc+DzrfP
+          giI6L2FjY291bnQgz4TOv8+FIM67zr/Os86xz4HOuc6xz4POvM6/z40gz4PO
+          sc+CLiDOkc69IM+Dz4TOvyDPgM6xz4HOtc67zrjPjM69IM61zq/Ph86xz4TO
+          tSDOsc+Azr/Ous+Ezq7Pg861zrkgz4jOt8+GzrnOsc66z4wgz4DOuc+Dz4TO
+          v8+Azr/Ouc63z4TOuc66z4wgzrHPgM+MIM+EzrfOvSDOkS7OoC4gzpdlbGxh
+          c0dyaWQgQ0Egz4TOvyDOv8+Azr/Or86/IM6tz4fOtc65IM+AzrvOrc6/zr0g
+          zrvOrs6+zrXOuSDOriDOrc+HzrXOuSDPh86xzrjOtc6vLCDPg8+FzrzPgM67
+          zrfPgc+Oz4PPhM61IM+Dz4TOvyDPgM61zrTOr86/IM+Azr/PhSDOsc66zr/O
+          u86/z4XOuM61zq8gz4TOvyBlLW1haWwgz4POsc+CIM6zzrnOsSDOvc6xIM+A
+          z4HOv8+Hz4nPgc6uz4POtc+EzrUgz4PPhM63IM60zrnOsc60zrnOus6xz4PO
+          r86xIM6xzq/PhM63z4POt8+CIM61zr3PjM+CIM66zrHOuc69zr/Pjc+BzrPO
+          uc6/z4Ugz4bOt8+GzrnOsc66zr/PjSDPgM65z4PPhM6/z4DOv865zrfPhM65
+          zrrOv8+NLg0KICAgIDwvcD4NCiAgICA8Zm9ybSBhY3Rpb249Ii9wZXJzb24v
+          cmVfYWN0aXZhdGUiIG1ldGhvZD0icG9zdCI+DQogICAgICA8ZGl2IGFsaWdu
+          PSJsZWZ0IiBzdHlsZT0icGFkZGluZy1yaWdodDogMjBweCI+DQogICAgICAg
+          IDxkaXYgc3R5bGU9InRleHQtYWxpZ246IGxlZnQ7Ij4NCiAgICAgICAgICA8
+          bGFiZWwgIGZvcj0icGVyc29uX2VtYWlsX3JlX2FjdGl2YXRlIj4NCiAgICAg
+          ICAgICAgIM6Rzr3Osc62zq7PhM63z4POtyBFLW1haWwNCiAgICAgICAgICA8
+          L2xhYmVsPg0KICAgICAgICA8L2Rpdj4NCiAgICAgICAgPGlucHV0IGNsYXNz
+          PSJ0ZXh0Ym94IiBpZD0icGVyc29uX2VtYWlsX3JlX2FjdGl2YXRlIiBuYW1l
+          PSJwZXJzb25bZW1haWxdIiBzaXplPSIyMCIgdHlwZT0idGV4dCIgLz4NCiAg
+          ICAgIDwvZGl2Pg0KICAgICAgPGlucHV0IHR5cGU9InN1Ym1pdCIgdmFsdWU9
+          Is6Rzr3Osc62zq7PhM63z4POtyIgY2xhc3M9InRleHRib3giIC8+DQogICAg
+          PC9mb3JtPg0KICA8L2ZpZWxkc2V0Pg0KPC9kaXY+
+
+        slug: new
+        title: !binary |
+          zpXOs86zz4HOsc+Gzq4gzr3Orc6/z4Ugz4fPgc6uz4PPhM63
 
         keywords: ""
-        slug: new
-      - title: new/edit form
-        filter_type: Textile
+      - filter_type: Textile
         body: "<div class=\"column span-11 last\">\r\n  <div class=\"column span-3\">\r\n    <label>\xCE\x8C\xCE\xBD\xCE\xBF\xCE\xBC\xCE\xB1</label>\r\n  </div>\r\n  <div class=\"column span-8 last\">\r\n    <div class=\"column span-4\">\r\n      <label for=\"person_first_name_el\">\xCE\x95\xCE\xBB\xCE\xBB\xCE\xB7\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAC</label><br />\r\n      <input class=\"textbox\" id=\"person_first_name_el\" name=\"person[first_name_el]\" size=\"20\" type=\"text\" value=\"<%= person[:first_name_el] %>\" />\r\n    </div>\r\n    <div class=\"column span-4 last\">\r\n      <label for=\"person_first_name_en\">\xCE\x91\xCE\xB3\xCE\xB3\xCE\xBB\xCE\xB9\xCE\xBA\xCE\xAC</label><br />\r\n      <input class=\"textbox\" id=\"person_first_name_en\" name=\"person[first_name_en]\" size=\"20\" type=\"text\" value=\"<%= person[:first_name_en] %>\" />\r\n    </div>\r\n  </div>\r\n\
           </div>\r\n\
           <div class=\"column span-11 last\">\r\n  <div class=\"column span-3\">\r\n    <label>\xCE\x95\xCF\x80\xCF\x8E\xCE\xBD\xCF\x85\xCE\xBC\xCE\xBF</label>\r\n  </div>\r\n  <div class=\"column span-8 last\">\r\n    <div class=\"column span-4\">\r\n      <label for=\"person_last_name_el\">\xCE\x95\xCE\xBB\xCE\xBB\xCE\xB7\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAC</label><br />\r\n      <input class=\"textbox\" id=\"person_last_name_el\" name=\"person[last_name_el]\" size=\"20\" type=\"text\" value=\"<%= person[:last_name_el] %>\" />\r\n    </div>\r\n    <div class=\"column span-4 last\">\r\n      <label for=\"person_last_name_en\">\xCE\x91\xCE\xB3\xCE\xB3\xCE\xBB\xCE\xB9\xCE\xBA\xCE\xAC</label><br />\r\n      <input class=\"textbox\" id=\"person_last_name_en\" name=\"person[last_name_en]\" size=\"20\" type=\"text\" value=\"<%= person[:last_name_en] %>\"/>\r\n    </div>\r\n  </div>\r\n\
@@ -203,26 +217,21 @@ children:
           </div>\r\n\
           <div class=\"column prepend-4\">\r\n  <input type=\"submit\" value=\"\xCE\x9A\xCE\xB1\xCF\x84\xCE\xB1\xCF\x87\xCF\x8E\xCF\x81\xCE\xB7\xCF\x83\xCE\xB7\" class=\"textbox\" />\r\n\
           </div>"
-        keywords: ""
         slug: form
-      - title: edit
-        filter_type: Textile
-        body: "<div class=\"leftCol column span-5\" style=\"padding-bottom: 32767px; margin-bottom: -32767px;\">\r\n  <div id=\"leftColContainer\">\r\n    <ul id=\"Procedure\" style=\"margin-left: -5px; text-align: left\">\r\n      <li class=\"leftMenuHead\">\xCE\x94\xCE\xB9\xCE\xB1\xCE\xB4\xCE\xB9\xCE\xBA\xCE\xB1\xCF\x83\xCE\xAF\xCE\xB1</li>\r\n      <li>\xCE\x9A\xCE\xB1\xCF\x84\xCE\xB1\xCF\x87\xCF\x8E\xCF\x81\xCE\xB7\xCF\x83\xCE\xB7 \xCF\x80\xCF\x81\xCE\xBF\xCF\x83\xCF\x89\xCF\x80\xCE\xB9\xCE\xBA\xCF\x8E\xCE\xBD \xCF\x83\xCF\x84\xCE\xBF\xCE\xB9\xCF\x87\xCE\xB5\xCE\xAF\xCF\x89\xCE\xBD</li>\r\n      <li><a href=\"/register/csr_form\">\xCE\x91\xCE\xAF\xCF\x84\xCE\xB7\xCF\x83\xCE\xB7 \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCE\xBF\xCF\x8D \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCE\xBF\xCF\x8D</a></li>\r\n      <li><a href=\"/register/csr_receipt\">\xCE\x91\xCF\x80\xCE\xBF\xCF\x83\xCF\x84\xCE\xBF\xCE\xBB\xCE\xAE \xCE\xB1\xCE\xB9\xCF\x84\xCE\xAE\xCF\x83\xCE\xB5\xCF\x89\xCF\x82</a></li>\r\n\
+        title: new/edit form
+        keywords: ""
+      - filter_type: Textile
+        body: "<div class=\"leftCol column span-5\" style=\"padding-bottom: 32767px; margin-bottom: -32767px;\">\r\n  <div id=\"leftColContainer\">\r\n    <ul id=\"Procedure\" style=\"margin-left: -5px; text-align: left\">\r\n      <li class=\"leftMenuHead\">\xCE\x94\xCE\xB9\xCE\xB1\xCE\xB4\xCE\xB9\xCE\xBA\xCE\xB1\xCF\x83\xCE\xAF\xCE\xB1</li>\r\n      <li>\xCE\x9A\xCE\xB1\xCF\x84\xCE\xB1\xCF\x87\xCF\x8E\xCF\x81\xCE\xB7\xCF\x83\xCE\xB7 \xCF\x80\xCF\x81\xCE\xBF\xCF\x83\xCF\x89\xCF\x80\xCE\xB9\xCE\xBA\xCF\x8E\xCE\xBD \xCF\x83\xCF\x84\xCE\xBF\xCE\xB9\xCF\x87\xCE\xB5\xCE\xAF\xCF\x89\xCE\xBD</li>\r\n      <li><a href=\"/el/register/csr_form\">\xCE\x91\xCE\xAF\xCF\x84\xCE\xB7\xCF\x83\xCE\xB7 \xCF\x88\xCE\xB7\xCF\x86\xCE\xB9\xCE\xB1\xCE\xBA\xCE\xBF\xCF\x8D \xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x80\xCE\xBF\xCE\xB9\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCE\xBF\xCF\x8D</a></li>\r\n      <li><a href=\"/el/register/csr_receipt\">\xCE\x91\xCF\x80\xCE\xBF\xCF\x83\xCF\x84\xCE\xBF\xCE\xBB\xCE\xAE \xCE\xB1\xCE\xB9\xCF\x84\xCE\xAE\xCF\x83\xCE\xB5\xCF\x89\xCF\x82</a></li>\r\n\
           \r\n      <li style=\"list-style: none;\">&nbsp;</li>\r\n      <li style=\"list-style: none;\">&nbsp;</li>\r\n      <li style=\"list-style: none;\">&nbsp;</li>\r\n\
           \r\n      <li class=\"leftMenuHead\">\xCE\x95\xCF\x80\xCE\xB9\xCE\xBA\xCE\xBF\xCE\xB9\xCE\xBD\xCF\x89\xCE\xBD\xCE\xAF\xCE\xB1</li>\r\n      <li><%= mail_to \"support@grid.auth.gr\", \"GridAUTH Support\", :encode => \"javascript\" %></li>\r\n     </ul>\r\n  </div>\r\n\
           </div>\r\n\
           <div class=\"column span-12\" style=\"padding-bottom: 32767px; margin-bottom: -32767px;\">\r\n  <form action=\"/person\" method=\"post\">\r\n    <fieldset id=\"editFormFields\">\r\n      <legend>\xCE\x95\xCE\xB3\xCE\xB3\xCF\x81\xCE\xB1\xCF\x86\xCE\xAE \xCE\xBD\xCE\xAD\xCE\xBF\xCF\x85 \xCF\x87\xCF\x81\xCE\xAE\xCF\x83\xCF\x84\xCE\xB7</legend>\r\n      <input name=\"_method\" type=\"hidden\" value=\"put\" />\r\n      <%= include \"el/web/person/form\" %>\r\n    </fieldset>\r\n  </form>\r\n\
           </div>"
-        keywords: ""
         slug: edit
-      filter_type: Textile
-      body: ""
+        title: edit
+        keywords: ""
       keywords: ""
-      slug: person
-    - title: !binary |
-        zqDOu863z4HOv8+Gzr/Pgc6vzrXPgiDOkS7OoC4gSGVsbGFzR3JpZA==
-
-      filter_type: Textile
+    - filter_type: Textile
       body: !binary |
         PGRpdiBjbGFzcz0ibGVmdENvbCBjb2x1bW4gc3Bhbi01IiBzdHlsZT0icGFk
         ZGluZy1ib3R0b206IDMyNzY3cHg7IG1hcmdpbi1ib3R0b206IC0zMjc2N3B4
@@ -231,74 +240,73 @@ children:
         YWxpZ246IGxlZnQiPg0KICAgICAgPGxpIGNsYXNzPSJsZWZ0TWVudUhlYWQi
         Ps6jz43Ovc60zrXPg868zr/OuTwvbGk+DQogICAgICA8bGk+PGEgaHJlZj0i
         LyI+zpHPgc+HzrnOus6uIM6jzrXOu86vzrTOsTwvYT48L2xpPg0KICAgICAg
-        PGxpPjxhIGhyZWY9Ii9yZWdpc3Rlci9yZWdpc3RyYXRpb25fZm9ybSI+zpXO
-        s86zz4HOsc+Gzq4gz4PPhM6/IEhlbGxhc0dyaWQ8L2E+PC9saT4NCiAgICAg
-        IDxsaSBjbGFzcz0ibGVmdE1lbnVIZWFkIj7Olc+AzrnOus6/zrnOvc+Jzr3O
-        r86xPC9saT4NCiAgICAgIDxsaT48JT0gbWFpbF90byAic3VwcG9ydEBncmlk
-        LmF1dGguZ3IiLCAiR3JpZEFVVEggU3VwcG9ydCIsIDplbmNvZGUgPT4gImph
-        dmFzY3JpcHQiICU+PC9saT4NCiAgICAgPC91bD4NCiAgPC9kaXY+DQo8L2Rp
-        dj4NCjxkaXY+DQogICZuYnNwOw0KPC9kaXY+DQo8ZGl2IGNsYXNzPSJjb2x1
-        bW4gc3Bhbi0xOCIgc3R5bGU9ImNvbG9yOiAjNjY2NjY2OyBmb250LWZhbWls
-        eTogVmVyZGFuYSwgQXJpYWwsIEhlbHZldGljYTsgZm9udC1zdHlsZTogbm9y
-        bWFsOyBmb250LXNpemU6IDEycHg7Ij4NCs6XIM67zrXOuc+Ezr/Phc+BzrPO
-        r86xIM+EzrfPgiDOkc+Bz4fOrs+CIM6gzrnPg8+Ezr/PgM6/zq/Ot8+DzrfP
-        giAiSGVsbGFzR3JpZCI6aHR0cDovL3d3dy5oZWxsYXNncmlkLmdyLyDOvs61
-        zrrOr869zrfPg861IM+Dz4TOuc+CIM6xz4HPh86tz4Igz4TOv8+FIDIwMDIg
-        z4PPhM6/IM6Rz4HOuc+Dz4TOv8+Ezq3Ou861zrnOvyDOoM6xzr3Otc+AzrnP
-        g8+Ezq7OvM65zr8gz4TOt8+CIM6YzrXPgy/Ovc6vzrrOt8+CIM68zrUgz4PO
-        us6/z4DPjCDOvc6xIM66zrHOu8+Fz4bOuM6/z43OvSDOv865IM6xzr3OrM6z
-        zrrOtc+CIM+Ez4nOvSDPh8+BzrfPg8+Ez47OvSBHcmlkIM+EzrfPgiDOvc61
-        zr/Pg8+Nz4PPhM6xz4TOt8+CIM+Ez4zPhM61IM6VzrvOu863zr3Ouc66zq7P
-        giDPhc+Azr/OtM6/zrzOrs+CLiANCjwvZGl2Pg0KPGRpdiBjbGFzcz0iY29s
-        dW1uIHNwYW4tMTgiIHN0eWxlPSJwYWRkaW5nLWJvdHRvbTogMzI3NjdweDsg
-        bWFyZ2luLWJvdHRvbTogLTMyNzY3cHg7Ij4NCiAgJm5ic3A7DQogICZuYnNw
-        Ow0KICAmbmJzcDsNCjwvZGl2Pg0KPGRpdiBjbGFzcz0iY29sdW1uIHNwYW4t
-        MTgiIHN0eWxlPSJjb2xvcjogIzY2NjY2NjsgZm9udC1mYW1pbHk6IFZlcmRh
-        bmEsIEFyaWFsLCBIZWx2ZXRpY2E7IGZvbnQtc3R5bGU6IG5vcm1hbDsgZm9u
-        dC1zaXplOiAxMnB4OyI+DQrOpM6/IDIwMDYgzr7Otc66zq/Ovc63z4POtSDP
-        hM63IM67zrXOuc+Ezr/Phc+BzrPOr86xIM+Ezr/PhSDPhM6/ICJwb3J0YWwg
-        zrXOs86zz4HOsc+Gzq7PgiDPh8+BzrfPg8+Ez47OvSBIZWxsYXNHcmlkIjov
-        LiDOnM6tz4PPiSDOsc+Fz4TOv8+NIM63IM60zrnOsc60zrnOus6xz4POr86x
-        IM6xzq/PhM63z4POt8+CIM66zrHOuSDPgM6xz4HOsc67zrHOss6uz4Igz4DO
-        uc+Dz4TOv8+Azr/Ouc63z4TOuc66zr/PjSDOsc67zrvOrCDOus6xzrkgzrcg
-        z4PPhc69zr/Ou865zrrOriDOtM65zrHOtM65zrrOsc+Dzq/OsSDOtc6zzrPP
-        gc6xz4bOrs+CIM+Dz4TOvyBIZWxsYXNHcmlkIM6tz4fOtc65IM6xz4DOu86/
-        z4DOv865zrfOuM61zq8gz4POt868zrHOvc+EzrnOus6sIM66zrHOuM+Oz4Ig
-        z4DOu86tzr/OvSDPhM6xIM6xz4DOsc+BzrHOr8+EzrfPhM6xIM6yzq7OvM6x
-        z4TOsSDOtc6zzrPPgc6xz4bOrs+CIM60zrnOtc66z4DOsc65z4HOtc+Ozr3O
-        v869z4TOsc65IM68zq3Pg86xIM6xz4DPjCDOrc69zrEgzrXOvc69zrnOsc6v
-        zr8gzrrOsc65IM6/zrzOv86zzrXOvc6/z4DOv865zrfOvM6tzr3OvyDPgM61
-        z4HOuc6yzqzOu867zr/OvSDPh8+Bzq7Pg863z4IuIA0KPC9kaXY+
+        PGxpPjxhIGhyZWY9Ii9lbC9yZWdpc3Rlci9yZWdpc3RyYXRpb25fZm9ybSI+
+        zpXOs86zz4HOsc+Gzq4gz4PPhM6/IEhlbGxhc0dyaWQ8L2E+PC9saT4NCiAg
+        ICAgIDxsaSBjbGFzcz0ibGVmdE1lbnVIZWFkIj7Olc+AzrnOus6/zrnOvc+J
+        zr3Or86xPC9saT4NCiAgICAgIDxsaT48JT0gbWFpbF90byAic3VwcG9ydEBn
+        cmlkLmF1dGguZ3IiLCAiR3JpZEFVVEggU3VwcG9ydCIsIDplbmNvZGUgPT4g
+        ImphdmFzY3JpcHQiICU+PC9saT4NCiAgICAgPC91bD4NCiAgPC9kaXY+DQo8
+        L2Rpdj4NCjxkaXY+DQogICZuYnNwOw0KPC9kaXY+DQo8ZGl2IGNsYXNzPSJj
+        b2x1bW4gc3Bhbi0xOCIgc3R5bGU9ImNvbG9yOiAjNjY2NjY2OyBmb250LWZh
+        bWlseTogVmVyZGFuYSwgQXJpYWwsIEhlbHZldGljYTsgZm9udC1zdHlsZTog
+        bm9ybWFsOyBmb250LXNpemU6IDEycHg7Ij4NCs6XIM67zrXOuc+Ezr/Phc+B
+        zrPOr86xIM+EzrfPgiDOkc+Bz4fOrs+CIM6gzrnPg8+Ezr/PgM6/zq/Ot8+D
+        zrfPgiAiSGVsbGFzR3JpZCI6aHR0cDovL3d3dy5oZWxsYXNncmlkLmdyLyDO
+        vs61zrrOr869zrfPg861IM+Dz4TOuc+CIM6xz4HPh86tz4Igz4TOv8+FIDIw
+        MDIgz4PPhM6/IM6Rz4HOuc+Dz4TOv8+Ezq3Ou861zrnOvyDOoM6xzr3Otc+A
+        zrnPg8+Ezq7OvM65zr8gz4TOt8+CIM6YzrXPgy/Ovc6vzrrOt8+CIM68zrUg
+        z4POus6/z4DPjCDOvc6xIM66zrHOu8+Fz4bOuM6/z43OvSDOv865IM6xzr3O
+        rM6zzrrOtc+CIM+Ez4nOvSDPh8+BzrfPg8+Ez47OvSBHcmlkIM+EzrfPgiDO
+        vc61zr/Pg8+Nz4PPhM6xz4TOt8+CIM+Ez4zPhM61IM6VzrvOu863zr3Ouc66
+        zq7PgiDPhc+Azr/OtM6/zrzOrs+CLiANCjwvZGl2Pg0KPGRpdiBjbGFzcz0i
+        Y29sdW1uIHNwYW4tMTgiIHN0eWxlPSJwYWRkaW5nLWJvdHRvbTogMzI3Njdw
+        eDsgbWFyZ2luLWJvdHRvbTogLTMyNzY3cHg7Ij4NCiAgJm5ic3A7DQogICZu
+        YnNwOw0KICAmbmJzcDsNCjwvZGl2Pg0KPGRpdiBjbGFzcz0iY29sdW1uIHNw
+        YW4tMTgiIHN0eWxlPSJjb2xvcjogIzY2NjY2NjsgZm9udC1mYW1pbHk6IFZl
+        cmRhbmEsIEFyaWFsLCBIZWx2ZXRpY2E7IGZvbnQtc3R5bGU6IG5vcm1hbDsg
+        Zm9udC1zaXplOiAxMnB4OyI+DQrOpM6/IDIwMDYgzr7Otc66zq/Ovc63z4PO
+        tSDPhM63IM67zrXOuc+Ezr/Phc+BzrPOr86xIM+Ezr/PhSDPhM6/ICJwb3J0
+        YWwgzrXOs86zz4HOsc+Gzq7PgiDPh8+BzrfPg8+Ez47OvSBIZWxsYXNHcmlk
+        IjovLiDOnM6tz4PPiSDOsc+Fz4TOv8+NIM63IM60zrnOsc60zrnOus6xz4PO
+        r86xIM6xzq/PhM63z4POt8+CIM66zrHOuSDPgM6xz4HOsc67zrHOss6uz4Ig
+        z4DOuc+Dz4TOv8+Azr/Ouc63z4TOuc66zr/PjSDOsc67zrvOrCDOus6xzrkg
+        zrcgz4PPhc69zr/Ou865zrrOriDOtM65zrHOtM65zrrOsc+Dzq/OsSDOtc6z
+        zrPPgc6xz4bOrs+CIM+Dz4TOvyBIZWxsYXNHcmlkIM6tz4fOtc65IM6xz4DO
+        u86/z4DOv865zrfOuM61zq8gz4POt868zrHOvc+EzrnOus6sIM66zrHOuM+O
+        z4Igz4DOu86tzr/OvSDPhM6xIM6xz4DOsc+BzrHOr8+EzrfPhM6xIM6yzq7O
+        vM6xz4TOsSDOtc6zzrPPgc6xz4bOrs+CIM60zrnOtc66z4DOsc65z4HOtc+O
+        zr3Ov869z4TOsc65IM68zq3Pg86xIM6xz4DPjCDOrc69zrEgzrXOvc69zrnO
+        sc6vzr8gzrrOsc65IM6/zrzOv86zzrXOvc6/z4DOv865zrfOvM6tzr3OvyDP
+        gM61z4HOuc6yzqzOu867zr/OvSDPh8+Bzq7Pg863z4IuIA0KPC9kaXY+
+
+      slug: info
+      title: !binary |
+        zqDOu863z4HOv8+Gzr/Pgc6vzrXPgiDOkS7OoC4gSGVsbGFzR3JpZA==
 
       keywords: ""
-      slug: info
-    filter_type: Textile
-    body: ""
     keywords: ""
-    slug: web
-  - title: error
+  - filter_type: Textile
+    body: ""
+    slug: error
+    title: error
     children: 
-    - title: "404"
-      filter_type: Textile
+    - filter_type: Textile
       body: !binary |
         PGRpdiB3aWR0aD0iNzAwIj4NCjxkaXYgY2xhc3M9ImVycm9yX2JveCI+DQog
         IDxoMT7OnyDPg8+Nzr3OtM61z4POvM6/z4IgzrTOtSDPhs6xzq/Ovc61z4TO
         sc65IM69zrEgz4XPgM6sz4HPh861zrkuPC9oMT4NCjwvZGl2Pg0KDQo8L2Rp
         dj4NCg==
 
-      keywords: ""
       slug: "404"
-    filter_type: Textile
-    body: ""
+      title: "404"
+      keywords: ""
     keywords: ""
-    slug: error
-  - title: email
+  - filter_type: Textile
+    body: ""
+    slug: email
+    title: email
     children: 
-    - title: !binary |
-        zpXPgM65zrLOtc6yzrHOuc+Oz4POtyDOtM65zrXPjc64z4XOvc+DzrfPgiBl
-        bWFpbDog
-
-      filter_type: "[No Filter]"
+    - filter_type: "[No Filter]"
       body: !binary |
         ICDOkc6zzrHPgM63z4TOri/OrSA8JT0gZnVsbF9uYW1lICU+LA0KDQrOpM6x
         ICDPg8+Ezr/Ouc+HzrXOr86xICAgz4POsc+CICDOrc+Hzr/Phc69ICDOus6x
@@ -360,13 +368,13 @@ children:
         rc67zrXOuc6/IM6gzrHOvc61z4DOuc+Dz4TOrs68zrnOvyDOmM61z4PPg86x
         zrvOv869zq/Ous63z4INCg==
 
-      keywords: ""
       slug: activation-instructions
-    - title: !binary |
+      title: !binary |
         zpXPgM65zrLOtc6yzrHOuc+Oz4POtyDOtM65zrXPjc64z4XOvc+DzrfPgiBl
         bWFpbDog
 
-      filter_type: "[No Filter]"
+      keywords: ""
+    - filter_type: "[No Filter]"
       body: !binary |
         ICDOkc6zzrHPgM63z4TOri/OrSA8JT0gZnVsbF9uYW1lICU+LA0KDQrOk865
         zrEgzr3OsSDPg8+Fzr3Otc+Hzq/Pg861z4TOtSDPhM63zr0gzrTOuc6xzrTO
@@ -393,104 +401,25 @@ children:
         zrzPjs69DQrOkc+BzrnPg8+Ezr/PhM6tzrvOtc65zr8gzqDOsc69zrXPgM65
         z4PPhM6uzrzOuc6/IM6YzrXPg8+DzrHOu86/zr3Or866zrfPgg==
 
-      keywords: ""
       slug: re-activation-instructions
-    filter_type: Textile
-    body: ""
+      title: !binary |
+        zpXPgM65zrLOtc6yzrHOuc+Oz4POtyDOtM65zrXPjc64z4XOvc+DzrfPgiBl
+        bWFpbDog
+
+      keywords: ""
     keywords: ""
-    slug: email
-  filter_type: Textile
-  body: ""
   keywords: ""
-  slug: el
-- title: en
+- filter_type: Textile
+  body: ""
+  slug: en
+  title: en
   children: 
-  - title: web
+  - filter_type: Textile
+    body: ""
+    slug: web
+    title: web
     children: 
-    - title: New user registration
-      children: 
-      - title: warning
-        filter_type: Textile
-        body: |-
-          <fieldset>
-            <legend>WARNING</legend>
-            <p>
-          In order to use the application you will have to import your certificate from Hellasgrid CA (<a href="http://crl.grid.auth.gr/hellasgrid-ca-2006/cert/82b36fca.cacrt">import</a>) as well as HellasGrid Root CA (<a href="http://crl.grid.auth.gr/hellasgrid-root-ca-2006/cert/28a58577.cacrt">import</a>) which has signed the certificate. You can find more information for Hellasgrid CA in <a href="/about_ca">its website</a>.
-            </p>
-          </fieldset>
-          <br />
-        keywords: ""
-        slug: warning
-      - title: account
-        filter_type: Textile
-        body: |-
-          <div style="border: grey solid 1px; padding: 10px; width: 300px">
-            <h1 style="font-size: 12px">
-              Do you already have a certificate from Hellasgrid CA?
-            </h1>
-            <p>
-              In case you already have a certificate from Hellasgrid CA (and it is installed in your browser), you can visit <a href="/account">the management webpage</a> of your personal account, overriding the registration process in Hellasgrid
-            </p>
-          </div>
-          <br />
-        keywords: ""
-        slug: account
-      - title: procedure
-        filter_type: Textile
-        body: |-
-          <h1>Access process to the Grid for new users</h1>
-          
-          <div class="column span-12">
-            <div class="column span-2">
-                <a href="/register/registration_form"><img alt="One" src="/images/one.png" style="border: 0" /></a>
-            </div>
-            <div class="column span-10 last" style="color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;">
-              Get your digital certificate from the National Certification Authority Hellasgrid CA <a href="/:locale/register/registration_form"><img alt="Go" src="/images/go.jpg" style="border: 0; margin: 0" /></a>
-            </div>
-          </div>
-          
-          <div class="column span-12">
-            <div class="column span-2">
-                <a href="/account/ui_access_form"><img alt="Two" src="/images/two.png" style="border: 0" /></a>
-            </div>
-            <div class="column span-10 last" style="color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;">
-                Get access to one of the User Interfaces of Hellasgrid (certificate required) <a href="/account/ui_access_form"><img alt="Go" src="/images/go.jpg" style="border: 0; margin: 0" /></a>
-            </div>
-          </div>
-          
-          <div class="column span-12">
-            <div class="column span-2">
-                <a href="/account"><img alt="Three" src="/images/three.png" style="border: 0" /></a>
-            </div>
-            <div class="column span-10 last" style="color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;">
-                Register to a VO (certificate required) <a href="/account"><img alt="Go" src="/images/go.jpg" style="border: 0; margin: 0" /></a>
-            </div>
-          </div>
-          <p>
-          <p>
-          <div class="column span-10 last" style="color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px; border-style: solid; border-color:grey; border-width:1px; padding:5px">
-                Submit application for certificate for a server or service (for Site Administrators. A personal certificate is required.)  <a href="/host/list"><img alt="Go" src="/images/go.jpg" style="border: 0; margin: 0" /></a>
-          </div>
-        keywords: ""
-        slug: procedure
-      - title: links
-        filter_type: Textile
-        body: |-
-          <div style="border: grey solid 1px; padding: 10px; width: 300px">
-            <h1 style="font-size: 12px">Useful links</h1>
-            <p>
-              <a href="http://www.hellasgrid.gr">www.hellasgrid.gr</a> <br />
-              <a href="https://wiki.hellasgrid.gr">wiki.hellasgrid.gr</a> <br />
-              <a href="/cert">Search certificate</a>
-            </p>
-            <p>
-              For questions or problems that may concern the usage of the Grid Infrastructure, you can always contact the support team: <br />
-              <a href="mailto:user-support@hellasgrid.gr">user-support@hellasgrid.gr</a>
-            </p>
-          </div>
-        keywords: ""
-        slug: links
-      filter_type: Textile
+    - filter_type: Textile
       body: |
         <div class="column span-20 last">
           &nbsp;
@@ -504,20 +433,105 @@ children:
           <%= include "en/web/home/links" %>
         </div>
 
-      keywords: ""
       slug: home
-    - title: person
+      title: New user registration
       children: 
-      - title: New User Registration
-        filter_type: Textile
+      - filter_type: Textile
+        body: |-
+          <fieldset>
+            <legend>WARNING</legend>
+            <p>
+          In order to use the application you will have to import your certificate from Hellasgrid CA (<a href="http://crl.grid.auth.gr/hellasgrid-ca-2006/cert/82b36fca.cacrt">import</a>) as well as HellasGrid Root CA (<a href="http://crl.grid.auth.gr/hellasgrid-root-ca-2006/cert/28a58577.cacrt">import</a>) which has signed the certificate. You can find more information for Hellasgrid CA in <a href="/en/about_ca">its website</a>.
+            </p>
+          </fieldset>
+          <br />
+        slug: warning
+        title: warning
+        keywords: ""
+      - filter_type: Textile
+        body: |-
+          <div style="border: grey solid 1px; padding: 10px; width: 300px">
+            <h1 style="font-size: 12px">
+              Do you already have a certificate from Hellasgrid CA?
+            </h1>
+            <p>
+              In case you already have a certificate from Hellasgrid CA (and it is installed in your browser), you can visit <a href="/en/account">the management webpage</a> of your personal account, overriding the registration process in Hellasgrid
+            </p>
+          </div>
+          <br />
+        slug: account
+        title: account
+        keywords: ""
+      - filter_type: Textile
+        body: |-
+          <h1>Access process to the Grid for new users</h1>
+          
+          <div class="column span-12">
+            <div class="column span-2">
+                <a href="/en/register/registration_form"><img alt="One" src="/images/one.png" style="border: 0" /></a>
+            </div>
+            <div class="column span-10 last" style="color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;">
+              Get your digital certificate from the National Certification Authority Hellasgrid CA <a href="/en/register/registration_form"><img alt="Go" src="/images/go.jpg" style="border: 0; margin: 0" /></a>
+            </div>
+          </div>
+          
+          <div class="column span-12">
+            <div class="column span-2">
+                <a href="/en/account/ui_access_form"><img alt="Two" src="/images/two.png" style="border: 0" /></a>
+            </div>
+            <div class="column span-10 last" style="color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;">
+                Get access to one of the User Interfaces of Hellasgrid (certificate required) <a href="/en/account/ui_access_form"><img alt="Go" src="/images/go.jpg" style="border: 0; margin: 0" /></a>
+            </div>
+          </div>
+          
+          <div class="column span-12">
+            <div class="column span-2">
+                <a href="/en/account"><img alt="Three" src="/images/three.png" style="border: 0" /></a>
+            </div>
+            <div class="column span-10 last" style="color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;">
+                Register to a VO (certificate required) <a href="/en/account"><img alt="Go" src="/images/go.jpg" style="border: 0; margin: 0" /></a>
+            </div>
+          </div>
+          <p>
+          <p>
+          <div class="column span-10 last" style="color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px; border-style: solid; border-color:grey; border-width:1px; padding:5px">
+                Submit application for certificate for a server or service (for Site Administrators. A personal certificate is required.)  <a href="/en/host/list"><img alt="Go" src="/images/go.jpg" style="border: 0; margin: 0" /></a>
+          </div>
+        slug: procedure
+        title: procedure
+        keywords: ""
+      - filter_type: Textile
+        body: |-
+          <div style="border: grey solid 1px; padding: 10px; width: 300px">
+            <h1 style="font-size: 12px">Useful links</h1>
+            <p>
+              <a href="http://www.hellasgrid.gr">www.hellasgrid.gr</a> <br />
+              <a href="https://wiki.hellasgrid.gr">wiki.hellasgrid.gr</a> <br />
+              <a href="/en/cert">Search certificate</a>
+            </p>
+            <p>
+              For questions or problems that may concern the usage of the Grid Infrastructure, you can always contact the support team: <br />
+              <a href="mailto:user-support@hellasgrid.gr">user-support@hellasgrid.gr</a>
+            </p>
+          </div>
+        slug: links
+        title: links
+        keywords: ""
+      keywords: ""
+    - filter_type: Textile
+      body: ""
+      slug: person
+      title: person
+      children: 
+      - filter_type: Textile
         body: |-
           <div class="leftCol column span-4" style="padding-bottom: 32767px; margin-bottom: -32767px;">
             <div id="leftColContainer">
               <ul id="Procedure" style="margin-left: -5px; text-align: left">
                 <li class="leftMenuHead">Process</li>
                 <li>Register personal details:</li>
-                <li><a href="/register/csr_form">Certificate application</a></li>
-                <li><a href="/register/csr_receipt">Send application</a></li>
+                <li><a href="/en/register/csr_form">Certificate application</a></li>
+                <li><a href="/en/register/csr_receipt">Send application</a></li>
           
                 <li style="list-style: none;">&nbsp;</li>
                 <li style="list-style: none;">&nbsp;</li>
@@ -555,10 +569,10 @@ children:
               </form>
             </fieldset>
           </div>
-        keywords: ""
         slug: new-user-registration
-      - title: new/edit form
-        filter_type: Textile
+        title: New User Registration
+        keywords: ""
+      - filter_type: Textile
         body: |-
           <div class="column span-11 last">
             <div class="column span-3">
@@ -658,21 +672,18 @@ children:
           <div class="column prepend-4">
             <input type="submit" value="Submit" class="textbox" />
           </div>
-        keywords: ""
         slug: newedit-form
-      filter_type: Textile
-      body: ""
+        title: new/edit form
+        keywords: ""
       keywords: ""
-      slug: person
-    - title: Hellasgrid CA Information
-      filter_type: Textile
+    - filter_type: Textile
       body: |-
         <div class="leftCol column span-5" style="padding-bottom: 32767px; margin-bottom: -32767px;">
           <div id="leftColContainer">
             <ul id="Procedure" style="margin-left: -5px; text-align: left">
               <li class="leftMenuHead">Links</li>
               <li><a href="/">Homepage</a></li>
-              <li><a href="/register/registration_form">Hellasgrid registration</a></li>
+              <li><a href="/en/register/registration_form">Hellasgrid registration</a></li>
               <li class="leftMenuHead">Contact</li>
               <li><%= mail_to "support@grid.auth.gr", "GridAUTH Support", :encode => "javascript" %></li>
              </ul>
@@ -692,12 +703,15 @@ children:
         <div class="column span-18" style="color: #666666; font-family: Verdana, Arial, Helvetica; font-style: normal; font-size: 12px;">
         In 2006, the operation "Hellasgrid user registration portal" started. Through it, the application and delivery of certificates and the whole registration to Hellasgrid has been simplified. The necessary steps of registration are now fulfilled through a single, uniform environment.
         </div>
-      keywords: ""
       slug: hellasgrid-ca-information
-    - title: error
+      title: Hellasgrid CA Information
+      keywords: ""
+    - filter_type: Textile
+      body: ""
+      slug: error
+      title: error
       children: 
-      - title: "404"
-        filter_type: Textile
+      - filter_type: Textile
         body: |
           <div width="700">
           <div class="error_box">
@@ -706,20 +720,17 @@ children:
           
           </div>
 
-        keywords: ""
         slug: "404"
-      filter_type: Textile
-      body: ""
+        title: "404"
+        keywords: ""
       keywords: ""
-      slug: error
-    filter_type: Textile
-    body: ""
     keywords: ""
-    slug: web
-  - title: email
+  - filter_type: Textile
+    body: ""
+    slug: email
+    title: email
     children: 
-    - title: Email address confirmation
-      filter_type: Textile
+    - filter_type: Textile
       body: "  Dearest <%= full_name %>,\r\n\
         \r\n\
         Your data has been successfully processed in the Hellasgrid index. In order to proceed with the process of applying for a new certificate, it is necessary to confirm our contact capability with you in the e-mail you filled in.\r\n\
@@ -741,20 +752,9 @@ children:
         \r\n\
         Management Group of Grid Infrastructure\r\n\
         Aristotle University of Thessaloniki\r\n"
-      keywords: ""
       slug: email-address-confirmation
-    filter_type: Textile
-    body: ""
+      title: Email address confirmation
+      keywords: ""
     keywords: ""
-    slug: email
-  filter_type: Textile
-  body: ""
   keywords: ""
-  slug: en
-filter_type: Textile
-body: |-
-  h1. Welcome
-  
-  Your content goes here...
 keywords: 
-slug: home-page
