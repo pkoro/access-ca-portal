@@ -1,4 +1,4 @@
-class AddEnglishNameVlauesInOrganizations < ActiveRecord::Migration
+class UpdateGreekNameValuesInOrganizations < ActiveRecord::Migration
   def self.up
     Organization.find_each do |organization|
       case organization.name_el
