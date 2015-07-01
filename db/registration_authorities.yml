@@ -1,5 +1,309 @@
 --- 
 - !ruby/object:RegistrationAuthority 
   attributes: 
+    description: IASA
+    id: "2"
+    organization_id: 
+    email: hg-iasa-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: UoM
+    id: "3"
+    organization_id: 
+    email: hg-uom-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: ICCS
+    id: "4"
+    organization_id: 
+    email: hg-iccs-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: Demokritos
+    id: "6"
+    organization_id: 
+    email: hg-demokritos-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: UoA
+    id: "9"
+    organization_id: 
+    email: hg-uoa-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: UoI
+    id: "10"
+    organization_id: 
+    email: hg-uoi-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: UPatras
+    id: "11"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: EIE
+    id: "12"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: CERTH
+    id: "13"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: AIT
+    id: "15"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: UoP
+    id: "17"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: Aegean
+    id: "18"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: Unipi
+    id: "19"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: AUTh
+    id: "14"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: AoA
+    id: "21"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: UTH
+    id: "16"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: CTI
+    id: "5"
+    organization_id: 
+    email: hg-cti-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: HellasGrid CA
     id: "1"
-    description: Catch-all RA in GridAUTH
+    organization_id: 
+    email: hg-auth-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: FORTH
+    id: "7"
+    organization_id: 
+    email: hg-forth-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: UCG
+    id: "22"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: UOWM
+    id: "20"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: HUA
+    id: "24"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: GRNET
+    id: "8"
+    organization_id: 
+    email: hg-grnet-ra@grid.auth.gr
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: TEICrete-Chania
+    id: "25"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "27"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: TEIWM
+    id: "23"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "28"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "29"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "30"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "31"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "32"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "33"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "34"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "35"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: !binary |
+      zp3Orc6xIM6RLs6kLg==
+
+    id: "36"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+
+- !ruby/object:RegistrationAuthority 
+  attributes: 
+    description: TEIEMT
+    id: "26"
+    organization_id: 
+    email: ""
+  attributes_cache: {}
+

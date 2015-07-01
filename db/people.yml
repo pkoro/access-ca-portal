@@ -1,0 +1,107 @@
+---
+- !ruby/object:UncheckedPerson
+  attributes:
+    version: "7"
+    work_phone: "2310998988"
+    id: "1"
+    scientific_area:
+    email_confirmation: "1"
+    updated_at: 2015-05-28 09:41:47.377038
+    last_name_en: Laskaridis
+    last_name_el: !binary |
+      zpvOsc+DzrrOsc+Bzq/OtM63z4I=
+
+    scientific_field_id: "11"
+    organization_id: "3"
+    first_name_en: Stefanos
+    first_name_el: !binary |
+      zqPPhM6tz4bOsc69zr/Pgg==
+
+    sex: "0"
+    created_at: 2013-11-05 09:35:56.479682
+    email: laskstef@csd.auth.gr
+    position: Student
+    department: !binary |
+      zqDOu863z4HOv8+Gzr/Pgc65zrrOrs+C
+
+  attributes_cache: {}
+
+- !ruby/object:UncheckedPerson 
+  attributes: 
+    organization_id: "3"
+    id: "2"
+    email: pkoro@grid.auth.gr
+    scientific_field_id: "11"
+    email_confirmation: "1"
+    created_at: 2006-04-07 09:08:41
+    last_name_en: Korosoglou
+    last_name_el: !binary |
+      zprOv8+Bz4zPg86/zrPOu86/z4U=
+
+    sex: "0"
+    position: Researcher
+    first_name_en: Paschalis
+    first_name_el: !binary |
+      zqDOsc+Dz4fOrM67zrfPgg==
+
+    version: "91"
+    department: !binary |
+      zqbPhc+DzrnOus6uz4I=
+
+    updated_at: 2015-05-18 09:13:34.318191
+    scientific_area: 
+    work_phone: "2310998988"
+  attributes_cache: {}
+
+- !ruby/object:UncheckedPerson 
+  attributes: 
+    organization_id: "11"
+    id: "3"
+    email: skanct@grnet.gr
+    scientific_field_id: "1"
+    email_confirmation: "1"
+    created_at: 2002-08-19 10:32:46
+    last_name_en: Kanellopoulos
+    last_name_el: !binary |
+      zprOsc69zrXOu867z4zPgM6/z4XOu86/z4I=
+
+    sex: "0"
+    position: Staff
+    first_name_en: Christos
+    first_name_el: !binary |
+      zqfPgc6uz4PPhM6/z4I=
+
+    version: "36"
+    department: ""
+    updated_at: 2015-04-06 09:22:53.214686
+    scientific_area: 
+    work_phone: "2107474254"
+  attributes_cache: {}
+
+- !ruby/object:UncheckedPerson 
+  attributes: 
+    organization_id: "11"
+    id: "4"
+    email: kkoum@grnet.gr
+    scientific_field_id: "1"
+    email_confirmation: "1"
+    created_at: 2003-12-09 19:00:38
+    last_name_en: Koumantaros
+    last_name_el: !binary |
+      zprOv8+FzrzOrM69z4TOsc+Bzr/Pgg==
+
+    sex: "0"
+    position: Researcher
+    first_name_en: Kostas
+    first_name_el: !binary |
+      zprPjs+Dz4TOsc+C
+
+    version: "21"
+    department: !binary |
+      zqTOtc+Hzr3Ouc66z4wgzqTOvM6uzrzOsQ==
+
+    updated_at: 2014-10-29 08:28:24.92775
+    scientific_area: 
+    work_phone: "2107474241"
+  attributes_cache: {}
+

@@ -1,2 +1,10 @@
---- []
+--- 
+- !ruby/object:EmailConfirmation
+  attributes:  
+    created_at: 2013-11-05 09:35:56.549475
+    confirmed_on: 
+    id: "2039"
+    person_id: "1121"
+    user_hash: 784e9240155834852dff458a730cceb50229df32
+  attributes_cache: {}
 

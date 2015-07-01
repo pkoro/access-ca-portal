@@ -1,505 +1,934 @@
 --- 
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: asfa.gr
     id: "1"
-    name_el: "\xCE\x91\xCE\xBD\xCF\x89\xCF\x84\xCE\xAC\xCF\x84\xCE\xB7 \xCE\xA3\xCF\x87\xCE\xBF\xCE\xBB\xCE\xAE \xCE\x9A\xCE\xB1\xCE\xBB\xCF\x8E\xCE\xBD \xCE\xA4\xCE\xB5\xCF\x87\xCE\xBD\xCF\x8E\xCE\xBD"
+    domain: asfa.gr
+    name_en: 
+    name_el: !binary |
+      zpHOvc+Jz4TOrM+EzrcgzqPPh86/zrvOriDOms6xzrvPjs69IM6kzrXPh869
+      z47OvQ==
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: oipp.gr
     id: "2"
-    name_el: "\xCE\x91\xCE\xBD\xCF\x89\xCF\x84\xCE\xAD\xCF\x81\xCE\xB1 \xCE\x95\xCE\xBA\xCE\xBA\xCE\xBB\xCE\xB7\xCF\x83\xCE\xB9\xCE\xB1\xCF\x83\xCF\x84\xCE\xB9\xCE\xBA\xCE\xAE \xCE\xA3\xCF\x87\xCE\xBF\xCE\xBB\xCE\xAE \xCE\x98\xCE\xB5\xCF\x83\xCF\x83\xCE\xB1\xCE\xBB\xCE\xBF\xCE\xBD\xCE\xAF\xCE\xBA\xCE\xB7\xCF\x82"
+    domain: oipp.gr
+    name_en: 
+    name_el: !binary |
+      zpHOvc+Jz4TOrc+BzrEgzpXOus66zrvOt8+DzrnOsc+Dz4TOuc66zq4gzqPP
+      h86/zrvOriDOmM61z4PPg86xzrvOv869zq/Ous63z4I=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: auth.gr
     id: "3"
-    name_el: "\xCE\x91\xCF\x81\xCE\xB9\xCF\x83\xCF\x84\xCE\xBF\xCF\x84\xCE\xAD\xCE\xBB\xCE\xB5\xCE\xB9\xCE\xBF \xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x98\xCE\xB5\xCF\x83\xCF\x83\xCE\xB1\xCE\xBB\xCE\xBF\xCE\xBD\xCE\xAF\xCE\xBA\xCE\xB7\xCF\x82"
+    domain: auth.gr
+    name_en: 
+    name_el: !binary |
+      zpHPgc65z4PPhM6/z4TOrc67zrXOuc6/IM6gzrHOvc61z4DOuc+Dz4TOrs68
+      zrnOvyDOmM61z4PPg86xzrvOv869zq/Ous63z4I=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: selete.gr
     id: "4"
+    domain: selete.gr
+    name_en: 
     name_el: !binary |
       zpHOo86gzpHOmc6kzpU=
 
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: parliament.gr
     id: "5"
-    name_el: "Bo\xCF\x85\xCE\xBB\xCE\xAE \xCF\x84\xCF\x89\xCE\xBD \xCE\x95\xCE\xBB\xCE\xBB\xCE\xAE\xCE\xBD\xCF\x89\xCE\xBD"
+    domain: parliament.gr
+    name_en: 
+    name_el: !binary |
+      Qm/Phc67zq4gz4TPic69IM6VzrvOu86uzr3Pic69
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: gsrt.gr
     id: "6"
-    name_el: "\xCE\x93\xCE\xB5\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAE \xCE\x93\xCF\x81\xCE\xB1\xCE\xBC\xCE\xBC\xCE\xB1\xCF\x84\xCE\xB5\xCE\xAF\xCE\xB1 \xCE\x88\xCF\x81\xCE\xB5\xCF\x85\xCE\xBD\xCE\xB1\xCF\x82 \xCE\xBA\xCE\xB1\xCE\xB9 \xCE\xA4\xCE\xB5\xCF\x87\xCE\xBD\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xAF\xCE\xB1\xCF\x82"
+    domain: gsrt.gr
+    name_en: 
+    name_el: !binary |
+      zpPOtc69zrnOus6uIM6Tz4HOsc68zrzOsc+EzrXOr86xIM6Iz4HOtc+Fzr3O
+      sc+CIM66zrHOuSDOpM61z4fOvc6/zrvOv86zzq/Osc+C
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: gscp.gr
     id: "7"
-    name_el: "\xCE\x93\xCE\xB5\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAE \xCE\x93\xCF\x81\xCE\xB1\xCE\xBC\xCE\xBC\xCE\xB1\xCF\x84\xCE\xB5\xCE\xAF\xCE\xB1 \xCE\xA0\xCE\xBF\xCE\xBB\xCE\xB9\xCF\x84\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\xA0\xCF\x81\xCE\xBF\xCF\x83\xCF\x84\xCE\xB1\xCF\x83\xCE\xAF\xCE\xB1\xCF\x82"
+    domain: gscp.gr
+    name_en: 
+    name_el: !binary |
+      zpPOtc69zrnOus6uIM6Tz4HOsc68zrzOsc+EzrXOr86xIM6gzr/Ou865z4TO
+      uc66zq7PgiDOoM+Bzr/Pg8+EzrHPg86vzrHPgg==
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: aua.gr
     id: "8"
-    name_el: "\xCE\x93\xCE\xB5\xCF\x89\xCF\x80\xCE\xBF\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C \xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x91\xCE\xB8\xCE\xB7\xCE\xBD\xCF\x8E\xCE\xBD"
+    domain: aua.gr
+    name_en: 
+    name_el: !binary |
+      zpPOtc+Jz4DOv869zrnOus+MIM6gzrHOvc61z4DOuc+Dz4TOrs68zrnOvyDO
+      kc64zrfOvc+Ozr0=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: afs.edu.gr
     id: "9"
-    name_el: "\xCE\x93\xCE\xB5\xCF\x89\xCF\x81\xCE\xB3\xCE\xB9\xCE\xBA\xCE\xAE \xCE\xBA\xCE\xB1\xCE\xB9 \xCE\x92\xCE\xB9\xCE\xBF\xCF\x84\xCE\xB5\xCF\x87\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAE \xCE\xA3\xCF\x87\xCE\xBF\xCE\xBB\xCE\xAE \xCE\x98\xCE\xB5\xCF\x83\xCF\x83\xCE\xB1\xCE\xBB\xCE\xBF\xCE\xBD\xCE\xAF\xCE\xBA\xCE\xB7\xCF\x82"
+    domain: afs.edu.gr
+    name_en: 
+    name_el: !binary |
+      zpPOtc+Jz4HOs865zrrOriDOus6xzrkgzpLOuc6/z4TOtc+Hzr3Ouc66zq4g
+      zqPPh86/zrvOriDOmM61z4PPg86xzrvOv869zq/Ous63z4I=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: duth.gr
     id: "10"
-    name_el: "\xCE\x94\xCE\xB7\xCE\xBC\xCE\xBF\xCE\xBA\xCF\x81\xCE\xAF\xCF\x84\xCE\xB5\xCE\xB9\xCE\xBF \xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x98\xCF\x81\xCE\xAC\xCE\xBA\xCE\xB7\xCF\x82"
+    domain: duth.gr
+    name_en: 
+    name_el: !binary |
+      zpTOt868zr/Ous+Bzq/PhM61zrnOvyDOoM6xzr3Otc+AzrnPg8+Ezq7OvM65
+      zr8gzpjPgc6szrrOt8+C
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: grnet.gr
     id: "11"
-    name_el: "\xCE\x94\xCE\xB9\xCE\xB1\xCF\x87\xCE\xB5\xCE\xAF\xCF\x81\xCE\xB9\xCF\x83\xCE\xB7 \xCE\x95\xCE\x94\xCE\x95\xCE\xA4"
+    domain: grnet.gr
+    name_en: 
+    name_el: !binary |
+      zpTOuc6xz4fOtc6vz4HOuc+DzrcgzpXOlM6VzqQ=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: untcentre.org
     id: "12"
-    name_el: "\xCE\x94\xCE\xB9\xCE\xB5\xCE\xB8\xCE\xBD\xCE\xAD\xCF\x82 \xCE\xBA\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\x94\xCE\xB7\xCE\xBC\xCF\x8C\xCF\x83\xCE\xB9\xCE\xB1\xCF\x82 \xCE\x94\xCE\xB9\xCE\xBF\xCE\xAF\xCE\xBA\xCE\xB7\xCF\x83\xCE\xB7\xCF\x82"
+    domain: untcentre.org
+    name_en: 
+    name_el: !binary |
+      zpTOuc61zrjOvc6tz4IgzrrOrc69z4TPgc6/IM6UzrfOvM+Mz4POuc6xz4Ig
+      zpTOuc6/zq/Ous63z4POt8+C
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: syzefxis.gov.gr
     id: "13"
-    name_el: "\xCE\x94\xCE\xAF\xCE\xBA\xCF\x84\xCF\x85\xCE\xBF \xCE\xA3\xCF\x8D\xCE\xB6\xCE\xB5\xCF\x85\xCE\xBE\xCE\xB9\xCF\x82"
+    domain: syzefxis.gov.gr
+    name_en: 
+    name_el: !binary |
+      zpTOr866z4TPhc6/IM6jz43Ots61z4XOvs65z4I=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: fleming.gr
     id: "14"
-    name_el: "\xCE\x95\xCE\x9A\xCE\x95\xCE\x92\xCE\x95 \xCE\x91. \xCE\xA6\xCE\xBB\xCE\xAD\xCE\xBC\xCE\xB9\xCE\xB3\xCE\xBA"
+    domain: fleming.gr
+    name_en: 
+    name_el: !binary |
+      zpXOms6VzpLOlSDOkS4gzqbOu86tzrzOuc6zzro=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: demokritos.gr
     id: "15"
-    name_el: "\xCE\x95.\xCE\x9A\xCE\x95.\xCE\xA6\xCE\x95 \xCE\x94\xCE\xB7\xCE\xBC\xCF\x8C\xCE\xBA\xCF\x81\xCE\xB9\xCF\x84\xCE\xBF\xCF\x82"
+    domain: demokritos.gr
+    name_en: 
+    name_el: !binary |
+      zpUuzprOlS7Ops6VIM6UzrfOvM+MzrrPgc65z4TOv8+C
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: noa.gr
     id: "16"
-    name_el: "\xCE\x95\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C \xCE\x91\xCF\x83\xCF\x84\xCE\xB5\xCF\x81\xCE\xBF\xCF\x83\xCE\xBA\xCE\xBF\xCF\x80\xCE\xB5\xCE\xAF\xCE\xBF \xCE\x91\xCE\xB8\xCE\xB7\xCE\xBD\xCF\x8E\xCE\xBD"
+    domain: noa.gr
+    name_en: 
+    name_el: !binary |
+      zpXOuM69zrnOus+MIM6Rz4PPhM61z4HOv8+DzrrOv8+AzrXOr86/IM6RzrjO
+      t869z47OvQ==
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: uoa.gr
     id: "17"
-    name_el: "\xCE\x95\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C \xCE\xBA\xCE\xB1\xCE\xB9 \xCE\x9A\xCE\xB1\xCF\x80\xCE\xBF\xCE\xB4\xCE\xB9\xCF\x83\xCF\x84\xCF\x81\xCE\xB9\xCE\xB1\xCE\xBA\xCF\x8C \xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x91\xCE\xB8\xCE\xB7\xCE\xBD\xCF\x8E\xCE\xBD"
+    domain: uoa.gr
+    name_en: 
+    name_el: !binary |
+      zpXOuM69zrnOus+MIM66zrHOuSDOms6xz4DOv860zrnPg8+Ez4HOuc6xzrrP
+      jCDOoM6xzr3Otc+AzrnPg8+Ezq7OvM65zr8gzpHOuM63zr3Pjs69
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: ekdd.gr
     id: "18"
-    name_el: "\xCE\x95\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C \xCE\x9A\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\x94\xCE\xB7\xCE\xBC\xCF\x8C\xCF\x83\xCE\xB9\xCE\xB1\xCF\x82 \xCE\x94\xCE\xB9\xCE\xBF\xCE\xAF\xCE\xBA\xCE\xB7\xCF\x83\xCE\xB7\xCF\x82"
+    domain: ekdd.gr
+    name_en: 
+    name_el: !binary |
+      zpXOuM69zrnOus+MIM6azq3Ovc+Ez4HOvyDOlM63zrzPjM+DzrnOsc+CIM6U
+      zrnOv86vzrrOt8+DzrfPgg==
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: hndc.gr
     id: "19"
-    name_el: "\xCE\x95\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C \xCE\x9A\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\x94\xCE\xB9\xCE\xB1\xCE\xB2\xCE\xAE\xCF\x84\xCE\xB7"
+    domain: hndc.gr
+    name_en: 
+    name_el: !binary |
+      zpXOuM69zrnOus+MIM6azq3Ovc+Ez4HOvyDOlM65zrHOss6uz4TOtw==
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: ncmr.gr
-    id: "20"
-    name_el: "\xCE\x95\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C \xCE\x9A\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\x98\xCE\xB1\xCE\xBB\xCE\xAC\xCF\x83\xCF\x83\xCE\xB9\xCE\xB1\xCF\x82 \xCE\x95\xCF\x81\xCE\xB5\xCF\x85\xCE\xBD\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: ekt.gr
     id: "21"
-    name_el: "\xCE\x95\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C \xCE\x9A\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\xA4\xCE\xB5\xCE\xBA\xCE\xBC\xCE\xB7\xCF\x81\xCE\xAF\xCF\x89\xCF\x83\xCE\xB7\xCF\x82 / EIE"
+    domain: ekt.gr
+    name_en: 
+    name_el: !binary |
+      zpXOuM69zrnOus+MIM6azq3Ovc+Ez4HOvyDOpM61zrrOvM63z4HOr8+Jz4PO
+      t8+CIC8gRUlF
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: ntua.gr
     id: "22"
-    name_el: "\xCE\x95\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C \xCE\x9C\xCE\xB5\xCF\x84\xCF\x83\xCF\x8C\xCE\xB2\xCE\xB9\xCE\xBF \xCE\xA0\xCE\xBF\xCE\xBB\xCF\x85\xCF\x84\xCE\xB5\xCF\x87\xCE\xBD\xCE\xB5\xCE\xAF\xCE\xBF"
+    domain: ntua.gr
+    name_en: 
+    name_el: !binary |
+      zpXOuM69zrnOus+MIM6czrXPhM+Dz4zOss65zr8gzqDOv867z4XPhM61z4fO
+      vc61zq/Ovw==
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: iceht.gr
     id: "23"
+    domain: iceht.gr
+    name_en: 
     name_el: !binary |
       zpXOmc6nzpfOnM6lzpg=
 
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: certh.gr
-    id: "24"
-    name_el: "EKETA/\xCE\x99\xCE\xBD\xCF\x83\xCF\x84\xCE\xB9\xCF\x84\xCE\xBF\xCF\x8D\xCF\x84\xCE\xBF \xCE\x91\xCE\xB3\xCF\x81\xCE\xBF\xCE\xB2\xCE\xB9\xCE\xBF\xCF\x84\xCE\xB5\xCF\x87\xCE\xBD\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xAF\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: eap.gr
-    id: "25"
-    name_el: "\xCE\x95\xCE\xBB\xCE\xBB\xCE\xB7\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C \xCE\x91\xCE\xBD\xCE\xBF\xCE\xB9\xCF\x87\xCF\x84\xCF\x8C \xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: elot.gr
-    id: "26"
-    name_el: "\xCE\x95\xCE\xBB\xCE\xBB\xCE\xB7\xCE\xBD\xCE\xB9\xCE\xBA\xCF\x8C\xCF\x82 \xCE\x9F\xCF\x81\xCE\xB3\xCE\xB1\xCE\xBD\xCE\xB9\xCF\x83\xCE\xBC\xCF\x8C\xCF\x82 \xCE\xA4\xCF\x85\xCF\x80\xCE\xBF\xCF\x80\xCE\xBF\xCE\xAF\xCE\xB7\xCF\x83\xCE\xB7\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: cedefop.gr
-    id: "27"
-    name_el: "\xCE\x95\xCF\x85\xCF\x81\xCF\x89\xCF\x80\xCE\xB1\xCF\x8A\xCE\xBA\xCF\x8C \xCE\x9A\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\xB3\xCE\xB9\xCE\xB1 \xCF\x84\xCE\xB7\xCE\xBD \xCE\x91\xCE\xBD\xCE\xAC\xCF\x80\xCF\x84\xCF\x85\xCE\xBE\xCE\xB7 \xCF\x84\xCE\xB7\xCF\x82 \xCE\x95\xCF\x80\xCE\xB1\xCE\xB3\xCE\xB3\xCE\xB5\xCE\xBB\xCE\xBC\xCE\xB1\xCF\x84\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\x9A\xCE\xB1\xCF\x84\xCE\xAC\xCF\x81\xCF\x84\xCE\xB9\xCF\x83\xCE\xB7\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: cti.gr
-    id: "28"
-    name_el: "\xCE\x95\xCF\x81\xCE\xB5\xCF\x85\xCE\xBD\xCE\xB7\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8C \xCE\x91\xCE\xBA\xCE\xB1\xCE\xB4\xCE\xB7\xCE\xBC\xCE\xB1\xCF\x8A\xCE\xBA\xCF\x8C \xCE\x99\xCE\xBD\xCF\x83\xCF\x84\xCE\xB9\xCF\x84\xCE\xBF\xCF\x8D\xCF\x84\xCE\xBF\xCF\x85 \xCE\xA4\xCE\xB5\xCF\x87\xCE\xBD\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xAF\xCE\xB1\xCF\x82 \xCE\xA5\xCF\x80\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xB9\xCF\x83\xCF\x84\xCF\x8E\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: iasa.gr
-    id: "29"
-    name_el: !binary |
-      zpnOkc6jzpE=
+  attributes_cache: {}
 
 - !ruby/object:Organization 
   attributes: 
+    id: "25"
+    domain: eap.gr
     name_en: 
-    domain: eugenfound.edu.gr
-    id: "30"
-    name_el: "\xCE\x8A\xCE\xB4\xCF\x81\xCF\x85\xCE\xBC\xCE\xB1 \xCE\x95\xCF\x85\xCE\xB3\xCE\xB5\xCE\xBD\xCE\xAF\xCE\xB4\xCE\xBF\xCF\x85"
+    name_el: !binary |
+      zpXOu867zrfOvc65zrrPjCDOkc69zr/Ouc+Hz4TPjCDOoM6xzr3Otc+AzrnP
+      g8+Ezq7OvM65zr8=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
+    id: "26"
+    domain: elot.gr
     name_en: 
-    domain: bioacademy.gr
-    id: "31"
-    name_el: "\xCE\x8A\xCE\xB4\xCF\x81\xCF\x85\xCE\xBC\xCE\xB1 \xCE\x99\xCE\xB1\xCF\x84\xCF\x81\xCE\xBF\xCE\xB2\xCE\xB9\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\x88\xCF\x81\xCE\xB5\xCF\x85\xCE\xBD\xCE\xB1\xCF\x82 \xCE\x91\xCE\xBA\xCE\xB1\xCE\xB4\xCE\xB7\xCE\xBC\xCE\xAF\xCE\xB1\xCF\x82 \xCE\x91\xCE\xB8\xCE\xB7\xCE\xBD\xCF\x8E\xCE\xBD"
+    name_el: !binary |
+      zpXOu867zrfOvc65zrrPjM+CIM6fz4HOs86xzr3Ouc+DzrzPjM+CIM6kz4XP
+      gM6/z4DOv86vzrfPg863z4I=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
+    id: "27"
+    domain: cedefop.gr
     name_en: 
-    domain: forth.gr
-    id: "32"
-    name_el: "\xCE\x99\xCE\xB4\xCF\x81\xCF\x85\xCE\xBC\xCE\xB1 \xCE\xA4\xCE\xB5\xCF\x87\xCE\xBD\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xAF\xCE\xB1\xCF\x82  \xCE\x95\xCF\x81\xCE\xB5\xCF\x85\xCE\xBD\xCE\xB1\xCF\x82"
+    name_el: !binary |
+      zpXPhc+Bz4nPgM6xz4rOus+MIM6azq3Ovc+Ez4HOvyDOs865zrEgz4TOt869
+      IM6Rzr3OrM+Az4TPhc6+zrcgz4TOt8+CIM6Vz4DOsc6zzrPOtc67zrzOsc+E
+      zrnOus6uz4IgzprOsc+EzqzPgc+EzrnPg863z4I=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: pasteur.gr
-    id: "33"
-    name_el: "\xCE\x99\xCE\xBD\xCF\x83\xCF\x84. Pasteur"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: igme.gr
-    id: "34"
-    name_el: "\xCE\x99\xCE\xBD\xCF\x83\xCF\x84. \xCE\x93\xCE\xB5\xCF\x89\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xB9\xCE\xBA\xCF\x8E\xCE\xBD & \xCE\x9C\xCE\xB5\xCF\x84\xCE\xB1\xCE\xBB\xCE\xBB\xCE\xB5\xCF\x85\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8E\xCE\xBD \xCE\x95\xCF\x81\xCE\xB5\xCF\x85\xCE\xBD\xCF\x8E\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: ilsp.gr
-    id: "35"
-    name_el: "\xCE\x99\xCE\xBD\xCF\x83\xCF\x84. \xCE\x95\xCF\x80\xCE\xB5\xCE\xBE\xCE\xB5\xCF\x81\xCE\xB3\xCE\xB1\xCF\x83\xCE\xAF\xCE\xB1\xCF\x82 \xCE\x9B\xCF\x8C\xCE\xB3\xCE\xBF\xCF\x85"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: imbc.gr
-    id: "36"
-    name_el: "\xCE\x99\xCE\xBD\xCF\x83\xCF\x84\xCE\xB9\xCF\x84\xCE\xBF\xCF\x8D\xCF\x84\xCE\xBF \xCE\x98\xCE\xB1\xCE\xBB\xCE\xAC\xCF\x83\xCF\x83\xCE\xB9\xCE\xB1\xCF\x82 \xCE\x92\xCE\xB9\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xAF\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: ceti.gr
-    id: "37"
-    name_el: "\xCE\x99\xCE\xBD\xCF\x83\xCF\x84\xCE\xB9\xCF\x84\xCE\xBF\xCF\x8D\xCF\x84\xCE\xBF \xCE\xA0\xCE\xBF\xCE\xBB\xCE\xB9\xCF\x84\xCE\xB9\xCF\x83\xCF\x84\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 & \xCE\x95\xCE\xBA\xCF\x80\xCE\xB1\xCE\xB9\xCE\xB4\xCE\xB5\xCF\x85\xCF\x84\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\xA4\xCE\xB5\xCF\x87\xCE\xBD\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xAF\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: itsak.gr
-    id: "38"
-    name_el: "\xCE\x99\xCE\xBD\xCF\x83\xCF\x84\xCE\xB9\xCF\x84\xCE\xBF\xCF\x8D\xCF\x84\xCE\xBF \xCE\xA4\xCE\xB5\xCF\x87\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\xA3\xCE\xB5\xCE\xB9\xCF\x83\xCE\xBC\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xAF\xCE\xB1\xCF\x82 & \xCE\x91\xCE\xBD\xCF\x84\xCE\xB9\xCF\x83\xCE\xB5\xCE\xB9\xCF\x83\xCE\xBC\xCE\xB9\xCE\xBA\xCF\x8E\xCE\xBD \xCE\x9A\xCE\xB1\xCF\x84\xCE\xB1\xCF\x83\xCE\xBA\xCE\xB5\xCF\x85\xCF\x8E\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: "ioni\xCE\xBF.gr"
-    id: "39"
-    name_el: "\xCE\x99\xCF\x8C\xCE\xBD\xCE\xB9\xCE\xBF \xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: cres.gr
-    id: "40"
-    name_el: "\xCE\x9A\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\x91\xCE\xBD\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x8E\xCF\x83\xCE\xB9\xCE\xBC\xCF\x89\xCE\xBD \xCE\xA0\xCE\xB7\xCE\xB3\xCF\x8E\xCE\xBD \xCE\x95\xCE\xBD\xCE\xAD\xCF\x81\xCE\xB3\xCE\xB5\xCE\xB9\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: kethi.gr
-    id: "41"
-    name_el: "\xCE\x9A\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\x95\xCF\x81\xCE\xB5\xCF\x85\xCE\xBD\xCE\xB1\xCF\x82 \xCE\xB3\xCE\xB9\xCE\xB1 \xCE\x98\xCE\xAD\xCE\xBC\xCE\xB1\xCF\x84\xCE\xB1 \xCE\x99\xCF\x83\xCF\x8C\xCF\x84\xCE\xB7\xCF\x84\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: komvos.edu.gr
-    id: "42"
-    name_el: "\xCE\x9A\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\x95\xCE\xBB\xCE\xBB\xCE\xB7\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\x93\xCE\xBB\xCF\x8E\xCF\x83\xCF\x83\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: nestor.org.gr
-    id: "43"
-    name_el: "\xCE\x9A\xCE\xAD\xCE\xBD\xCF\x84\xCF\x81\xCE\xBF \xCE\x95\xCF\x81\xCE\xB5\xCF\x85\xCE\xBD\xCF\x8E\xCE\xBD \xCE\x9D\xCE\x95\xCE\xA3\xCE\xA4\xCE\xA9\xCE\xA1"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: aueb.gr
-    id: "44"
-    name_el: "\xCE\x9F\xCE\xB9\xCE\xBA\xCE\xBF\xCE\xBD\xCE\xBF\xCE\xBC\xCE\xB9\xCE\xBA\xCF\x8C \xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x91\xCE\xB8\xCE\xB7\xCE\xBD\xCF\x8E\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: oasp.gr
-    id: "45"
-    name_el: "\xCE\x9F\xCF\x81\xCE\xB3\xCE\xB1\xCE\xBD\xCE\xB9\xCF\x83\xCE\xBC\xCF\x8C\xCF\x82 \xCE\x91\xCE\xBD\xCF\x84\xCE\xB9\xCF\x83\xCE\xB5\xCE\xB9\xCF\x83\xCE\xBC\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\xA0\xCF\x81\xCE\xBF\xCF\x83\xCF\x84\xCE\xB1\xCF\x83\xCE\xAF\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: oteresearch.gr
-    id: "46"
-    name_el: "\xCE\x9F\xCE\xA4\xCE\x95 \xE2\x80\x93 \xCE\xA3\xCF\x85\xCE\xB3\xCE\xBA\xCF\x81\xCF\x8C\xCF\x84\xCE\xB7\xCE\xBC\xCE\xB1 \xCE\x95\xCF\x81\xCE\xB3\xCE\xB1\xCF\x83\xCF\x84\xCE\xB7\xCF\x81\xCE\xAF\xCF\x89\xCE\xBD \xCE\x9D\xCE\xAD\xCF\x89\xCE\xBD \xCE\xA4\xCE\xB5\xCF\x87\xCE\xBD\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xB9\xCF\x8E\xCE\xBD & \xCE\xA5\xCF\x80\xCE\xB7\xCF\x81\xCE\xB5\xCF\x83\xCE\xB9\xCF\x8E\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: sch.gr
-    id: "47"
-    name_el: "\xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCE\xBB\xCE\xBB\xCE\xAE\xCE\xBD\xCE\xB9\xCE\xBF \xCE\xA3\xCF\x87\xCE\xBF\xCE\xBB\xCE\xB9\xCE\xBA\xCF\x8C \xCE\x94\xCE\xAF\xCE\xBA\xCF\x84\xCF\x85\xCE\xBF \xE2\x80\x93 EDUnet"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: aegean.gr
-    id: "48"
-    name_el: "\xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x91\xCE\xB9\xCE\xB3\xCE\xB1\xCE\xAF\xCE\xBF\xCF\x85"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: uth.gr
-    id: "49"
-    name_el: "\xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x98\xCE\xB5\xCF\x83\xCF\x83\xCE\xB1\xCE\xBB\xCE\xAF\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: uoi.gr
-    id: "50"
-    name_el: "\xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x99\xCF\x89\xCE\xB1\xCE\xBD\xCE\xBD\xCE\xAF\xCE\xBD\xCF\x89\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: uoc.gr
-    id: "51"
-    name_el: "\xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x9A\xCF\x81\xCE\xAE\xCF\x84\xCE\xB7\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: uom.gr
-    id: "52"
-    name_el: "\xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\x9C\xCE\xB1\xCE\xBA\xCE\xB5\xCE\xB4\xCE\xBF\xCE\xBD\xCE\xAF\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: upatras.gr
-    id: "53"
-    name_el: "\xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\xA0\xCE\xB1\xCF\x84\xCF\x81\xCF\x8E\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: unipi.gr
-    id: "54"
-    name_el: "\xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\xA0\xCE\xB5\xCE\xB9\xCF\x81\xCE\xB1\xCE\xB9\xCE\xAC"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: uop.gr
-    id: "55"
-    name_el: "\xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF \xCE\xA0\xCE\xB5\xCE\xBB\xCE\xBB\xCE\xBF\xCF\x80\xCE\xBF\xCE\xBD\xCE\xAE\xCF\x83\xCE\xBF\xCF\x85"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: panteion.gr
-    id: "56"
-    name_el: "\xCE\xA0\xCE\xAC\xCE\xBD\xCF\x84\xCE\xB5\xCE\xB9\xCE\xBF\xCE\xBD \xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: tuc.gr
-    id: "57"
-    name_el: "\xCE\xA0\xCE\xBF\xCE\xBB\xCF\x85\xCF\x84\xCE\xB5\xCF\x87\xCE\xBD\xCE\xB5\xCE\xAF\xCE\xBF \xCE\x9A\xCF\x81\xCE\xAE\xCF\x84\xCE\xB7\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: fire-dept-academy.gr
-    id: "58"
-    name_el: "\xCE\xA0\xCF\x85\xCF\x81\xCE\xBF\xCF\x83\xCE\xB2\xCE\xB5\xCF\x83\xCF\x84\xCE\xB9\xCE\xBA\xCE\xAE \xCE\x91\xCE\xBA\xCE\xB1\xCE\xB4\xCE\xB7\xCE\xBC\xCE\xAF\xCE\xB1"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: rae.gr
-    id: "59"
-    name_el: "\xCE\xA1\xCF\x85\xCE\xB8\xCE\xBC\xCE\xB9\xCF\x83\xCF\x84\xCE\xB9\xCE\xBA\xCE\xAE \xCE\x91\xCF\x81\xCF\x87\xCE\xAE \xCE\x95\xCE\xBD\xCE\xAD\xCF\x81\xCE\xB3\xCE\xB5\xCE\xB9\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: hafa.gr
-    id: "60"
-    name_el: "\xCE\xA3\xCF\x87\xCE\xBF\xCE\xBB\xCE\xAE \xCE\x99\xCE\xBA\xCE\xAC\xCF\x81\xCF\x89\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: sse.gr
-    id: "61"
-    name_el: "\xCE\xA3\xCF\x84\xCF\x81\xCE\xB1\xCF\x84\xCE\xB9\xCF\x89\xCF\x84\xCE\xB9\xCE\xBA\xCE\xAE \xCE\xA3\xCF\x87\xCE\xBF\xCE\xBB\xCE\xAE \xCE\x95\xCF\x85\xCE\xB5\xCE\xBB\xCF\x80\xCE\xAF\xCE\xB4\xCF\x89\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: hna.gr
-    id: "62"
-    name_el: "\xCE\xA3\xCF\x87\xCE\xBF\xCE\xBB\xCE\xAE \xCE\x9D\xCE\xB1\xCF\x85\xCF\x84\xCE\xB9\xCE\xBA\xCF\x8E\xCE\xBD \xCE\x94\xCE\xBF\xCE\xBA\xCE\xAF\xCE\xBC\xCF\x89\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teiath.gr
-    id: "63"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x91\xCE\xB8\xCE\xB7\xCE\xBD\xCF\x8E\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teikoz.gr
-    id: "64"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x94\xCF\x85\xCF\x84\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\x9C\xCE\xB1\xCE\xBA\xCE\xB5\xCE\xB4\xCE\xBF\xCE\xBD\xCE\xAF\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teiep.gr
-    id: "65"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x97\xCF\x80\xCE\xB5\xCE\xAF\xCF\x81\xCE\xBF\xCF\x85"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teiion.gr
-    id: "66"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x99\xCE\xBF\xCE\xBD\xCE\xAF\xCE\xBF\xCF\x85"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teithe.gr
-    id: "67"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x98\xCE\xB5\xCF\x83\xCF\x83\xCE\xB1\xCE\xBB\xCE\xBF\xCE\xBD\xCE\xAF\xCE\xBA\xCE\xB7\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teikav.edu.gr
-    id: "68"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x9A\xCE\xB1\xCE\xB2\xCE\xAC\xCE\xBB\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teikal.gr
-    id: "69"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x9A\xCE\xB1\xCE\xBB\xCE\xB1\xCE\xBC\xCE\xAC\xCF\x84\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teiher.gr
-    id: "70"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x9A\xCF\x81\xCE\xAE\xCF\x84\xCE\xB7\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teilam.gr
-    id: "71"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x9B\xCE\xB1\xCE\xBC\xCE\xAF\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teilar.edu.gr
-    id: "72"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x9B\xCE\xAC\xCF\x81\xCE\xB9\xCF\x83\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teimess.gr
-    id: "73"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\x9C\xCE\xB5\xCF\x83\xCF\x83\xCE\xBF\xCE\xBB\xCE\xBF\xCE\xB3\xCE\xAF\xCE\xBF\xCF\x85"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teipat.gr
-    id: "74"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\xA0\xCE\xAC\xCF\x84\xCF\x81\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teipir.gr
-    id: "75"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\xA0\xCE\xB5\xCE\xB9\xCF\x81\xCE\xB1\xCE\xB9\xCE\xAC"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teiser.gr
-    id: "76"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\xA3\xCE\xB5\xCF\x81\xCF\x81\xCF\x8E\xCE\xBD"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: teihal.gr
-    id: "77"
-    name_el: "\xCE\xA4\xCE\x95\xCE\x99 \xCE\xA7\xCE\xB1\xCE\xBB\xCE\xBA\xCE\xAF\xCE\xB4\xCE\xB1\xCF\x82"
-- !ruby/object:Organization 
-  attributes: 
-    name_en: 
-    domain: ypetho.gr
     id: "78"
-    name_el: "\xCE\xA5\xCF\x80\xCE\xBF\xCF\x85\xCF\x81\xCE\xB3\xCE\xB5\xCE\xAF\xCE\xBF \xCE\x95\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\x9F\xCE\xB9\xCE\xBA\xCE\xBF\xCE\xBD\xCE\xBF\xCE\xBC\xCE\xAF\xCE\xB1\xCF\x82"
+    domain: ypetho.gr
+    name_en: 
+    name_el: !binary |
+      zqXPgM6/z4XPgc6zzrXOr86/IM6VzrjOvc65zrrOrs+CIM6fzrnOus6/zr3O
+      v868zq/Osc+C
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
+    id: "30"
+    domain: eugenfound.edu.gr
     name_en: 
-    domain: ypepth.gr
+    name_el: !binary |
+      zorOtM+Bz4XOvM6xIM6Vz4XOs861zr3Or860zr/PhQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "31"
+    domain: bioacademy.gr
+    name_en: 
+    name_el: !binary |
+      zorOtM+Bz4XOvM6xIM6ZzrHPhM+Bzr/Oss65zr/Ou86/zrPOuc66zq7PgiDO
+      iM+BzrXPhc69zrHPgiDOkc66zrHOtM63zrzOr86xz4IgzpHOuM63zr3Pjs69
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "32"
+    domain: forth.gr
+    name_en: 
+    name_el: !binary |
+      zpnOtM+Bz4XOvM6xIM6kzrXPh869zr/Ou86/zrPOr86xz4IgIM6Vz4HOtc+F
+      zr3Osc+C
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "33"
+    domain: pasteur.gr
+    name_en: 
+    name_el: !binary |
+      zpnOvc+Dz4QuIFBhc3RldXI=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "34"
+    domain: igme.gr
+    name_en: 
+    name_el: !binary |
+      zpnOvc+Dz4QuIM6TzrXPic67zr/Os865zrrPjs69ICYgzpzOtc+EzrHOu867
+      zrXPhc+EzrnOus+Ozr0gzpXPgc61z4XOvc+Ozr0=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "35"
+    domain: ilsp.gr
+    name_en: 
+    name_el: !binary |
+      zpnOvc+Dz4QuIM6Vz4DOtc6+zrXPgc6zzrHPg86vzrHPgiDOm8+MzrPOv8+F
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "36"
+    domain: imbc.gr
+    name_en: 
+    name_el: !binary |
+      zpnOvc+Dz4TOuc+Ezr/Pjc+Ezr8gzpjOsc67zqzPg8+DzrnOsc+CIM6SzrnO
+      v867zr/Os86vzrHPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "37"
+    domain: ceti.gr
+    name_en: 
+    name_el: !binary |
+      zpnOvc+Dz4TOuc+Ezr/Pjc+Ezr8gzqDOv867zrnPhM65z4PPhM65zrrOrs+C
+      ICYgzpXOus+AzrHOuc60zrXPhc+EzrnOus6uz4IgzqTOtc+Hzr3Ov867zr/O
+      s86vzrHPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "38"
+    domain: itsak.gr
+    name_en: 
+    name_el: !binary |
+      zpnOvc+Dz4TOuc+Ezr/Pjc+Ezr8gzqTOtc+Hzr3Ouc66zq7PgiDOo861zrnP
+      g868zr/Ou86/zrPOr86xz4IgJiDOkc69z4TOuc+DzrXOuc+DzrzOuc66z47O
+      vSDOms6xz4TOsc+DzrrOtc+Fz47OvQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "39"
+    domain: "ioni\xCE\xBF.gr"
+    name_en: 
+    name_el: !binary |
+      zpnPjM69zrnOvyDOoM6xzr3Otc+AzrnPg8+Ezq7OvM65zr8=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "40"
+    domain: cres.gr
+    name_en: 
+    name_el: !binary |
+      zprOrc69z4TPgc6/IM6Rzr3Osc69zrXPjs+DzrnOvM+Jzr0gzqDOt86zz47O
+      vSDOlc69zq3Pgc6zzrXOuc6xz4I=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "41"
+    domain: kethi.gr
+    name_en: 
+    name_el: !binary |
+      zprOrc69z4TPgc6/IM6Vz4HOtc+Fzr3Osc+CIM6zzrnOsSDOmM6tzrzOsc+E
+      zrEgzpnPg8+Mz4TOt8+EzrHPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "42"
+    domain: komvos.edu.gr
+    name_en: 
+    name_el: !binary |
+      zprOrc69z4TPgc6/IM6VzrvOu863zr3Ouc66zq7PgiDOk867z47Pg8+DzrHP
+      gg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "43"
+    domain: nestor.org.gr
+    name_en: 
+    name_el: !binary |
+      zprOrc69z4TPgc6/IM6Vz4HOtc+Fzr3Pjs69IM6dzpXOo86kzqnOoQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "44"
+    domain: aueb.gr
+    name_en: 
+    name_el: !binary |
+      zp/Ouc66zr/Ovc6/zrzOuc66z4wgzqDOsc69zrXPgM65z4PPhM6uzrzOuc6/
+      IM6RzrjOt869z47OvQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "45"
+    domain: oasp.gr
+    name_en: 
+    name_el: !binary |
+      zp/Pgc6zzrHOvc65z4POvM+Mz4IgzpHOvc+EzrnPg861zrnPg868zrnOus6u
+      z4IgzqDPgc6/z4PPhM6xz4POr86xz4I=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "46"
+    domain: oteresearch.gr
+    name_en: 
+    name_el: !binary |
+      zp/OpM6VIOKAkyDOo8+FzrPOus+Bz4zPhM63zrzOsSDOlc+BzrPOsc+Dz4TO
+      t8+Bzq/Pic69IM6dzq3Pic69IM6kzrXPh869zr/Ou86/zrPOuc+Ozr0gJiDO
+      pc+AzrfPgc61z4POuc+Ozr0=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "47"
+    domain: sch.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXOu867zq7Ovc65zr8gzqPPh86/zrvOuc66z4wgzpTOr866z4TP
+      hc6/IOKAkyBFRFVuZXQ=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "48"
+    domain: aegean.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6RzrnOs86xzq/Ov8+F
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "49"
+    domain: uth.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6YzrXPg8+DzrHOu86vzrHPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "50"
+    domain: uoi.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6Zz4nOsc69zr3Or869z4nOvQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "51"
+    domain: uoc.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6az4HOrs+EzrfPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "52"
+    domain: uom.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6czrHOus61zrTOv869zq/Osc+C
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "53"
+    domain: upatras.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6gzrHPhM+Bz47OvQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "54"
+    domain: unipi.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6gzrXOuc+BzrHOuc6s
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "55"
+    domain: uop.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6gzrXOu867zr/PgM6/zr3Ors+D
+      zr/PhQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "56"
+    domain: panteion.gr
+    name_en: 
+    name_el: !binary |
+      zqDOrM69z4TOtc65zr/OvSDOoM6xzr3Otc+AzrnPg8+Ezq7OvM65zr8=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "57"
+    domain: tuc.gr
+    name_en: 
+    name_el: !binary |
+      zqDOv867z4XPhM61z4fOvc61zq/OvyDOms+Bzq7PhM63z4I=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "58"
+    domain: fire-dept-academy.gr
+    name_en: 
+    name_el: !binary |
+      zqDPhc+Bzr/Pg86yzrXPg8+EzrnOus6uIM6RzrrOsc60zrfOvM6vzrE=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "59"
+    domain: rae.gr
+    name_en: 
+    name_el: !binary |
+      zqHPhc64zrzOuc+Dz4TOuc66zq4gzpHPgc+Hzq4gzpXOvc6tz4HOs861zrnO
+      sc+C
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "60"
+    domain: hafa.gr
+    name_en: 
+    name_el: !binary |
+      zqPPh86/zrvOriDOmc66zqzPgc+Jzr0=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "61"
+    domain: sse.gr
+    name_en: 
+    name_el: !binary |
+      zqPPhM+BzrHPhM65z4nPhM65zrrOriDOo8+Hzr/Ou86uIM6Vz4XOtc67z4DO
+      r860z4nOvQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "62"
+    domain: hna.gr
+    name_en: 
+    name_el: !binary |
+      zqPPh86/zrvOriDOnc6xz4XPhM65zrrPjs69IM6Uzr/Ous6vzrzPic69
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "63"
+    domain: teiath.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6RzrjOt869z47OvQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "65"
+    domain: teiep.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6Xz4DOtc6vz4HOv8+F
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "66"
+    domain: teiion.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6Zzr/Ovc6vzr/PhQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "67"
+    domain: teithe.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6YzrXPg8+DzrHOu86/zr3Or866zrfPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "69"
+    domain: teikal.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6azrHOu86xzrzOrM+EzrHPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
     id: "79"
-    name_el: "\xCE\xA5\xCF\x80\xCE\xBF\xCF\x85\xCF\x81\xCE\xB3\xCE\xB5\xCE\xAF\xCE\xBF \xCE\x95\xCE\xB8\xCE\xBD\xCE\xB9\xCE\xBA\xCE\xAE\xCF\x82 \xCE\xA0\xCE\xB1\xCE\xB9\xCE\xB4\xCE\xB5\xCE\xAF\xCE\xB1\xCF\x82 & \xCE\x98\xCF\x81\xCE\xB7\xCF\x83\xCE\xBA\xCE\xB5\xCF\x85\xCE\xBC\xCE\xAC\xCF\x84\xCF\x89\xCE\xBD"
+    domain: ypepth.gr
+    name_en: 
+    name_el: !binary |
+      zqXPgM6/z4XPgc6zzrXOr86/IM6VzrjOvc65zrrOrs+CIM6gzrHOuc60zrXO
+      r86xz4IgJiDOmM+BzrfPg866zrXPhc68zqzPhM+Jzr0=
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
+    id: "71"
+    domain: teilam.gr
     name_en: 
-    domain: hua.gr
+    name_el: !binary |
+      zqTOlc6ZIM6bzrHOvM6vzrHPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "72"
+    domain: teilar.edu.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6bzqzPgc65z4POsc+C
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "73"
+    domain: teimess.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6czrXPg8+Dzr/Ou86/zrPOr86/z4U=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "74"
+    domain: teipat.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6gzqzPhM+BzrHPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "75"
+    domain: teipir.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6gzrXOuc+BzrHOuc6s
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "76"
+    domain: teiser.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6jzrXPgc+Bz47OvQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "77"
+    domain: teihal.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6nzrHOu866zq/OtM6xz4I=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
     id: "80"
-    name_el: "\xCE\xA7\xCE\xB1\xCF\x81\xCE\xBF\xCE\xBA\xCF\x8C\xCF\x80\xCE\xB5\xCE\xB9\xCE\xBF \xCE\xA0\xCE\xB1\xCE\xBD\xCE\xB5\xCF\x80\xCE\xB9\xCF\x83\xCF\x84\xCE\xAE\xCE\xBC\xCE\xB9\xCE\xBF"
+    domain: hua.gr
+    name_en: 
+    name_el: !binary |
+      zqfOsc+Bzr/Ous+Mz4DOtc65zr8gzqDOsc69zrXPgM65z4PPhM6uzrzOuc6/
+
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: ait.edu.gr
     id: "81"
+    domain: ait.edu.gr
+    name_en: 
     name_el: Athens Information Technology
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: hellasgrid.gr
     id: "82"
+    domain: hellasgrid.gr
+    name_en: 
     name_el: HellasGrid
+  attributes_cache: {}
+
 - !ruby/object:Organization 
   attributes: 
-    name_en: 
-    domain: egee-see.org
     id: "83"
+    domain: egee-see.org
+    name_en: 
     name_el: EGEE-SEE
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "84"
+    domain: eie.gr
+    name_en: 
+    name_el: !binary |
+      zpXOuM69zrnOus+MIM6KzrTPgc+FzrzOsSDOlc+BzrXPhc69z47OvQ==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "85"
+    domain: certh.gr
+    name_en: 
+    name_el: !binary |
+      zpXOuM69zrnOus+MIM6azq3Ovc+Ez4HOvyDOiM+BzrXPhc69zrHPgiAmIM6k
+      zrXPh869zr/Ou86/zrPOuc66zq7PgiDOkc69zqzPgM+Ez4XOvs63z4I=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "68"
+    domain: teiemt.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6azrHOss6szrvOsc+C
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "86"
+    domain: tsi.gr
+    name_en: Telecommunication Systems Research Institute
+    name_el: Telecommunication Systems Research Institute
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "29"
+    domain: iasa.gr
+    name_en: 
+    name_el: !binary |
+      zpnOlc6jzpU=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "24"
+    domain: certh.gr
+    name_en: 
+    name_el: EKETA
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "87"
+    domain: uowm.gr
+    name_en: 
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6Uz4XPhM65zrrOrs+CIM6czrHO
+      us61zrTOv869zq/Osc+C
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "88"
+    domain: academyofathens.gr
+    name_en: 
+    name_el: !binary |
+      zpHOus6xzrTOt868zq/OsSDOkc64zrfOvc+Ozr0=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "89"
+    domain: ucg.gr
+    name_en: University of Central Greece
+    name_el: !binary |
+      zqDOsc69zrXPgM65z4PPhM6uzrzOuc6/IM6jz4TOtc+BzrXOrM+CIM6VzrvO
+      u86szrTOsc+C
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "90"
+    domain: egi.eu
+    name_en: EGI.eu
+    name_el: EGI.eu
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "20"
+    domain: hcmr.gr
+    name_en: 
+    name_el: !binary |
+      zpXOu867zrfOvc65zrrPjCDOms6tzr3PhM+Bzr8gzpjOsc67zqzPg8+DzrnO
+      sc+CIM6Vz4HOtc+Fzr3Osc+C
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "28"
+    domain: cti.gr
+    name_en: 
+    name_el: !binary |
+      zpnOvc+Dz4TOuc+Ezr/Pjc+Ezr8gzqTOtc+Hzr3Ov867zr/Os86vzrHPgiDO
+      pc+Azr/Ou86/zrPOuc+Dz4TPjs69IM66zrHOuSDOlc66zrTPjM+DzrXPic69
+      IMKrzpTOuc+Mz4bOsc69z4TOv8+Cwrs=
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "70"
+    domain: teicrete.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6az4HOrs+EzrfPgg==
+
+  attributes_cache: {}
+
+- !ruby/object:Organization 
+  attributes: 
+    id: "64"
+    domain: teiwm.gr
+    name_en: 
+    name_el: !binary |
+      zqTOlc6ZIM6Uz4XPhM65zrrOrs+CIM6czrHOus61zrTOv869zq/Osc+C
+
+  attributes_cache: {}
+
