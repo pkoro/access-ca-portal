@@ -1,6 +1,6 @@
 class UncheckedPerson < ActiveRecord::Base
   set_table_name "people"
-  acts_as_versioned(:table_name => "Person_versions", :foreign_key => "person_id")
+  acts_as_versioned(:table_name => "person_versions", :foreign_key => "person_id")
   
   has_many :certificate_requests
   has_many :distinguished_names,
