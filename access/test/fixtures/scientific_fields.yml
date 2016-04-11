@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+
+other:
+  description: other
+
+field1:
+  description: field1
+
+field2:
+  description: field2

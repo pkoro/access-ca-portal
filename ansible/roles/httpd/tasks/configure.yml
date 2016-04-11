@@ -1,0 +1,21 @@
+---
+
+- name: Copy access.conf
+  template: src=../templates/etc/httpd/conf.d/access.conf.j2 dest=/etc/httpd/conf.d/access.conf owner=apache group=apache mode=0644
+  tags: httpd_configuration
+
+- name: Enable the httpd service at boot time
+  shell: systemctl enable httpd.service
+  tags:
+    -httpd_install
+
+
+
+- name: Enable required ports
+  firewalld: service={{ item }} immediate=true permanent=true state=enabled
+  with_items:
+    - http
+    - https
+  tags:
+    - httpd_install
+    - firewall_configure

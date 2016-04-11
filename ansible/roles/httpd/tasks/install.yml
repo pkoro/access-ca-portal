@@ -1,0 +1,15 @@
+---
+
+- name: Install httpd
+  yum: name=httpd state=latest
+  notify: restart apache
+  tags: httpd_install
+
+- name: Install httpd modules
+  yum: name={{ item }} state=latest
+  with_items:
+      - mod_ssl
+  notify: restart apache
+  tags:
+    - httpd_install
+    - mod_ssl_install

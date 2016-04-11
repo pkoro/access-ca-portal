@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+auth:
+  name: Aristotle University of Thessaloniki
+  domain: auth.gr
+  description: AUTh
+
+grnet:
+  name: GRNET
+  domain: edet.gr
+  description: Edet

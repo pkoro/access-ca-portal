@@ -1,0 +1,48 @@
+el:
+  views:
+    label:
+      person:
+        first_name: Όνομα
+        last_name: Επώνυμο
+        first_name_latin: Όνομα (με λατινικούς χαρακτήρες)
+        last_name_latin: Επώνυμο (με λατινικούς χαρακτήρες)
+        email: E-mail
+        phone_number: Αριθμός Τηλεφώνου
+        department: Τμήμα
+        position: Ιδιότητα
+        scientific_field: Επιστημονικό Πεδίο
+        alternative_emails: Εναλλακτικά E-mails
+        organization: Οργανισμός
+      host:
+        admin: Διαχειριστής
+        organization: Οργανισμός
+      certificate_request:
+        uuid: Αναγνωριστικό
+        body: Σώμα
+        requestor: Αιτών
+        owner: Κάτοχος
+        organization: Οργανισμός
+        status: Κατάσταση
+    error:
+      csr_gen: Λόγω σφάλματος δεν ήταν δυνατό να δημιουργηθεί αίτηση ψηφιακού πιστοποιητικού ή έχετε ήδη κάνει αίτηση
+      error: Συνέβη κάποιο σφάλμα
+      already_csr: Είτε έχετε δημιουργήσει ήδη αίτηση ψηφιακού πιστοποιητικού
+      no_reg: είτε δεν έχετε κάνει εγγραφή
+      no_csr: Είτε δεν έχετε κάνει αίτηση ψηφιακού πιστοποιητικού
+    status: Κατασταση
+    Request_date: Ημερομηνία αιτησης
+    Person_information: Στοιχεια χρηστη
+    identification_pending_list: Λίστα αιτήσεων σε αναμονή για ταυτοποίηση
+    rejected_list: Λίστα απορριφθέντων αιτήσεων
+    signing_pending_list: Λίστα αιτήσεων σε αναμονή για υπογραφή
+    show: Προβολή
+    list_people: Λίστα Χρηστών
+    list_csr: Λίστα Αιτήσεων για Πιστοποιητικό
+    edit: Επεξεργασία
+    destroy: Διαγραφή
+    accept: Αποδοχή
+    reject: Απόρριψη
+    delete_confirmation: Είστε σίγουρος/η;
+    new_person: Νέος χρήστης
+    new_csr: Νέα άιτηση
+    back: Επιστροφή

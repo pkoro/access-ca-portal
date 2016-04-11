@@ -1,0 +1,48 @@
+en:
+  views:
+    label:
+      person:
+        first_name: Name
+        last_name: Surname
+        first_name_latin: Name (in Latin characters)
+        last_name_latin: Surname (in Latin characters)
+        email: E-mail
+        phone_number: Phone Number
+        department: Department
+        position: Position
+        scientific_field: Scientific Field
+        alternative_emails: Alternative e-mails
+        organization: Organization
+      host:
+        admin: Administrator
+        organization: Organization
+      certificate_request:
+        uuid: Unique Identifier
+        body: Body
+        requestor: Requestor
+        owner: Owner
+        organization: Organization
+        status: Status
+    error:
+      csr_gen: An error has occurred. We couldn't generate your csr or it has been already generated
+      error: An error has occurred
+      already_csr: You may already have created a csr
+      no_reg: Or you are not registered
+      no_csr: You may not have created a csr
+    status: status
+    Request_date: Request date
+    Person_information: Person information
+    identification_pending_list: Pending identification applications list
+    rejected_list: Rejected applications list
+    signing_pending_list: Pending singing applications list
+    show: Show
+    list_people: List People
+    list_csr: List Certificate Requests
+    edit: Edit
+    destroy: Destroy
+    accept: Accept
+    reject: Reject
+    delete_confirmation: Are you sure?
+    new_person: New Person
+    new_csr: New Request
+    back: Back
